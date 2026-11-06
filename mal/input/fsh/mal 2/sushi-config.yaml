@@ -1,0 +1,26 @@
+# ╭──────────────────────────────────────ImplementationGuide───────────────────────────────────────╮
+# │  The properties below are used to create the ImplementationGuide resource. For a list of       │
+# │  supported properties, see: https://fshschool.org/docs/sushi/configuration/                    │
+# ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
+# Hvis id endres, må linjen i ig.ini endres tilsvarende.
+id: joda.fhir.sardokumentasjon
+canonical: https://kristilerla.github.io/joda-sardokumentasjon-fhir
+name: JodaSardokumentasjon
+title: "Sårdokumentasjon med JodaCare og Jodapro"
+description: Øvingsguide som beskriver hvordan bilder og vurderinger av sår, tatt av pasienten, pårørende eller helsepersonell, kan uttrykkes i HL7 FHIR og sendes til pasientens journal.
+status: draft
+version: 0.1.0
+fhirVersion: 4.0.1
+copyrightYear: 2026+
+releaseLabel: ci-build
+jurisdiction: urn:iso:std:iso:3166#NO "Norway"
+publisher:
+  name: Kristil Erla Håland
+  url: https://jodacare.no
+dependencies:
+  hl7.fhir.no.basis: 2.2.2
+
+menu:
+  Home: index.html
+  Artifacts: artifacts.html
+  TOC: toc.html
