@@ -1,6 +1,0 @@
-URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
-https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-bildeformat-vs,0.1.0,draft,,JodaBildeformatVS,Bildeformat,"Bildeformater som kan brukes for sårbilder.","StructureDefinition/joda-sarbilde","Other"
-https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-hud-rundt-vs,0.1.0,draft,,JodaHudRundtVS,Huden rundt såret,"Gyldige verdier for huden rundt såret.","StructureDefinition/joda-sarvurdering","Internal"
-https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-kameratype-vs,0.1.0,draft,,JodaKameratypeVS,Kameratype,"Gyldige kameratyper.","StructureDefinition/joda-kamera","Internal"
-https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-sarbunn-vs,0.1.0,draft,,JodaSarbunnVS,Sårbunn,"Gyldige verdier for sårbunn.","StructureDefinition/joda-sarvurdering","Internal"
-https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-vaesking-vs,0.1.0,draft,,JodaVaeskingVS,Væsking,"Gyldige verdier for væsking.","StructureDefinition/joda-sarvurdering","Internal"

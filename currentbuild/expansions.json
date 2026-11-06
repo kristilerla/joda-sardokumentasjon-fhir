@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "94d5733d-d18f-4a9e-a9d8-88cded432e30",
+  "id" : "72adc554-3d7a-406b-b3f2-54a12bcd9971",
   "meta" : {
-    "lastUpdated" : "2026-11-06T17:48:45.507+00:00"
+    "lastUpdated" : "2026-11-06T17:56:14.904+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "title" : "Bildeformat",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-11-06T17:48:45+00:00",
+      "date" : "2026-11-06T17:56:14+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -28,8 +28,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:5c15a283-0d38-4129-bd7a-aeaf6448d309",
-        "timestamp" : "2026-11-06T17:50:03+00:00",
+        "identifier" : "urn:uuid:de1f8aa3-1190-40da-b43d-f84b5f19f848",
+        "timestamp" : "2026-11-06T17:57:14+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -85,7 +85,7 @@
       "title" : "Huden rundt såret",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-11-06T17:48:45+00:00",
+      "date" : "2026-11-06T17:56:14+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -94,8 +94,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:b2ee8e7f-934f-44a4-b79e-b3181d30a29f",
-        "timestamp" : "2026-11-06T17:50:03+00:00",
+        "identifier" : "urn:uuid:8d31a2ff-ed59-4b48-8b7d-6b24908f8ec4",
+        "timestamp" : "2026-11-06T17:57:14+00:00",
         "total" : 5,
         "offset" : 0,
         "parameter" : [{
@@ -155,7 +155,7 @@
       "title" : "Kameratype",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-11-06T17:48:45+00:00",
+      "date" : "2026-11-06T17:56:14+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -164,8 +164,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d355f7d9-d756-4433-b5d8-9aa3843bd432",
-        "timestamp" : "2026-11-06T17:50:03+00:00",
+        "identifier" : "urn:uuid:8f74eaa3-82b9-458f-89dc-5c500596bb82",
+        "timestamp" : "2026-11-06T17:57:14+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -213,7 +213,7 @@
       "title" : "Sårbunn",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-11-06T17:48:45+00:00",
+      "date" : "2026-11-06T17:56:14+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -222,8 +222,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:9c6149f8-de1e-4ce7-aa32-f843c6ec11b3",
-        "timestamp" : "2026-11-06T17:50:03+00:00",
+        "identifier" : "urn:uuid:1360d3a6-1b3b-41d9-ac19-e50cf267d37c",
+        "timestamp" : "2026-11-06T17:57:15+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{
@@ -279,7 +279,7 @@
       "title" : "Væsking",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-11-06T17:48:45+00:00",
+      "date" : "2026-11-06T17:56:14+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -288,8 +288,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:cc914283-a415-41ad-b91d-3fa1089da3ab",
-        "timestamp" : "2026-11-06T17:50:03+00:00",
+        "identifier" : "urn:uuid:22d04dab-cb02-4b69-b4c5-415177138a06",
+        "timestamp" : "2026-11-06T17:57:15+00:00",
         "total" : 4,
         "offset" : 0,
         "parameter" : [{

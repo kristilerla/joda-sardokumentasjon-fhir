@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-joda-sarvurdering.cs
   "title" : "Sårvurdering",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-06T17:48:45+00:00",
+  "date" : "2026-11-06T17:56:14+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",

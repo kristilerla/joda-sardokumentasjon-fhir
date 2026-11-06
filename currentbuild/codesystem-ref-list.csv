@@ -1,5 +1,0 @@
-URL,Version,Status,OIDs,Name,Title,Description,Used
-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt,0.1.0,draft,,JodaHudRundt,Huden rundt såret,"Tilstanden til huden rundt såret.","ValueSet/joda-hud-rundt-vs"
-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype,0.1.0,draft,,JodaKameratype,Kameratype,"Hva slags kamera bildet er tatt med.","ValueSet/joda-kameratype-vs"
-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn,0.1.0,draft,,JodaSarbunn,Sårbunn,"Hva sårbunnen hovedsakelig består av.","ValueSet/joda-sarbunn-vs"
-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking,0.1.0,draft,,JodaVaesking,Væsking,"Hvor mye såret væsker.","ValueSet/joda-vaesking-vs"

@@ -252,8 +252,8 @@
     },
     "StructureDefinition-joda-sarbilde.html" : "Sårbilde",
     "StructureDefinition-joda-kamera.html" : "Kamera",
-    "StructureDefinition-joda-pasient.html" : "Pasient",
     "StructureDefinition-joda-sardokument.html" : "Sårdokument til journal",
+    "StructureDefinition-joda-pasient.html" : "Pasient",
     "StructureDefinition-joda-sarvurdering.html" : "Sårvurdering"
   },
   {
