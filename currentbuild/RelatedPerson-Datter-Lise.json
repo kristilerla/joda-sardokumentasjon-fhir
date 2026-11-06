@@ -1,0 +1,22 @@
+{
+  "resourceType" : "RelatedPerson",
+  "id" : "Datter-Lise",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson Datter-Lise</b></p><a name=\"Datter-Lise\"> </a><a name=\"hcDatter-Lise\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Lise Testdal - natural daughter</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"The patient this person is related to\">Patient:</td><td colspan=\"3\"><a href=\"Patient-Pasient-Karin.html\">Karin Testdal  Female, DoB: 1948-03-13 ( https://example.org/oppdiktet/pasient-id#testpasient-karin)</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The nature of the relationship between the patient and the related person\">Relationship:</td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode DAU}\">natural daughter</span></td></tr></table></div>"
+  },
+  "patient" : {
+    "reference" : "Patient/Pasient-Karin"
+  },
+  "relationship" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "code" : "DAU",
+      "display" : "natural daughter"
+    }]
+  }],
+  "name" : [{
+    "family" : "Testdal",
+    "given" : ["Lise"]
+  }]
+}

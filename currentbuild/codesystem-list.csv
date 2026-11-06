@@ -1,0 +1,6 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt,0.1.0,draft,,JodaHudRundt,Huden rundt såret,"Tilstanden til huden rundt såret.",
+http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype,0.1.0,draft,,JodaKameratype,Kameratype,"Hva slags kamera bildet er tatt med.",
+http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn,0.1.0,draft,,JodaSarbunn,Sårbunn,"Hva sårbunnen hovedsakelig består av.",
+http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode,0.1.0,draft,,JodaSarvurderingKode,Sårvurdering,"Kode for selve sårvurderingen og for feltene i den.",
+http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking,0.1.0,draft,,JodaVaesking,Væsking,"Hvor mye såret væsker.",

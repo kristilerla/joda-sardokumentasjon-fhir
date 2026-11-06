@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="Pasient-Karin"/>
+  <meta>
+    <profile value="http://hl7.no/fhir/ig/mal/StructureDefinition/joda-pasient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Patient Pasient-Karin</b></p><a name="Pasient-Karin"> </a><a name="hcPasient-Karin"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-joda-pasient.html">Pasient</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Karin Testdal  Female, DoB: 1948-03-13 ( https://example.org/oppdiktet/pasient-id#testpasient-karin)</p><hr/></div>
+  </text>
+  <identifier>
+    <system value="https://example.org/oppdiktet/pasient-id"/>
+    <value value="testpasient-karin"/>
+  </identifier>
+  <name>
+    <family value="Testdal"/>
+    <given value="Karin"/>
+  </name>
+  <gender value="female"/>
+  <birthDate value="1948-03-13"/>
+</Patient>

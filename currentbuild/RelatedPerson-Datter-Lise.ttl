@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/mal/RelatedPerson/Datter-Lise> a fhir:RelatedPerson ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Datter-Lise"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson Datter-Lise</b></p><a name=\"Datter-Lise\"> </a><a name=\"hcDatter-Lise\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Lise Testdal - natural daughter</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"The patient this person is related to\">Patient:</td><td colspan=\"3\"><a href=\"Patient-Pasient-Karin.html\">Karin Testdal  Female, DoB: 1948-03-13 ( https://example.org/oppdiktet/pasient-id#testpasient-karin)</a></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The nature of the relationship between the patient and the related person\">Relationship:</td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode DAU}\">natural daughter</span></td></tr></table></div>"
+  ] ;
+  fhir:RelatedPerson.patient [
+     fhir:link <http://hl7.no/fhir/ig/mal/Patient/Pasient-Karin> ;
+     fhir:Reference.reference [ fhir:value "Patient/Pasient-Karin" ]
+  ] ;
+  fhir:RelatedPerson.relationship [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v3-RoleCode" ] ;
+       fhir:Coding.code [ fhir:value "DAU" ] ;
+       fhir:Coding.display [ fhir:value "natural daughter" ]
+     ]
+  ] ;
+  fhir:RelatedPerson.name [
+     fhir:index 0 ;
+     fhir:HumanName.family [ fhir:value "Testdal" ] ;
+     fhir:HumanName.given [
+       fhir:value "Lise" ;
+       fhir:index 0
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/mal/RelatedPerson/Datter-Lise.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

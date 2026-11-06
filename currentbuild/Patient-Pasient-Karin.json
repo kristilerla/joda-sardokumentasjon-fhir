@@ -1,0 +1,21 @@
+{
+  "resourceType" : "Patient",
+  "id" : "Pasient-Karin",
+  "meta" : {
+    "profile" : ["http://hl7.no/fhir/ig/mal/StructureDefinition/joda-pasient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient Pasient-Karin</b></p><a name=\"Pasient-Karin\"> </a><a name=\"hcPasient-Karin\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-joda-pasient.html\">Pasient</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Karin Testdal  Female, DoB: 1948-03-13 ( https://example.org/oppdiktet/pasient-id#testpasient-karin)</p><hr/></div>"
+  },
+  "identifier" : [{
+    "system" : "https://example.org/oppdiktet/pasient-id",
+    "value" : "testpasient-karin"
+  }],
+  "name" : [{
+    "family" : "Testdal",
+    "given" : ["Karin"]
+  }],
+  "gender" : "female",
+  "birthDate" : "1948-03-13"
+}

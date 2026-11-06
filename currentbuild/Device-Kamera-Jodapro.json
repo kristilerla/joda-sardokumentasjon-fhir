@@ -1,0 +1,22 @@
+{
+  "resourceType" : "Device",
+  "id" : "Kamera-Jodapro",
+  "meta" : {
+    "profile" : ["http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device Kamera-Jodapro</b></p><a name=\"Kamera-Jodapro\"> </a><a name=\"hcKamera-Jodapro\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-joda-kamera.html\">Kamera</a></p></div><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Jodapro hodekamera</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype hodekamera}\">Hodekamera</span></p></div>"
+  },
+  "deviceName" : [{
+    "name" : "Jodapro hodekamera",
+    "type" : "user-friendly-name"
+  }],
+  "type" : {
+    "coding" : [{
+      "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype",
+      "code" : "hodekamera",
+      "display" : "Hodekamera"
+    }]
+  }
+}

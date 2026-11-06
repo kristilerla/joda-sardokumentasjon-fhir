@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "joda-kameratype"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem joda-kameratype</b></p><a name=\"joda-kameratype\"> </a><a name=\"hcjoda-kameratype\"> </a><p>This case-sensitive code system <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">mobil<a name=\"joda-kameratype-mobil\"> </a></td><td>Mobiltelefon eller nettbrett</td><td>Pasientens, pårørendes eller den ansattes egen mobil eller nettbrett, via JodaCare.</td></tr><tr><td style=\"white-space:nowrap\">hodekamera<a name=\"joda-kameratype-hodekamera\"> </a></td><td>Hodekamera</td><td>Jodapro hodekamera brukt av helsepersonell.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype"] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "JodaKameratype"] ;
+  fhir:CodeSystem.title [ fhir:value "Kameratype"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-06T17:24:45+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Norge"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Norge" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.no" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Hva slags kamera bildet er tatt med."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NO" ] ;
+       fhir:Coding.display [ fhir:value "Norway" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "2"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "mobil" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Mobiltelefon eller nettbrett" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Pasientens, pårørendes eller den ansattes egen mobil eller nettbrett, via JodaCare." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hodekamera" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Hodekamera" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Jodapro hodekamera brukt av helsepersonell." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

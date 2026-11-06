@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/mal/DocumentReference/Sardokument-Hjemme-1-Innsendt> a fhir:DocumentReference ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "Sardokument-Hjemme-1-Innsendt"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sardokument" ;
+       fhir:index 0 ;
+       fhir:link <http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sardokument>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference Sardokument-Hjemme-1-Innsendt</b></p><a name=\"Sardokument-Hjemme-1-Innsendt\"> </a><a name=\"hcSardokument-Hjemme-1-Innsendt\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-joda-sardokument.html\">Sårdokument til journal</a></p></div><p><b>status</b>: Current</p><p><b>docStatus</b>: Preliminary</p><p><b>subject</b>: <a href=\"Patient-Pasient-Karin.html\">Karin Testdal  Female, DoB: 1948-03-13 ( https://example.org/oppdiktet/pasient-id#testpasient-karin)</a></p><p><b>date</b>: 2026-11-10 18:31:00+0100</p><p><b>author</b>: <a href=\"RelatedPerson-Datter-Lise.html\">Lise Testdal - natural daughter</a></p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td></tr><tr><td style=\"display: none\">*</td><td>image/jpeg</td><td><a href=\"https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.2&amp;canonical=https://example.org/oppdiktet/sarbilde-hjemme-1.jpg\">https://example.org/oppdiktet/sarbilde-hjemme-1.jpg</a></td></tr></table></blockquote><h3>Contexts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Related</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Media-Sarbilde-Hjemme-1.html\">Media: status = completed; type = Image; created[x] = 2026-11-10 18:30:00+0100; bodySite = Venstre legg, innside; note = Mamma sier det verker mer i kveld, og det ser rødere ut rundt kanten.</a></td></tr></table></div>"
+  ] ;
+  fhir:DocumentReference.status [ fhir:value "current"] ;
+  fhir:DocumentReference.docStatus [ fhir:value "preliminary"] ;
+  fhir:DocumentReference.subject [
+     fhir:link <http://hl7.no/fhir/ig/mal/Patient/Pasient-Karin> ;
+     fhir:Reference.reference [ fhir:value "Patient/Pasient-Karin" ]
+  ] ;
+  fhir:DocumentReference.date [ fhir:value "2026-11-10T18:31:00+01:00"^^xsd:dateTime] ;
+  fhir:DocumentReference.author [
+     fhir:index 0 ;
+     fhir:link <http://hl7.no/fhir/ig/mal/RelatedPerson/Datter-Lise> ;
+     fhir:Reference.reference [ fhir:value "RelatedPerson/Datter-Lise" ]
+  ] ;
+  fhir:DocumentReference.content [
+     fhir:index 0 ;
+     fhir:DocumentReference.content.attachment [
+       fhir:Attachment.contentType [ fhir:value "image/jpeg" ] ;
+       fhir:Attachment.url [ fhir:value "https://example.org/oppdiktet/sarbilde-hjemme-1.jpg" ]
+     ]
+  ] ;
+  fhir:DocumentReference.context [
+     fhir:DocumentReference.context.related [
+       fhir:index 0 ;
+       fhir:link <http://hl7.no/fhir/ig/mal/Media/Sarbilde-Hjemme-1> ;
+       fhir:Reference.reference [ fhir:value "Media/Sarbilde-Hjemme-1" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/mal/DocumentReference/Sardokument-Hjemme-1-Innsendt.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

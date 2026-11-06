@@ -1,0 +1,42 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JodaHudRundt",
+    "title" : "Huden rundt såret",
+    "description" : "Tilstanden til huden rundt såret."
+  },
+  {
+    "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JodaKameratype",
+    "title" : "Kameratype",
+    "description" : "Hva slags kamera bildet er tatt med."
+  },
+  {
+    "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JodaSarbunn",
+    "title" : "Sårbunn",
+    "description" : "Hva sårbunnen hovedsakelig består av."
+  },
+  {
+    "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JodaSarvurderingKode",
+    "title" : "Sårvurdering",
+    "description" : "Kode for selve sårvurderingen og for feltene i den."
+  },
+  {
+    "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JodaVaesking",
+    "title" : "Væsking",
+    "description" : "Hvor mye såret væsker."
+  }]
+}

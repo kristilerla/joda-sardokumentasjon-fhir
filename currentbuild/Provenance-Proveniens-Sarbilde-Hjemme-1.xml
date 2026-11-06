@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Provenance xmlns="http://hl7.org/fhir">
+  <id value="Proveniens-Sarbilde-Hjemme-1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Provenance Proveniens-Sarbilde-Hjemme-1</b></p><a name="Proveniens-Sarbilde-Hjemme-1"> </a><a name="hcProveniens-Sarbilde-Hjemme-1"> </a><p>Provenance for <a href="Media-Sarbilde-Hjemme-1.html">Media: status = completed; type = Image; created[x] = 2026-11-10 18:30:00+0100; bodySite = Venstre legg, innside; note = Mamma sier det verker mer i kveld, og det ser rødere ut rundt kanten.</a></p><p>Summary</p><table class="grid"><tr><td>Recorded</td><td>2026-11-10 18:31:00+0100</td></tr><tr><td>Activity</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-DataOperation CREATE}">create</span></td></tr></table><p><b>Agents</b></p><table class="grid"><tr><td><b>Type</b></td><td><b>who</b></td><td><b>On Behalf Of</b></td></tr><tr><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}">Author</span></td><td><a href="RelatedPerson-Datter-Lise.html">Lise Testdal - natural daughter</a></td><td><a href="Patient-Pasient-Karin.html">Karin Testdal  Female, DoB: 1948-03-13 ( https://example.org/oppdiktet/pasient-id#testpasient-karin)</a></td></tr><tr><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type assembler}">Assembler</span></td><td><a href="Device-Kamera-Mobil.html">Device: type = Mobiltelefon eller nettbrett</a></td><td/></tr></table></div>
+  </text>
+  <target>
+    <reference value="Media/Sarbilde-Hjemme-1"/>
+  </target>
+  <recorded value="2026-11-10T18:31:00+01:00"/>
+  <activity>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-DataOperation"/>
+      <code value="CREATE"/>
+      <display value="create"/>
+    </coding>
+  </activity>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+        <code value="author"/>
+        <display value="Author"/>
+      </coding>
+    </type>
+    <who>
+      <reference value="RelatedPerson/Datter-Lise"/>
+    </who>
+    <onBehalfOf>
+      <reference value="Patient/Pasient-Karin"/>
+    </onBehalfOf>
+  </agent>
+  <agent>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+        <code value="assembler"/>
+        <display value="Assembler"/>
+      </coding>
+    </type>
+    <who>
+      <reference value="Device/Kamera-Mobil"/>
+    </who>
+  </agent>
+</Provenance>

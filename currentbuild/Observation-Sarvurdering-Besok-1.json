@@ -1,0 +1,126 @@
+{
+  "resourceType" : "Observation",
+  "id" : "Sarvurdering-Besok-1",
+  "meta" : {
+    "profile" : ["http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarvurdering"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Sarvurdering-Besok-1</b></p><a name=\"Sarvurdering-Besok-1\"> </a><a name=\"hcSarvurdering-Besok-1\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-joda-sarvurdering.html\">Sårvurdering</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode sarvurdering}\">Sårvurdering</span></p><p><b>subject</b>: <a href=\"Patient-Pasient-Karin.html\">Karin Testdal  Female, DoB: 1948-03-13 ( https://example.org/oppdiktet/pasient-id#testpasient-karin)</a></p><p><b>effective</b>: 2026-11-11 10:25:00+0100</p><p><b>performer</b>: <a href=\"Practitioner-Sykepleier-Sara.html\">Sara Testesen</a></p><p><b>bodySite</b>: <span title=\"Codes:\">Venstre legg, innside</span></p><p><b>derivedFrom</b>: </p><ul><li><a href=\"Media-Sarbilde-Hjemme-1.html\">Media: status = completed; type = Image; created[x] = 2026-11-10 18:30:00+0100; bodySite = Venstre legg, innside; note = Mamma sier det verker mer i kveld, og det ser rødere ut rundt kanten.</a></li><li><a href=\"Media-Sarbilde-Besok-1.html\">Media: status = completed; type = Image; created[x] = 2026-11-11 10:15:00+0100; bodySite = Venstre legg, innside</a></li></ul><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode lengde}\">Lengde</span></p><p><b>value</b>: 4.5 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode bredde}\">Bredde</span></p><p><b>value</b>: 3 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode sarbunn}\">Sårbunn</span></p><p><b>value</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn fibrin}\">Fibrin (belegg)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode vaesking}\">Væsking</span></p><p><b>value</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking moderat}\">Moderat</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode hud-rundt}\">Huden rundt såret</span></p><p><b>value</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt rod}\">Rød</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode infeksjonstegn}\">Tegn på infeksjon</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode smerte}\">Smerte</span></p><p><b>value</b>: 6</p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+      "code" : "sarvurdering",
+      "display" : "Sårvurdering"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Pasient-Karin"
+  },
+  "effectiveDateTime" : "2026-11-11T10:25:00+01:00",
+  "performer" : [{
+    "reference" : "Practitioner/Sykepleier-Sara"
+  }],
+  "bodySite" : {
+    "text" : "Venstre legg, innside"
+  },
+  "derivedFrom" : [{
+    "reference" : "Media/Sarbilde-Hjemme-1"
+  },
+  {
+    "reference" : "Media/Sarbilde-Besok-1"
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+        "code" : "lengde"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 4.5,
+      "unit" : "cm",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "cm"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+        "code" : "bredde"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 3,
+      "unit" : "cm",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "cm"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+        "code" : "sarbunn"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn",
+        "code" : "fibrin",
+        "display" : "Fibrin (belegg)"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+        "code" : "vaesking"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking",
+        "code" : "moderat",
+        "display" : "Moderat"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+        "code" : "hud-rundt"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt",
+        "code" : "rod",
+        "display" : "Rød"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+        "code" : "infeksjonstegn"
+      }]
+    },
+    "valueBoolean" : true
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+        "code" : "smerte"
+      }]
+    },
+    "valueInteger" : 6
+  }]
+}

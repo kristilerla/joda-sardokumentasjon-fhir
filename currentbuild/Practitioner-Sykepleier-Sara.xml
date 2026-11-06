@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="Sykepleier-Sara"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner Sykepleier-Sara</b></p><a name="Sykepleier-Sara"> </a><a name="hcSykepleier-Sara"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Sara Testesen</p><hr/></div>
+  </text>
+  <name>
+    <family value="Testesen"/>
+    <given value="Sara"/>
+  </name>
+</Practitioner>

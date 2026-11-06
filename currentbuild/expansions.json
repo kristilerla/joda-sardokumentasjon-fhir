@@ -1,0 +1,334 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "501adc47-0188-40c2-9e49-7f50e2b8e7fd",
+  "meta" : {
+    "lastUpdated" : "2026-11-06T17:24:45.571+00:00"
+  },
+  "type" : "collection",
+  "entry" : [{
+    "fullUrl" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-bildeformat-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (no)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-urn:ietf:bcp:13-image/jpeg\"> </a><code>urn:ietf:bcp:13</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0image/jpeg</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:ietf:bcp:13&quot;, &quot;code&quot;: &quot;image/jpeg&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:ietf:bcp:13&quot;/&gt;&lt;code value=&quot;image/jpeg&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:ietf:bcp:13-image/png\"> </a><code>urn:ietf:bcp:13</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0image/png</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:ietf:bcp:13&quot;, &quot;code&quot;: &quot;image/png&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:ietf:bcp:13&quot;/&gt;&lt;code value=&quot;image/png&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-bildeformat-vs",
+      "version" : "0.1.0",
+      "name" : "JodaBildeformatVS",
+      "title" : "Bildeformat",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2026-11-06T17:24:45+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "NO",
+          "display" : "Norway"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:1c282bc2-088f-4a12-af03-cbbaa76176ac",
+        "timestamp" : "2026-11-06T17:25:49+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "no"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "includeDefinition",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "urn:ietf:bcp:13"
+        }],
+        "contains" : [{
+          "system" : "urn:ietf:bcp:13",
+          "code" : "image/jpeg"
+        },
+        {
+          "system" : "urn:ietf:bcp:13",
+          "code" : "image/png"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-hud-rundt-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-joda-hud-rundt.html\">codesystem Huden rundt såret v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 5 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (no)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt-normal\"> </a><code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-hud-rundt.html#joda-hud-rundt-normal\">normal</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;normal&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;normal&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt-rod\"> </a><code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-hud-rundt.html#joda-hud-rundt-rod\">rod</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;rod&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;rod&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt-maserert\"> </a><code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-hud-rundt.html#joda-hud-rundt-maserert\">maserert</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;maserert&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;maserert&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt-hoven\"> </a><code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-hud-rundt.html#joda-hud-rundt-hoven\">hoven</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;hoven&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;hoven&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt-torr\"> </a><code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-hud-rundt.html#joda-hud-rundt-torr\">torr</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;torr&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;torr&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-hud-rundt-vs",
+      "version" : "0.1.0",
+      "name" : "JodaHudRundtVS",
+      "title" : "Huden rundt såret",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2026-11-06T17:24:45+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "NO",
+          "display" : "Norway"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:4aa081d9-8888-420f-ab07-929de60d948c",
+        "timestamp" : "2026-11-06T17:25:49+00:00",
+        "total" : 5,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "no"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt",
+          "code" : "normal"
+        },
+        {
+          "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt",
+          "code" : "rod"
+        },
+        {
+          "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt",
+          "code" : "maserert"
+        },
+        {
+          "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt",
+          "code" : "hoven"
+        },
+        {
+          "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt",
+          "code" : "torr"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-kameratype-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-joda-kameratype.html\">codesystem Kameratype v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (no)</b></td><td><b>Definition</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype-mobil\"> </a><code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-kameratype.html#joda-kameratype-mobil\">mobil</a></td><td/><td>Pasientens, pårørendes eller den ansattes egen mobil eller nettbrett, via JodaCare.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;mobil&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;mobil&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype-hodekamera\"> </a><code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-kameratype.html#joda-kameratype-hodekamera\">hodekamera</a></td><td/><td>Jodapro hodekamera brukt av helsepersonell.</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;hodekamera&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;hodekamera&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-kameratype-vs",
+      "version" : "0.1.0",
+      "name" : "JodaKameratypeVS",
+      "title" : "Kameratype",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2026-11-06T17:24:45+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "NO",
+          "display" : "Norway"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:197cd6a1-7e45-4c41-9edc-b0c5c19abf67",
+        "timestamp" : "2026-11-06T17:25:49+00:00",
+        "total" : 2,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "no"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype",
+          "code" : "mobil"
+        },
+        {
+          "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype",
+          "code" : "hodekamera"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-sarbunn-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-joda-sarbunn.html\">codesystem Sårbunn v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 4 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (no)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn-granulasjon\"> </a><code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-sarbunn.html#joda-sarbunn-granulasjon\">granulasjon</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;granulasjon&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;granulasjon&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn-fibrin\"> </a><code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-sarbunn.html#joda-sarbunn-fibrin\">fibrin</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;fibrin&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;fibrin&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn-nekrose\"> </a><code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-sarbunn.html#joda-sarbunn-nekrose\">nekrose</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;nekrose&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;nekrose&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn-epitel\"> </a><code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-sarbunn.html#joda-sarbunn-epitel\">epitel</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;epitel&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;epitel&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-sarbunn-vs",
+      "version" : "0.1.0",
+      "name" : "JodaSarbunnVS",
+      "title" : "Sårbunn",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2026-11-06T17:24:45+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "NO",
+          "display" : "Norway"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:fc3c21d5-771a-48c5-b285-dfc289456f73",
+        "timestamp" : "2026-11-06T17:25:49+00:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "no"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn",
+          "code" : "granulasjon"
+        },
+        {
+          "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn",
+          "code" : "fibrin"
+        },
+        {
+          "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn",
+          "code" : "nekrose"
+        },
+        {
+          "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn",
+          "code" : "epitel"
+        }]
+      }
+    }
+  },
+  {
+    "fullUrl" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-vaesking-vs",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-joda-vaesking.html\">codesystem Væsking v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 4 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (no)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking-ingen\"> </a><code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-vaesking.html#joda-vaesking-ingen\">ingen</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;ingen&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;ingen&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking-lite\"> </a><code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-vaesking.html#joda-vaesking-lite\">lite</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;lite&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;lite&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking-moderat\"> </a><code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-vaesking.html#joda-vaesking-moderat\">moderat</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;moderat&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;moderat&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking-mye\"> </a><code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-vaesking.html#joda-vaesking-mye\">mye</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;mye&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;mye&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+      },
+      "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-vaesking-vs",
+      "version" : "0.1.0",
+      "name" : "JodaVaeskingVS",
+      "title" : "Væsking",
+      "status" : "draft",
+      "experimental" : true,
+      "date" : "2026-11-06T17:24:45+00:00",
+      "jurisdiction" : [{
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "NO",
+          "display" : "Norway"
+        }]
+      }],
+      "expansion" : {
+        "identifier" : "urn:uuid:92fcfa23-3c68-42b2-bfa2-82fc53f8560a",
+        "timestamp" : "2026-11-06T17:25:49+00:00",
+        "total" : 4,
+        "offset" : 0,
+        "parameter" : [{
+          "name" : "displayLanguage",
+          "valueCode" : "no"
+        },
+        {
+          "name" : "count",
+          "valueInteger" : 1000
+        },
+        {
+          "name" : "offset",
+          "valueInteger" : 0
+        },
+        {
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "used-codesystem",
+          "valueUri" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking|0.1.0"
+        }],
+        "contains" : [{
+          "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking",
+          "code" : "ingen"
+        },
+        {
+          "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking",
+          "code" : "lite"
+        },
+        {
+          "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking",
+          "code" : "moderat"
+        },
+        {
+          "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking",
+          "code" : "mye"
+        }]
+      }
+    }
+  }]
+}

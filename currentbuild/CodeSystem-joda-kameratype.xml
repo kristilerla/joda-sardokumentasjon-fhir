@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="joda-kameratype"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem joda-kameratype</b></p><a name="joda-kameratype"> </a><a name="hcjoda-kameratype"> </a><p>This case-sensitive code system <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">mobil<a name="joda-kameratype-mobil"> </a></td><td>Mobiltelefon eller nettbrett</td><td>Pasientens, pårørendes eller den ansattes egen mobil eller nettbrett, via JodaCare.</td></tr><tr><td style="white-space:nowrap">hodekamera<a name="joda-kameratype-hodekamera"> </a></td><td>Hodekamera</td><td>Jodapro hodekamera brukt av helsepersonell.</td></tr></table></div>
+  </text>
+  <url value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype"/>
+  <version value="0.1.0"/>
+  <name value="JodaKameratype"/>
+  <title value="Kameratype"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-11-06T17:24:45+00:00"/>
+  <publisher value="HL7 Norge"/>
+  <contact>
+    <name value="HL7 Norge"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.no"/>
+    </telecom>
+  </contact>
+  <description value="Hva slags kamera bildet er tatt med."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="mobil"/>
+    <display value="Mobiltelefon eller nettbrett"/>
+    <definition value="Pasientens, pårørendes eller den ansattes egen mobil eller nettbrett, via JodaCare."/>
+  </concept>
+  <concept>
+    <code value="hodekamera"/>
+    <display value="Hodekamera"/>
+    <definition value="Jodapro hodekamera brukt av helsepersonell."/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,98 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "joda-sarvurdering-kode"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem joda-sarvurdering-kode</b></p><a name=\"joda-sarvurdering-kode\"> </a><a name=\"hcjoda-sarvurdering-kode\"> </a><p>This case-sensitive code system <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">sarvurdering<a name=\"joda-sarvurdering-kode-sarvurdering\"> </a></td><td>Sårvurdering</td><td>En vurdering av et sår på et gitt tidspunkt.</td></tr><tr><td style=\"white-space:nowrap\">lengde<a name=\"joda-sarvurdering-kode-lengde\"> </a></td><td>Lengde</td><td>Sårets lengde i centimeter.</td></tr><tr><td style=\"white-space:nowrap\">bredde<a name=\"joda-sarvurdering-kode-bredde\"> </a></td><td>Bredde</td><td>Sårets bredde i centimeter.</td></tr><tr><td style=\"white-space:nowrap\">dybde<a name=\"joda-sarvurdering-kode-dybde\"> </a></td><td>Dybde</td><td>Sårets dybde i centimeter.</td></tr><tr><td style=\"white-space:nowrap\">sarbunn<a name=\"joda-sarvurdering-kode-sarbunn\"> </a></td><td>Sårbunn</td><td>Hva sårbunnen består av.</td></tr><tr><td style=\"white-space:nowrap\">vaesking<a name=\"joda-sarvurdering-kode-vaesking\"> </a></td><td>Væsking</td><td>Hvor mye såret væsker.</td></tr><tr><td style=\"white-space:nowrap\">hud-rundt<a name=\"joda-sarvurdering-kode-hud-rundt\"> </a></td><td>Huden rundt såret</td><td>Tilstanden til huden rundt såret.</td></tr><tr><td style=\"white-space:nowrap\">infeksjonstegn<a name=\"joda-sarvurdering-kode-infeksjonstegn\"> </a></td><td>Tegn på infeksjon</td><td>Om det er tegn på infeksjon, for eksempel rødme, varme, hevelse eller lukt.</td></tr><tr><td style=\"white-space:nowrap\">smerte<a name=\"joda-sarvurdering-kode-smerte\"> </a></td><td>Smerte</td><td>Smerte i såret på en skala fra 0 til 10.</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode"] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "JodaSarvurderingKode"] ;
+  fhir:CodeSystem.title [ fhir:value "Sårvurdering"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-06T17:24:45+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "HL7 Norge"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "HL7 Norge" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://www.hl7.no" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Kode for selve sårvurderingen og for feltene i den."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ] ;
+       fhir:Coding.code [ fhir:value "NO" ] ;
+       fhir:Coding.display [ fhir:value "Norway" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "9"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sarvurdering" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sårvurdering" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "En vurdering av et sår på et gitt tidspunkt." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "lengde" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Lengde" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Sårets lengde i centimeter." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "bredde" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Bredde" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Sårets bredde i centimeter." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "dybde" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Dybde" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Sårets dybde i centimeter." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "sarbunn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Sårbunn" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hva sårbunnen består av." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "vaesking" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Væsking" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Hvor mye såret væsker." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "hud-rundt" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Huden rundt såret" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Tilstanden til huden rundt såret." ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "infeksjonstegn" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Tegn på infeksjon" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Om det er tegn på infeksjon, for eksempel rødme, varme, hevelse eller lukt." ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "smerte" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Smerte" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Smerte i såret på en skala fra 0 til 10." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

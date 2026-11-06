@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "joda-hud-rundt-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet joda-hud-rundt-vs</b></p><a name=\"joda-hud-rundt-vs\"> </a><a name=\"hcjoda-hud-rundt-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-joda-hud-rundt.html\"><code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+  },
+  "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-hud-rundt-vs",
+  "version" : "0.1.0",
+  "name" : "JodaHudRundtVS",
+  "title" : "Huden rundt såret",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-06T17:24:45+00:00",
+  "publisher" : "HL7 Norge",
+  "contact" : [{
+    "name" : "HL7 Norge",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.no"
+    }]
+  }],
+  "description" : "Gyldige verdier for huden rundt såret.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt"
+    }]
+  }
+}

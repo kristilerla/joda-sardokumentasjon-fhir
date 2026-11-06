@@ -1,0 +1,50 @@
+# hl7.fhir.no.mal#0.1.0: Mal
+
+## Pages
+
+* [Home](index.md)
+* [Artifacts Summary](artifacts.md)
+
+## Resources
+
+### CodeSystems
+
+* [Huden rundt såret](CodeSystem-joda-hud-rundt.md)
+* [Kameratype](CodeSystem-joda-kameratype.md)
+* [Sårbunn](CodeSystem-joda-sarbunn.md)
+* [Sårvurdering](CodeSystem-joda-sarvurdering-kode.md)
+* [Væsking](CodeSystem-joda-vaesking.md)
+
+### ValueSets
+
+* [Bildeformat](ValueSet-joda-bildeformat-vs.md)
+* [Huden rundt såret](ValueSet-joda-hud-rundt-vs.md)
+* [Kameratype](ValueSet-joda-kameratype-vs.md)
+* [Sårbunn](ValueSet-joda-sarbunn-vs.md)
+* [Væsking](ValueSet-joda-vaesking-vs.md)
+
+### Resource Profiles
+
+* [Kamera](StructureDefinition-joda-kamera.md)
+* [Pasient](StructureDefinition-joda-pasient.md)
+* [Sårbilde](StructureDefinition-joda-sarbilde.md)
+* [Sårdokument til journal](StructureDefinition-joda-sardokument.md)
+* [Sårvurdering](StructureDefinition-joda-sarvurdering.md)
+
+### ImplementationGuides
+
+* [Mal](index.md)
+
+### Examples
+
+* [Kamera-Jodapro (Device)](Device-Kamera-Jodapro.md)
+* [Kamera-Mobil (Device)](Device-Kamera-Mobil.md)
+* [Sardokument-Hjemme-1-Innsendt (DocumentReference)](DocumentReference-Sardokument-Hjemme-1-Innsendt.md)
+* [Sardokument-Hjemme-1-Journalfort (DocumentReference)](DocumentReference-Sardokument-Hjemme-1-Journalfort.md)
+* [Sarbilde-Besok-1 (Media)](Media-Sarbilde-Besok-1.md)
+* [Sarbilde-Hjemme-1 (Media)](Media-Sarbilde-Hjemme-1.md)
+* [Sarvurdering-Besok-1 (Observation)](Observation-Sarvurdering-Besok-1.md)
+* [Pasient-Karin (Patient)](Patient-Pasient-Karin.md)
+* [Sykepleier-Sara (Practitioner)](Practitioner-Sykepleier-Sara.md)
+* [Proveniens-Sarbilde-Hjemme-1 (Provenance)](Provenance-Proveniens-Sarbilde-Hjemme-1.md)
+* [Datter-Lise (RelatedPerson)](RelatedPerson-Datter-Lise.md)

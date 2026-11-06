@@ -1,0 +1,112 @@
+[{
+  "id" : "joda-hud-rundt",
+  "type" : "CodeSystem",
+  "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt",
+  "version" : "0.1.0",
+  "name" : "JodaHudRundt"
+},
+{
+  "id" : "joda-kameratype",
+  "type" : "CodeSystem",
+  "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype",
+  "version" : "0.1.0",
+  "name" : "JodaKameratype"
+},
+{
+  "id" : "joda-sarbunn",
+  "type" : "CodeSystem",
+  "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn",
+  "version" : "0.1.0",
+  "name" : "JodaSarbunn"
+},
+{
+  "id" : "joda-sarvurdering-kode",
+  "type" : "CodeSystem",
+  "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+  "version" : "0.1.0",
+  "name" : "JodaSarvurderingKode"
+},
+{
+  "id" : "joda-vaesking",
+  "type" : "CodeSystem",
+  "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking",
+  "version" : "0.1.0",
+  "name" : "JodaVaesking"
+},
+{
+  "id" : "hl7.fhir.no.mal",
+  "type" : "ImplementationGuide",
+  "url" : "http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal",
+  "version" : "0.1.0",
+  "name" : "Mal"
+},
+{
+  "id" : "joda-kamera",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera",
+  "version" : "0.1.0",
+  "name" : "JodaKamera"
+},
+{
+  "id" : "joda-pasient",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-pasient",
+  "version" : "0.1.0",
+  "name" : "JodaPasient"
+},
+{
+  "id" : "joda-sarbilde",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde",
+  "version" : "0.1.0",
+  "name" : "JodaSarbilde"
+},
+{
+  "id" : "joda-sardokument",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sardokument",
+  "version" : "0.1.0",
+  "name" : "JodaSardokument"
+},
+{
+  "id" : "joda-sarvurdering",
+  "type" : "StructureDefinition",
+  "url" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarvurdering",
+  "version" : "0.1.0",
+  "name" : "JodaSarvurdering"
+},
+{
+  "id" : "joda-bildeformat-vs",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-bildeformat-vs",
+  "version" : "0.1.0",
+  "name" : "JodaBildeformatVS"
+},
+{
+  "id" : "joda-hud-rundt-vs",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-hud-rundt-vs",
+  "version" : "0.1.0",
+  "name" : "JodaHudRundtVS"
+},
+{
+  "id" : "joda-kameratype-vs",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-kameratype-vs",
+  "version" : "0.1.0",
+  "name" : "JodaKameratypeVS"
+},
+{
+  "id" : "joda-sarbunn-vs",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-sarbunn-vs",
+  "version" : "0.1.0",
+  "name" : "JodaSarbunnVS"
+},
+{
+  "id" : "joda-vaesking-vs",
+  "type" : "ValueSet",
+  "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-vaesking-vs",
+  "version" : "0.1.0",
+  "name" : "JodaVaeskingVS"
+}]

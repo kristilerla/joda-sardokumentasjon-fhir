@@ -1,0 +1,50 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "joda-vaesking",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem joda-vaesking</b></p><a name=\"joda-vaesking\"> </a><a name=\"hcjoda-vaesking\"> </a><p>This case-sensitive code system <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">ingen<a name=\"joda-vaesking-ingen\"> </a></td><td>Ingen</td></tr><tr><td style=\"white-space:nowrap\">lite<a name=\"joda-vaesking-lite\"> </a></td><td>Lite</td></tr><tr><td style=\"white-space:nowrap\">moderat<a name=\"joda-vaesking-moderat\"> </a></td><td>Moderat</td></tr><tr><td style=\"white-space:nowrap\">mye<a name=\"joda-vaesking-mye\"> </a></td><td>Mye</td></tr></table></div>"
+  },
+  "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking",
+  "version" : "0.1.0",
+  "name" : "JodaVaesking",
+  "title" : "Væsking",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-06T17:24:45+00:00",
+  "publisher" : "HL7 Norge",
+  "contact" : [{
+    "name" : "HL7 Norge",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.hl7.no"
+    }]
+  }],
+  "description" : "Hvor mye såret væsker.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "NO",
+      "display" : "Norway"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "ingen",
+    "display" : "Ingen"
+  },
+  {
+    "code" : "lite",
+    "display" : "Lite"
+  },
+  {
+    "code" : "moderat",
+    "display" : "Moderat"
+  },
+  {
+    "code" : "mye",
+    "display" : "Mye"
+  }]
+}

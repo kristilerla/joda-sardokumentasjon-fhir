@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="joda-hud-rundt-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet joda-hud-rundt-vs</b></p><a name="joda-hud-rundt-vs"> </a><a name="hcjoda-hud-rundt-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-joda-hud-rundt.html"><code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
+  </text>
+  <url value="http://hl7.no/fhir/ig/mal/ValueSet/joda-hud-rundt-vs"/>
+  <version value="0.1.0"/>
+  <name value="JodaHudRundtVS"/>
+  <title value="Huden rundt såret"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-11-06T17:24:45+00:00"/>
+  <publisher value="HL7 Norge"/>
+  <contact>
+    <name value="HL7 Norge"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.hl7.no"/>
+    </telecom>
+  </contact>
+  <description value="Gyldige verdier for huden rundt såret."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="NO"/>
+      <display value="Norway"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt"/>
+    </include>
+  </compose>
+</ValueSet>
