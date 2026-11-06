@@ -1,112 +1,112 @@
 [{
   "id" : "joda-hud-rundt",
   "type" : "CodeSystem",
-  "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt",
   "version" : "0.1.0",
   "name" : "JodaHudRundt"
 },
 {
   "id" : "joda-kameratype",
   "type" : "CodeSystem",
-  "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype",
   "version" : "0.1.0",
   "name" : "JodaKameratype"
 },
 {
   "id" : "joda-sarbunn",
   "type" : "CodeSystem",
-  "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn",
   "version" : "0.1.0",
   "name" : "JodaSarbunn"
 },
 {
   "id" : "joda-sarvurdering-kode",
   "type" : "CodeSystem",
-  "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
   "version" : "0.1.0",
   "name" : "JodaSarvurderingKode"
 },
 {
   "id" : "joda-vaesking",
   "type" : "CodeSystem",
-  "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking",
   "version" : "0.1.0",
   "name" : "JodaVaesking"
 },
 {
-  "id" : "hl7.fhir.no.mal",
+  "id" : "joda.fhir.sardokumentasjon",
   "type" : "ImplementationGuide",
-  "url" : "http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ImplementationGuide/joda.fhir.sardokumentasjon",
   "version" : "0.1.0",
-  "name" : "Mal"
+  "name" : "JodaSardokumentasjon"
 },
 {
   "id" : "joda-kamera",
   "type" : "StructureDefinition",
-  "url" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera",
   "version" : "0.1.0",
   "name" : "JodaKamera"
 },
 {
   "id" : "joda-pasient",
   "type" : "StructureDefinition",
-  "url" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-pasient",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-pasient",
   "version" : "0.1.0",
   "name" : "JodaPasient"
 },
 {
   "id" : "joda-sarbilde",
   "type" : "StructureDefinition",
-  "url" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde",
   "version" : "0.1.0",
   "name" : "JodaSarbilde"
 },
 {
   "id" : "joda-sardokument",
   "type" : "StructureDefinition",
-  "url" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sardokument",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sardokument",
   "version" : "0.1.0",
   "name" : "JodaSardokument"
 },
 {
   "id" : "joda-sarvurdering",
   "type" : "StructureDefinition",
-  "url" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarvurdering",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering",
   "version" : "0.1.0",
   "name" : "JodaSarvurdering"
 },
 {
   "id" : "joda-bildeformat-vs",
   "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-bildeformat-vs",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-bildeformat-vs",
   "version" : "0.1.0",
   "name" : "JodaBildeformatVS"
 },
 {
   "id" : "joda-hud-rundt-vs",
   "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-hud-rundt-vs",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-hud-rundt-vs",
   "version" : "0.1.0",
   "name" : "JodaHudRundtVS"
 },
 {
   "id" : "joda-kameratype-vs",
   "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-kameratype-vs",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-kameratype-vs",
   "version" : "0.1.0",
   "name" : "JodaKameratypeVS"
 },
 {
   "id" : "joda-sarbunn-vs",
   "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-sarbunn-vs",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-sarbunn-vs",
   "version" : "0.1.0",
   "name" : "JodaSarbunnVS"
 },
 {
   "id" : "joda-vaesking-vs",
   "type" : "ValueSet",
-  "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-vaesking-vs",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-vaesking-vs",
   "version" : "0.1.0",
   "name" : "JodaVaeskingVS"
 }]

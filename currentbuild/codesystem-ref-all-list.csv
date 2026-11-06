@@ -1,8 +1,4 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
-http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt,0.1.0,draft,,JodaHudRundt,Huden rundt såret,"Tilstanden til huden rundt såret.","ValueSet/joda-hud-rundt-vs"
-http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype,0.1.0,draft,,JodaKameratype,Kameratype,"Hva slags kamera bildet er tatt med.","ValueSet/joda-kameratype-vs"
-http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn,0.1.0,draft,,JodaSarbunn,Sårbunn,"Hva sårbunnen hovedsakelig består av.","ValueSet/joda-sarbunn-vs"
-http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking,0.1.0,draft,,JodaVaesking,Væsking,"Hvor mye såret væsker.","ValueSet/joda-vaesking-vs"
 http://hl7.org/fhir/administrative-gender,4.0.1,active,"2.16.840.1.113883.4.642.4.2",AdministrativeGender,AdministrativeGender,"The gender of a person used for administrative purposes.","ValueSet/administrative-gender"
 http://hl7.org/fhir/composition-status,4.0.1,draft,"2.16.840.1.113883.4.642.4.242",CompositionStatus,CompositionStatus,"The workflow/clinical status of the composition.","ValueSet/composition-status"
 http://hl7.org/fhir/device-nametype,4.0.1,draft,"2.16.840.1.113883.4.642.4.1084",DeviceNameType,DeviceNameType,"The type of name the device is referred by.","ValueSet/device-nametype"
@@ -28,3 +24,7 @@ http://terminology.hl7.org/CodeSystem/v3-ActCode,11.0.0,active,"2.16.840.1.11388
 http://terminology.hl7.org/CodeSystem/v3-MaritalStatus,5.0.0,active,"2.16.840.1.113883.5.2",MaritalStatus,MaritalStatus,"\* \* \* No description supplied \* \* \*    *Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.    *Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.","ValueSet/marital-status"
 http://terminology.hl7.org/CodeSystem/v3-NullFlavor,4.0.0,active,"2.16.840.1.113883.5.1008",NullFlavor,NullFlavor,"A collection of codes specifying why a valid value is not present.","ValueSet/marital-status"
 http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation,4.0.0,active,"2.16.840.1.113883.5.83",ObservationInterpretation,ObservationInterpretation,"One or more codes providing a rough qualitative interpretation of the observation, such as ""normal"" / ""abnormal"", ""low"" / ""high"", ""better"" / ""worse"", ""resistant"" / ""susceptible"", ""expected"" / ""not expected"". The value set is intended to be for ANY use where coded representation of an interpretation is needed.","ValueSet/observation-interpretation"
+https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt,0.1.0,draft,,JodaHudRundt,Huden rundt såret,"Tilstanden til huden rundt såret.","ValueSet/joda-hud-rundt-vs"
+https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype,0.1.0,draft,,JodaKameratype,Kameratype,"Hva slags kamera bildet er tatt med.","ValueSet/joda-kameratype-vs"
+https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn,0.1.0,draft,,JodaSarbunn,Sårbunn,"Hva sårbunnen hovedsakelig består av.","ValueSet/joda-sarbunn-vs"
+https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking,0.1.0,draft,,JodaVaesking,Væsking,"Hvor mye såret væsker.","ValueSet/joda-vaesking-vs"

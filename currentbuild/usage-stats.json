@@ -1,5 +1,5 @@
 {
-  "package": "hl7.fhir.no.mal",
+  "package": "joda.fhir.sardokumentasjon",
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "NO",
@@ -7,31 +7,31 @@
   "profiles": {
     "Device": [
       {
-        "url": "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera",
+        "url": "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera",
         "title": "Kamera"
       }
     ],
     "Patient": [
       {
-        "url": "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-pasient",
+        "url": "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-pasient",
         "title": "Pasient"
       }
     ],
     "Media": [
       {
-        "url": "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde",
+        "url": "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde",
         "title": "Sårbilde"
       }
     ],
     "DocumentReference": [
       {
-        "url": "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sardokument",
+        "url": "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sardokument",
         "title": "Sårdokument til journal"
       }
     ],
     "Observation": [
       {
-        "url": "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarvurdering",
+        "url": "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering",
         "title": "Sårvurdering"
       }
     ]

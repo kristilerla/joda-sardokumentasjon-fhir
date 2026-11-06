@@ -1,4 +1,4 @@
-# Kameratype - Mal v0.1.0
+# Kameratype - Sårdokumentasjon med JodaCare og Jodapro v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype | *Version*:0.1.0 |
+| *Official URL*:https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype | *Version*:0.1.0 |
 | Draft as of 2026-11-06 | *Computable Name*:JodaKameratype |
 
  
@@ -26,19 +26,19 @@ Hva slags kamera bildet er tatt med.
 {
   "resourceType" : "CodeSystem",
   "id" : "joda-kameratype",
-  "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype",
   "version" : "0.1.0",
   "name" : "JodaKameratype",
   "title" : "Kameratype",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-06T17:24:45+00:00",
-  "publisher" : "HL7 Norge",
+  "date" : "2026-11-06T17:48:45+00:00",
+  "publisher" : "Kristil Erla Håland",
   "contact" : [{
-    "name" : "HL7 Norge",
+    "name" : "Kristil Erla Håland",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.hl7.no"
+      "value" : "https://jodacare.no"
     }]
   }],
   "description" : "Hva slags kamera bildet er tatt med.",

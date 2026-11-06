@@ -1,4 +1,4 @@
-# Sårvurdering ved besøk - Mal v0.1.0
+# Sårvurdering ved besøk - Sårdokumentasjon med JodaCare og Jodapro v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -48,12 +48,12 @@ Profile: [Sårvurdering](StructureDefinition-joda-sarvurdering.md)
   "resourceType" : "Observation",
   "id" : "Sarvurdering-Besok-1",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarvurdering"]
+    "profile" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering"]
   },
   "status" : "final",
   "code" : {
     "coding" : [{
-      "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
       "code" : "sarvurdering",
       "display" : "Sårvurdering"
     }]
@@ -77,7 +77,7 @@ Profile: [Sårvurdering](StructureDefinition-joda-sarvurdering.md)
   "component" : [{
     "code" : {
       "coding" : [{
-        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+        "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
         "code" : "lengde"
       }]
     },
@@ -91,7 +91,7 @@ Profile: [Sårvurdering](StructureDefinition-joda-sarvurdering.md)
   {
     "code" : {
       "coding" : [{
-        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+        "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
         "code" : "bredde"
       }]
     },
@@ -105,13 +105,13 @@ Profile: [Sårvurdering](StructureDefinition-joda-sarvurdering.md)
   {
     "code" : {
       "coding" : [{
-        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+        "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
         "code" : "sarbunn"
       }]
     },
     "valueCodeableConcept" : {
       "coding" : [{
-        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn",
+        "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn",
         "code" : "fibrin",
         "display" : "Fibrin (belegg)"
       }]
@@ -120,13 +120,13 @@ Profile: [Sårvurdering](StructureDefinition-joda-sarvurdering.md)
   {
     "code" : {
       "coding" : [{
-        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+        "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
         "code" : "vaesking"
       }]
     },
     "valueCodeableConcept" : {
       "coding" : [{
-        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking",
+        "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking",
         "code" : "moderat",
         "display" : "Moderat"
       }]
@@ -135,13 +135,13 @@ Profile: [Sårvurdering](StructureDefinition-joda-sarvurdering.md)
   {
     "code" : {
       "coding" : [{
-        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+        "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
         "code" : "hud-rundt"
       }]
     },
     "valueCodeableConcept" : {
       "coding" : [{
-        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt",
+        "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt",
         "code" : "rod",
         "display" : "Rød"
       }]
@@ -150,7 +150,7 @@ Profile: [Sårvurdering](StructureDefinition-joda-sarvurdering.md)
   {
     "code" : {
       "coding" : [{
-        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+        "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
         "code" : "infeksjonstegn"
       }]
     },
@@ -159,7 +159,7 @@ Profile: [Sårvurdering](StructureDefinition-joda-sarvurdering.md)
   {
     "code" : {
       "coding" : [{
-        "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+        "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
         "code" : "smerte"
       }]
     },

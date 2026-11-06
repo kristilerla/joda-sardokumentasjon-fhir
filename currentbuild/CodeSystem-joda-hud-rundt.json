@@ -3,21 +3,21 @@
   "id" : "joda-hud-rundt",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem joda-hud-rundt</b></p><a name=\"joda-hud-rundt\"> </a><a name=\"hcjoda-hud-rundt\"> </a><p>This case-sensitive code system <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">normal<a name=\"joda-hud-rundt-normal\"> </a></td><td>Normal</td></tr><tr><td style=\"white-space:nowrap\">rod<a name=\"joda-hud-rundt-rod\"> </a></td><td>Rød</td></tr><tr><td style=\"white-space:nowrap\">maserert<a name=\"joda-hud-rundt-maserert\"> </a></td><td>Maserert (oppbløtt)</td></tr><tr><td style=\"white-space:nowrap\">hoven<a name=\"joda-hud-rundt-hoven\"> </a></td><td>Hoven</td></tr><tr><td style=\"white-space:nowrap\">torr<a name=\"joda-hud-rundt-torr\"> </a></td><td>Tørr eller skjellende</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem joda-hud-rundt</b></p><a name=\"joda-hud-rundt\"> </a><a name=\"hcjoda-hud-rundt\"> </a><p>This case-sensitive code system <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">normal<a name=\"joda-hud-rundt-normal\"> </a></td><td>Normal</td></tr><tr><td style=\"white-space:nowrap\">rod<a name=\"joda-hud-rundt-rod\"> </a></td><td>Rød</td></tr><tr><td style=\"white-space:nowrap\">maserert<a name=\"joda-hud-rundt-maserert\"> </a></td><td>Maserert (oppbløtt)</td></tr><tr><td style=\"white-space:nowrap\">hoven<a name=\"joda-hud-rundt-hoven\"> </a></td><td>Hoven</td></tr><tr><td style=\"white-space:nowrap\">torr<a name=\"joda-hud-rundt-torr\"> </a></td><td>Tørr eller skjellende</td></tr></table></div>"
   },
-  "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt",
   "version" : "0.1.0",
   "name" : "JodaHudRundt",
   "title" : "Huden rundt såret",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-06T17:24:45+00:00",
-  "publisher" : "HL7 Norge",
+  "date" : "2026-11-06T17:48:45+00:00",
+  "publisher" : "Kristil Erla Håland",
   "contact" : [{
-    "name" : "HL7 Norge",
+    "name" : "Kristil Erla Håland",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.hl7.no"
+      "value" : "https://jodacare.no"
     }]
   }],
   "description" : "Tilstanden til huden rundt såret.",

@@ -2,7 +2,7 @@
   "resourceType" : "Media",
   "id" : "Sarbilde-Besok-1",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde"]
+    "profile" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde"]
   },
   "text" : {
     "status" : "generated",

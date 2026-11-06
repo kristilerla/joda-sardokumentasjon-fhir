@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/Patient/Pasient-Karin> a fhir:Patient ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/Patient/Pasient-Karin> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "Pasient-Karin"] ;
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-pasient" ;
+       fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-pasient" ;
        fhir:index 0 ;
-       fhir:link <http://hl7.no/fhir/ig/mal/StructureDefinition/joda-pasient>
+       fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-pasient>
      ]
   ] ;
   fhir:DomainResource.text [
@@ -37,7 +37,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/Patient/Pasient-Karin.ttl> a owl:Ontology ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/Patient/Pasient-Karin.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

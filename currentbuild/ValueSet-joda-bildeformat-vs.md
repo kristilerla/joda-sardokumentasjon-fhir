@@ -1,4 +1,4 @@
-# Bildeformat - Mal v0.1.0
+# Bildeformat - Sårdokumentasjon med JodaCare og Jodapro v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/mal/ValueSet/joda-bildeformat-vs | *Version*:0.1.0 |
+| *Official URL*:https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-bildeformat-vs | *Version*:0.1.0 |
 | Draft as of 2026-11-06 | *Computable Name*:JodaBildeformatVS |
 
  
@@ -45,19 +45,19 @@ Bildeformater som kan brukes for sårbilder.
 {
   "resourceType" : "ValueSet",
   "id" : "joda-bildeformat-vs",
-  "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-bildeformat-vs",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-bildeformat-vs",
   "version" : "0.1.0",
   "name" : "JodaBildeformatVS",
   "title" : "Bildeformat",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-06T17:24:45+00:00",
-  "publisher" : "HL7 Norge",
+  "date" : "2026-11-06T17:48:45+00:00",
+  "publisher" : "Kristil Erla Håland",
   "contact" : [{
-    "name" : "HL7 Norge",
+    "name" : "Kristil Erla Håland",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.hl7.no"
+      "value" : "https://jodacare.no"
     }]
   }],
   "description" : "Bildeformater som kan brukes for sårbilder.",

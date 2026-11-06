@@ -1,4 +1,4 @@
-# Bildet fra Lise, journalført - Mal v0.1.0
+# Bildet fra Lise, journalført - Sårdokumentasjon med JodaCare og Jodapro v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -43,7 +43,7 @@ Profile: [Sårdokument til journal](StructureDefinition-joda-sardokument.md)
   "resourceType" : "DocumentReference",
   "id" : "Sardokument-Hjemme-1-Journalfort",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sardokument"]
+    "profile" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sardokument"]
   },
   "status" : "current",
   "docStatus" : "final",

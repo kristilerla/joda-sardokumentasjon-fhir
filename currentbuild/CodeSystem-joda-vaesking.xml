@@ -3,21 +3,21 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="joda-vaesking"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem joda-vaesking</b></p><a name="joda-vaesking"> </a><a name="hcjoda-vaesking"> </a><p>This case-sensitive code system <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">ingen<a name="joda-vaesking-ingen"> </a></td><td>Ingen</td></tr><tr><td style="white-space:nowrap">lite<a name="joda-vaesking-lite"> </a></td><td>Lite</td></tr><tr><td style="white-space:nowrap">moderat<a name="joda-vaesking-moderat"> </a></td><td>Moderat</td></tr><tr><td style="white-space:nowrap">mye<a name="joda-vaesking-mye"> </a></td><td>Mye</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem joda-vaesking</b></p><a name="joda-vaesking"> </a><a name="hcjoda-vaesking"> </a><p>This case-sensitive code system <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">ingen<a name="joda-vaesking-ingen"> </a></td><td>Ingen</td></tr><tr><td style="white-space:nowrap">lite<a name="joda-vaesking-lite"> </a></td><td>Lite</td></tr><tr><td style="white-space:nowrap">moderat<a name="joda-vaesking-moderat"> </a></td><td>Moderat</td></tr><tr><td style="white-space:nowrap">mye<a name="joda-vaesking-mye"> </a></td><td>Mye</td></tr></table></div>
   </text>
-  <url value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking"/>
+  <url value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking"/>
   <version value="0.1.0"/>
   <name value="JodaVaesking"/>
   <title value="Væsking"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2026-11-06T17:24:45+00:00"/>
-  <publisher value="HL7 Norge"/>
+  <date value="2026-11-06T17:48:45+00:00"/>
+  <publisher value="Kristil Erla Håland"/>
   <contact>
-    <name value="HL7 Norge"/>
+    <name value="Kristil Erla Håland"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.hl7.no"/>
+      <value value="https://jodacare.no"/>
     </telecom>
   </contact>
   <description value="Hvor mye såret væsker."/>

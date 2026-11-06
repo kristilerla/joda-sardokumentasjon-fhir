@@ -1,7 +1,7 @@
 {
   "version" : "0.1.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20261106172445",
-  "name" : "hl7.fhir.no.mal",
+  "date" : "20261106174845",
+  "name" : "joda.fhir.sardokumentasjon",
   "jurisdiction" : "urn:iso:std:iso:3166#NO"
 }

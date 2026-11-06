@@ -1,4 +1,4 @@
-# Sårbilde - Mal v0.1.0
+# Sårbilde - Sårdokumentasjon med JodaCare og Jodapro v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde | *Version*:0.1.0 |
+| *Official URL*:https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde | *Version*:0.1.0 |
 | Draft as of 2026-11-06 | *Computable Name*:JodaSarbilde |
 
  
@@ -19,7 +19,7 @@ Et bilde av et sår. Kan være tatt av pasienten selv, av en pårørende eller a
 * Refer to this Profile: [Sårvurdering](StructureDefinition-joda-sarvurdering.md)
 * Examples for this Profile: [Media/Sarbilde-Besok-1](Media-Sarbilde-Besok-1.md) and [Media/Sarbilde-Hjemme-1](Media-Sarbilde-Hjemme-1.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.no.mal|current/StructureDefinition/StructureDefinition-joda-sarbilde.json)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/joda.fhir.sardokumentasjon|current/StructureDefinition/StructureDefinition-joda-sarbilde.json)
 
 ### Formal Views of Profile Content
 
@@ -37,19 +37,19 @@ Other representations of profile: [CSV](StructureDefinition-joda-sarbilde.csv), 
 {
   "resourceType" : "StructureDefinition",
   "id" : "joda-sarbilde",
-  "url" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde",
   "version" : "0.1.0",
   "name" : "JodaSarbilde",
   "title" : "Sårbilde",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-06T17:24:45+00:00",
-  "publisher" : "HL7 Norge",
+  "date" : "2026-11-06T17:48:45+00:00",
+  "publisher" : "Kristil Erla Håland",
   "contact" : [{
-    "name" : "HL7 Norge",
+    "name" : "Kristil Erla Håland",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.hl7.no"
+      "value" : "https://jodacare.no"
     }]
   }],
   "description" : "Et bilde av et sår. Kan være tatt av pasienten selv, av en pårørende eller av helsepersonell.",
@@ -129,7 +129,7 @@ Other representations of profile: [CSV](StructureDefinition-joda-sarbilde.csv), 
       "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.no/fhir/ig/mal/StructureDefinition/joda-pasient"]
+        "targetProfile" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-pasient"]
       }],
       "mustSupport" : true
     },
@@ -170,7 +170,7 @@ Other representations of profile: [CSV](StructureDefinition-joda-sarbilde.csv), 
       "short" : "Kameraet bildet er tatt med",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera"]
+        "targetProfile" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera"]
       }],
       "mustSupport" : true
     },
@@ -187,7 +187,7 @@ Other representations of profile: [CSV](StructureDefinition-joda-sarbilde.csv), 
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-bildeformat-vs"
+        "valueSet" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-bildeformat-vs"
       }
     },
     {

@@ -2,7 +2,7 @@
   "resourceType" : "Patient",
   "id" : "Pasient-Karin",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/ig/mal/StructureDefinition/joda-pasient"]
+    "profile" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-pasient"]
   },
   "text" : {
     "status" : "generated",

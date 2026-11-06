@@ -5,14 +5,14 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/Media/Sarbilde-Besok-1> a fhir:Media ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/Media/Sarbilde-Besok-1> a fhir:Media ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "Sarbilde-Besok-1"] ;
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde" ;
+       fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde" ;
        fhir:index 0 ;
-       fhir:link <http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde>
+       fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde>
      ]
   ] ;
   fhir:DomainResource.text [
@@ -29,19 +29,19 @@
      ]
   ] ;
   fhir:Media.subject [
-     fhir:link <http://hl7.no/fhir/ig/mal/Patient/Pasient-Karin> ;
+     fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/Patient/Pasient-Karin> ;
      fhir:Reference.reference [ fhir:value "Patient/Pasient-Karin" ]
   ] ;
   fhir:Media.createdDateTime [ fhir:value "2026-11-11T10:15:00+01:00"^^xsd:dateTime] ;
   fhir:Media.operator [
-     fhir:link <http://hl7.no/fhir/ig/mal/Practitioner/Sykepleier-Sara> ;
+     fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/Practitioner/Sykepleier-Sara> ;
      fhir:Reference.reference [ fhir:value "Practitioner/Sykepleier-Sara" ]
   ] ;
   fhir:Media.bodySite [
      fhir:CodeableConcept.text [ fhir:value "Venstre legg, innside" ]
   ] ;
   fhir:Media.device [
-     fhir:link <http://hl7.no/fhir/ig/mal/Device/Kamera-Jodapro> ;
+     fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/Device/Kamera-Jodapro> ;
      fhir:Reference.reference [ fhir:value "Device/Kamera-Jodapro" ]
   ] ;
   fhir:Media.content [
@@ -52,7 +52,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/Media/Sarbilde-Besok-1.ttl> a owl:Ontology ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/Media/Sarbilde-Besok-1.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

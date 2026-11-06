@@ -5,19 +5,19 @@
     "status" : "generated",
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet joda-bildeformat-vs</b></p><a name=\"joda-bildeformat-vs\"> </a><a name=\"hcjoda-bildeformat-vs\"> </a><ul><li>Include these codes as defined in <code>urn:ietf:bcp:13</code><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>image/jpeg</td><td>JPEG</td></tr><tr><td>image/png</td><td>PNG</td></tr></table></li></ul></div>"
   },
-  "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-bildeformat-vs",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-bildeformat-vs",
   "version" : "0.1.0",
   "name" : "JodaBildeformatVS",
   "title" : "Bildeformat",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-06T17:24:45+00:00",
-  "publisher" : "HL7 Norge",
+  "date" : "2026-11-06T17:48:45+00:00",
+  "publisher" : "Kristil Erla Håland",
   "contact" : [{
-    "name" : "HL7 Norge",
+    "name" : "Kristil Erla Håland",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.hl7.no"
+      "value" : "https://jodacare.no"
     }]
   }],
   "description" : "Bildeformater som kan brukes for sårbilder.",

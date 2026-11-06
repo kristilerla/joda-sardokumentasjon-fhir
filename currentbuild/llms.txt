@@ -1,4 +1,4 @@
-# hl7.fhir.no.mal#0.1.0: Mal
+# joda.fhir.sardokumentasjon#0.1.0: Sårdokumentasjon med JodaCare og Jodapro
 
 ## Pages
 
@@ -33,7 +33,7 @@
 
 ### ImplementationGuides
 
-* [Mal](index.md)
+* [Sårdokumentasjon med JodaCare og Jodapro](index.md)
 
 ### Examples
 

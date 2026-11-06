@@ -1,4 +1,4 @@
-# Bilde tatt hjemme av datteren - Mal v0.1.0
+# Bilde tatt hjemme av datteren - Sårdokumentasjon med JodaCare og Jodapro v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -45,7 +45,7 @@ Mamma sier det verker mer i kveld, og det ser rødere ut rundt kanten.
   "resourceType" : "Media",
   "id" : "Sarbilde-Hjemme-1",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde"]
+    "profile" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde"]
   },
   "status" : "completed",
   "type" : {

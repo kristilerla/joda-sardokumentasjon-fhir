@@ -1,4 +1,4 @@
-# Home - Mal v0.1.0
+# Home - Sårdokumentasjon med JodaCare og Jodapro v0.1.0
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,42 +7,80 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal | *Version*:0.1.0 |
-| Draft as of 2026-11-06 | *Computable Name*:Mal |
+| *Official URL*:https://kristilerla.github.io/joda-sardokumentasjon-fhir/ImplementationGuide/joda.fhir.sardokumentasjon | *Version*:0.1.0 |
+| Draft as of 2026-11-06 | *Computable Name*:JodaSardokumentasjon |
 
-### Tittel
+### Om denne guiden
 
-Introduksjonstekst (husk at dette er en mal, og ALL tekst må endres - dette er kun et eksempel)
+Dette er en øvingsguide som beskriver hvordan bilder og vurderinger av sår kan uttrykkes i HL7 FHIR og sendes til pasientens journal. Bildene kan være tatt av pasienten selv eller en pårørende med mobilen via JodaCare, eller av helsepersonell med et Jodapro hodekamera.
 
-### Mål
+Guiden er et utkast. Den beskriver ingen ferdig integrasjon. Alle personer, steder og bilder i eksemplene er oppdiktet.
 
-Målet med denne implementasjonsguiden er å gi en standardisert måte å representere og utveksle helsedata på ved hjelp av HL7 FHIR. Guiden beskriver hvordan ulike FHIR-profiler og ressurser kan brukes for å oppnå interoperabilitet mellom helsesystemer.
+### Bakgrunn
 
-### Omfang
+Mange som får hjelp av hjemmetjenesten har sår som skal følges opp over tid, for eksempel leggsår, trykksår eller operasjonssår. Hjemmetjenesten ser såret når de er på besøk. Mellom besøkene er det ofte pasienten selv eller familien som ser at noe endrer seg.
 
-Denne implementasjonsguiden dekker følgende områder:
+Et bilde tatt hjemme kan gi hjemmetjenesten beskjed tidligere, og et bilde tatt med hodekamera under besøket gir god dokumentasjon uten at sykepleieren må legge fra seg utstyret. Når begge typer bilder beskrives på samme måte, kan de havne i samme sårjournal.
 
-* Pasientadministrasjon
-* Kliniske observasjoner
-* Medisinsk historikk
-* Behandlingsplaner
-* Laboratorieresultater
+### Aktører
 
-### Brukstilfeller
+| | |
+| :--- | :--- |
+| Pasient | Har såret. Kan ta bilder og registrere smerte og om det ser betent ut. |
+| Pårørende | Hjelper pasienten med å ta bilder mellom besøkene. |
+| Sykepleier i hjemmetjenesten | Vurderer bildene, gjør sårvurderingen og bestemmer hva som journalføres. Kan ta bilder med Jodapro hodekamera under besøket. |
+| Journalsystemet | Kommunens pasientjournal, der det journalførte bildet og vurderingen havner. |
 
-#### Pasientregistrering
+### Hovedbrukstilfelle: leggsår som blir verre
 
-Denne guiden beskriver hvordan pasienter kan registreres i et helsesystem ved hjelp av FHIR `Patient`-ressursen. Eksempler inkluderer opprettelse, oppdatering og sletting av pasientdata.
+1. Karin (78 år) får hjelp av hjemmetjenesten i Fjordvik kommune til et leggsår på venstre legg.
+1. En kveld mellom besøkene synes datteren Lise at såret ser rødere ut. Hun tar et bilde med mobilen i JodaCare og skriver at det verker mer.
+1. Bildet sendes inn som foreløpig. Det er ikke en del av journalen ennå.
+1. Neste morgen ser sykepleieren Sara bildet. På besøket tar hun et nytt bilde med Jodapro hodekamera og gjør en sårvurdering: mål, sårbunn, væsking, huden rundt, tegn på infeksjon og smerte.
+1. Sara velger å journalføre bildet fra Lise sammen med sin egen vurdering. Bildet får status endelig og Sara som den som har godkjent det.
+1. Hvem som tok hvert bilde, og med hvilket kamera, er sporbart.
 
-#### Kliniske observasjoner
+### Krav
 
-Guiden viser hvordan kliniske observasjoner som blodtrykk, puls og temperatur kan representeres ved hjelp av FHIR `Observation`-ressursen.
+* Et sårbilde gjelder alltid én pasient og ett sted på kroppen.
+* Det skal alltid gå fram hvem som tok bildet, når, og med hvilket kamera.
+* Et bilde fra pasienten eller en pårørende er ikke en del av journalen før helsepersonell har vurdert det. Det er helsepersonell som har journalføringsplikt og bestemmer hva som journalføres (helsepersonelloven §§ 39 og 40).
+* En sårvurdering skal kunne vise hvilke bilder den bygger på.
+* Pasienten kan selv registrere smerte og tegn på infeksjon. Mål og sårbunn registreres normalt av helsepersonell.
+* Bilder av sår er helseopplysninger og skal behandles etter Normen.
 
-### Figur
+### Modell
 
-Eksempel på en figur laget med PlantUML.
+| | | |
+| :--- | :--- | :--- |
+| Pasienten | Patient | [Pasient](StructureDefinition-joda-pasient.md), bygger på no-basis |
+| Kameraet | Device | [Kamera](StructureDefinition-joda-kamera.md), mobil via JodaCare eller Jodapro hodekamera |
+| Bildet | Media | [Sårbilde](StructureDefinition-joda-sarbilde.md) |
+| Vurderingen | Observation | [Sårvurdering](StructureDefinition-joda-sarvurdering.md), peker på bildene med derivedFrom |
+| Innsending til journal | DocumentReference | [Sårdokument til journal](StructureDefinition-joda-sardokument.md), docStatus preliminary eller final |
+| Sporbarhet | Provenance | Hvem tok bildet, på vegne av hvem, med hvilket kamera |
 
-![](test.svg)
+### Åpne spørsmål
+
+1. Hvilke SNOMED CT-koder bør brukes for sårtype, sårbunn og kroppssted, i stedet for våre egne koder og fritekst?
+1. Bør sårvurderingen bygge på en eksisterende standard for sårdokumentasjon, for eksempel et anerkjent vurderingsskjema?
+1. Kan NHN-tjenesten Pasientens måledata ta imot bilder fra pasienten, eller er det IHE MHD og dokumentdeling som passer best?
+1. Hvordan tar journalsystemene i kommunene imot bilder i dag, og hvor mange av dem støtter FHIR?
+1. Hvordan skal pasientens samtykke til at pårørende tar og sender bilder uttrykkes?
+1. Bør bildet i journalen være selve bildefilen, en lenke, eller en PDF med bilde og vurdering samlet?
+1. I FHIR R5 er Media erstattet av DocumentReference. Bør guiden bruke DocumentReference for bildene allerede nå?
+
+### Eksempler
+
+* [Karin Testdal](Patient-Pasient-Karin.md), oppdiktet pasient
+* [Lise Testdal](RelatedPerson-Datter-Lise.md), datter
+* [Sara Testesen](Practitioner-Sykepleier-Sara.md), sykepleier
+* [Bilde tatt hjemme av datteren](Media-Sarbilde-Hjemme-1.md)
+* [Bilde tatt av sykepleier med hodekamera](Media-Sarbilde-Besok-1.md)
+* [Sårvurdering ved besøk](Observation-Sarvurdering-Besok-1.md)
+* [Bildet fra Lise, sendt inn](DocumentReference-Sardokument-Hjemme-1-Innsendt.md)
+* [Bildet fra Lise, journalført](DocumentReference-Sardokument-Hjemme-1-Journalfort.md)
+* [Hvem tok bildet hjemme](Provenance-Proveniens-Sarbilde-Hjemme-1.md)
 
 
 
@@ -51,22 +89,22 @@ Eksempel på en figur laget med PlantUML.
 ```json
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "hl7.fhir.no.mal",
-  "url" : "http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal",
+  "id" : "joda.fhir.sardokumentasjon",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ImplementationGuide/joda.fhir.sardokumentasjon",
   "version" : "0.1.0",
-  "name" : "Mal",
-  "title" : "Mal",
+  "name" : "JodaSardokumentasjon",
+  "title" : "Sårdokumentasjon med JodaCare og Jodapro",
   "status" : "draft",
-  "date" : "2026-11-06T17:24:45+00:00",
-  "publisher" : "HL7 Norge",
+  "date" : "2026-11-06T17:48:45+00:00",
+  "publisher" : "Kristil Erla Håland",
   "contact" : [{
-    "name" : "HL7 Norge",
+    "name" : "Kristil Erla Håland",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.hl7.no"
+      "value" : "https://jodacare.no"
     }]
   }],
-  "description" : "Implementasjonsguide for å TODO",
+  "description" : "Øvingsguide som beskriver hvordan bilder og vurderinger av sår, tatt av pasienten, pårørende eller helsepersonell, kan uttrykkes i HL7 FHIR og sendes til pasientens journal.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -74,7 +112,7 @@ Eksempel på en figur laget med PlantUML.
       "display" : "Norway"
     }]
   }],
-  "packageId" : "hl7.fhir.no.mal",
+  "packageId" : "joda.fhir.sardokumentasjon",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
@@ -214,7 +252,7 @@ Eksempel på en figur laget med PlantUML.
       },
       {
         "url" : "value",
-        "valueString" : "http://hl7.no/fhir/ig/mal/history.html"
+        "valueString" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -397,7 +435,7 @@ Eksempel på en figur laget med PlantUML.
       },
       "name" : "Bilde tatt av sykepleier med hodekamera",
       "description" : "Sara tar et bilde med Jodapro hodekamera under besøket dagen etter.",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde"
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde"
     },
     {
       "extension" : [{
@@ -413,7 +451,7 @@ Eksempel på en figur laget med PlantUML.
       },
       "name" : "Bilde tatt hjemme av datteren",
       "description" : "Lise tar et bilde av morens sår med mobilen via JodaCare, to dager etter siste besøk.",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde"
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde"
     },
     {
       "extension" : [{
@@ -445,7 +483,7 @@ Eksempel på en figur laget med PlantUML.
       },
       "name" : "Bildet fra Lise, journalført",
       "description" : "Sara har sett på bildet og valgt å legge det i journalen.",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sardokument"
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sardokument"
     },
     {
       "extension" : [{
@@ -461,7 +499,7 @@ Eksempel på en figur laget med PlantUML.
       },
       "name" : "Bildet fra Lise, sendt inn",
       "description" : "Bildet Lise tok er sendt inn til journalen, men ikke vurdert ennå.",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sardokument"
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sardokument"
     },
     {
       "extension" : [{
@@ -525,7 +563,7 @@ Eksempel på en figur laget med PlantUML.
       },
       "name" : "Jodapro hodekamera",
       "description" : "Hodekamera som hjemmetjenesten bruker.",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera"
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera"
     },
     {
       "extension" : [{
@@ -589,7 +627,7 @@ Eksempel på en figur laget med PlantUML.
       },
       "name" : "Karin Testdal",
       "description" : "Oppdiktet pasient, 78 år, som får hjelp fra hjemmetjenesten i Fjordvik kommune til et leggsår.",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-pasient"
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-pasient"
     },
     {
       "extension" : [{
@@ -621,7 +659,7 @@ Eksempel på en figur laget med PlantUML.
       },
       "name" : "Mobilen til Lise",
       "description" : "Mobiltelefon brukt via JodaCare.",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera"
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera"
     },
     {
       "extension" : [{
@@ -765,7 +803,7 @@ Eksempel på en figur laget med PlantUML.
       },
       "name" : "Sårvurdering ved besøk",
       "description" : "Saras vurdering av såret, basert på bildet fra Lise og bildet fra besøket.",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarvurdering"
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering"
     },
     {
       "extension" : [{

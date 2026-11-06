@@ -3,21 +3,21 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="joda-vaesking-vs"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet joda-vaesking-vs</b></p><a name="joda-vaesking-vs"> </a><a name="hcjoda-vaesking-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-joda-vaesking.html"><code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet joda-vaesking-vs</b></p><a name="joda-vaesking-vs"> </a><a name="hcjoda-vaesking-vs"> </a><ul><li>Include all codes defined in <a href="CodeSystem-joda-vaesking.html"><code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.1.0</span></li></ul></div>
   </text>
-  <url value="http://hl7.no/fhir/ig/mal/ValueSet/joda-vaesking-vs"/>
+  <url value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-vaesking-vs"/>
   <version value="0.1.0"/>
   <name value="JodaVaeskingVS"/>
   <title value="Væsking"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2026-11-06T17:24:45+00:00"/>
-  <publisher value="HL7 Norge"/>
+  <date value="2026-11-06T17:48:45+00:00"/>
+  <publisher value="Kristil Erla Håland"/>
   <contact>
-    <name value="HL7 Norge"/>
+    <name value="Kristil Erla Håland"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.hl7.no"/>
+      <value value="https://jodacare.no"/>
     </telecom>
   </contact>
   <description value="Gyldige verdier for væsking."/>
@@ -30,7 +30,7 @@
   </jurisdiction>
   <compose>
     <include>
-      <system value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking"/>
+      <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking"/>
     </include>
   </compose>
 </ValueSet>

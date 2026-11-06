@@ -1,6 +1,6 @@
 {
   "codeSystems" : [{
-    "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-bildeformat-vs",
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-bildeformat-vs",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "JodaBildeformatVS",
@@ -9,39 +9,39 @@
     "systems" : ["urn:ietf:bcp:13"]
   },
   {
-    "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-hud-rundt-vs",
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-hud-rundt-vs",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "JodaHudRundtVS",
     "title" : "Huden rundt såret",
     "description" : "Gyldige verdier for huden rundt såret.",
-    "systems" : ["http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt"]
+    "systems" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt"]
   },
   {
-    "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-kameratype-vs",
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-kameratype-vs",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "JodaKameratypeVS",
     "title" : "Kameratype",
     "description" : "Gyldige kameratyper.",
-    "systems" : ["http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype"]
+    "systems" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype"]
   },
   {
-    "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-sarbunn-vs",
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-sarbunn-vs",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "JodaSarbunnVS",
     "title" : "Sårbunn",
     "description" : "Gyldige verdier for sårbunn.",
-    "systems" : ["http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn"]
+    "systems" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn"]
   },
   {
-    "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-vaesking-vs",
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-vaesking-vs",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "JodaVaeskingVS",
     "title" : "Væsking",
     "description" : "Gyldige verdier for væsking.",
-    "systems" : ["http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking"]
+    "systems" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking"]
   }]
 }

@@ -1,4 +1,4 @@
-# Sårdokument til journal - Mal v0.1.0
+# Sårdokument til journal - Sårdokumentasjon med JodaCare og Jodapro v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sardokument | *Version*:0.1.0 |
+| *Official URL*:https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sardokument | *Version*:0.1.0 |
 | Draft as of 2026-11-06 | *Computable Name*:JodaSardokument |
 
  
@@ -18,7 +18,7 @@ Et sårbilde som er sendt inn til journalen. Det starter som foreløpig (docStat
 
 * Examples for this Profile: [DocumentReference/Sardokument-Hjemme-1-Innsendt](DocumentReference-Sardokument-Hjemme-1-Innsendt.md) and [DocumentReference/Sardokument-Hjemme-1-Journalfort](DocumentReference-Sardokument-Hjemme-1-Journalfort.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.no.mal|current/StructureDefinition/StructureDefinition-joda-sardokument.json)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/joda.fhir.sardokumentasjon|current/StructureDefinition/StructureDefinition-joda-sardokument.json)
 
 ### Formal Views of Profile Content
 
@@ -36,19 +36,19 @@ Other representations of profile: [CSV](StructureDefinition-joda-sardokument.csv
 {
   "resourceType" : "StructureDefinition",
   "id" : "joda-sardokument",
-  "url" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sardokument",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sardokument",
   "version" : "0.1.0",
   "name" : "JodaSardokument",
   "title" : "Sårdokument til journal",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-06T17:24:45+00:00",
-  "publisher" : "HL7 Norge",
+  "date" : "2026-11-06T17:48:45+00:00",
+  "publisher" : "Kristil Erla Håland",
   "contact" : [{
-    "name" : "HL7 Norge",
+    "name" : "Kristil Erla Håland",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.hl7.no"
+      "value" : "https://jodacare.no"
     }]
   }],
   "description" : "Et sårbilde som er sendt inn til journalen. Det starter som foreløpig (docStatus = preliminary). Når helsepersonell har sett på det og valgt å journalføre det, blir det endelig (docStatus = final) og får helsepersonellet som authenticator.",
@@ -123,7 +123,7 @@ Other representations of profile: [CSV](StructureDefinition-joda-sardokument.csv
       "min" : 1,
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["http://hl7.no/fhir/ig/mal/StructureDefinition/joda-pasient"]
+        "targetProfile" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-pasient"]
       }],
       "mustSupport" : true
     },

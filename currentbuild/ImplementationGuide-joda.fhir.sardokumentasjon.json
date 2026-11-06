@@ -1,25 +1,25 @@
 {
   "resourceType" : "ImplementationGuide",
-  "id" : "hl7.fhir.no.mal",
+  "id" : "joda.fhir.sardokumentasjon",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.mal</b></p><a name=\"hl7.fhir.no.mal\"> </a><a name=\"hchl7.fhir.no.mal\"> </a><h2>Mal</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal</pre><div><p>Implementasjonsguide for å TODO</p>\n</div></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide joda.fhir.sardokumentasjon</b></p><a name=\"joda.fhir.sardokumentasjon\"> </a><a name=\"hcjoda.fhir.sardokumentasjon\"> </a><h2>JodaSardokumentasjon</h2><p>The official URL for this implementation guide is: </p><pre>https://kristilerla.github.io/joda-sardokumentasjon-fhir/ImplementationGuide/joda.fhir.sardokumentasjon</pre><div><p>Øvingsguide som beskriver hvordan bilder og vurderinger av sår, tatt av pasienten, pårørende eller helsepersonell, kan uttrykkes i HL7 FHIR og sendes til pasientens journal.</p>\n</div></div>"
   },
-  "url" : "http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ImplementationGuide/joda.fhir.sardokumentasjon",
   "version" : "0.1.0",
-  "name" : "Mal",
-  "title" : "Mal",
+  "name" : "JodaSardokumentasjon",
+  "title" : "Sårdokumentasjon med JodaCare og Jodapro",
   "status" : "draft",
-  "date" : "2026-11-06T17:24:45+00:00",
-  "publisher" : "HL7 Norge",
+  "date" : "2026-11-06T17:48:45+00:00",
+  "publisher" : "Kristil Erla Håland",
   "contact" : [{
-    "name" : "HL7 Norge",
+    "name" : "Kristil Erla Håland",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.hl7.no"
+      "value" : "https://jodacare.no"
     }]
   }],
-  "description" : "Implementasjonsguide for å TODO",
+  "description" : "Øvingsguide som beskriver hvordan bilder og vurderinger av sår, tatt av pasienten, pårørende eller helsepersonell, kan uttrykkes i HL7 FHIR og sendes til pasientens journal.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -27,7 +27,7 @@
       "display" : "Norway"
     }]
   }],
-  "packageId" : "hl7.fhir.no.mal",
+  "packageId" : "joda.fhir.sardokumentasjon",
   "license" : "CC0-1.0",
   "fhirVersion" : ["4.0.1"],
   "dependsOn" : [{
@@ -167,7 +167,7 @@
       },
       {
         "url" : "value",
-        "valueString" : "http://hl7.no/fhir/ig/mal/history.html"
+        "valueString" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -346,7 +346,7 @@
       },
       "name" : "Bilde tatt av sykepleier med hodekamera",
       "description" : "Sara tar et bilde med Jodapro hodekamera under besøket dagen etter.",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde"
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde"
     },
     {
       "extension" : [{
@@ -358,7 +358,7 @@
       },
       "name" : "Bilde tatt hjemme av datteren",
       "description" : "Lise tar et bilde av morens sår med mobilen via JodaCare, to dager etter siste besøk.",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde"
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde"
     },
     {
       "extension" : [{
@@ -382,7 +382,7 @@
       },
       "name" : "Bildet fra Lise, journalført",
       "description" : "Sara har sett på bildet og valgt å legge det i journalen.",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sardokument"
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sardokument"
     },
     {
       "extension" : [{
@@ -394,7 +394,7 @@
       },
       "name" : "Bildet fra Lise, sendt inn",
       "description" : "Bildet Lise tok er sendt inn til journalen, men ikke vurdert ennå.",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sardokument"
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sardokument"
     },
     {
       "extension" : [{
@@ -442,7 +442,7 @@
       },
       "name" : "Jodapro hodekamera",
       "description" : "Hodekamera som hjemmetjenesten bruker.",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera"
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera"
     },
     {
       "extension" : [{
@@ -490,7 +490,7 @@
       },
       "name" : "Karin Testdal",
       "description" : "Oppdiktet pasient, 78 år, som får hjelp fra hjemmetjenesten i Fjordvik kommune til et leggsår.",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-pasient"
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-pasient"
     },
     {
       "extension" : [{
@@ -514,7 +514,7 @@
       },
       "name" : "Mobilen til Lise",
       "description" : "Mobiltelefon brukt via JodaCare.",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera"
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera"
     },
     {
       "extension" : [{
@@ -622,7 +622,7 @@
       },
       "name" : "Sårvurdering ved besøk",
       "description" : "Saras vurdering av såret, basert på bildet fra Lise og bildet fra besøket.",
-      "exampleCanonical" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarvurdering"
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering"
     },
     {
       "extension" : [{

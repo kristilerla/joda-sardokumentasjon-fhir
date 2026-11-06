@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="501adc47-0188-40c2-9e49-7f50e2b8e7fd"/>
+  <id value="94d5733d-d18f-4a9e-a9d8-88cded432e30"/>
   <meta>
-    <lastUpdated value="2026-11-06T17:24:45.571+00:00"/>
+    <lastUpdated value="2026-11-06T17:48:45.507+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="http://hl7.no/fhir/ig/mal/ValueSet/joda-bildeformat-vs"/>
+    <fullUrl value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-bildeformat-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -72,13 +72,13 @@
             </table>
           </div>
         </text>
-        <url value="http://hl7.no/fhir/ig/mal/ValueSet/joda-bildeformat-vs"/>
+        <url value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-bildeformat-vs"/>
         <version value="0.1.0"/>
         <name value="JodaBildeformatVS"/>
         <title value="Bildeformat"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2026-11-06T17:24:45+00:00"/>
+        <date value="2026-11-06T17:48:45+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -87,8 +87,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1c282bc2-088f-4a12-af03-cbbaa76176ac"/>
-          <timestamp value="2026-11-06T17:25:49+00:00"/>
+          <identifier value="urn:uuid:5c15a283-0d38-4129-bd7a-aeaf6448d309"/>
+          <timestamp value="2026-11-06T17:50:03+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -132,7 +132,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.no/fhir/ig/mal/ValueSet/joda-hud-rundt-vs"/>
+    <fullUrl value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-hud-rundt-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -142,7 +142,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-joda-hud-rundt.html">codesystem Huden rundt såret v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                <button data-clipboard-text="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set contains 5 concepts</p>
@@ -166,8 +166,8 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt-normal"> </a>
-                  <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt</code>
+                  <a name="x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt-normal"> </a>
+                  <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-joda-hud-rundt.html#joda-hud-rundt-normal">normal</a>
@@ -175,19 +175,19 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;normal&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;normal&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;normal&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;normal&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt-rod"> </a>
-                  <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt</code>
+                  <a name="x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt-rod"> </a>
+                  <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-joda-hud-rundt.html#joda-hud-rundt-rod">rod</a>
@@ -195,19 +195,19 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;rod&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;rod&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;rod&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;rod&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt-maserert"> </a>
-                  <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt</code>
+                  <a name="x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt-maserert"> </a>
+                  <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-joda-hud-rundt.html#joda-hud-rundt-maserert">maserert</a>
@@ -215,19 +215,19 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;maserert&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;maserert&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;maserert&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;maserert&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt-hoven"> </a>
-                  <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt</code>
+                  <a name="x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt-hoven"> </a>
+                  <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-joda-hud-rundt.html#joda-hud-rundt-hoven">hoven</a>
@@ -235,19 +235,19 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;hoven&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;hoven&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;hoven&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;hoven&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt-torr"> </a>
-                  <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt</code>
+                  <a name="x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt-torr"> </a>
+                  <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-joda-hud-rundt.html#joda-hud-rundt-torr">torr</a>
@@ -255,25 +255,25 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;torr&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;torr&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;torr&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;torr&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://hl7.no/fhir/ig/mal/ValueSet/joda-hud-rundt-vs"/>
+        <url value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-hud-rundt-vs"/>
         <version value="0.1.0"/>
         <name value="JodaHudRundtVS"/>
         <title value="Huden rundt såret"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2026-11-06T17:24:45+00:00"/>
+        <date value="2026-11-06T17:48:45+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -282,8 +282,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:4aa081d9-8888-420f-ab07-929de60d948c"/>
-          <timestamp value="2026-11-06T17:25:49+00:00"/>
+          <identifier value="urn:uuid:b2ee8e7f-934f-44a4-b79e-b3181d30a29f"/>
+          <timestamp value="2026-11-06T17:50:03+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>
@@ -304,26 +304,26 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt|0.1.0"/>
+            <valueUri value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt"/>
+            <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt"/>
             <code value="normal"/>
           </contains>
           <contains>
-            <system value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt"/>
+            <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt"/>
             <code value="rod"/>
           </contains>
           <contains>
-            <system value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt"/>
+            <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt"/>
             <code value="maserert"/>
           </contains>
           <contains>
-            <system value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt"/>
+            <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt"/>
             <code value="hoven"/>
           </contains>
           <contains>
-            <system value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt"/>
+            <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt"/>
             <code value="torr"/>
           </contains>
         </expansion>
@@ -331,7 +331,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.no/fhir/ig/mal/ValueSet/joda-kameratype-vs"/>
+    <fullUrl value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-kameratype-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -341,7 +341,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-joda-kameratype.html">codesystem Kameratype v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                <button data-clipboard-text="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set contains 2 concepts</p>
@@ -368,8 +368,8 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype-mobil"> </a>
-                  <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype</code>
+                  <a name="x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype-mobil"> </a>
+                  <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-joda-kameratype.html#joda-kameratype-mobil">mobil</a>
@@ -378,19 +378,19 @@
                 <td>Pasientens, pårørendes eller den ansattes egen mobil eller nettbrett, via JodaCare.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;mobil&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;mobil&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;mobil&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;mobil&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype-hodekamera"> </a>
-                  <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype</code>
+                  <a name="x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype-hodekamera"> </a>
+                  <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-joda-kameratype.html#joda-kameratype-hodekamera">hodekamera</a>
@@ -399,25 +399,25 @@
                 <td>Jodapro hodekamera brukt av helsepersonell.</td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;hodekamera&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;hodekamera&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;hodekamera&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;hodekamera&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://hl7.no/fhir/ig/mal/ValueSet/joda-kameratype-vs"/>
+        <url value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-kameratype-vs"/>
         <version value="0.1.0"/>
         <name value="JodaKameratypeVS"/>
         <title value="Kameratype"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2026-11-06T17:24:45+00:00"/>
+        <date value="2026-11-06T17:48:45+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -426,8 +426,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:197cd6a1-7e45-4c41-9edc-b0c5c19abf67"/>
-          <timestamp value="2026-11-06T17:25:49+00:00"/>
+          <identifier value="urn:uuid:d355f7d9-d756-4433-b5d8-9aa3843bd432"/>
+          <timestamp value="2026-11-06T17:50:03+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -448,14 +448,14 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype|0.1.0"/>
+            <valueUri value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype"/>
+            <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype"/>
             <code value="mobil"/>
           </contains>
           <contains>
-            <system value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype"/>
+            <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype"/>
             <code value="hodekamera"/>
           </contains>
         </expansion>
@@ -463,7 +463,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.no/fhir/ig/mal/ValueSet/joda-sarbunn-vs"/>
+    <fullUrl value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-sarbunn-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -473,7 +473,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-joda-sarbunn.html">codesystem Sårbunn v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                <button data-clipboard-text="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set contains 4 concepts</p>
@@ -497,8 +497,8 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn-granulasjon"> </a>
-                  <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn</code>
+                  <a name="x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn-granulasjon"> </a>
+                  <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-joda-sarbunn.html#joda-sarbunn-granulasjon">granulasjon</a>
@@ -506,19 +506,19 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;granulasjon&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;granulasjon&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;granulasjon&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;granulasjon&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn-fibrin"> </a>
-                  <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn</code>
+                  <a name="x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn-fibrin"> </a>
+                  <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-joda-sarbunn.html#joda-sarbunn-fibrin">fibrin</a>
@@ -526,19 +526,19 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;fibrin&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;fibrin&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;fibrin&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;fibrin&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn-nekrose"> </a>
-                  <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn</code>
+                  <a name="x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn-nekrose"> </a>
+                  <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-joda-sarbunn.html#joda-sarbunn-nekrose">nekrose</a>
@@ -546,19 +546,19 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;nekrose&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;nekrose&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;nekrose&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;nekrose&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn-epitel"> </a>
-                  <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn</code>
+                  <a name="x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn-epitel"> </a>
+                  <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-joda-sarbunn.html#joda-sarbunn-epitel">epitel</a>
@@ -566,25 +566,25 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;epitel&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;epitel&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;epitel&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;epitel&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://hl7.no/fhir/ig/mal/ValueSet/joda-sarbunn-vs"/>
+        <url value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-sarbunn-vs"/>
         <version value="0.1.0"/>
         <name value="JodaSarbunnVS"/>
         <title value="Sårbunn"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2026-11-06T17:24:45+00:00"/>
+        <date value="2026-11-06T17:48:45+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -593,8 +593,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:fc3c21d5-771a-48c5-b285-dfc289456f73"/>
-          <timestamp value="2026-11-06T17:25:49+00:00"/>
+          <identifier value="urn:uuid:9c6149f8-de1e-4ce7-aa32-f843c6ec11b3"/>
+          <timestamp value="2026-11-06T17:50:03+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -615,22 +615,22 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn|0.1.0"/>
+            <valueUri value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn"/>
+            <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn"/>
             <code value="granulasjon"/>
           </contains>
           <contains>
-            <system value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn"/>
+            <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn"/>
             <code value="fibrin"/>
           </contains>
           <contains>
-            <system value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn"/>
+            <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn"/>
             <code value="nekrose"/>
           </contains>
           <contains>
-            <system value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn"/>
+            <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn"/>
             <code value="epitel"/>
           </contains>
         </expansion>
@@ -638,7 +638,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="http://hl7.no/fhir/ig/mal/ValueSet/joda-vaesking-vs"/>
+    <fullUrl value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-vaesking-vs"/>
     <resource>
       <ValueSet>
         <text>
@@ -648,7 +648,7 @@
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
               <a href="CodeSystem-joda-vaesking.html">codesystem Væsking v0.1.0 (CodeSystem)</a>
               <span class="copy-text-inline">
-                <button data-clipboard-text="http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+                <button data-clipboard-text="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
               </span>
             </p>
             <p>This value set contains 4 concepts</p>
@@ -672,8 +672,8 @@
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking-ingen"> </a>
-                  <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking</code>
+                  <a name="x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking-ingen"> </a>
+                  <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-joda-vaesking.html#joda-vaesking-ingen">ingen</a>
@@ -681,19 +681,19 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;ingen&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;ingen&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;ingen&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;ingen&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking-lite"> </a>
-                  <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking</code>
+                  <a name="x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking-lite"> </a>
+                  <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-joda-vaesking.html#joda-vaesking-lite">lite</a>
@@ -701,19 +701,19 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;lite&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;lite&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;lite&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;lite&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking-moderat"> </a>
-                  <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking</code>
+                  <a name="x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking-moderat"> </a>
+                  <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-joda-vaesking.html#joda-vaesking-moderat">moderat</a>
@@ -721,19 +721,19 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;moderat&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;moderat&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;moderat&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;moderat&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a name="x-http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking-mye"> </a>
-                  <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking</code>
+                  <a name="x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking-mye"> </a>
+                  <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking</code>
                 </td>
                 <td style="white-space:nowrap">  
                   <a href="CodeSystem-joda-vaesking.html#joda-vaesking-mye">mye</a>
@@ -741,25 +741,25 @@
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;mye&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;mye&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;mye&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;mye&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
                   </span>
                 </td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="http://hl7.no/fhir/ig/mal/ValueSet/joda-vaesking-vs"/>
+        <url value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-vaesking-vs"/>
         <version value="0.1.0"/>
         <name value="JodaVaeskingVS"/>
         <title value="Væsking"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2026-11-06T17:24:45+00:00"/>
+        <date value="2026-11-06T17:48:45+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -768,8 +768,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:92fcfa23-3c68-42b2-bfa2-82fc53f8560a"/>
-          <timestamp value="2026-11-06T17:25:49+00:00"/>
+          <identifier value="urn:uuid:cc914283-a415-41ad-b91d-3fa1089da3ab"/>
+          <timestamp value="2026-11-06T17:50:03+00:00"/>
           <total value="4"/>
           <offset value="0"/>
           <parameter>
@@ -790,22 +790,22 @@
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking|0.1.0"/>
+            <valueUri value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking"/>
+            <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking"/>
             <code value="ingen"/>
           </contains>
           <contains>
-            <system value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking"/>
+            <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking"/>
             <code value="lite"/>
           </contains>
           <contains>
-            <system value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking"/>
+            <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking"/>
             <code value="moderat"/>
           </contains>
           <contains>
-            <system value="http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking"/>
+            <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking"/>
             <code value="mye"/>
           </contains>
         </expansion>

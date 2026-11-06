@@ -1,499 +1,509 @@
 {
-  "date" : "Fri, 06 Nov, 2026 17:24:45 +0000",
+  "date" : "Fri, 06 Nov, 2026 17:48:45 +0000",
   "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
   "files" : [{
-    "name" : "/fsh-generated/resources/ImplementationGuide-hl7.fhir.no.mal.json",
-    "size" : 8889,
+    "name" : "/fsh-generated/resources/ImplementationGuide-joda.fhir.sardokumentasjon.json",
+    "size" : 9424,
     "processes" : [{
       "activity" : "load",
-      "start" : 48,
+      "start" : 62,
       "length" : 10
     },
     {
+      "activity" : "loadDepInfo",
+      "start" : 63,
+      "length" : 1
+    },
+    {
       "activity" : "checkR4R4B",
-      "start" : 49,
-      "length" : 38
+      "start" : 63,
+      "length" : 12
     },
     {
       "activity" : "generateNarratives",
-      "start" : 49,
+      "start" : 63,
       "length" : 49
     },
     {
       "activity" : "validate",
-      "start" : 53,
-      "length" : 2981
+      "start" : 66,
+      "length" : 3394
     },
     {
       "activity" : "generate1",
-      "start" : 57,
-      "length" : 48
+      "start" : 71,
+      "length" : 49
     },
     {
       "activity" : "generate2",
-      "start" : 60,
-      "length" : 69
+      "start" : 74,
+      "length" : 68
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 72,
-      "length" : 6
+      "start" : 85,
+      "length" : 4
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 77,
+      "start" : 89,
       "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/CodeSystem-joda-hud-rundt.json",
-    "size" : 705,
+    "size" : 736,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 48,
+      "start" : 62,
       "length" : 3
     },
     {
       "activity" : "load",
-      "start" : 48,
-      "length" : 6
+      "start" : 62,
+      "length" : 5
     },
     {
       "activity" : "load-configure",
-      "start" : 49,
+      "start" : 62,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 49,
+      "start" : 63,
       "length" : 7
     },
     {
       "activity" : "validate",
-      "start" : 51,
-      "length" : 329
+      "start" : 64,
+      "length" : 342
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 70,
+      "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 57,
-      "length" : 6
+      "start" : 71,
+      "length" : 8
     },
     {
       "activity" : "generate2",
-      "start" : 60,
-      "length" : 55
+      "start" : 74,
+      "length" : 51
     }]
   },
   {
     "name" : "fsh-generated/resources/CodeSystem-joda-kameratype.json",
-    "size" : 696,
+    "size" : 727,
     "processes" : [{
-      "activity" : "loadResources",
-      "start" : 48,
-      "length" : 1
-    },
-    {
       "activity" : "load",
-      "start" : 48,
+      "start" : 62,
       "length" : 3
     },
     {
-      "activity" : "scan",
-      "start" : 49,
+      "activity" : "checkR4R4B",
+      "start" : 63,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 49,
-      "length" : 2
+      "start" : 63,
+      "length" : 3
     },
     {
       "activity" : "validate",
-      "start" : 51,
-      "length" : 10
+      "start" : 64,
+      "length" : 8
     },
     {
       "activity" : "generate1",
-      "start" : 57,
-      "length" : 4
+      "start" : 71,
+      "length" : 10
     },
     {
       "activity" : "generate2",
-      "start" : 60,
-      "length" : 42
+      "start" : 74,
+      "length" : 40
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 72,
+      "start" : 85,
       "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/CodeSystem-joda-sarbunn.json",
-    "size" : 641,
+    "size" : 672,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 48,
+      "start" : 62,
       "length" : 1
     },
     {
       "activity" : "load",
-      "start" : 48,
+      "start" : 62,
       "length" : 2
     },
     {
-      "activity" : "checkR4R4B",
-      "start" : 49,
+      "activity" : "load-configure",
+      "start" : 62,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 49,
+      "start" : 63,
       "length" : 2
     },
     {
       "activity" : "validate",
-      "start" : 51,
-      "length" : 12
+      "start" : 64,
+      "length" : 11
     },
     {
       "activity" : "generate1",
-      "start" : 57,
-      "length" : 5
+      "start" : 71,
+      "length" : 10
     },
     {
       "activity" : "generate2",
-      "start" : 60,
-      "length" : 44
+      "start" : 74,
+      "length" : 43
     }]
   },
   {
     "name" : "fsh-generated/resources/CodeSystem-joda-sarvurdering-kode.json",
-    "size" : 1572,
+    "size" : 1603,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 48,
+      "start" : 62,
       "length" : 2
     },
     {
       "activity" : "load",
-      "start" : 48,
-      "length" : 4
+      "start" : 62,
+      "length" : 3
     },
     {
-      "activity" : "generateNarratives",
-      "start" : 49,
-      "length" : 4
-    },
-    {
-      "activity" : "validate",
-      "start" : 51,
-      "length" : 14
-    },
-    {
-      "activity" : "generate1",
-      "start" : 57,
-      "length" : 6
-    },
-    {
-      "activity" : "generate2",
-      "start" : 60,
-      "length" : 53
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/CodeSystem-joda-vaesking.json",
-    "size" : 587,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 48,
+      "activity" : "load",
+      "start" : 62,
       "length" : 1
-    },
-    {
-      "activity" : "load",
-      "start" : 48,
-      "length" : 2
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 49,
+      "start" : 63,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 49,
-      "length" : 2
+      "start" : 63,
+      "length" : 4
     },
     {
       "activity" : "validate",
-      "start" : 51,
-      "length" : 10
-    },
-    {
-      "activity" : "scanForUsageStats",
-      "start" : 56,
-      "length" : 1
+      "start" : 64,
+      "length" : 16
     },
     {
       "activity" : "generate1",
-      "start" : 57,
+      "start" : 71,
       "length" : 5
     },
     {
       "activity" : "generate2",
-      "start" : 60,
-      "length" : 42
+      "start" : 74,
+      "length" : 53
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 72,
+      "start" : 85,
       "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CodeSystem-joda-vaesking.json",
+    "size" : 618,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 62,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 63,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 64,
+      "length" : 11
+    },
+    {
+      "activity" : "generate1",
+      "start" : 71,
+      "length" : 5
+    },
+    {
+      "activity" : "generate2",
+      "start" : 74,
+      "length" : 42
     }]
   },
   {
     "name" : "fsh-generated/resources/Device-Kamera-Jodapro.json",
-    "size" : 460,
+    "size" : 522,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 48,
+      "start" : 62,
       "length" : 2
     },
     {
-      "activity" : "generateNarratives",
-      "start" : 49,
-      "length" : 8
-    },
-    {
-      "activity" : "validate",
-      "start" : 56,
-      "length" : 3
-    },
-    {
-      "activity" : "generate1",
-      "start" : 57,
-      "length" : 3
-    },
-    {
-      "activity" : "generate2",
-      "start" : 60,
-      "length" : 12
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/Device-Kamera-Mobil.json",
-    "size" : 471,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 48,
+      "activity" : "load",
+      "start" : 62,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 49,
-      "length" : 2
+      "start" : 63,
+      "length" : 8
     },
     {
       "activity" : "validate",
-      "start" : 56,
-      "length" : 3
+      "start" : 70,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 70,
+      "length" : 4
     },
     {
       "activity" : "generate1",
-      "start" : 57,
+      "start" : 71,
       "length" : 3
     },
     {
       "activity" : "generate2",
-      "start" : 60,
+      "start" : 74,
+      "length" : 10
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 85,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Device-Kamera-Mobil.json",
+    "size" : 533,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 62,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 63,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 70,
+      "length" : 2
+    },
+    {
+      "activity" : "generate1",
+      "start" : 71,
+      "length" : 3
+    },
+    {
+      "activity" : "generate2",
+      "start" : 74,
       "length" : 5
     }]
   },
   {
     "name" : "fsh-generated/resources/DocumentReference-Sardokument-Hjemme-1-Innsendt.json",
-    "size" : 699,
+    "size" : 730,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 48,
-      "length" : 1
-    },
-    {
-      "activity" : "load",
-      "start" : 48,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 49,
-      "length" : 413
-    },
-    {
-      "activity" : "validate",
-      "start" : 56,
-      "length" : 120
-    },
-    {
-      "activity" : "generate1",
-      "start" : 57,
-      "length" : 3
-    },
-    {
-      "activity" : "generate2",
-      "start" : 60,
-      "length" : 14
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/DocumentReference-Sardokument-Hjemme-1-Journalfort.json",
-    "size" : 843,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 48,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 50,
-      "length" : 5
-    },
-    {
-      "activity" : "validate",
-      "start" : 56,
-      "length" : 6
-    },
-    {
-      "activity" : "generate1",
-      "start" : 57,
-      "length" : 3
-    },
-    {
-      "activity" : "generate2",
-      "start" : 60,
-      "length" : 9
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/Media-Sarbilde-Besok-1.json",
-    "size" : 835,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 48,
+      "start" : 62,
       "length" : 2
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 49,
+      "start" : 63,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 50,
-      "length" : 4
+      "start" : 63,
+      "length" : 333
     },
     {
       "activity" : "validate",
-      "start" : 56,
-      "length" : 62
+      "start" : 70,
+      "length" : 128
     },
     {
       "activity" : "generate1",
-      "start" : 57,
-      "length" : 4
+      "start" : 71,
+      "length" : 3
     },
     {
       "activity" : "generate2",
-      "start" : 60,
+      "start" : 74,
+      "length" : 15
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/DocumentReference-Sardokument-Hjemme-1-Journalfort.json",
+    "size" : 874,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 62,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 63,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 70,
+      "length" : 4
+    },
+    {
+      "activity" : "generate1",
+      "start" : 71,
+      "length" : 5
+    },
+    {
+      "activity" : "generate2",
+      "start" : 74,
+      "length" : 8
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Media-Sarbilde-Besok-1.json",
+    "size" : 866,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 62,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 63,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 70,
+      "length" : 64
+    },
+    {
+      "activity" : "generate1",
+      "start" : 71,
+      "length" : 3
+    },
+    {
+      "activity" : "generate2",
+      "start" : 74,
       "length" : 9
     }]
   },
   {
     "name" : "fsh-generated/resources/Media-Sarbilde-Hjemme-1.json",
-    "size" : 940,
+    "size" : 971,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 48,
+      "start" : 62,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 50,
-      "length" : 3
+      "start" : 63,
+      "length" : 4
     },
     {
       "activity" : "validate",
-      "start" : 56,
-      "length" : 7
-    },
-    {
-      "activity" : "generate1",
-      "start" : 57,
+      "start" : 70,
       "length" : 3
     },
     {
+      "activity" : "generate1",
+      "start" : 71,
+      "length" : 4
+    },
+    {
       "activity" : "generate2",
-      "start" : 60,
+      "start" : 74,
       "length" : 7
     }]
   },
   {
     "name" : "fsh-generated/resources/Observation-Sarvurdering-Besok-1.json",
-    "size" : 3314,
+    "size" : 3686,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 48,
-      "length" : 2
+      "start" : 62,
+      "length" : 3
     },
     {
       "activity" : "checkR4R4B",
-      "start" : 49,
+      "start" : 63,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 50,
-      "length" : 160
+      "start" : 63,
+      "length" : 174
     },
     {
       "activity" : "validate",
-      "start" : 57,
-      "length" : 140
+      "start" : 70,
+      "length" : 144
     },
     {
       "activity" : "generate1",
-      "start" : 57,
-      "length" : 6
+      "start" : 71,
+      "length" : 5
     },
     {
       "activity" : "generate2",
-      "start" : 60,
-      "length" : 21
+      "start" : 74,
+      "length" : 20
     }]
   },
   {
     "name" : "fsh-generated/resources/Patient-Pasient-Karin.json",
-    "size" : 442,
+    "size" : 473,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 48,
+      "start" : 62,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 50,
+      "start" : 63,
       "length" : 1
     },
     {
       "activity" : "validate",
-      "start" : 57,
-      "length" : 4
+      "start" : 70,
+      "length" : 3
     },
     {
       "activity" : "generate1",
-      "start" : 57,
-      "length" : 2
+      "start" : 71,
+      "length" : 4
     },
     {
       "activity" : "generate2",
-      "start" : 60,
+      "start" : 74,
       "length" : 9
     }]
   },
@@ -501,28 +511,18 @@
     "name" : "fsh-generated/resources/Practitioner-Sykepleier-Sara.json",
     "size" : 161,
     "processes" : [{
-      "activity" : "loadResources",
-      "start" : 48,
-      "length" : 1
-    },
-    {
       "activity" : "generateNarratives",
-      "start" : 50,
-      "length" : 1
-    },
-    {
-      "activity" : "validate",
-      "start" : 57,
+      "start" : 63,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 57,
+      "start" : 71,
       "length" : 2
     },
     {
       "activity" : "generate2",
-      "start" : 60,
+      "start" : 74,
       "length" : 6
     }]
   },
@@ -531,28 +531,33 @@
     "size" : 1110,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 48,
+      "start" : 62,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 50,
+      "start" : 63,
       "length" : 3
     },
     {
+      "activity" : "scanForUsageStats",
+      "start" : 70,
+      "length" : 1
+    },
+    {
       "activity" : "validate",
-      "start" : 57,
-      "length" : 110
+      "start" : 70,
+      "length" : 155
     },
     {
       "activity" : "generate1",
-      "start" : 57,
-      "length" : 4
+      "start" : 71,
+      "length" : 6
     },
     {
       "activity" : "generate2",
-      "start" : 60,
-      "length" : 12
+      "start" : 74,
+      "length" : 10
     }]
   },
   {
@@ -560,565 +565,545 @@
     "size" : 439,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 48,
+      "start" : 62,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 50,
+      "start" : 63,
       "length" : 1
     },
     {
       "activity" : "validate",
-      "start" : 57,
-      "length" : 19
+      "start" : 70,
+      "length" : 25
     },
     {
       "activity" : "generate1",
-      "start" : 57,
-      "length" : 2
+      "start" : 71,
+      "length" : 3
     },
     {
       "activity" : "generate2",
-      "start" : 60,
-      "length" : 9
+      "start" : 74,
+      "length" : 6
     }]
   },
   {
     "name" : "fsh-generated/resources/StructureDefinition-joda-kamera.json",
-    "size" : 967,
+    "size" : 1029,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 48,
-      "length" : 2
-    },
-    {
-      "activity" : "load",
-      "start" : 48,
-      "length" : 4
-    },
-    {
-      "activity" : "generateSnapshots",
-      "start" : 48,
-      "length" : 51
-    },
-    {
-      "activity" : "loadInfo",
-      "start" : 49,
+      "start" : 62,
       "length" : 1
     },
     {
+      "activity" : "load",
+      "start" : 62,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 62,
+      "length" : 34
+    },
+    {
       "activity" : "checkR4R4B",
-      "start" : 49,
+      "start" : 63,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 50,
-      "length" : 60
+      "start" : 63,
+      "length" : 66
     },
     {
       "activity" : "validate",
-      "start" : 51,
-      "length" : 495
+      "start" : 64,
+      "length" : 498
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 56,
+      "start" : 70,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 57,
+      "start" : 71,
       "length" : 38
     },
     {
       "activity" : "generate2",
-      "start" : 60,
-      "length" : 1030
+      "start" : 74,
+      "length" : 839
     },
     {
       "activity" : "generate2",
-      "start" : 64,
-      "length" : 721
+      "start" : 78,
+      "length" : 775
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 72,
-      "length" : 6
+      "start" : 85,
+      "length" : 7
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 77,
+      "start" : 89,
       "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/StructureDefinition-joda-pasient.json",
-    "size" : 941,
+    "size" : 972,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 48,
+      "start" : 62,
       "length" : 1
     },
     {
       "activity" : "load",
-      "start" : 48,
-      "length" : 3
-    },
-    {
-      "activity" : "load",
-      "start" : 48,
-      "length" : 1
+      "start" : 62,
+      "length" : 2
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 48,
-      "length" : 81
+      "start" : 62,
+      "length" : 79
     },
     {
       "activity" : "load-configure",
-      "start" : 49,
+      "start" : 62,
       "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 50,
-      "length" : 26
+      "start" : 63,
+      "length" : 32
     },
     {
       "activity" : "validate",
-      "start" : 52,
-      "length" : 726
-    },
-    {
-      "activity" : "checkConformanceResources",
-      "start" : 56,
-      "length" : 1
+      "start" : 65,
+      "length" : 681
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 56,
+      "start" : 70,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 57,
-      "length" : 62
+      "start" : 71,
+      "length" : 68
     },
     {
       "activity" : "generate2",
-      "start" : 61,
-      "length" : 664
+      "start" : 75,
+      "length" : 654
     },
     {
       "activity" : "generate2",
-      "start" : 64,
-      "length" : 565
+      "start" : 78,
+      "length" : 458
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 72,
-      "length" : 9
+      "start" : 85,
+      "length" : 14
     },
     {
       "activity" : "scanProfilesForR5",
-      "start" : 77,
+      "start" : 89,
       "length" : 1
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 77,
+      "start" : 89,
       "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/StructureDefinition-joda-sarbilde.json",
-    "size" : 3360,
+    "size" : 3484,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 48,
+      "start" : 62,
       "length" : 2
     },
     {
       "activity" : "load",
-      "start" : 48,
-      "length" : 5
+      "start" : 62,
+      "length" : 4
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 48,
-      "length" : 227
+      "start" : 62,
+      "length" : 241
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 63,
+      "length" : 1
     },
     {
       "activity" : "generateNarratives",
-      "start" : 50,
-      "length" : 18
+      "start" : 63,
+      "length" : 21
     },
     {
       "activity" : "validate",
-      "start" : 52,
-      "length" : 164
+      "start" : 66,
+      "length" : 173
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 70,
+      "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 57,
-      "length" : 30
+      "start" : 71,
+      "length" : 31
     },
     {
       "activity" : "generate2",
-      "start" : 62,
-      "length" : 243
+      "start" : 75,
+      "length" : 251
     },
     {
       "activity" : "generate2",
-      "start" : 65,
-      "length" : 205
+      "start" : 79,
+      "length" : 147
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 72,
-      "length" : 6
+      "start" : 85,
+      "length" : 8
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 89,
+      "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/StructureDefinition-joda-sardokument.json",
-    "size" : 2632,
+    "size" : 2694,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 48,
-      "length" : 1
+      "start" : 62,
+      "length" : 2
     },
     {
       "activity" : "load",
-      "start" : 48,
-      "length" : 4
+      "start" : 62,
+      "length" : 3
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 48,
-      "length" : 32
-    },
-    {
-      "activity" : "loadDepInfo",
-      "start" : 49,
-      "length" : 1
+      "start" : 62,
+      "length" : 35
     },
     {
       "activity" : "generateNarratives",
-      "start" : 50,
-      "length" : 23
+      "start" : 63,
+      "length" : 25
     },
     {
       "activity" : "validate",
-      "start" : 53,
-      "length" : 199
-    },
-    {
-      "activity" : "validate",
-      "start" : 53,
-      "length" : 1
+      "start" : 66,
+      "length" : 192
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 56,
+      "start" : 70,
       "length" : 1
     },
     {
       "activity" : "generate1",
-      "start" : 57,
-      "length" : 38
+      "start" : 71,
+      "length" : 41
     },
     {
       "activity" : "generate2",
-      "start" : 62,
-      "length" : 268
+      "start" : 76,
+      "length" : 269
     },
     {
       "activity" : "generate2",
-      "start" : 65,
-      "length" : 216
+      "start" : 79,
+      "length" : 196
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 72,
-      "length" : 6
-    },
-    {
-      "activity" : "scanExamplesForR5",
-      "start" : 77,
-      "length" : 1
+      "start" : 85,
+      "length" : 9
     }]
   },
   {
     "name" : "fsh-generated/resources/StructureDefinition-joda-sarvurdering.json",
-    "size" : 10946,
+    "size" : 11411,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 48,
-      "length" : 7
+      "start" : 62,
+      "length" : 3
     },
     {
       "activity" : "load",
-      "start" : 48,
-      "length" : 10
+      "start" : 62,
+      "length" : 6
     },
     {
       "activity" : "generateSnapshots",
-      "start" : 48,
-      "length" : 76
+      "start" : 62,
+      "length" : 92
     },
     {
       "activity" : "generateNarratives",
-      "start" : 50,
-      "length" : 65
+      "start" : 63,
+      "length" : 68
     },
     {
       "activity" : "validate",
-      "start" : 53,
-      "length" : 509
+      "start" : 66,
+      "length" : 492
     },
     {
       "activity" : "scanForUsageStats",
-      "start" : 56,
-      "length" : 2
-    },
-    {
-      "activity" : "generate1",
-      "start" : 57,
-      "length" : 98
-    },
-    {
-      "activity" : "generate2",
-      "start" : 62,
-      "length" : 1238
-    },
-    {
-      "activity" : "generate2",
-      "start" : 65,
-      "length" : 419
-    },
-    {
-      "activity" : "generateExampleZip",
-      "start" : 71,
+      "start" : 70,
       "length" : 1
     },
     {
+      "activity" : "generate1",
+      "start" : 71,
+      "length" : 95
+    },
+    {
+      "activity" : "generate2",
+      "start" : 76,
+      "length" : 1343
+    },
+    {
+      "activity" : "generate2",
+      "start" : 79,
+      "length" : 322
+    },
+    {
       "activity" : "generateValidationPack",
-      "start" : 72,
-      "length" : 16
+      "start" : 85,
+      "length" : 28
     },
     {
       "activity" : "scanExamplesForR5",
-      "start" : 77,
-      "length" : 2
+      "start" : 89,
+      "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/ValueSet-joda-bildeformat-vs.json",
-    "size" : 600,
+    "size" : 631,
     "processes" : [{
       "activity" : "loadResources",
-      "start" : 48,
+      "start" : 62,
       "length" : 1
     },
     {
       "activity" : "load",
-      "start" : 48,
-      "length" : 4
-    },
-    {
-      "activity" : "checkR4R4B",
-      "start" : 49,
-      "length" : 1
+      "start" : 62,
+      "length" : 3
     },
     {
       "activity" : "generateNarratives",
-      "start" : 50,
-      "length" : 294
+      "start" : 63,
+      "length" : 319
     },
     {
       "activity" : "validate",
-      "start" : 51,
-      "length" : 290
+      "start" : 64,
+      "length" : 351
     },
     {
       "activity" : "generate1",
-      "start" : 57,
+      "start" : 71,
       "length" : 4
     },
     {
       "activity" : "generate2",
-      "start" : 64,
-      "length" : 115
+      "start" : 77,
+      "length" : 116
     },
     {
       "activity" : "generateValidationPack",
-      "start" : 72,
+      "start" : 85,
       "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/ValueSet-joda-hud-rundt-vs.json",
-    "size" : 424,
+    "size" : 486,
     "processes" : [{
-      "activity" : "loadResources",
-      "start" : 48,
-      "length" : 1
-    },
-    {
       "activity" : "load",
-      "start" : 48,
-      "length" : 3
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 51,
+      "start" : 62,
       "length" : 2
     },
     {
+      "activity" : "load",
+      "start" : 62,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 64,
+      "length" : 8
+    },
+    {
       "activity" : "validate",
-      "start" : 51,
+      "start" : 64,
       "length" : 9
     },
     {
       "activity" : "generate1",
-      "start" : 57,
-      "length" : 4
+      "start" : 71,
+      "length" : 5
     },
     {
       "activity" : "generate2",
-      "start" : 64,
-      "length" : 42
+      "start" : 77,
+      "length" : 40
     }]
   },
   {
     "name" : "fsh-generated/resources/ValueSet-joda-kameratype-vs.json",
-    "size" : 402,
+    "size" : 464,
     "processes" : [{
-      "activity" : "load",
-      "start" : 48,
-      "length" : 2
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 51,
+      "activity" : "loadResources",
+      "start" : 62,
       "length" : 1
     },
     {
+      "activity" : "load",
+      "start" : 62,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 63,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 64,
+      "length" : 2
+    },
+    {
       "activity" : "validate",
-      "start" : 51,
-      "length" : 5
+      "start" : 64,
+      "length" : 9
     },
     {
       "activity" : "generate1",
-      "start" : 57,
-      "length" : 4
+      "start" : 71,
+      "length" : 6
     },
     {
       "activity" : "generate2",
-      "start" : 64,
-      "length" : 31
+      "start" : 77,
+      "length" : 34
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 85,
+      "length" : 1
     }]
   },
   {
     "name" : "fsh-generated/resources/ValueSet-joda-sarbunn-vs.json",
-    "size" : 397,
+    "size" : 459,
     "processes" : [{
-      "activity" : "loadResources",
-      "start" : 48,
-      "length" : 1
-    },
-    {
       "activity" : "load",
-      "start" : 48,
+      "start" : 62,
       "length" : 2
     },
     {
-      "activity" : "generateNarratives",
-      "start" : 51,
+      "activity" : "scan",
+      "start" : 63,
       "length" : 1
     },
     {
-      "activity" : "validate",
-      "start" : 51,
-      "length" : 4
-    },
-    {
-      "activity" : "generate1",
-      "start" : 57,
-      "length" : 3
-    },
-    {
-      "activity" : "generate2",
+      "activity" : "generateNarratives",
       "start" : 64,
-      "length" : 32
-    },
-    {
-      "activity" : "generateValidationPack",
-      "start" : 72,
-      "length" : 1
-    }]
-  },
-  {
-    "name" : "fsh-generated/resources/ValueSet-joda-vaesking-vs.json",
-    "size" : 401,
-    "processes" : [{
-      "activity" : "loadResources",
-      "start" : 48,
-      "length" : 1
-    },
-    {
-      "activity" : "load",
-      "start" : 48,
-      "length" : 2
-    },
-    {
-      "activity" : "checkR4R4B",
-      "start" : 49,
-      "length" : 1
-    },
-    {
-      "activity" : "generateNarratives",
-      "start" : 51,
       "length" : 1
     },
     {
       "activity" : "validate",
-      "start" : 51,
+      "start" : 64,
       "length" : 6
     },
     {
       "activity" : "generate1",
-      "start" : 57,
+      "start" : 71,
       "length" : 3
     },
     {
       "activity" : "generate2",
+      "start" : 77,
+      "length" : 31
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-joda-vaesking-vs.json",
+    "size" : 463,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 62,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 62,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
       "start" : 64,
-      "length" : 32
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 64,
+      "length" : 8
+    },
+    {
+      "activity" : "generate1",
+      "start" : 71,
+      "length" : 4
+    },
+    {
+      "activity" : "generate2",
+      "start" : 78,
+      "length" : 30
     }]
   },
   {
     "name" : "/fsh-generated/includes/fsh-link-references.md",
-    "size" : 1430,
+    "size" : 1430
+  },
+  {
+    "name" : "/fsh-generated/includes/menu.xml",
+    "size" : 1089,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 64,
+      "start" : 78,
       "length" : 1
     }]
   },
   {
-    "name" : "/fsh-generated/includes/menu.xml",
-    "size" : 1089
-  },
-  {
     "name" : "/input/pagecontent/index.md",
-    "size" : 1058,
+    "size" : 5029,
     "processes" : [{
       "activity" : "generate2",
-      "start" : 64,
-      "length" : 1
+      "start" : 78,
+      "length" : 2
     }]
   },
   {
@@ -1131,12 +1116,7 @@
   },
   {
     "name" : "/input/images",
-    "size" : 0,
-    "processes" : [{
-      "activity" : "generate2",
-      "start" : 64,
-      "length" : 1
-    }]
+    "size" : 0
   },
   {
     "name" : "/input/images/test.svg",
@@ -1148,6 +1128,11 @@
   },
   {
     "name" : "/temp/pages/_includes/artifacts.xml",
-    "size" : 11768
+    "size" : 11768,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 78,
+      "length" : 1
+    }]
   }]
 }

@@ -1,4 +1,4 @@
-# Jodapro hodekamera - Mal v0.1.0
+# Jodapro hodekamera - Sårdokumentasjon med JodaCare og Jodapro v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -26,7 +26,7 @@ Profile: [Kamera](StructureDefinition-joda-kamera.md)
   "resourceType" : "Device",
   "id" : "Kamera-Jodapro",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera"]
+    "profile" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera"]
   },
   "deviceName" : [{
     "name" : "Jodapro hodekamera",
@@ -34,7 +34,7 @@ Profile: [Kamera](StructureDefinition-joda-kamera.md)
   }],
   "type" : {
     "coding" : [{
-      "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype",
+      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype",
       "code" : "hodekamera",
       "display" : "Hodekamera"
     }]

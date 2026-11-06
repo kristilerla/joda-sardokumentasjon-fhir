@@ -1,4 +1,4 @@
-# Karin Testdal - Mal v0.1.0
+# Karin Testdal - Sårdokumentasjon med JodaCare og Jodapro v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -21,7 +21,7 @@ Karin Testdal Female, DoB: 1948-03-13 ( https://example.org/oppdiktet/pasient-id
   "resourceType" : "Patient",
   "id" : "Pasient-Karin",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/ig/mal/StructureDefinition/joda-pasient"]
+    "profile" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-pasient"]
   },
   "identifier" : [{
     "system" : "https://example.org/oppdiktet/pasient-id",

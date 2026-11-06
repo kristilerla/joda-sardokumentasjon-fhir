@@ -5,28 +5,28 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype> a fhir:CodeSystem ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype> a fhir:CodeSystem ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "joda-kameratype"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem joda-kameratype</b></p><a name=\"joda-kameratype\"> </a><a name=\"hcjoda-kameratype\"> </a><p>This case-sensitive code system <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">mobil<a name=\"joda-kameratype-mobil\"> </a></td><td>Mobiltelefon eller nettbrett</td><td>Pasientens, pårørendes eller den ansattes egen mobil eller nettbrett, via JodaCare.</td></tr><tr><td style=\"white-space:nowrap\">hodekamera<a name=\"joda-kameratype-hodekamera\"> </a></td><td>Hodekamera</td><td>Jodapro hodekamera brukt av helsepersonell.</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem joda-kameratype</b></p><a name=\"joda-kameratype\"> </a><a name=\"hcjoda-kameratype\"> </a><p>This case-sensitive code system <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">mobil<a name=\"joda-kameratype-mobil\"> </a></td><td>Mobiltelefon eller nettbrett</td><td>Pasientens, pårørendes eller den ansattes egen mobil eller nettbrett, via JodaCare.</td></tr><tr><td style=\"white-space:nowrap\">hodekamera<a name=\"joda-kameratype-hodekamera\"> </a></td><td>Hodekamera</td><td>Jodapro hodekamera brukt av helsepersonell.</td></tr></table></div>"
   ] ;
-  fhir:CodeSystem.url [ fhir:value "http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype"] ;
+  fhir:CodeSystem.url [ fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype"] ;
   fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
   fhir:CodeSystem.name [ fhir:value "JodaKameratype"] ;
   fhir:CodeSystem.title [ fhir:value "Kameratype"] ;
   fhir:CodeSystem.status [ fhir:value "draft"] ;
   fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-11-06T17:24:45+00:00"^^xsd:dateTime] ;
-  fhir:CodeSystem.publisher [ fhir:value "HL7 Norge"] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-06T17:48:45+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Kristil Erla Håland"] ;
   fhir:CodeSystem.contact [
      fhir:index 0 ;
-     fhir:ContactDetail.name [ fhir:value "HL7 Norge" ] ;
+     fhir:ContactDetail.name [ fhir:value "Kristil Erla Håland" ] ;
      fhir:ContactDetail.telecom [
        fhir:index 0 ;
        fhir:ContactPoint.system [ fhir:value "url" ] ;
-       fhir:ContactPoint.value [ fhir:value "https://www.hl7.no" ]
+       fhir:ContactPoint.value [ fhir:value "https://jodacare.no" ]
      ]
   ] ;
   fhir:CodeSystem.description [ fhir:value "Hva slags kamera bildet er tatt med."] ;
@@ -56,7 +56,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype.ttl> a owl:Ontology ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

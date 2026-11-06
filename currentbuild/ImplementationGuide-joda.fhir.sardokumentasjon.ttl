@@ -5,30 +5,30 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal> a fhir:ImplementationGuide ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/ImplementationGuide/joda.fhir.sardokumentasjon> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
-  fhir:Resource.id [ fhir:value "hl7.fhir.no.mal"] ;
+  fhir:Resource.id [ fhir:value "joda.fhir.sardokumentasjon"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.mal</b></p><a name=\"hl7.fhir.no.mal\"> </a><a name=\"hchl7.fhir.no.mal\"> </a><h2>Mal</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal</pre><div><p>Implementasjonsguide for å TODO</p>\n</div></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide joda.fhir.sardokumentasjon</b></p><a name=\"joda.fhir.sardokumentasjon\"> </a><a name=\"hcjoda.fhir.sardokumentasjon\"> </a><h2>JodaSardokumentasjon</h2><p>The official URL for this implementation guide is: </p><pre>https://kristilerla.github.io/joda-sardokumentasjon-fhir/ImplementationGuide/joda.fhir.sardokumentasjon</pre><div><p>Øvingsguide som beskriver hvordan bilder og vurderinger av sår, tatt av pasienten, pårørende eller helsepersonell, kan uttrykkes i HL7 FHIR og sendes til pasientens journal.</p>\n</div></div>"
   ] ;
-  fhir:ImplementationGuide.url [ fhir:value "http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal"] ;
+  fhir:ImplementationGuide.url [ fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ImplementationGuide/joda.fhir.sardokumentasjon"] ;
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"] ;
-  fhir:ImplementationGuide.name [ fhir:value "Mal"] ;
-  fhir:ImplementationGuide.title [ fhir:value "Mal"] ;
+  fhir:ImplementationGuide.name [ fhir:value "JodaSardokumentasjon"] ;
+  fhir:ImplementationGuide.title [ fhir:value "Sårdokumentasjon med JodaCare og Jodapro"] ;
   fhir:ImplementationGuide.status [ fhir:value "draft"] ;
-  fhir:ImplementationGuide.date [ fhir:value "2026-11-06T17:24:45+00:00"^^xsd:dateTime] ;
-  fhir:ImplementationGuide.publisher [ fhir:value "HL7 Norge"] ;
+  fhir:ImplementationGuide.date [ fhir:value "2026-11-06T17:48:45+00:00"^^xsd:dateTime] ;
+  fhir:ImplementationGuide.publisher [ fhir:value "Kristil Erla Håland"] ;
   fhir:ImplementationGuide.contact [
      fhir:index 0 ;
-     fhir:ContactDetail.name [ fhir:value "HL7 Norge" ] ;
+     fhir:ContactDetail.name [ fhir:value "Kristil Erla Håland" ] ;
      fhir:ContactDetail.telecom [
        fhir:index 0 ;
        fhir:ContactPoint.system [ fhir:value "url" ] ;
-       fhir:ContactPoint.value [ fhir:value "https://www.hl7.no" ]
+       fhir:ContactPoint.value [ fhir:value "https://jodacare.no" ]
      ]
   ] ;
-  fhir:ImplementationGuide.description [ fhir:value "Implementasjonsguide for å TODO"] ;
+  fhir:ImplementationGuide.description [ fhir:value "Øvingsguide som beskriver hvordan bilder og vurderinger av sår, tatt av pasienten, pårørende eller helsepersonell, kan uttrykkes i HL7 FHIR og sendes til pasientens journal."] ;
   fhir:ImplementationGuide.jurisdiction [
      fhir:index 0 ;
      fhir:CodeableConcept.coding [
@@ -38,7 +38,7 @@
        fhir:Coding.display [ fhir:value "Norway" ]
      ]
   ] ;
-  fhir:ImplementationGuide.packageId [ fhir:value "hl7.fhir.no.mal"] ;
+  fhir:ImplementationGuide.packageId [ fhir:value "joda.fhir.sardokumentasjon"] ;
   fhir:ImplementationGuide.license [ fhir:value "CC0-1.0"] ;
   fhir:ImplementationGuide.fhirVersion [
      fhir:value "4.0.1" ;
@@ -204,7 +204,7 @@
        ], [
          fhir:index 1 ;
          fhir:Extension.url [ fhir:value "value" ] ;
-         fhir:Extension.valueString [ fhir:value "http://hl7.no/fhir/ig/mal/history.html" ]
+         fhir:Extension.valueString [ fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/history.html" ]
        ] ;
        fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter" ]
      ], [
@@ -396,14 +396,14 @@
          fhir:Extension.valueString [ fhir:value "Media" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/Media/Sarbilde-Besok-1> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/Media/Sarbilde-Besok-1> ;
          fhir:Reference.reference [ fhir:value "Media/Sarbilde-Besok-1" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bilde tatt av sykepleier med hodekamera" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sara tar et bilde med Jodapro hodekamera under besøket dagen etter." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde" ;
-         fhir:link <http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde>
+         fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde" ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde>
        ]
      ], [
        fhir:index 1 ;
@@ -413,14 +413,14 @@
          fhir:Extension.valueString [ fhir:value "Media" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/Media/Sarbilde-Hjemme-1> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/Media/Sarbilde-Hjemme-1> ;
          fhir:Reference.reference [ fhir:value "Media/Sarbilde-Hjemme-1" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bilde tatt hjemme av datteren" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Lise tar et bilde av morens sår med mobilen via JodaCare, to dager etter siste besøk." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde" ;
-         fhir:link <http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde>
+         fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde" ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde>
        ]
      ], [
        fhir:index 2 ;
@@ -430,7 +430,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/ValueSet/joda-bildeformat-vs> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-bildeformat-vs> ;
          fhir:Reference.reference [ fhir:value "ValueSet/joda-bildeformat-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bildeformat" ] ;
@@ -444,14 +444,14 @@
          fhir:Extension.valueString [ fhir:value "DocumentReference" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/DocumentReference/Sardokument-Hjemme-1-Journalfort> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/DocumentReference/Sardokument-Hjemme-1-Journalfort> ;
          fhir:Reference.reference [ fhir:value "DocumentReference/Sardokument-Hjemme-1-Journalfort" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bildet fra Lise, journalført" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Sara har sett på bildet og valgt å legge det i journalen." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sardokument" ;
-         fhir:link <http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sardokument>
+         fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sardokument" ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sardokument>
        ]
      ], [
        fhir:index 4 ;
@@ -461,14 +461,14 @@
          fhir:Extension.valueString [ fhir:value "DocumentReference" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/DocumentReference/Sardokument-Hjemme-1-Innsendt> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/DocumentReference/Sardokument-Hjemme-1-Innsendt> ;
          fhir:Reference.reference [ fhir:value "DocumentReference/Sardokument-Hjemme-1-Innsendt" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Bildet fra Lise, sendt inn" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Bildet Lise tok er sendt inn til journalen, men ikke vurdert ennå." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sardokument" ;
-         fhir:link <http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sardokument>
+         fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sardokument" ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sardokument>
        ]
      ], [
        fhir:index 5 ;
@@ -478,7 +478,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/ValueSet/joda-hud-rundt-vs> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-hud-rundt-vs> ;
          fhir:Reference.reference [ fhir:value "ValueSet/joda-hud-rundt-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Huden rundt såret" ] ;
@@ -492,7 +492,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt> ;
          fhir:Reference.reference [ fhir:value "CodeSystem/joda-hud-rundt" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Huden rundt såret" ] ;
@@ -506,7 +506,7 @@
          fhir:Extension.valueString [ fhir:value "Provenance" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/Provenance/Proveniens-Sarbilde-Hjemme-1> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/Provenance/Proveniens-Sarbilde-Hjemme-1> ;
          fhir:Reference.reference [ fhir:value "Provenance/Proveniens-Sarbilde-Hjemme-1" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Hvem tok bildet hjemme" ] ;
@@ -520,14 +520,14 @@
          fhir:Extension.valueString [ fhir:value "Device" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/Device/Kamera-Jodapro> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/Device/Kamera-Jodapro> ;
          fhir:Reference.reference [ fhir:value "Device/Kamera-Jodapro" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Jodapro hodekamera" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Hodekamera som hjemmetjenesten bruker." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera" ;
-         fhir:link <http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera>
+         fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera" ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera>
        ]
      ], [
        fhir:index 9 ;
@@ -537,7 +537,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/joda-kamera" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kamera" ] ;
@@ -551,7 +551,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/ValueSet/joda-kameratype-vs> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-kameratype-vs> ;
          fhir:Reference.reference [ fhir:value "ValueSet/joda-kameratype-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kameratype" ] ;
@@ -565,7 +565,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype> ;
          fhir:Reference.reference [ fhir:value "CodeSystem/joda-kameratype" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Kameratype" ] ;
@@ -579,14 +579,14 @@
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/Patient/Pasient-Karin> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/Patient/Pasient-Karin> ;
          fhir:Reference.reference [ fhir:value "Patient/Pasient-Karin" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Karin Testdal" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Oppdiktet pasient, 78 år, som får hjelp fra hjemmetjenesten i Fjordvik kommune til et leggsår." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-pasient" ;
-         fhir:link <http://hl7.no/fhir/ig/mal/StructureDefinition/joda-pasient>
+         fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-pasient" ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-pasient>
        ]
      ], [
        fhir:index 13 ;
@@ -596,7 +596,7 @@
          fhir:Extension.valueString [ fhir:value "RelatedPerson" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/RelatedPerson/Datter-Lise> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/RelatedPerson/Datter-Lise> ;
          fhir:Reference.reference [ fhir:value "RelatedPerson/Datter-Lise" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Lise Testdal" ] ;
@@ -610,14 +610,14 @@
          fhir:Extension.valueString [ fhir:value "Device" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/Device/Kamera-Mobil> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/Device/Kamera-Mobil> ;
          fhir:Reference.reference [ fhir:value "Device/Kamera-Mobil" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Mobilen til Lise" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Mobiltelefon brukt via JodaCare." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera" ;
-         fhir:link <http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera>
+         fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera" ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera>
        ]
      ], [
        fhir:index 15 ;
@@ -627,7 +627,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/StructureDefinition/joda-pasient> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-pasient> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/joda-pasient" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Pasient" ] ;
@@ -641,7 +641,7 @@
          fhir:Extension.valueString [ fhir:value "Practitioner" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/Practitioner/Sykepleier-Sara> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/Practitioner/Sykepleier-Sara> ;
          fhir:Reference.reference [ fhir:value "Practitioner/Sykepleier-Sara" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sara Testesen" ] ;
@@ -655,7 +655,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/joda-sarbilde" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sårbilde" ] ;
@@ -669,7 +669,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/ValueSet/joda-sarbunn-vs> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-sarbunn-vs> ;
          fhir:Reference.reference [ fhir:value "ValueSet/joda-sarbunn-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sårbunn" ] ;
@@ -683,7 +683,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn> ;
          fhir:Reference.reference [ fhir:value "CodeSystem/joda-sarbunn" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sårbunn" ] ;
@@ -697,7 +697,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sardokument> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sardokument> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/joda-sardokument" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sårdokument til journal" ] ;
@@ -711,7 +711,7 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarvurdering> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering> ;
          fhir:Reference.reference [ fhir:value "StructureDefinition/joda-sarvurdering" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sårvurdering" ] ;
@@ -725,7 +725,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode> ;
          fhir:Reference.reference [ fhir:value "CodeSystem/joda-sarvurdering-kode" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sårvurdering" ] ;
@@ -739,14 +739,14 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/Observation/Sarvurdering-Besok-1> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/Observation/Sarvurdering-Besok-1> ;
          fhir:Reference.reference [ fhir:value "Observation/Sarvurdering-Besok-1" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Sårvurdering ved besøk" ] ;
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Saras vurdering av såret, basert på bildet fra Lise og bildet fra besøket." ] ;
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarvurdering" ;
-         fhir:link <http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarvurdering>
+         fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering" ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering>
        ]
      ], [
        fhir:index 24 ;
@@ -756,7 +756,7 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/ValueSet/joda-vaesking-vs> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-vaesking-vs> ;
          fhir:Reference.reference [ fhir:value "ValueSet/joda-vaesking-vs" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Væsking" ] ;
@@ -770,7 +770,7 @@
          fhir:Extension.valueString [ fhir:value "CodeSystem" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking> ;
+         fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking> ;
          fhir:Reference.reference [ fhir:value "CodeSystem/joda-vaesking" ]
        ] ;
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Væsking" ] ;
@@ -863,7 +863,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal.ttl> a owl:Ontology ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/ImplementationGuide/joda.fhir.sardokumentasjon.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

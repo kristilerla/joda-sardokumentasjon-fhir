@@ -1,65 +1,5 @@
 {
   "codeSystems" : [{
-    "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-bildeformat-vs",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "JodaBildeformatVS",
-    "title" : "Bildeformat",
-    "description" : "Bildeformater som kan brukes for sårbilder.",
-    "systems" : ["urn:ietf:bcp:13"],
-    "uses" : {
-    },
-    "StructureDefinition-joda-sarbilde.html" : "Sårbilde"
-  },
-  {
-    "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-hud-rundt-vs",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "JodaHudRundtVS",
-    "title" : "Huden rundt såret",
-    "description" : "Gyldige verdier for huden rundt såret.",
-    "systems" : ["http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt"],
-    "uses" : {
-    },
-    "StructureDefinition-joda-sarvurdering.html" : "Sårvurdering"
-  },
-  {
-    "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-kameratype-vs",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "JodaKameratypeVS",
-    "title" : "Kameratype",
-    "description" : "Gyldige kameratyper.",
-    "systems" : ["http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype"],
-    "uses" : {
-    },
-    "StructureDefinition-joda-kamera.html" : "Kamera"
-  },
-  {
-    "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-sarbunn-vs",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "JodaSarbunnVS",
-    "title" : "Sårbunn",
-    "description" : "Gyldige verdier for sårbunn.",
-    "systems" : ["http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn"],
-    "uses" : {
-    },
-    "StructureDefinition-joda-sarvurdering.html" : "Sårvurdering"
-  },
-  {
-    "url" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-vaesking-vs",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "JodaVaeskingVS",
-    "title" : "Væsking",
-    "description" : "Gyldige verdier for væsking.",
-    "systems" : ["http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking"],
-    "uses" : {
-    },
-    "StructureDefinition-joda-sarvurdering.html" : "Sårvurdering"
-  },
-  {
     "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
     "version" : "4.0.1",
     "status" : "active",
@@ -85,8 +25,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-joda-sarvurdering.html" : "Sårvurdering",
-    "StructureDefinition-joda-sarbilde.html" : "Sårbilde"
+    "StructureDefinition-joda-sarbilde.html" : "Sårbilde",
+    "StructureDefinition-joda-sarvurdering.html" : "Sårvurdering"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/c80-doc-typecodes",
@@ -310,11 +250,11 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-joda-sardokument.html" : "Sårdokument til journal",
-    "StructureDefinition-joda-sarvurdering.html" : "Sårvurdering",
-    "StructureDefinition-joda-kamera.html" : "Kamera",
     "StructureDefinition-joda-sarbilde.html" : "Sårbilde",
-    "StructureDefinition-joda-pasient.html" : "Pasient"
+    "StructureDefinition-joda-kamera.html" : "Kamera",
+    "StructureDefinition-joda-pasient.html" : "Pasient",
+    "StructureDefinition-joda-sardokument.html" : "Sårdokument til journal",
+    "StructureDefinition-joda-sarvurdering.html" : "Sårvurdering"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -585,5 +525,65 @@
     "uses" : {
     },
     "StructureDefinition-joda-sardokument.html" : "Sårdokument til journal"
+  },
+  {
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-bildeformat-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JodaBildeformatVS",
+    "title" : "Bildeformat",
+    "description" : "Bildeformater som kan brukes for sårbilder.",
+    "systems" : ["urn:ietf:bcp:13"],
+    "uses" : {
+    },
+    "StructureDefinition-joda-sarbilde.html" : "Sårbilde"
+  },
+  {
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-hud-rundt-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JodaHudRundtVS",
+    "title" : "Huden rundt såret",
+    "description" : "Gyldige verdier for huden rundt såret.",
+    "systems" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt"],
+    "uses" : {
+    },
+    "StructureDefinition-joda-sarvurdering.html" : "Sårvurdering"
+  },
+  {
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-kameratype-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JodaKameratypeVS",
+    "title" : "Kameratype",
+    "description" : "Gyldige kameratyper.",
+    "systems" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype"],
+    "uses" : {
+    },
+    "StructureDefinition-joda-kamera.html" : "Kamera"
+  },
+  {
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-sarbunn-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JodaSarbunnVS",
+    "title" : "Sårbunn",
+    "description" : "Gyldige verdier for sårbunn.",
+    "systems" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn"],
+    "uses" : {
+    },
+    "StructureDefinition-joda-sarvurdering.html" : "Sårvurdering"
+  },
+  {
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-vaesking-vs",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JodaVaeskingVS",
+    "title" : "Væsking",
+    "description" : "Gyldige verdier for væsking.",
+    "systems" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking"],
+    "uses" : {
+    },
+    "StructureDefinition-joda-sarvurdering.html" : "Sårvurdering"
   }]
 }

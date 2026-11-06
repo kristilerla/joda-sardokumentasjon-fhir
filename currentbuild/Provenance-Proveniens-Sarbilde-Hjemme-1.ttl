@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/Provenance/Proveniens-Sarbilde-Hjemme-1> a fhir:Provenance ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/Provenance/Proveniens-Sarbilde-Hjemme-1> a fhir:Provenance ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "Proveniens-Sarbilde-Hjemme-1"] ;
   fhir:DomainResource.text [
@@ -14,7 +14,7 @@
   ] ;
   fhir:Provenance.target [
      fhir:index 0 ;
-     fhir:link <http://hl7.no/fhir/ig/mal/Media/Sarbilde-Hjemme-1> ;
+     fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/Media/Sarbilde-Hjemme-1> ;
      fhir:Reference.reference [ fhir:value "Media/Sarbilde-Hjemme-1" ]
   ] ;
   fhir:Provenance.recorded [ fhir:value "2026-11-10T18:31:00+01:00"^^xsd:dateTime] ;
@@ -37,11 +37,11 @@
        ]
      ] ;
      fhir:Provenance.agent.who [
-       fhir:link <http://hl7.no/fhir/ig/mal/RelatedPerson/Datter-Lise> ;
+       fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/RelatedPerson/Datter-Lise> ;
        fhir:Reference.reference [ fhir:value "RelatedPerson/Datter-Lise" ]
      ] ;
      fhir:Provenance.agent.onBehalfOf [
-       fhir:link <http://hl7.no/fhir/ig/mal/Patient/Pasient-Karin> ;
+       fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/Patient/Pasient-Karin> ;
        fhir:Reference.reference [ fhir:value "Patient/Pasient-Karin" ]
      ]
   ], [
@@ -55,14 +55,14 @@
        ]
      ] ;
      fhir:Provenance.agent.who [
-       fhir:link <http://hl7.no/fhir/ig/mal/Device/Kamera-Mobil> ;
+       fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/Device/Kamera-Mobil> ;
        fhir:Reference.reference [ fhir:value "Device/Kamera-Mobil" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/Provenance/Proveniens-Sarbilde-Hjemme-1.ttl> a owl:Ontology ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/Provenance/Proveniens-Sarbilde-Hjemme-1.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

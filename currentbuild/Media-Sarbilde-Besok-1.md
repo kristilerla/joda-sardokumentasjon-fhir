@@ -1,4 +1,4 @@
-# Bilde tatt av sykepleier med hodekamera - Mal v0.1.0
+# Bilde tatt av sykepleier med hodekamera - Sårdokumentasjon med JodaCare og Jodapro v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -38,7 +38,7 @@ Profile: [Sårbilde](StructureDefinition-joda-sarbilde.md)
   "resourceType" : "Media",
   "id" : "Sarbilde-Besok-1",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde"]
+    "profile" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde"]
   },
   "status" : "completed",
   "type" : {

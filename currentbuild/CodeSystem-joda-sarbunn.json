@@ -3,21 +3,21 @@
   "id" : "joda-sarbunn",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem joda-sarbunn</b></p><a name=\"joda-sarbunn\"> </a><a name=\"hcjoda-sarbunn\"> </a><p>This case-sensitive code system <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">granulasjon<a name=\"joda-sarbunn-granulasjon\"> </a></td><td>Granulasjonsvev</td></tr><tr><td style=\"white-space:nowrap\">fibrin<a name=\"joda-sarbunn-fibrin\"> </a></td><td>Fibrin (belegg)</td></tr><tr><td style=\"white-space:nowrap\">nekrose<a name=\"joda-sarbunn-nekrose\"> </a></td><td>Nekrose</td></tr><tr><td style=\"white-space:nowrap\">epitel<a name=\"joda-sarbunn-epitel\"> </a></td><td>Epitelisering</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem joda-sarbunn</b></p><a name=\"joda-sarbunn\"> </a><a name=\"hcjoda-sarbunn\"> </a><p>This case-sensitive code system <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">granulasjon<a name=\"joda-sarbunn-granulasjon\"> </a></td><td>Granulasjonsvev</td></tr><tr><td style=\"white-space:nowrap\">fibrin<a name=\"joda-sarbunn-fibrin\"> </a></td><td>Fibrin (belegg)</td></tr><tr><td style=\"white-space:nowrap\">nekrose<a name=\"joda-sarbunn-nekrose\"> </a></td><td>Nekrose</td></tr><tr><td style=\"white-space:nowrap\">epitel<a name=\"joda-sarbunn-epitel\"> </a></td><td>Epitelisering</td></tr></table></div>"
   },
-  "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn",
   "version" : "0.1.0",
   "name" : "JodaSarbunn",
   "title" : "Sårbunn",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-06T17:24:45+00:00",
-  "publisher" : "HL7 Norge",
+  "date" : "2026-11-06T17:48:45+00:00",
+  "publisher" : "Kristil Erla Håland",
   "contact" : [{
-    "name" : "HL7 Norge",
+    "name" : "Kristil Erla Håland",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.hl7.no"
+      "value" : "https://jodacare.no"
     }]
   }],
   "description" : "Hva sårbunnen hovedsakelig består av.",

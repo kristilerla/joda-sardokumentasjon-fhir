@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <ImplementationGuide xmlns="http://hl7.org/fhir">
-  <id value="hl7.fhir.no.mal"/>
+  <id value="joda.fhir.sardokumentasjon"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide hl7.fhir.no.mal</b></p><a name="hl7.fhir.no.mal"> </a><a name="hchl7.fhir.no.mal"> </a><h2>Mal</h2><p>The official URL for this implementation guide is: </p><pre>http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal</pre><div><p>Implementasjonsguide for å TODO</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide joda.fhir.sardokumentasjon</b></p><a name="joda.fhir.sardokumentasjon"> </a><a name="hcjoda.fhir.sardokumentasjon"> </a><h2>JodaSardokumentasjon</h2><p>The official URL for this implementation guide is: </p><pre>https://kristilerla.github.io/joda-sardokumentasjon-fhir/ImplementationGuide/joda.fhir.sardokumentasjon</pre><div><p>Øvingsguide som beskriver hvordan bilder og vurderinger av sår, tatt av pasienten, pårørende eller helsepersonell, kan uttrykkes i HL7 FHIR og sendes til pasientens journal.</p>
 </div></div>
   </text>
-  <url value="http://hl7.no/fhir/ig/mal/ImplementationGuide/hl7.fhir.no.mal"/>
+  <url value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/ImplementationGuide/joda.fhir.sardokumentasjon"/>
   <version value="0.1.0"/>
-  <name value="Mal"/>
-  <title value="Mal"/>
+  <name value="JodaSardokumentasjon"/>
+  <title value="Sårdokumentasjon med JodaCare og Jodapro"/>
   <status value="draft"/>
-  <date value="2026-11-06T17:24:45+00:00"/>
-  <publisher value="HL7 Norge"/>
+  <date value="2026-11-06T17:48:45+00:00"/>
+  <publisher value="Kristil Erla Håland"/>
   <contact>
-    <name value="HL7 Norge"/>
+    <name value="Kristil Erla Håland"/>
     <telecom>
       <system value="url"/>
-      <value value="https://www.hl7.no"/>
+      <value value="https://jodacare.no"/>
     </telecom>
   </contact>
-  <description value="Implementasjonsguide for å TODO"/>
+  <description value="Øvingsguide som beskriver hvordan bilder og vurderinger av sår, tatt av pasienten, pårørende eller helsepersonell, kan uttrykkes i HL7 FHIR og sendes til pasientens journal."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
@@ -28,7 +28,7 @@
       <display value="Norway"/>
     </coding>
   </jurisdiction>
-  <packageId value="hl7.fhir.no.mal"/>
+  <packageId value="joda.fhir.sardokumentasjon"/>
   <license value="CC0-1.0"/>
   <fhirVersion value="4.0.1"/>
   <dependsOn id="hl7tx">
@@ -133,7 +133,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="http://hl7.no/fhir/ig/mal/history.html"/>
+        <valueString value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -265,7 +265,7 @@
       </reference>
       <name value="Bilde tatt av sykepleier med hodekamera"/>
       <description value="Sara tar et bilde med Jodapro hodekamera under besøket dagen etter."/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde"/>
+      <exampleCanonical value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -276,7 +276,7 @@
       </reference>
       <name value="Bilde tatt hjemme av datteren"/>
       <description value="Lise tar et bilde av morens sår med mobilen via JodaCare, to dager etter siste besøk."/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarbilde"/>
+      <exampleCanonical value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -298,7 +298,7 @@
       </reference>
       <name value="Bildet fra Lise, journalført"/>
       <description value="Sara har sett på bildet og valgt å legge det i journalen."/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sardokument"/>
+      <exampleCanonical value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sardokument"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -309,7 +309,7 @@
       </reference>
       <name value="Bildet fra Lise, sendt inn"/>
       <description value="Bildet Lise tok er sendt inn til journalen, men ikke vurdert ennå."/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sardokument"/>
+      <exampleCanonical value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sardokument"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -353,7 +353,7 @@
       </reference>
       <name value="Jodapro hodekamera"/>
       <description value="Hodekamera som hjemmetjenesten bruker."/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera"/>
+      <exampleCanonical value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -397,7 +397,7 @@
       </reference>
       <name value="Karin Testdal"/>
       <description value="Oppdiktet pasient, 78 år, som får hjelp fra hjemmetjenesten i Fjordvik kommune til et leggsår."/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/mal/StructureDefinition/joda-pasient"/>
+      <exampleCanonical value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-pasient"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -419,7 +419,7 @@
       </reference>
       <name value="Mobilen til Lise"/>
       <description value="Mobiltelefon brukt via JodaCare."/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera"/>
+      <exampleCanonical value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -518,7 +518,7 @@
       </reference>
       <name value="Sårvurdering ved besøk"/>
       <description value="Saras vurdering av såret, basert på bildet fra Lise og bildet fra besøket."/>
-      <exampleCanonical value="http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarvurdering"/>
+      <exampleCanonical value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

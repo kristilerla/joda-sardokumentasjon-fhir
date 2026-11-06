@@ -1,4 +1,4 @@
-# Kamera - Mal v0.1.0
+# Kamera - Sårdokumentasjon med JodaCare og Jodapro v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera | *Version*:0.1.0 |
+| *Official URL*:https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera | *Version*:0.1.0 |
 | Draft as of 2026-11-06 | *Computable Name*:JodaKamera |
 
  
@@ -19,7 +19,7 @@ Kameraet bildet er tatt med: en mobil eller et nettbrett via JodaCare, eller et 
 * Refer to this Profile: [Sårbilde](StructureDefinition-joda-sarbilde.md)
 * Examples for this Profile: [Device/Kamera-Jodapro](Device-Kamera-Jodapro.md) and [Device/Kamera-Mobil](Device-Kamera-Mobil.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/hl7.fhir.no.mal|current/StructureDefinition/StructureDefinition-joda-kamera.json)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/joda.fhir.sardokumentasjon|current/StructureDefinition/StructureDefinition-joda-kamera.json)
 
 ### Formal Views of Profile Content
 
@@ -37,19 +37,19 @@ Other representations of profile: [CSV](StructureDefinition-joda-kamera.csv), [E
 {
   "resourceType" : "StructureDefinition",
   "id" : "joda-kamera",
-  "url" : "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera",
   "version" : "0.1.0",
   "name" : "JodaKamera",
   "title" : "Kamera",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-06T17:24:45+00:00",
-  "publisher" : "HL7 Norge",
+  "date" : "2026-11-06T17:48:45+00:00",
+  "publisher" : "Kristil Erla Håland",
   "contact" : [{
-    "name" : "HL7 Norge",
+    "name" : "Kristil Erla Håland",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.hl7.no"
+      "value" : "https://jodacare.no"
     }]
   }],
   "description" : "Kameraet bildet er tatt med: en mobil eller et nettbrett via JodaCare, eller et Jodapro hodekamera.",
@@ -98,7 +98,7 @@ Other representations of profile: [CSV](StructureDefinition-joda-kamera.csv), [E
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "http://hl7.no/fhir/ig/mal/ValueSet/joda-kameratype-vs"
+        "valueSet" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-kameratype-vs"
       }
     }]
   }

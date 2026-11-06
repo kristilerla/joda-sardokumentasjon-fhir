@@ -1,4 +1,4 @@
-# Huden rundt såret - Mal v0.1.0
+# Huden rundt såret - Sårdokumentasjon med JodaCare og Jodapro v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt | *Version*:0.1.0 |
+| *Official URL*:https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt | *Version*:0.1.0 |
 | Draft as of 2026-11-06 | *Computable Name*:JodaHudRundt |
 
  
@@ -26,19 +26,19 @@ Tilstanden til huden rundt såret.
 {
   "resourceType" : "CodeSystem",
   "id" : "joda-hud-rundt",
-  "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt",
+  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt",
   "version" : "0.1.0",
   "name" : "JodaHudRundt",
   "title" : "Huden rundt såret",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-06T17:24:45+00:00",
-  "publisher" : "HL7 Norge",
+  "date" : "2026-11-06T17:48:45+00:00",
+  "publisher" : "Kristil Erla Håland",
   "contact" : [{
-    "name" : "HL7 Norge",
+    "name" : "Kristil Erla Håland",
     "telecom" : [{
       "system" : "url",
-      "value" : "https://www.hl7.no"
+      "value" : "https://jodacare.no"
     }]
   }],
   "description" : "Tilstanden til huden rundt såret.",

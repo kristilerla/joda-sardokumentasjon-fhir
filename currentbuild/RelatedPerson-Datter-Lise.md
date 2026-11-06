@@ -1,4 +1,4 @@
-# Lise Testdal - Mal v0.1.0
+# Lise Testdal - Sårdokumentasjon med JodaCare og Jodapro v0.1.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)

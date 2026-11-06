@@ -5,19 +5,19 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/Device/Kamera-Jodapro> a fhir:Device ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/Device/Kamera-Jodapro> a fhir:Device ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "Kamera-Jodapro"] ;
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera" ;
+       fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera" ;
        fhir:index 0 ;
-       fhir:link <http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera>
+       fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera>
      ]
   ] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device Kamera-Jodapro</b></p><a name=\"Kamera-Jodapro\"> </a><a name=\"hcKamera-Jodapro\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-joda-kamera.html\">Kamera</a></p></div><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Jodapro hodekamera</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype hodekamera}\">Hodekamera</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device Kamera-Jodapro</b></p><a name=\"Kamera-Jodapro\"> </a><a name=\"hcKamera-Jodapro\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-joda-kamera.html\">Kamera</a></p></div><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Jodapro hodekamera</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype hodekamera}\">Hodekamera</span></p></div>"
   ] ;
   fhir:Device.deviceName [
      fhir:index 0 ;
@@ -27,7 +27,7 @@
   fhir:Device.type [
      fhir:CodeableConcept.coding [
        fhir:index 0 ;
-       fhir:Coding.system [ fhir:value "http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype" ] ;
+       fhir:Coding.system [ fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype" ] ;
        fhir:Coding.code [ fhir:value "hodekamera" ] ;
        fhir:Coding.display [ fhir:value "Hodekamera" ]
      ]
@@ -35,7 +35,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/Device/Kamera-Jodapro.ttl> a owl:Ontology ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/Device/Kamera-Jodapro.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

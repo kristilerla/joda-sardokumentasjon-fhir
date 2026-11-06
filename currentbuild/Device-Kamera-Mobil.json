@@ -2,11 +2,11 @@
   "resourceType" : "Device",
   "id" : "Kamera-Mobil",
   "meta" : {
-    "profile" : ["http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera"]
+    "profile" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera"]
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device Kamera-Mobil</b></p><a name=\"Kamera-Mobil\"> </a><a name=\"hcKamera-Mobil\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-joda-kamera.html\">Kamera</a></p></div><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Mobil via JodaCare</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype mobil}\">Mobiltelefon eller nettbrett</span></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device Kamera-Mobil</b></p><a name=\"Kamera-Mobil\"> </a><a name=\"hcKamera-Mobil\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-joda-kamera.html\">Kamera</a></p></div><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Mobil via JodaCare</td><td>User Friendly name</td></tr></table><p><b>type</b>: <span title=\"Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype mobil}\">Mobiltelefon eller nettbrett</span></p></div>"
   },
   "deviceName" : [{
     "name" : "Mobil via JodaCare",
@@ -14,7 +14,7 @@
   }],
   "type" : {
     "coding" : [{
-      "system" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype",
+      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype",
       "code" : "mobil",
       "display" : "Mobiltelefon eller nettbrett"
     }]

@@ -1,49 +1,5 @@
 {
   "codeSystems" : [{
-    "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "JodaHudRundt",
-    "title" : "Huden rundt såret",
-    "description" : "Tilstanden til huden rundt såret.",
-    "uses" : {
-    },
-    "ValueSet-joda-hud-rundt-vs.html" : "Huden rundt såret"
-  },
-  {
-    "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "JodaKameratype",
-    "title" : "Kameratype",
-    "description" : "Hva slags kamera bildet er tatt med.",
-    "uses" : {
-    },
-    "ValueSet-joda-kameratype-vs.html" : "Kameratype"
-  },
-  {
-    "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "JodaSarbunn",
-    "title" : "Sårbunn",
-    "description" : "Hva sårbunnen hovedsakelig består av.",
-    "uses" : {
-    },
-    "ValueSet-joda-sarbunn-vs.html" : "Sårbunn"
-  },
-  {
-    "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "JodaVaesking",
-    "title" : "Væsking",
-    "description" : "Hvor mye såret væsker.",
-    "uses" : {
-    },
-    "ValueSet-joda-vaesking-vs.html" : "Væsking"
-  },
-  {
     "url" : "http://hl7.org/fhir/administrative-gender",
     "version" : "4.0.1",
     "status" : "active",
@@ -197,13 +153,13 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
     "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
     "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "http://hl7.org/fhir/R4/valueset-media-view.html" : "Media Collection View/Projection",
     "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
-    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes"
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+    "http://hl7.org/fhir/R4/valueset-media-view.html" : "Media Collection View/Projection",
+    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
@@ -348,5 +304,49 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
+  },
+  {
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JodaHudRundt",
+    "title" : "Huden rundt såret",
+    "description" : "Tilstanden til huden rundt såret.",
+    "uses" : {
+    },
+    "ValueSet-joda-hud-rundt-vs.html" : "Huden rundt såret"
+  },
+  {
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JodaKameratype",
+    "title" : "Kameratype",
+    "description" : "Hva slags kamera bildet er tatt med.",
+    "uses" : {
+    },
+    "ValueSet-joda-kameratype-vs.html" : "Kameratype"
+  },
+  {
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JodaSarbunn",
+    "title" : "Sårbunn",
+    "description" : "Hva sårbunnen hovedsakelig består av.",
+    "uses" : {
+    },
+    "ValueSet-joda-sarbunn-vs.html" : "Sårbunn"
+  },
+  {
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "JodaVaesking",
+    "title" : "Væsking",
+    "description" : "Hvor mye såret væsker.",
+    "uses" : {
+    },
+    "ValueSet-joda-vaesking-vs.html" : "Væsking"
   }]
 }

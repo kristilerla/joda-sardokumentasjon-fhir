@@ -1,6 +1,6 @@
 {
   "codeSystems" : [{
-    "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt",
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "JodaHudRundt",
@@ -8,7 +8,7 @@
     "description" : "Tilstanden til huden rundt såret."
   },
   {
-    "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-kameratype",
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "JodaKameratype",
@@ -16,7 +16,7 @@
     "description" : "Hva slags kamera bildet er tatt med."
   },
   {
-    "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn",
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "JodaSarbunn",
@@ -24,7 +24,7 @@
     "description" : "Hva sårbunnen hovedsakelig består av."
   },
   {
-    "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode",
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "JodaSarvurderingKode",
@@ -32,7 +32,7 @@
     "description" : "Kode for selve sårvurderingen og for feltene i den."
   },
   {
-    "url" : "http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking",
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "JodaVaesking",

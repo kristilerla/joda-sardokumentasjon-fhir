@@ -5,37 +5,37 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/Observation/Sarvurdering-Besok-1> a fhir:Observation ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/Observation/Sarvurdering-Besok-1> a fhir:Observation ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "Sarvurdering-Besok-1"] ;
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarvurdering" ;
+       fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering" ;
        fhir:index 0 ;
-       fhir:link <http://hl7.no/fhir/ig/mal/StructureDefinition/joda-sarvurdering>
+       fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering>
      ]
   ] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Sarvurdering-Besok-1</b></p><a name=\"Sarvurdering-Besok-1\"> </a><a name=\"hcSarvurdering-Besok-1\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-joda-sarvurdering.html\">Sårvurdering</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode sarvurdering}\">Sårvurdering</span></p><p><b>subject</b>: <a href=\"Patient-Pasient-Karin.html\">Karin Testdal  Female, DoB: 1948-03-13 ( https://example.org/oppdiktet/pasient-id#testpasient-karin)</a></p><p><b>effective</b>: 2026-11-11 10:25:00+0100</p><p><b>performer</b>: <a href=\"Practitioner-Sykepleier-Sara.html\">Sara Testesen</a></p><p><b>bodySite</b>: <span title=\"Codes:\">Venstre legg, innside</span></p><p><b>derivedFrom</b>: </p><ul><li><a href=\"Media-Sarbilde-Hjemme-1.html\">Media: status = completed; type = Image; created[x] = 2026-11-10 18:30:00+0100; bodySite = Venstre legg, innside; note = Mamma sier det verker mer i kveld, og det ser rødere ut rundt kanten.</a></li><li><a href=\"Media-Sarbilde-Besok-1.html\">Media: status = completed; type = Image; created[x] = 2026-11-11 10:15:00+0100; bodySite = Venstre legg, innside</a></li></ul><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode lengde}\">Lengde</span></p><p><b>value</b>: 4.5 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode bredde}\">Bredde</span></p><p><b>value</b>: 3 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode sarbunn}\">Sårbunn</span></p><p><b>value</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn fibrin}\">Fibrin (belegg)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode vaesking}\">Væsking</span></p><p><b>value</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking moderat}\">Moderat</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode hud-rundt}\">Huden rundt såret</span></p><p><b>value</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt rod}\">Rød</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode infeksjonstegn}\">Tegn på infeksjon</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode smerte}\">Smerte</span></p><p><b>value</b>: 6</p></blockquote></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Sarvurdering-Besok-1</b></p><a name=\"Sarvurdering-Besok-1\"> </a><a name=\"hcSarvurdering-Besok-1\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-joda-sarvurdering.html\">Sårvurdering</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode sarvurdering}\">Sårvurdering</span></p><p><b>subject</b>: <a href=\"Patient-Pasient-Karin.html\">Karin Testdal  Female, DoB: 1948-03-13 ( https://example.org/oppdiktet/pasient-id#testpasient-karin)</a></p><p><b>effective</b>: 2026-11-11 10:25:00+0100</p><p><b>performer</b>: <a href=\"Practitioner-Sykepleier-Sara.html\">Sara Testesen</a></p><p><b>bodySite</b>: <span title=\"Codes:\">Venstre legg, innside</span></p><p><b>derivedFrom</b>: </p><ul><li><a href=\"Media-Sarbilde-Hjemme-1.html\">Media: status = completed; type = Image; created[x] = 2026-11-10 18:30:00+0100; bodySite = Venstre legg, innside; note = Mamma sier det verker mer i kveld, og det ser rødere ut rundt kanten.</a></li><li><a href=\"Media-Sarbilde-Besok-1.html\">Media: status = completed; type = Image; created[x] = 2026-11-11 10:15:00+0100; bodySite = Venstre legg, innside</a></li></ul><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode lengde}\">Lengde</span></p><p><b>value</b>: 4.5 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode bredde}\">Bredde</span></p><p><b>value</b>: 3 cm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codecm = 'cm')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode sarbunn}\">Sårbunn</span></p><p><b>value</b>: <span title=\"Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn fibrin}\">Fibrin (belegg)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode vaesking}\">Væsking</span></p><p><b>value</b>: <span title=\"Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking moderat}\">Moderat</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode hud-rundt}\">Huden rundt såret</span></p><p><b>value</b>: <span title=\"Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt rod}\">Rød</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode infeksjonstegn}\">Tegn på infeksjon</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode smerte}\">Smerte</span></p><p><b>value</b>: 6</p></blockquote></div>"
   ] ;
   fhir:Observation.status [ fhir:value "final"] ;
   fhir:Observation.code [
      fhir:CodeableConcept.coding [
        fhir:index 0 ;
-       fhir:Coding.system [ fhir:value "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode" ] ;
+       fhir:Coding.system [ fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode" ] ;
        fhir:Coding.code [ fhir:value "sarvurdering" ] ;
        fhir:Coding.display [ fhir:value "Sårvurdering" ]
      ]
   ] ;
   fhir:Observation.subject [
-     fhir:link <http://hl7.no/fhir/ig/mal/Patient/Pasient-Karin> ;
+     fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/Patient/Pasient-Karin> ;
      fhir:Reference.reference [ fhir:value "Patient/Pasient-Karin" ]
   ] ;
   fhir:Observation.effectiveDateTime [ fhir:value "2026-11-11T10:25:00+01:00"^^xsd:dateTime] ;
   fhir:Observation.performer [
      fhir:index 0 ;
-     fhir:link <http://hl7.no/fhir/ig/mal/Practitioner/Sykepleier-Sara> ;
+     fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/Practitioner/Sykepleier-Sara> ;
      fhir:Reference.reference [ fhir:value "Practitioner/Sykepleier-Sara" ]
   ] ;
   fhir:Observation.bodySite [
@@ -43,11 +43,11 @@
   ] ;
   fhir:Observation.derivedFrom [
      fhir:index 0 ;
-     fhir:link <http://hl7.no/fhir/ig/mal/Media/Sarbilde-Hjemme-1> ;
+     fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/Media/Sarbilde-Hjemme-1> ;
      fhir:Reference.reference [ fhir:value "Media/Sarbilde-Hjemme-1" ]
   ], [
      fhir:index 1 ;
-     fhir:link <http://hl7.no/fhir/ig/mal/Media/Sarbilde-Besok-1> ;
+     fhir:link <https://kristilerla.github.io/joda-sardokumentasjon-fhir/Media/Sarbilde-Besok-1> ;
      fhir:Reference.reference [ fhir:value "Media/Sarbilde-Besok-1" ]
   ] ;
   fhir:Observation.component [
@@ -55,7 +55,7 @@
      fhir:Observation.component.code [
        fhir:CodeableConcept.coding [
          fhir:index 0 ;
-         fhir:Coding.system [ fhir:value "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode" ] ;
+         fhir:Coding.system [ fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode" ] ;
          fhir:Coding.code [ fhir:value "lengde" ]
        ]
      ] ;
@@ -70,7 +70,7 @@
      fhir:Observation.component.code [
        fhir:CodeableConcept.coding [
          fhir:index 0 ;
-         fhir:Coding.system [ fhir:value "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode" ] ;
+         fhir:Coding.system [ fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode" ] ;
          fhir:Coding.code [ fhir:value "bredde" ]
        ]
      ] ;
@@ -85,14 +85,14 @@
      fhir:Observation.component.code [
        fhir:CodeableConcept.coding [
          fhir:index 0 ;
-         fhir:Coding.system [ fhir:value "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode" ] ;
+         fhir:Coding.system [ fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode" ] ;
          fhir:Coding.code [ fhir:value "sarbunn" ]
        ]
      ] ;
      fhir:Observation.component.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0 ;
-         fhir:Coding.system [ fhir:value "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn" ] ;
+         fhir:Coding.system [ fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn" ] ;
          fhir:Coding.code [ fhir:value "fibrin" ] ;
          fhir:Coding.display [ fhir:value "Fibrin (belegg)" ]
        ]
@@ -102,14 +102,14 @@
      fhir:Observation.component.code [
        fhir:CodeableConcept.coding [
          fhir:index 0 ;
-         fhir:Coding.system [ fhir:value "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode" ] ;
+         fhir:Coding.system [ fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode" ] ;
          fhir:Coding.code [ fhir:value "vaesking" ]
        ]
      ] ;
      fhir:Observation.component.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0 ;
-         fhir:Coding.system [ fhir:value "http://hl7.no/fhir/ig/mal/CodeSystem/joda-vaesking" ] ;
+         fhir:Coding.system [ fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking" ] ;
          fhir:Coding.code [ fhir:value "moderat" ] ;
          fhir:Coding.display [ fhir:value "Moderat" ]
        ]
@@ -119,14 +119,14 @@
      fhir:Observation.component.code [
        fhir:CodeableConcept.coding [
          fhir:index 0 ;
-         fhir:Coding.system [ fhir:value "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode" ] ;
+         fhir:Coding.system [ fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode" ] ;
          fhir:Coding.code [ fhir:value "hud-rundt" ]
        ]
      ] ;
      fhir:Observation.component.valueCodeableConcept [
        fhir:CodeableConcept.coding [
          fhir:index 0 ;
-         fhir:Coding.system [ fhir:value "http://hl7.no/fhir/ig/mal/CodeSystem/joda-hud-rundt" ] ;
+         fhir:Coding.system [ fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt" ] ;
          fhir:Coding.code [ fhir:value "rod" ] ;
          fhir:Coding.display [ fhir:value "Rød" ]
        ]
@@ -136,7 +136,7 @@
      fhir:Observation.component.code [
        fhir:CodeableConcept.coding [
          fhir:index 0 ;
-         fhir:Coding.system [ fhir:value "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode" ] ;
+         fhir:Coding.system [ fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode" ] ;
          fhir:Coding.code [ fhir:value "infeksjonstegn" ]
        ]
      ] ;
@@ -146,7 +146,7 @@
      fhir:Observation.component.code [
        fhir:CodeableConcept.coding [
          fhir:index 0 ;
-         fhir:Coding.system [ fhir:value "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode" ] ;
+         fhir:Coding.system [ fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode" ] ;
          fhir:Coding.code [ fhir:value "smerte" ]
        ]
      ] ;
@@ -155,7 +155,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/Observation/Sarvurdering-Besok-1.ttl> a owl:Ontology ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/Observation/Sarvurdering-Besok-1.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

@@ -58,7 +58,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Media.view","Media.view","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Imaging view, e.g. Lateral or Antero-posterior","The name of the imaging view e.g. Lateral or Antero-posterior (AP).","","","","","","","","","",,"example","Imaging view (projection) used when collecting an image.","http://hl7.org/fhir/ValueSet/media-view|4.0.1","",,,,"Media.view",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","DiagnosticImage.subjectOrientationCode"
-"Media.subject","Media.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.no/fhir/ig/mal/StructureDefinition/joda-pasient]]}
+"Media.subject","Media.subject","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-pasient]]}
 ","Who/What this Media is a record of","Who/What this Media is a record of.","","","","","","","","","",,,,,"",,,,"Media.subject",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.subject",".participation[typeCode=""SUBJ""]???","FiveWs.subject[x]","FiveWs.subject","~0010,0020"
 "Media.encounter","Media.encounter","","context
@@ -86,7 +86,7 @@ If the use case requires BodySite to be handled as a separate resource (e.g. to 
 "Media.deviceName","Media.deviceName","","","",0,1,"","","Y","string {[]} {[]}
 ","Name of the device/manufacturer","The name of the device / manufacturer of the device  that was used to make the recording.","","","","","","","","","",,,,,"",,,,"Media.deviceName",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".participation[typeCode=""DEV""].role.player.Entity[classCode=""DEV""].name","0008,0070"
-"Media.device","Media.device","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.no/fhir/ig/mal/StructureDefinition/joda-kamera]]}
+"Media.device","Media.device","","","",0,1,"Y","","Y","Reference {[]} {[CanonicalType[https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera]]}
 ","Kameraet bildet er tatt med","The device used to collect the media.","An extension should be used if further typing of the device is needed.  Secondary devices used to support collecting a media can be represented using either extension or through the Observation.related element.","","","","","","","","",,,,,"",,,,"Media.device",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","participation[typeCode=DEV]","< 49062001 |Device|","424226004 |Using device|"
 "Media.height","Media.height","","","",0,1,"","","Y","positiveInt {[]} {[]}
@@ -112,7 +112,7 @@ user content","",0,*,"","","","Extension {[]} {[]}
 ","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
 "Media.content.contentType","Media.content.contentType","","","",1,1,"Y","","Y","code {[]} {[]}
-","Mime type of the content, with charset etc.","Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate.","","Processors of the data need to be able to know how to interpret the data.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""text/plain; charset=UTF-8, image/png""/>","","",,"required","","http://hl7.no/fhir/ig/mal/ValueSet/joda-bildeformat-vs","",,,,"Attachment.contentType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Mime type of the content, with charset etc.","Identifies the type of the data in the attachment and allows a method to be chosen to interpret or render the data. Includes mime type parameters such as charset where appropriate.","","Processors of the data need to be able to know how to interpret the data.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""text/plain; charset=UTF-8, image/png""/>","","",,"required","","https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-bildeformat-vs","",,,,"Attachment.contentType",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./mediaType, ./charset","ED.2+ED.3/RP.2+RP.3. Note conversion may be needed if old style values are being used"
 "Media.content.language","Media.content.language","","","",0,1,"","","Y","code {[]} {[]}
 ","Human language of the content (BCP-47)","The human language of the content. The value can be any valid value according to BCP 47.","","Users need to be able to choose between the languages in a set of attachments.","","","","","<valueCode xmlns=""http://hl7.org/fhir"" value=""en-AU""/>","","",,"preferred","A human language.","http://hl7.org/fhir/ValueSet/languages|4.0.1","",,,,"Attachment.language",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

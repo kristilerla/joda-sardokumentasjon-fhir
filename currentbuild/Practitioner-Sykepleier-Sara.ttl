@@ -5,7 +5,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/Practitioner/Sykepleier-Sara> a fhir:Practitioner ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/Practitioner/Sykepleier-Sara> a fhir:Practitioner ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "Sykepleier-Sara"] ;
   fhir:DomainResource.text [
@@ -23,7 +23,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/Practitioner/Sykepleier-Sara.ttl> a owl:Ontology ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/Practitioner/Sykepleier-Sara.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

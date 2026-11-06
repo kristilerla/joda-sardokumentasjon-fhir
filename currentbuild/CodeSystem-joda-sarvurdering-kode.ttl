@@ -5,28 +5,28 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode> a fhir:CodeSystem ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode> a fhir:CodeSystem ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "joda-sarvurdering-kode"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem joda-sarvurdering-kode</b></p><a name=\"joda-sarvurdering-kode\"> </a><a name=\"hcjoda-sarvurdering-kode\"> </a><p>This case-sensitive code system <code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">sarvurdering<a name=\"joda-sarvurdering-kode-sarvurdering\"> </a></td><td>Sårvurdering</td><td>En vurdering av et sår på et gitt tidspunkt.</td></tr><tr><td style=\"white-space:nowrap\">lengde<a name=\"joda-sarvurdering-kode-lengde\"> </a></td><td>Lengde</td><td>Sårets lengde i centimeter.</td></tr><tr><td style=\"white-space:nowrap\">bredde<a name=\"joda-sarvurdering-kode-bredde\"> </a></td><td>Bredde</td><td>Sårets bredde i centimeter.</td></tr><tr><td style=\"white-space:nowrap\">dybde<a name=\"joda-sarvurdering-kode-dybde\"> </a></td><td>Dybde</td><td>Sårets dybde i centimeter.</td></tr><tr><td style=\"white-space:nowrap\">sarbunn<a name=\"joda-sarvurdering-kode-sarbunn\"> </a></td><td>Sårbunn</td><td>Hva sårbunnen består av.</td></tr><tr><td style=\"white-space:nowrap\">vaesking<a name=\"joda-sarvurdering-kode-vaesking\"> </a></td><td>Væsking</td><td>Hvor mye såret væsker.</td></tr><tr><td style=\"white-space:nowrap\">hud-rundt<a name=\"joda-sarvurdering-kode-hud-rundt\"> </a></td><td>Huden rundt såret</td><td>Tilstanden til huden rundt såret.</td></tr><tr><td style=\"white-space:nowrap\">infeksjonstegn<a name=\"joda-sarvurdering-kode-infeksjonstegn\"> </a></td><td>Tegn på infeksjon</td><td>Om det er tegn på infeksjon, for eksempel rødme, varme, hevelse eller lukt.</td></tr><tr><td style=\"white-space:nowrap\">smerte<a name=\"joda-sarvurdering-kode-smerte\"> </a></td><td>Smerte</td><td>Smerte i såret på en skala fra 0 til 10.</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem joda-sarvurdering-kode</b></p><a name=\"joda-sarvurdering-kode\"> </a><a name=\"hcjoda-sarvurdering-kode\"> </a><p>This case-sensitive code system <code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">sarvurdering<a name=\"joda-sarvurdering-kode-sarvurdering\"> </a></td><td>Sårvurdering</td><td>En vurdering av et sår på et gitt tidspunkt.</td></tr><tr><td style=\"white-space:nowrap\">lengde<a name=\"joda-sarvurdering-kode-lengde\"> </a></td><td>Lengde</td><td>Sårets lengde i centimeter.</td></tr><tr><td style=\"white-space:nowrap\">bredde<a name=\"joda-sarvurdering-kode-bredde\"> </a></td><td>Bredde</td><td>Sårets bredde i centimeter.</td></tr><tr><td style=\"white-space:nowrap\">dybde<a name=\"joda-sarvurdering-kode-dybde\"> </a></td><td>Dybde</td><td>Sårets dybde i centimeter.</td></tr><tr><td style=\"white-space:nowrap\">sarbunn<a name=\"joda-sarvurdering-kode-sarbunn\"> </a></td><td>Sårbunn</td><td>Hva sårbunnen består av.</td></tr><tr><td style=\"white-space:nowrap\">vaesking<a name=\"joda-sarvurdering-kode-vaesking\"> </a></td><td>Væsking</td><td>Hvor mye såret væsker.</td></tr><tr><td style=\"white-space:nowrap\">hud-rundt<a name=\"joda-sarvurdering-kode-hud-rundt\"> </a></td><td>Huden rundt såret</td><td>Tilstanden til huden rundt såret.</td></tr><tr><td style=\"white-space:nowrap\">infeksjonstegn<a name=\"joda-sarvurdering-kode-infeksjonstegn\"> </a></td><td>Tegn på infeksjon</td><td>Om det er tegn på infeksjon, for eksempel rødme, varme, hevelse eller lukt.</td></tr><tr><td style=\"white-space:nowrap\">smerte<a name=\"joda-sarvurdering-kode-smerte\"> </a></td><td>Smerte</td><td>Smerte i såret på en skala fra 0 til 10.</td></tr></table></div>"
   ] ;
-  fhir:CodeSystem.url [ fhir:value "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode"] ;
+  fhir:CodeSystem.url [ fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"] ;
   fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
   fhir:CodeSystem.name [ fhir:value "JodaSarvurderingKode"] ;
   fhir:CodeSystem.title [ fhir:value "Sårvurdering"] ;
   fhir:CodeSystem.status [ fhir:value "draft"] ;
   fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:CodeSystem.date [ fhir:value "2026-11-06T17:24:45+00:00"^^xsd:dateTime] ;
-  fhir:CodeSystem.publisher [ fhir:value "HL7 Norge"] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-06T17:48:45+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Kristil Erla Håland"] ;
   fhir:CodeSystem.contact [
      fhir:index 0 ;
-     fhir:ContactDetail.name [ fhir:value "HL7 Norge" ] ;
+     fhir:ContactDetail.name [ fhir:value "Kristil Erla Håland" ] ;
      fhir:ContactDetail.telecom [
        fhir:index 0 ;
        fhir:ContactPoint.system [ fhir:value "url" ] ;
-       fhir:ContactPoint.value [ fhir:value "https://www.hl7.no" ]
+       fhir:ContactPoint.value [ fhir:value "https://jodacare.no" ]
      ]
   ] ;
   fhir:CodeSystem.description [ fhir:value "Kode for selve sårvurderingen og for feltene i den."] ;
@@ -91,7 +91,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarvurdering-kode.ttl> a owl:Ontology ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

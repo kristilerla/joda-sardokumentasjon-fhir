@@ -5,28 +5,28 @@
 
 # - resource -------------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/ValueSet/joda-sarbunn-vs> a fhir:ValueSet ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-sarbunn-vs> a fhir:ValueSet ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:Resource.id [ fhir:value "joda-sarbunn-vs"] ;
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ] ;
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet joda-sarbunn-vs</b></p><a name=\"joda-sarbunn-vs\"> </a><a name=\"hcjoda-sarbunn-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-joda-sarbunn.html\"><code>http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet joda-sarbunn-vs</b></p><a name=\"joda-sarbunn-vs\"> </a><a name=\"hcjoda-sarbunn-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-joda-sarbunn.html\"><code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version ?0.1.0</span></li></ul></div>"
   ] ;
-  fhir:ValueSet.url [ fhir:value "http://hl7.no/fhir/ig/mal/ValueSet/joda-sarbunn-vs"] ;
+  fhir:ValueSet.url [ fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-sarbunn-vs"] ;
   fhir:ValueSet.version [ fhir:value "0.1.0"] ;
   fhir:ValueSet.name [ fhir:value "JodaSarbunnVS"] ;
   fhir:ValueSet.title [ fhir:value "Sårbunn"] ;
   fhir:ValueSet.status [ fhir:value "draft"] ;
   fhir:ValueSet.experimental [ fhir:value "true"^^xsd:boolean] ;
-  fhir:ValueSet.date [ fhir:value "2026-11-06T17:24:45+00:00"^^xsd:dateTime] ;
-  fhir:ValueSet.publisher [ fhir:value "HL7 Norge"] ;
+  fhir:ValueSet.date [ fhir:value "2026-11-06T17:48:45+00:00"^^xsd:dateTime] ;
+  fhir:ValueSet.publisher [ fhir:value "Kristil Erla Håland"] ;
   fhir:ValueSet.contact [
      fhir:index 0 ;
-     fhir:ContactDetail.name [ fhir:value "HL7 Norge" ] ;
+     fhir:ContactDetail.name [ fhir:value "Kristil Erla Håland" ] ;
      fhir:ContactDetail.telecom [
        fhir:index 0 ;
        fhir:ContactPoint.system [ fhir:value "url" ] ;
-       fhir:ContactPoint.value [ fhir:value "https://www.hl7.no" ]
+       fhir:ContactPoint.value [ fhir:value "https://jodacare.no" ]
      ]
   ] ;
   fhir:ValueSet.description [ fhir:value "Gyldige verdier for sårbunn."] ;
@@ -42,13 +42,13 @@
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0 ;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://hl7.no/fhir/ig/mal/CodeSystem/joda-sarbunn" ]
+       fhir:ValueSet.compose.include.system [ fhir:value "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn" ]
      ]
   ] .
 
 # - ontology header ------------------------------------------------------------
 
-<http://hl7.no/fhir/ig/mal/ValueSet/joda-sarbunn-vs.ttl> a owl:Ontology ;
+<https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-sarbunn-vs.ttl> a owl:Ontology ;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
