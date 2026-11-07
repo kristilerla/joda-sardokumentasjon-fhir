@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-kamera | *Version*:0.1.0 |
-| Draft as of 2026-11-06 | *Computable Name*:JodaKamera |
+| Draft as of 2026-11-07 | *Computable Name*:JodaKamera |
 
  
 Kameraet bildet er tatt med: en mobil eller et nettbrett via JodaCare, eller et Jodapro hodekamera. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-joda-kamera.csv), [E
   "title" : "Kamera",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-06T17:56:14+00:00",
+  "date" : "2026-11-07T05:45:35+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",

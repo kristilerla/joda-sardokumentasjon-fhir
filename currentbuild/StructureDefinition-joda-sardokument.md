@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sardokument | *Version*:0.1.0 |
-| Draft as of 2026-11-06 | *Computable Name*:JodaSardokument |
+| Draft as of 2026-11-07 | *Computable Name*:JodaSardokument |
 
  
 Et sårbilde som er sendt inn til journalen. Det starter som foreløpig (docStatus = preliminary). Når helsepersonell har sett på det og valgt å journalføre det, blir det endelig (docStatus = final) og får helsepersonellet som authenticator. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-joda-sardokument.csv
   "title" : "Sårdokument til journal",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-06T17:56:14+00:00",
+  "date" : "2026-11-07T05:45:35+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",

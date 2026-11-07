@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://kristilerla.github.io/joda-sardokumentasjon-fhir/ImplementationGuide/joda.fhir.sardokumentasjon | *Version*:0.1.0 |
-| Draft as of 2026-11-06 | *Computable Name*:JodaSardokumentasjon |
+| Draft as of 2026-11-07 | *Computable Name*:JodaSardokumentasjon |
 
 ### Om denne guiden
 
@@ -70,6 +70,16 @@ Et bilde tatt hjemme kan gi hjemmetjenesten beskjed tidligere, og et bilde tatt 
 1. Bør bildet i journalen være selve bildefilen, en lenke, eller en PDF med bilde og vurdering samlet?
 1. I FHIR R5 er Media erstattet av DocumentReference. Bør guiden bruke DocumentReference for bildene allerede nå?
 
+### Spørsmål til Aidn
+
+Aidn er et journalsystem for kommunal helse og omsorg, og Open Aidn bruker FHIR R4. I dokumentasjonen kan en tredjepart lese Observation og Composition, men det er ikke beskrevet hvordan man sender inn bilder eller dokumenter.
+
+1. Kan en tredjepart sende inn et sårbilde til Aidn, for eksempel som Media eller DocumentReference, slik at sykepleieren kan vurdere og journalføre det?
+1. Kan en sårvurdering sendes inn som en Observation?
+1. Hvordan skiller Aidn mellom bilder tatt av pasienten eller en pårørende og bilder tatt av helsepersonell?
+1. Hvordan får man tilgang til demomiljøet (open.demo.aidn.no)?
+1. Har Aidn planer om å bygge den kommende Aidn-profilen på no-basis?
+
 ### Eksempler
 
 * [Karin Testdal](Patient-Pasient-Karin.md), oppdiktet pasient
@@ -95,7 +105,7 @@ Et bilde tatt hjemme kan gi hjemmetjenesten beskjed tidligere, og et bilde tatt 
   "name" : "JodaSardokumentasjon",
   "title" : "Sårdokumentasjon med JodaCare og Jodapro",
   "status" : "draft",
-  "date" : "2026-11-06T17:56:14+00:00",
+  "date" : "2026-11-07T05:45:35+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",

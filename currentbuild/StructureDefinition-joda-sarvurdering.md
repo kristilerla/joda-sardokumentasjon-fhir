@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering | *Version*:0.1.0 |
-| Draft as of 2026-11-06 | *Computable Name*:JodaSarvurdering |
+| Draft as of 2026-11-07 | *Computable Name*:JodaSarvurdering |
 
  
 En vurdering av et sår, gjerne basert på ett eller flere sårbilder. Pasienten kan selv registrere smerte og tegn på infeksjon. Mål og sårbunn registreres normalt av helsepersonell. 
@@ -42,7 +42,7 @@ Other representations of profile: [CSV](StructureDefinition-joda-sarvurdering.cs
   "title" : "Sårvurdering",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-06T17:56:14+00:00",
+  "date" : "2026-11-07T05:45:35+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",

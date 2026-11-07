@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn | *Version*:0.1.0 |
-| Draft as of 2026-11-06 | *Computable Name*:JodaSarbunn |
+| Draft as of 2026-11-07 | *Computable Name*:JodaSarbunn |
 
  
 Hva sårbunnen hovedsakelig består av. 
@@ -32,7 +32,7 @@ Hva sårbunnen hovedsakelig består av.
   "title" : "Sårbunn",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-06T17:56:14+00:00",
+  "date" : "2026-11-07T05:45:35+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",

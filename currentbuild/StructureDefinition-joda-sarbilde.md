@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde | *Version*:0.1.0 |
-| Draft as of 2026-11-06 | *Computable Name*:JodaSarbilde |
+| Draft as of 2026-11-07 | *Computable Name*:JodaSarbilde |
 
  
 Et bilde av et sår. Kan være tatt av pasienten selv, av en pårørende eller av helsepersonell. 
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-joda-sarbilde.csv), 
   "title" : "Sårbilde",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-06T17:56:14+00:00",
+  "date" : "2026-11-07T05:45:35+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",
