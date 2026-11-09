@@ -28,6 +28,8 @@ Et bilde tatt hjemme kan gi hjemmetjenesten beskjed tidligere, og et bilde tatt 
 5. Sara velger å journalføre bildet fra Lise sammen med sin egen vurdering. Bildet får status endelig og Sara som den som har godkjent det.
 6. Hvem som tok hvert bilde, og med hvilket kamera, er sporbart.
 
+Flyten er også vist som et diagram, med bildene og status fra FHIR-hackathonet 9. november 2026: [Karins sår: fra JodaCare til journal](karins-sar.html).
+
 ### Krav
 
 - Et sårbilde gjelder alltid én pasient og ett sted på kroppen.
@@ -79,3 +81,4 @@ Aidn er et journalsystem for kommunal helse og omsorg, og Open Aidn bruker FHIR 
 - [Bildet fra Lise, sendt inn](DocumentReference-Sardokument-Hjemme-1-Innsendt.html)
 - [Bildet fra Lise, journalført](DocumentReference-Sardokument-Hjemme-1-Journalfort.html)
 - [Hvem tok bildet hjemme](Provenance-Proveniens-Sarbilde-Hjemme-1.html)
+- [Hvem tok bildet ved besøket](Provenance-Proveniens-Sarbilde-Besok-1.html)
