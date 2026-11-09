@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="bd8a1b75-28a6-4762-bd42-084e23e03487"/>
+  <id value="e209e5fd-bf61-4b08-b740-f4e37c19fd0a"/>
   <meta>
-    <lastUpdated value="2026-11-09T12:33:10.185+00:00"/>
+    <lastUpdated value="2026-11-09T12:42:57.437+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -96,7 +96,7 @@
         <title value="Bildeformat"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2026-11-09T12:33:10+00:00"/>
+        <date value="2026-11-09T12:42:57+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -105,8 +105,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:29a3ac51-7d3e-480b-a7d8-65f3ca3a3ecf"/>
-          <timestamp value="2026-11-09T12:34:10+00:00"/>
+          <identifier value="urn:uuid:0a23ebaa-2ec4-4c37-aa07-94191efaf86b"/>
+          <timestamp value="2026-11-09T12:43:54+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -422,7 +422,7 @@
         <title value="Huden rundt såret"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2026-11-09T12:33:10+00:00"/>
+        <date value="2026-11-09T12:42:57+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -431,8 +431,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:2b346293-0491-459a-9004-bdadc9b2d495"/>
-          <timestamp value="2026-11-09T12:34:10+00:00"/>
+          <identifier value="urn:uuid:65645369-8096-492c-9338-1997a825f1f7"/>
+          <timestamp value="2026-11-09T12:43:55+00:00"/>
           <total value="10"/>
           <offset value="0"/>
           <parameter>
@@ -603,7 +603,7 @@
         <title value="Kameratype"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2026-11-09T12:33:10+00:00"/>
+        <date value="2026-11-09T12:42:57+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -612,8 +612,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:c2424064-fb75-4bdf-a0e3-550dbddd1a2f"/>
-          <timestamp value="2026-11-09T12:34:10+00:00"/>
+          <identifier value="urn:uuid:1116caf1-df3c-4f44-9ba8-c8576b94cb43"/>
+          <timestamp value="2026-11-09T12:43:55+00:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -829,7 +829,7 @@
         <title value="Sårbunn"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2026-11-09T12:33:10+00:00"/>
+        <date value="2026-11-09T12:42:57+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -838,8 +838,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dc5cc805-35e3-46e2-8bee-9e76354840e0"/>
-          <timestamp value="2026-11-09T12:34:10+00:00"/>
+          <identifier value="urn:uuid:3d8ebea2-af03-48dd-b0b0-9c04bacba7ef"/>
+          <timestamp value="2026-11-09T12:43:55+00:00"/>
           <total value="7"/>
           <offset value="0"/>
           <parameter>
@@ -1043,7 +1043,7 @@
         <title value="Væsking"/>
         <status value="draft"/>
         <experimental value="true"/>
-        <date value="2026-11-09T12:33:10+00:00"/>
+        <date value="2026-11-09T12:42:57+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -1052,8 +1052,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:dab50ec8-1a20-4376-a802-1390b3e89213"/>
-          <timestamp value="2026-11-09T12:34:10+00:00"/>
+          <identifier value="urn:uuid:dc9f9410-f3ec-4db3-8f1e-5f5dfde35451"/>
+          <timestamp value="2026-11-09T12:43:55+00:00"/>
           <total value="5"/>
           <offset value="0"/>
           <parameter>

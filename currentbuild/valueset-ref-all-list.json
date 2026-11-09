@@ -251,10 +251,10 @@
     "uses" : {
     },
     "StructureDefinition-joda-sardokument.html" : "Sårdokument til journal",
-    "StructureDefinition-joda-kamera.html" : "Kamera",
     "StructureDefinition-joda-sarvurdering.html" : "Sårvurdering",
-    "StructureDefinition-joda-sarbilde.html" : "Sårbilde",
-    "StructureDefinition-joda-pasient.html" : "Pasient"
+    "StructureDefinition-joda-kamera.html" : "Kamera",
+    "StructureDefinition-joda-pasient.html" : "Pasient",
+    "StructureDefinition-joda-sarbilde.html" : "Sårbilde"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/link-type",

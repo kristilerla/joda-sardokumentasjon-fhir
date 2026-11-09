@@ -4,11 +4,6 @@ JodaSardokumentasjon
 Generic: line 0, col 0, Warning - The reference urn:iso:std:iso:3166 could not be resolved (INVARIANT)
 Generic: line 0, col 0, Info - No conformance term found in the text:  (BUSINESSRULE)
 Generic: line 0, col 0, Info - The html source does not contain the publish box; this is recommended for publishing support (NOTFOUND)
-Generic: line 0, col 0, Warning - The html source is not well formed: Found "</head>" expecting "</meta>" at line 211 column 8 (STRUCTURE)
-Generic: line 0, col 0, Warning - The html source is not well formed: Found "</figure>" expecting "</img>" at line 345 column 16 (STRUCTURE)
-Generic: line 0, col 0, Warning - The html source is not well formed: Found "</figure>" expecting "</img>" at line 349 column 16 (STRUCTURE)
-Generic: line 0, col 0, Warning - The html source is not well formed: Found "</figure>" expecting "</img>" at line 353 column 16 (STRUCTURE)
-Generic: line 0, col 0, Warning - Illegal HTML: Illegal HTML element: section (INVALID)
 Generic: line 0, col 0, Warning - The html source is not well formed: Found "</a>" expecting "</img>" at line 34 column 177 (STRUCTURE)
 Generic: line 0, col 0, Warning - The html source is not well formed: Found "</div>" expecting "</body>" at line 79 column 10 (STRUCTURE)
 Generic: line 0, col 0, Warning - The html source is not well formed: Found "</div>" expecting "</body>" at line 80 column 9 (STRUCTURE)
@@ -33,7 +28,6 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /__w/joda-sardokumentasjon-fhir/joda-sardokumentasjon-fhir/mal/fsh-generated/resources/ImplementationGuide-joda.fhir.sardokumentasjon.json: line 1, col 2396, Warning - The canonical URL http://fhir.org/packages/hl7.fhir.no.basis/ImplementationGuide/hl7.fhir.no.basis doesn't point to an actual ImplementationGuide resource (BUSINESSRULE)
 /__w/joda-sardokumentasjon-fhir/joda-sardokumentasjon-fhir/mal/fsh-generated/resources/ImplementationGuide-joda.fhir.sardokumentasjon.json: line 0, col 0, Info - The resource ImplementationGuide/joda.fhir.sardokumentasjon could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html) (BUSINESSRULE)
 /__w/joda-sardokumentasjon-fhir/joda-sardokumentasjon-fhir/mal/fsh-generated/resources/Media-Sarbilde-Besok-1.json: line 37, col 58, Warning - No definition could be found for URL value 'https://jodapro.no/fhir/sid/evidence-id' (INVALID)
-/__w/joda-sardokumentasjon-fhir/joda-sardokumentasjon-fhir/mal/fsh-generated/resources/Media-Sarbilde-Besok-1.json: line 41, col 4, Warning - Error fetching the content: Attachment content cannot be checked because there was an error accessing https://kristilerla.github.io/joda-sardokumentasjon-fhir/currentbuild/sarbilde-besok-1.tif: https://kristilerla.github.io/joda-sardokumentasjon-fhir/currentbuild/sarbilde-besok-1.tif (STRUCTURE)
 /__w/joda-sardokumentasjon-fhir/joda-sardokumentasjon-fhir/mal/fsh-generated/resources/Observation-Sarvurdering-Besok-1.json: line 9, col 4, Info - There are no valid display names found for the code http://loinc.org#39135-9 for language(s) 'no-NO'. The display is 'Wound assessment panel' which is a valid display for the default language (INVALID)
 /__w/joda-sardokumentasjon-fhir/joda-sardokumentasjon-fhir/mal/fsh-generated/resources/Observation-Sarvurdering-Besok-1.json: line 20, col 8, Info - There are no valid display names found for the code http://loinc.org#39126-8 for language(s) 'no-NO'. The display is 'Length of Wound' which is a valid display for the default language (INVALID)
 /__w/joda-sardokumentasjon-fhir/joda-sardokumentasjon-fhir/mal/fsh-generated/resources/Observation-Sarvurdering-Besok-1.json: line 37, col 8, Info - There are no valid display names found for the code http://loinc.org#39125-0 for language(s) 'no-NO'. The display is 'Width of Wound' which is a valid display for the default language (INVALID)
@@ -123,5 +117,5 @@ Generic: line 0, col 0, Warning - The HTML fragment 'globals-table.xhtml' is not
 /__w/joda-sardokumentasjon-fhir/joda-sardokumentasjon-fhir/mal/fsh-generated/resources/ValueSet-joda-vaesking-vs.json: line 1, col 1975, Info - There are no valid display names found for the code http://snomed.info/sct#255509001 for language(s) 'no-NO'. The display is 'Large' which is a valid display for the default language. Note that the display in the ValueSet does not have to match; this check exists to help check that it's not accidentally the wrong code (INFORMATIONAL)
 /__w/joda-sardokumentasjon-fhir/joda-sardokumentasjon-fhir/mal/fsh-generated/resources/ValueSet-joda-vaesking-vs.json: line 0, col 0, Warning - The resource ValueSet/joda-vaesking-vs should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html) (BUSINESSRULE)
 
-err = 1, warn = 33, info = 87, broken links = 0
+err = 1, warn = 27, info = 87, broken links = 0
 IG Publisher Version: 3.0.3

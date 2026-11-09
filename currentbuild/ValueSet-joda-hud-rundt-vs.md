@@ -51,7 +51,7 @@ Tilstanden til huden rundt såret. Et utvalg av SNOMED CT-kodene i periwoundCond
   "title" : "Huden rundt såret",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-09T12:33:10+00:00",
+  "date" : "2026-11-09T12:42:57+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",

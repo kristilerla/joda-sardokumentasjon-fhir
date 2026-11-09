@@ -1,5 +1,13 @@
 # Karins sår i JodaCare
 
+FHIR-hackathon · Rebel, Oslo · 9. november 2026
+
+# Karins sår: fra JodaCare til journal
+
+Karin (78) har leggsår og får hjemmesykepleie. Datteren Lise tar et bilde med mobilen i JodaCare når såret blir verre. Dagen etter har Karin time hos sårpoliklinikken på sykehuset: sykepleier Sara er hjemme hos Karin med Jodapro hodekamera, og spesialisten Nora er med på video. Sara måler, Nora vurderer og foreslår en ny sårplan, og Sara journalfører. Først da sendes noe til NHN.
+
+Ressursnavnene under er eksemplene i FHIR-guiden `joda-sardokumentasjon-fhir`.
+
 ## Flyten
 
 **Sårplan
@@ -148,4 +156,6 @@ Da ser spesialisten Lises bilde uten at hjemmetjenesten må sende det på annen 
 Støtter Dokumentlager eller Pasientens planer SMART on FHIR, slik at JodaCare kan startes med pasienten valgt og få tilgang med avgrensede rettigheter?
 
 I dag er det tenkt et HelseID-token og system-til-system-innsending. SMART ville passet når Sara eller Lise sitter i appen selv.
+
+Alle personer, bilder og data på denne siden er oppdiktet testdata. Bildene er tegnet og merket «OPPDIKTET TESTBILDE».
 
