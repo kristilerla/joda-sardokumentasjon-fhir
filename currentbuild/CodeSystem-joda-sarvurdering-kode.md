@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode | *Version*:0.1.0 |
-| Draft as of 2026-11-07 | *Computable Name*:JodaSarvurderingKode |
+| Draft as of 2026-11-09 | *Computable Name*:JodaSarvurderingKode |
 
  
 Kode for selve sårvurderingen og for feltene i den. 
@@ -32,7 +32,7 @@ Kode for selve sårvurderingen og for feltene i den.
   "title" : "Sårvurdering",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-07T05:45:35+00:00",
+  "date" : "2026-11-09T09:13:35+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",

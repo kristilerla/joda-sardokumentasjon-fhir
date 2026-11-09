@@ -8,7 +8,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://kristilerla.github.io/joda-sardokumentasjon-fhir/ImplementationGuide/joda.fhir.sardokumentasjon | *Version*:0.1.0 |
-| Draft as of 2026-11-07 | *Computable Name*:JodaSardokumentasjon |
+| Draft as of 2026-11-09 | *Computable Name*:JodaSardokumentasjon |
 
 ### Om denne guiden
 
@@ -105,7 +105,7 @@ Aidn er et journalsystem for kommunal helse og omsorg, og Open Aidn bruker FHIR 
   "name" : "JodaSardokumentasjon",
   "title" : "Sårdokumentasjon med JodaCare og Jodapro",
   "status" : "draft",
-  "date" : "2026-11-07T05:45:35+00:00",
+  "date" : "2026-11-09T09:13:35+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",

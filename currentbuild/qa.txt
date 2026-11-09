@@ -3,7 +3,7 @@ JodaSardokumentasjon : Validation Results
 
 err = 1, warn = 27, info = 62, broken links = 0
 IG Publisher Version: 3.0.3
-Generated Sat Nov 07 05:47:23 UTC 2026. FHIR version 4.0.1 for joda.fhir.sardokumentasjon#0.1.0 (canonical = https://kristilerla.github.io/joda-sardokumentasjon-fhir)
+Generated Mon Nov 09 09:14:31 UTC 2026. FHIR version 4.0.1 for joda.fhir.sardokumentasjon#0.1.0 (canonical = https://kristilerla.github.io/joda-sardokumentasjon-fhir)
  Build Errors : 0 / 13 / 1
  /__w/joda-sardokumentasjon-fhir/joda-sardokumentasjon-fhir/mal/fsh-generated/resources/CodeSystem-joda-hud-rundt : 0 / 1 / 2
  /__w/joda-sardokumentasjon-fhir/joda-sardokumentasjon-fhir/mal/fsh-generated/resources/CodeSystem-joda-kameratype : 0 / 1 / 2
