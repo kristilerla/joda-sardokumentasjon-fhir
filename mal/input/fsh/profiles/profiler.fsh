@@ -58,6 +58,7 @@ Description: "Bildeformater som kan brukes for sårbilder."
 * ^experimental = true
 * urn:ietf:bcp:13#image/jpeg "JPEG"
 * urn:ietf:bcp:13#image/png  "PNG"
+* urn:ietf:bcp:13#image/tiff "TIFF"
 
 Profile:     JodaSarvurdering
 Id:          joda-sarvurdering
