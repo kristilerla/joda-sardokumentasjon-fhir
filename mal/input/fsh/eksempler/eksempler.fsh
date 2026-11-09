@@ -126,22 +126,24 @@ Title:       "Saras observasjoner ved timen"
 Description: "Det Sara måler og observerer hjemme hos Karin under videotimen: mål, væsking, huden rundt og smerte."
 Usage:       #example
 * status = #final
-* code = JodaSarvurderingKode#sarvurdering "Sårvurdering"
+* code = $loinc#39135-9 "Wound assessment panel"
 * subject = Reference(Pasient-Karin)
 * encounter = Reference(Time-Sarpoliklinikk-1)
 * effectiveDateTime = "2026-11-11T10:20:00+01:00"
 * performer = Reference(Sykepleier-Sara)
 * bodySite.text = "Venstre legg, innside"
 * derivedFrom[0] = Reference(Sarbilde-Besok-1)
-* component[lengde].code = JodaSarvurderingKode#lengde
+* component[lengde].code = $loinc#39126-8 "Length of Wound"
 * component[lengde].valueQuantity = 4.5 'cm' "cm"
-* component[bredde].code = JodaSarvurderingKode#bredde
+* component[bredde].code = $loinc#39125-0 "Width of Wound"
 * component[bredde].valueQuantity = 3 'cm' "cm"
-* component[vaesking].code = JodaSarvurderingKode#vaesking
-* component[vaesking].valueCodeableConcept = JodaVaesking#moderat "Moderat"
-* component[hud_rundt].code = JodaSarvurderingKode#hud-rundt
-* component[hud_rundt].valueCodeableConcept = JodaHudRundt#rod "Rød"
-* component[smerte].code = JodaSarvurderingKode#smerte
+* component[vaesking].code = $loinc#39116-9 "Drainage amount of Wound"
+* component[vaesking].valueCodeableConcept = $sct#6736007 "Moderate"
+* component[vaesking].valueCodeableConcept.text = "Moderat væsking"
+* component[hud_rundt].code = $loinc#72301-5 "Description of Periwound"
+* component[hud_rundt].valueCodeableConcept = $sct#239163008 "Wound erythema"
+* component[hud_rundt].valueCodeableConcept.text = "Rødme rundt såret"
+* component[smerte].code = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * component[smerte].valueInteger = 6
 
 Instance:    Sarvurdering-Spesialist-1
@@ -150,7 +152,7 @@ Title:       "Spesialistens sårvurdering"
 Description: "Noras faglige vurdering under videotimen, basert på bildet fra Lise, bildet fra hodekameraet og Saras observasjoner."
 Usage:       #example
 * status = #final
-* code = JodaSarvurderingKode#sarvurdering "Sårvurdering"
+* code = $loinc#39135-9 "Wound assessment panel"
 * subject = Reference(Pasient-Karin)
 * encounter = Reference(Time-Sarpoliklinikk-1)
 * effectiveDateTime = "2026-11-11T10:25:00+01:00"
@@ -159,8 +161,9 @@ Usage:       #example
 * derivedFrom[0] = Reference(Sarbilde-Hjemme-1)
 * derivedFrom[1] = Reference(Sarbilde-Besok-1)
 * derivedFrom[2] = Reference(Sarvurdering-Besok-1)
-* component[sarbunn].code = JodaSarvurderingKode#sarbunn
-* component[sarbunn].valueCodeableConcept = JodaSarbunn#fibrin "Fibrin (belegg)"
+* component[sarbunn].code = $loinc#72371-8 "Appearance of Wound base"
+* component[sarbunn].valueCodeableConcept = $sct#449745003 "Fibrinous wound bed"
+* component[sarbunn].valueCodeableConcept.text = "Fibrinbelegg"
 * component[infeksjonstegn].code = JodaSarvurderingKode#infeksjonstegn
 * component[infeksjonstegn].valueBoolean = true
 * note.text = "Tegn på infeksjon. Sårpoliklinikken foreslår en ny sårplan med grønn, gul og rød sone, og ny videotime om to uker."

@@ -1,4 +1,5 @@
-// Egne kodeverk for sårdokumentasjon. Bør erstattes med SNOMED CT der det finnes gode koder.
+// Egne kodeverk for sårdokumentasjon. Spørsmålene bruker LOINC og svarene SNOMED CT der guiden har koder.
+// Det som står igjen her, mangler ennå en standardkode.
 
 CodeSystem:  JodaKameratype
 Id:          joda-kameratype
@@ -21,77 +22,51 @@ Description: "Gyldige kameratyper."
 CodeSystem:  JodaSarvurderingKode
 Id:          joda-sarvurdering-kode
 Title:       "Sårvurdering"
-Description: "Kode for selve sårvurderingen og for feltene i den."
+Description: "Egne koder for felt i sårvurderingen som ennå ikke har en LOINC-kode i guiden. De andre feltene bruker LOINC."
 * ^status = #draft
 * ^experimental = true
 * ^caseSensitive = true
-* #sarvurdering    "Sårvurdering"           "En vurdering av et sår på et gitt tidspunkt."
-* #lengde          "Lengde"                 "Sårets lengde i centimeter."
-* #bredde          "Bredde"                 "Sårets bredde i centimeter."
-* #dybde           "Dybde"                  "Sårets dybde i centimeter."
-* #sarbunn         "Sårbunn"                "Hva sårbunnen består av."
-* #vaesking        "Væsking"                "Hvor mye såret væsker."
-* #hud-rundt       "Huden rundt såret"      "Tilstanden til huden rundt såret."
 * #infeksjonstegn  "Tegn på infeksjon"      "Om det er tegn på infeksjon, for eksempel rødme, varme, hevelse eller lukt."
-* #smerte          "Smerte"                 "Smerte i såret på en skala fra 0 til 10."
-
-CodeSystem:  JodaSarbunn
-Id:          joda-sarbunn
-Title:       "Sårbunn"
-Description: "Hva sårbunnen hovedsakelig består av."
-* ^status = #draft
-* ^experimental = true
-* ^caseSensitive = true
-* #granulasjon "Granulasjonsvev"
-* #fibrin      "Fibrin (belegg)"
-* #nekrose     "Nekrose"
-* #epitel      "Epitelisering"
 
 ValueSet:    JodaSarbunnVS
 Id:          joda-sarbunn-vs
 Title:       "Sårbunn"
-Description: "Gyldige verdier for sårbunn."
+Description: "Hva sårbunnen hovedsakelig består av. SNOMED CT-koder fra woundBedAppearanceVS i HL7 Lower Extremity Skin Wound Assessment IG."
 * ^status = #draft
 * ^experimental = true
-* include codes from system JodaSarbunn
-
-CodeSystem:  JodaVaesking
-Id:          joda-vaesking
-Title:       "Væsking"
-Description: "Hvor mye såret væsker."
-* ^status = #draft
-* ^experimental = true
-* ^caseSensitive = true
-* #ingen    "Ingen"
-* #lite     "Lite"
-* #moderat  "Moderat"
-* #mye      "Mye"
+* $sct#225541009 "Granulation of tissue"
+* $sct#449745003 "Fibrinous wound bed"
+* $sct#449746002 "Wound slough"
+* $sct#421306004 "Necrotic eschar"
+* $sct#609410002 "Necrosis of anatomical site"
+* $sct#409590008 "Skin eschar"
+* $sct#449743005 "Wound epithelialization"
 
 ValueSet:    JodaVaeskingVS
 Id:          joda-vaesking-vs
 Title:       "Væsking"
-Description: "Gyldige verdier for væsking."
+Description: "Hvor mye såret væsker. SNOMED CT-koder fra woundExudateAmountDescriptionVS i HL7 Lower Extremity Skin Wound Assessment IG."
 * ^status = #draft
 * ^experimental = true
-* include codes from system JodaVaesking
-
-CodeSystem:  JodaHudRundt
-Id:          joda-hud-rundt
-Title:       "Huden rundt såret"
-Description: "Tilstanden til huden rundt såret."
-* ^status = #draft
-* ^experimental = true
-* ^caseSensitive = true
-* #normal    "Normal"
-* #rod       "Rød"
-* #maserert  "Maserert (oppbløtt)"
-* #hoven     "Hoven"
-* #torr      "Tørr eller skjellende"
+* $sct#260413007 "None"
+* $sct#263865001 "Scanty"
+* $sct#255507004 "Small"
+* $sct#6736007   "Moderate"
+* $sct#255509001 "Large"
 
 ValueSet:    JodaHudRundtVS
 Id:          joda-hud-rundt-vs
 Title:       "Huden rundt såret"
-Description: "Gyldige verdier for huden rundt såret."
+Description: "Tilstanden til huden rundt såret. Et utvalg av SNOMED CT-kodene i periwoundConditionVS i HL7 Lower Extremity Skin Wound Assessment IG."
 * ^status = #draft
 * ^experimental = true
-* include codes from system JodaHudRundt
+* $sct#444884003 "Intact skin"
+* $sct#239163008 "Wound erythema"
+* $sct#3644009   "Macerated skin"
+* $sct#95322002  "Edematous skin"
+* $sct#16386004  "Dry skin"
+* $sct#17038008  "Increased skin temperature"
+* $sct#449738003 "Inflammation of periwound skin"
+* $sct#449744004 "Induration of wound"
+* $sct#247444006 "Excoriation of skin"
+* $sct#417237009 "Blister"

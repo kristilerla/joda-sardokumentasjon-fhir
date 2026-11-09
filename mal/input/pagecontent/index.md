@@ -54,9 +54,27 @@ Flyten er også vist som et diagram, med bildene og status fra FHIR-hackathonet 
 | Innsending til journal | DocumentReference | [Sårdokument til journal](StructureDefinition-joda-sardokument.html), docStatus preliminary eller final |
 | Sporbarhet | Provenance | Hvem tok bildet, på vegne av hvem, med hvilket kamera |
 
+### Kodeverk
+
+Guiden bruker LOINC for spørsmålene og SNOMED CT for svarene. Den følger samme oppskrift som [HL7 Lower Extremity Skin Wound Assessment IG](https://build.fhir.org/ig/HL7/fhir-skin-wound-ig/). LOINC-koden sier hva som er målt eller observert. SNOMED CT-koden sier hva svaret er. Norsk tekst står i `text` ved siden av koden.
+
+| Felt | LOINC | Svar |
+|---|---|---|
+| Hele sårvurderingen | 39135-9 Wound assessment panel | Feltene under |
+| Lengde | 39126-8 Length of Wound | Centimeter |
+| Bredde | 39125-0 Width of Wound | Centimeter |
+| Dybde | 39127-6 Depth of Wound | Centimeter |
+| Sårbunn | 72371-8 Appearance of Wound base | SNOMED CT, [Sårbunn](ValueSet-joda-sarbunn-vs.html) |
+| Væsking | 39116-9 Drainage amount of Wound | SNOMED CT, [Væsking](ValueSet-joda-vaesking-vs.html) |
+| Huden rundt såret | 72301-5 Description of Periwound | SNOMED CT, [Huden rundt såret](ValueSet-joda-hud-rundt-vs.html) |
+| Smerte | 72514-3 Pain severity - 0-10 verbal numeric rating [Score] - Reported | Tall fra 0 til 10 |
+| Tegn på infeksjon | Egen kode i [Sårvurdering](CodeSystem-joda-sarvurdering-kode.html) | Ja eller nei |
+
+Verdisettene for sårbunn og væsking er de samme som i HL7-guiden. Verdisettet for huden rundt såret er et utvalg. Koden 16386004 «Dry skin» er inaktiv i gjeldende utgave av SNOMED CT og bør byttes ut.
+
 ### Åpne spørsmål
 
-1. Hvilke SNOMED CT-koder bør brukes for sårtype, sårbunn og kroppssted, i stedet for våre egne koder og fritekst?
+1. Hvilke SNOMED CT-koder bør brukes for sårtype, kroppssted og tegn på infeksjon? Disse har ennå egne koder eller fritekst.
 2. Bør sårvurderingen bygge på en eksisterende standard for sårdokumentasjon, for eksempel et anerkjent vurderingsskjema?
 3. Kan NHN-tjenesten Pasientens måledata ta imot bilder fra pasienten, eller er det IHE MHD og dokumentdeling som passer best?
 4. Hvordan tar journalsystemene i kommunene imot bilder i dag, og hvor mange av dem støtter FHIR?
