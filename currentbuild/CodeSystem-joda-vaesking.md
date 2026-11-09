@@ -32,7 +32,7 @@ Hvor mye såret væsker.
   "title" : "Væsking",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-09T09:13:35+00:00",
+  "date" : "2026-11-09T10:33:12+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",
