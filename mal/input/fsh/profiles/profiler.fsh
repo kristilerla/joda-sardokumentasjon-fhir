@@ -58,6 +58,7 @@ Description: "Bildeformater som kan brukes for sårbilder."
 * ^experimental = true
 * urn:ietf:bcp:13#image/jpeg "JPEG"
 * urn:ietf:bcp:13#image/png  "PNG"
+* urn:ietf:bcp:13#image/tiff "TIFF"
 
 Profile:     JodaSarvurdering
 Id:          joda-sarvurdering
@@ -67,7 +68,7 @@ Description: "En vurdering av et sår, gjerne basert på ett eller flere sårbil
 * ^status = #draft
 * ^experimental = true
 * status MS
-* code = JodaSarvurderingKode#sarvurdering
+* code = $loinc#39135-9 "Wound assessment panel"
 * subject 1..1 MS
 * subject only Reference(JodaPasient)
 * effective[x] 1..1 MS
@@ -77,8 +78,8 @@ Description: "En vurdering av et sår, gjerne basert på ett eller flere sårbil
 * performer ^short = "Hvem som gjorde vurderingen"
 * bodySite 1..1 MS
 * derivedFrom MS
-* derivedFrom only Reference(JodaSarbilde)
-* derivedFrom ^short = "Sårbildene vurderingen bygger på"
+* derivedFrom only Reference(JodaSarbilde or JodaSarvurdering)
+* derivedFrom ^short = "Sårbildene og eventuelle andre vurderinger denne bygger på"
 * note MS
 * component MS
 * component ^slicing.discriminator.type = #pattern
@@ -94,30 +95,30 @@ Description: "En vurdering av et sår, gjerne basert på ett eller flere sårbil
     hud_rundt 0..1 MS and
     infeksjonstegn 0..1 MS and
     smerte 0..1 MS
-* component[lengde].code = JodaSarvurderingKode#lengde
+* component[lengde].code = $loinc#39126-8 "Length of Wound"
 * component[lengde].value[x] only Quantity
 * component[lengde].valueQuantity.system = $ucum
 * component[lengde].valueQuantity.code = #cm
-* component[bredde].code = JodaSarvurderingKode#bredde
+* component[bredde].code = $loinc#39125-0 "Width of Wound"
 * component[bredde].value[x] only Quantity
 * component[bredde].valueQuantity.system = $ucum
 * component[bredde].valueQuantity.code = #cm
-* component[dybde].code = JodaSarvurderingKode#dybde
+* component[dybde].code = $loinc#39127-6 "Depth of Wound"
 * component[dybde].value[x] only Quantity
 * component[dybde].valueQuantity.system = $ucum
 * component[dybde].valueQuantity.code = #cm
-* component[sarbunn].code = JodaSarvurderingKode#sarbunn
+* component[sarbunn].code = $loinc#72371-8 "Appearance of Wound base"
 * component[sarbunn].value[x] only CodeableConcept
 * component[sarbunn].valueCodeableConcept from JodaSarbunnVS (required)
-* component[vaesking].code = JodaSarvurderingKode#vaesking
+* component[vaesking].code = $loinc#39116-9 "Drainage amount of Wound"
 * component[vaesking].value[x] only CodeableConcept
 * component[vaesking].valueCodeableConcept from JodaVaeskingVS (required)
-* component[hud_rundt].code = JodaSarvurderingKode#hud-rundt
+* component[hud_rundt].code = $loinc#72301-5 "Description of Periwound"
 * component[hud_rundt].value[x] only CodeableConcept
 * component[hud_rundt].valueCodeableConcept from JodaHudRundtVS (required)
 * component[infeksjonstegn].code = JodaSarvurderingKode#infeksjonstegn
 * component[infeksjonstegn].value[x] only boolean
-* component[smerte].code = JodaSarvurderingKode#smerte
+* component[smerte].code = $loinc#72514-3 "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
 * component[smerte].value[x] only integer
 * component[smerte] ^short = "Smerte fra 0 (ingen) til 10 (verst tenkelig)"
 
