@@ -244,7 +244,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="ValueSet/joda-hud-rundt-vs">Huden rundt såret</a>
             </td>
             <td>
-<p>Gyldige verdier for huden rundt såret.</p>
+<p>Tilstanden til huden rundt såret. Et utvalg av SNOMED CT-kodene i periwoundConditionVS i HL7 Lower Extremity Skin Wound Assessment IG.</p>
 </td>
          </tr>
          <tr>
@@ -261,7 +261,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <a href="ValueSet-joda-sarbunn-vs.html" title="ValueSet/joda-sarbunn-vs">Sårbunn</a>
             </td>
             <td>
-<p>Gyldige verdier for sårbunn.</p>
+<p>Hva sårbunnen hovedsakelig består av. SNOMED CT-koder fra woundBedAppearanceVS i HL7 Lower Extremity Skin Wound Assessment IG.</p>
 </td>
          </tr>
          <tr>
@@ -269,7 +269,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <a href="ValueSet-joda-vaesking-vs.html" title="ValueSet/joda-vaesking-vs">Væsking</a>
             </td>
             <td>
-<p>Gyldige verdier for væsking.</p>
+<p>Hvor mye såret væsker. SNOMED CT-koder fra woundExudateAmountDescriptionVS i HL7 Lower Extremity Skin Wound Assessment IG.</p>
 </td>
          </tr>
       </tbody>
@@ -282,14 +282,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-joda-hud-rundt.html" title="CodeSystem/joda-hud-rundt">Huden rundt såret</a>
-            </td>
-            <td>
-<p>Tilstanden til huden rundt såret.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="CodeSystem-joda-kameratype.html"
                   title="CodeSystem/joda-kameratype">Kameratype</a>
             </td>
@@ -299,27 +291,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-joda-sarbunn.html" title="CodeSystem/joda-sarbunn">Sårbunn</a>
-            </td>
-            <td>
-<p>Hva sårbunnen hovedsakelig består av.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="CodeSystem-joda-sarvurdering-kode.html"
                   title="CodeSystem/joda-sarvurdering-kode">Sårvurdering</a>
             </td>
             <td>
-<p>Kode for selve sårvurderingen og for feltene i den.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-joda-vaesking.html" title="CodeSystem/joda-vaesking">Væsking</a>
-            </td>
-            <td>
-<p>Hvor mye såret væsker.</p>
+<p>Egne koder for felt i sårvurderingen som ennå ikke har en LOINC-kode i guiden. De andre feltene bruker LOINC.</p>
 </td>
          </tr>
       </tbody>
@@ -335,7 +311,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                <a href="Media-Sarbilde-Besok-1.html" title="Media/Sarbilde-Besok-1">Bilde tatt av sykepleier med hodekamera</a>
             </td>
             <td>
-<p>Sara tar et bilde med Jodapro hodekamera under besøket dagen etter.</p>
+<p>Sara tar et bilde med Jodapro hodekamera under videotimen med sårpoliklinikken dagen etter.</p>
 </td>
          </tr>
          <tr>
@@ -375,6 +351,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Provenance-Proveniens-Sarbilde-Besok-1.html"
+                  title="Provenance/Proveniens-Sarbilde-Besok-1">Hvem tok bildet ved besøket</a>
+            </td>
+            <td>
+<p>Sporbarhet: Sara tok bildet med Jodapro hodekamera. Originalen er identifisert med SHA-256 som ni-URI (RFC 6920), slik at det kan bevises at bildet ikke er endret.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Device-Kamera-Jodapro.html" title="Device/Kamera-Jodapro">Jodapro hodekamera</a>
             </td>
             <td>
@@ -407,6 +392,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="Practitioner-Spesialist-Nora.html"
+                  title="Practitioner/Spesialist-Nora">Nora Testvik</a>
+            </td>
+            <td>
+<p>Oppdiktet spesialist i sårbehandling ved sårpoliklinikken på Fjordvik sykehus.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Practitioner-Sykepleier-Sara.html"
                   title="Practitioner/Sykepleier-Sara">Sara Testesen</a>
             </td>
@@ -417,10 +411,37 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tr>
             <td style="column-width:30%">
                <a href="Observation-Sarvurdering-Besok-1.html"
-                  title="Observation/Sarvurdering-Besok-1">Sårvurdering ved besøk</a>
+                  title="Observation/Sarvurdering-Besok-1">Saras observasjoner ved timen</a>
             </td>
             <td>
-<p>Saras vurdering av såret, basert på bildet fra Lise og bildet fra besøket.</p>
+<p>Det Sara måler og observerer hjemme hos Karin under videotimen: mål, væsking, huden rundt og smerte.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-Sarvurdering-Spesialist-1.html"
+                  title="Observation/Sarvurdering-Spesialist-1">Spesialistens sårvurdering</a>
+            </td>
+            <td>
+<p>Noras faglige vurdering under videotimen, basert på bildet fra Lise, bildet fra hodekameraet og Saras observasjoner.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-Sarpoliklinikk.html"
+                  title="Organization/Sarpoliklinikk">Sårpoliklinikken, Fjordvik sykehus</a>
+            </td>
+            <td>
+<p>Oppdiktet sårpoliklinikk på sykehuset, som hjelper hjemmetjenesten med vurdering og behandling av sår.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-Time-Sarpoliklinikk-1.html"
+                  title="Encounter/Time-Sarpoliklinikk-1">Videotime med sårpoliklinikken</a>
+            </td>
+            <td>
+<p>Karin har time hos sårpoliklinikken. Sara er hjemme hos Karin med Jodapro hodekamera, og Nora er med på video fra sykehuset.</p>
 </td>
          </tr>
       </tbody>
@@ -443,7 +464,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jodacare.no">Kristil Erla Håland</a>.  Package joda.fhir.sardokumentasjon#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 9, 2026 10:33+0000">2026-11-09</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jodacare.no">Kristil Erla Håland</a>.  Package joda.fhir.sardokumentasjon#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 9, 2026 12:33+0000">2026-11-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

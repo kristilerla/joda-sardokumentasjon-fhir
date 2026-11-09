@@ -6,8 +6,12 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Media Sarbilde-Besok-1</b></p><a name=\"Sarbilde-Besok-1\"> </a><a name=\"hcSarbilde-Besok-1\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-joda-sarbilde.html\">Sårbilde</a></p></div><p><b>status</b>: Completed</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/media-type image}\">Image</span></p><p><b>subject</b>: <a href=\"Patient-Pasient-Karin.html\">Karin Testdal  Female, DoB: 1948-03-13 ( https://example.org/oppdiktet/pasient-id#testpasient-karin)</a></p><p><b>created</b>: 2026-11-11 10:15:00+0100</p><p><b>operator</b>: <a href=\"Practitioner-Sykepleier-Sara.html\">Sara Testesen</a></p><p><b>bodySite</b>: <span title=\"Codes:\">Venstre legg, innside</span></p><p><b>device</b>: <a href=\"Device-Kamera-Jodapro.html\">Device: type = Hodekamera</a></p><h3>Contents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Title</b></td></tr><tr><td style=\"display: none\">*</td><td>image/jpeg</td><td><a href=\"https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.2&amp;canonical=https://example.org/oppdiktet/sarbilde-besok-1.jpg\">https://example.org/oppdiktet/sarbilde-besok-1.jpg</a></td><td>Sår venstre legg 11.11.2026, besøk</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Media Sarbilde-Besok-1</b></p><a name=\"Sarbilde-Besok-1\"> </a><a name=\"hcSarbilde-Besok-1\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-joda-sarbilde.html\">Sårbilde</a></p></div><p><b>identifier</b>: <code>https://jodapro.no/fhir/sid/evidence-id</code>/7d2f4b8e-1c3a-4e59-9b6d-2a8f0c5e9d14</p><p><b>status</b>: Completed</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/media-type image}\">Image</span></p><p><b>subject</b>: <a href=\"Patient-Pasient-Karin.html\">Karin Testdal  Female, DoB: 1948-03-13 ( https://example.org/oppdiktet/pasient-id#testpasient-karin)</a></p><p><b>encounter</b>: <a href=\"Encounter-Time-Sarpoliklinikk-1.html\">Encounter: status = finished; class = virtual (ActCode#VR); period = 2026-11-11 10:00:00+0100 --&gt; 2026-11-11 10:30:00+0100</a></p><p><b>created</b>: 2026-11-11 10:15:00+0100</p><p><b>operator</b>: <a href=\"Practitioner-Sykepleier-Sara.html\">Sara Testesen</a></p><p><b>bodySite</b>: <span title=\"Codes:\">Venstre legg, innside</span></p><p><b>device</b>: <a href=\"Device-Kamera-Jodapro.html\">Device: identifier = https://jodapro.no/fhir/sid/device-id#0f3c9a2e7b41d5c8; manufacturer = RealWear; type = Hodekamera</a></p><h3>Contents</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Url</b></td><td><b>Size</b></td><td><b>Hash</b></td><td><b>Title</b></td></tr><tr><td style=\"display: none\">*</td><td>image/tiff</td><td><a href=\"https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.2&amp;canonical=https://kristilerla.github.io/joda-sardokumentasjon-fhir/currentbuild/sarbilde-besok-1.tif\">https://kristilerla.github.io/joda-sardokumentasjon-fhir/currentbuild/sarbilde-besok-1.tif</a></td><td>7683900</td><td><code>rJqcpzbJIEJ9boVfRPxDRrecRjo=</code></td><td>Sår venstre legg 11.11.2026, besøk</td></tr></table></div>"
   },
+  "identifier" : [{
+    "system" : "https://jodapro.no/fhir/sid/evidence-id",
+    "value" : "7d2f4b8e-1c3a-4e59-9b6d-2a8f0c5e9d14"
+  }],
   "status" : "completed",
   "type" : {
     "coding" : [{
@@ -18,6 +22,9 @@
   },
   "subject" : {
     "reference" : "Patient/Pasient-Karin"
+  },
+  "encounter" : {
+    "reference" : "Encounter/Time-Sarpoliklinikk-1"
   },
   "createdDateTime" : "2026-11-11T10:15:00+01:00",
   "operator" : {
@@ -30,8 +37,10 @@
     "reference" : "Device/Kamera-Jodapro"
   },
   "content" : {
-    "contentType" : "image/jpeg",
-    "url" : "https://example.org/oppdiktet/sarbilde-besok-1.jpg",
+    "contentType" : "image/tiff",
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/currentbuild/sarbilde-besok-1.tif",
+    "size" : 7683900,
+    "hash" : "rJqcpzbJIEJ9boVfRPxDRrecRjo=",
     "title" : "Sår venstre legg 11.11.2026, besøk"
   }
 }

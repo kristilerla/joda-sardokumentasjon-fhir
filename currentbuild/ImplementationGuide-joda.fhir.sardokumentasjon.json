@@ -10,7 +10,7 @@
   "name" : "JodaSardokumentasjon",
   "title" : "Sårdokumentasjon med JodaCare og Jodapro",
   "status" : "draft",
-  "date" : "2026-11-09T10:33:12+00:00",
+  "date" : "2026-11-09T12:33:10+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",
@@ -345,7 +345,7 @@
         "reference" : "Media/Sarbilde-Besok-1"
       },
       "name" : "Bilde tatt av sykepleier med hodekamera",
-      "description" : "Sara tar et bilde med Jodapro hodekamera under besøket dagen etter.",
+      "description" : "Sara tar et bilde med Jodapro hodekamera under videotimen med sårpoliklinikken dagen etter.",
       "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde"
     },
     {
@@ -405,19 +405,7 @@
         "reference" : "ValueSet/joda-hud-rundt-vs"
       },
       "name" : "Huden rundt såret",
-      "description" : "Gyldige verdier for huden rundt såret.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/joda-hud-rundt"
-      },
-      "name" : "Huden rundt såret",
-      "description" : "Tilstanden til huden rundt såret.",
+      "description" : "Tilstanden til huden rundt såret. Et utvalg av SNOMED CT-kodene i periwoundConditionVS i HL7 Lower Extremity Skin Wound Assessment IG.",
       "exampleBoolean" : false
     },
     {
@@ -430,6 +418,18 @@
       },
       "name" : "Hvem tok bildet hjemme",
       "description" : "Sporbarhet: Lise tok bildet med mobilen via JodaCare.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Provenance"
+      }],
+      "reference" : {
+        "reference" : "Provenance/Proveniens-Sarbilde-Besok-1"
+      },
+      "name" : "Hvem tok bildet ved besøket",
+      "description" : "Sporbarhet: Sara tok bildet med Jodapro hodekamera. Originalen er identifisert med SHA-256 som ni-URI (RFC 6920), slik at det kan bevises at bildet ikke er endret.",
       "exampleBoolean" : true
     },
     {
@@ -519,6 +519,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/Spesialist-Nora"
+      },
+      "name" : "Nora Testvik",
+      "description" : "Oppdiktet spesialist i sårbehandling ved sårpoliklinikken på Fjordvik sykehus.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -543,6 +555,30 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/Sarvurdering-Besok-1"
+      },
+      "name" : "Saras observasjoner ved timen",
+      "description" : "Det Sara måler og observerer hjemme hos Karin under videotimen: mål, væsking, huden rundt og smerte.",
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/Sarvurdering-Spesialist-1"
+      },
+      "name" : "Spesialistens sårvurdering",
+      "description" : "Noras faglige vurdering under videotimen, basert på bildet fra Lise, bildet fra hodekameraet og Saras observasjoner.",
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -561,19 +597,7 @@
         "reference" : "ValueSet/joda-sarbunn-vs"
       },
       "name" : "Sårbunn",
-      "description" : "Gyldige verdier for sårbunn.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/joda-sarbunn"
-      },
-      "name" : "Sårbunn",
-      "description" : "Hva sårbunnen hovedsakelig består av.",
+      "description" : "Hva sårbunnen hovedsakelig består av. SNOMED CT-koder fra woundBedAppearanceVS i HL7 Lower Extremity Skin Wound Assessment IG.",
       "exampleBoolean" : false
     },
     {
@@ -587,6 +611,18 @@
       "name" : "Sårdokument til journal",
       "description" : "Et sårbilde som er sendt inn til journalen. Det starter som foreløpig (docStatus = preliminary). Når helsepersonell har sett på det og valgt å journalføre det, blir det endelig (docStatus = final) og får helsepersonellet som authenticator.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Sarpoliklinikk"
+      },
+      "name" : "Sårpoliklinikken, Fjordvik sykehus",
+      "description" : "Oppdiktet sårpoliklinikk på sykehuset, som hjelper hjemmetjenesten med vurdering og behandling av sår.",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -609,20 +645,20 @@
         "reference" : "CodeSystem/joda-sarvurdering-kode"
       },
       "name" : "Sårvurdering",
-      "description" : "Kode for selve sårvurderingen og for feltene i den.",
+      "description" : "Egne koder for felt i sårvurderingen som ennå ikke har en LOINC-kode i guiden. De andre feltene bruker LOINC.",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
+        "valueString" : "Encounter"
       }],
       "reference" : {
-        "reference" : "Observation/Sarvurdering-Besok-1"
+        "reference" : "Encounter/Time-Sarpoliklinikk-1"
       },
-      "name" : "Sårvurdering ved besøk",
-      "description" : "Saras vurdering av såret, basert på bildet fra Lise og bildet fra besøket.",
-      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering"
+      "name" : "Videotime med sårpoliklinikken",
+      "description" : "Karin har time hos sårpoliklinikken. Sara er hjemme hos Karin med Jodapro hodekamera, og Nora er med på video fra sykehuset.",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -633,19 +669,7 @@
         "reference" : "ValueSet/joda-vaesking-vs"
       },
       "name" : "Væsking",
-      "description" : "Gyldige verdier for væsking.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/joda-vaesking"
-      },
-      "name" : "Væsking",
-      "description" : "Hvor mye såret væsker.",
+      "description" : "Hvor mye såret væsker. SNOMED CT-koder fra woundExudateAmountDescriptionVS i HL7 Lower Extremity Skin Wound Assessment IG.",
       "exampleBoolean" : false
     }],
     "page" : {

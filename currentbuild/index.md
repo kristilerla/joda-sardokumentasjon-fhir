@@ -28,7 +28,8 @@ Et bilde tatt hjemme kan gi hjemmetjenesten beskjed tidligere, og et bilde tatt 
 | :--- | :--- |
 | Pasient | Har såret. Kan ta bilder og registrere smerte og om det ser betent ut. |
 | Pårørende | Hjelper pasienten med å ta bilder mellom besøkene. |
-| Sykepleier i hjemmetjenesten | Vurderer bildene, gjør sårvurderingen og bestemmer hva som journalføres. Kan ta bilder med Jodapro hodekamera under besøket. |
+| Sykepleier i hjemmetjenesten | Ser bildene fra pasient og pårørende, måler og observerer såret, og bestemmer hva som journalføres. Tar bilder med Jodapro hodekamera under timen med sårpoliklinikken. |
+| Spesialist på sårpoliklinikken | Er med på video fra sykehuset under timen. Gjør den faglige sårvurderingen og foreslår sårplanen. |
 | Journalsystemet | Kommunens pasientjournal, der det journalførte bildet og vurderingen havner. |
 
 ### Hovedbrukstilfelle: leggsår som blir verre
@@ -36,9 +37,13 @@ Et bilde tatt hjemme kan gi hjemmetjenesten beskjed tidligere, og et bilde tatt 
 1. Karin (78 år) får hjelp av hjemmetjenesten i Fjordvik kommune til et leggsår på venstre legg.
 1. En kveld mellom besøkene synes datteren Lise at såret ser rødere ut. Hun tar et bilde med mobilen i JodaCare og skriver at det verker mer.
 1. Bildet sendes inn som foreløpig. Det er ikke en del av journalen ennå.
-1. Neste morgen ser sykepleieren Sara bildet. På besøket tar hun et nytt bilde med Jodapro hodekamera og gjør en sårvurdering: mål, sårbunn, væsking, huden rundt, tegn på infeksjon og smerte.
-1. Sara velger å journalføre bildet fra Lise sammen med sin egen vurdering. Bildet får status endelig og Sara som den som har godkjent det.
+1. Neste morgen ser sykepleieren Sara bildet. Karin har time hos sårpoliklinikken på Fjordvik sykehus. Sara er hjemme hos Karin med Jodapro hodekamera, og spesialisten Nora er med på video fra sykehuset.
+1. Under timen tar Sara et bilde med hodekameraet og registrerer det hun måler og observerer: mål, væsking, huden rundt og smerte.
+1. Nora gjør den faglige vurderingen ut fra bildet fra Lise, bildet fra hodekameraet og Saras observasjoner: sårbunn og tegn på infeksjon. Hun foreslår en ny sårplan med grønn, gul og rød sone.
+1. Sara journalfører bildet fra Lise sammen med vurderingene. Bildet får status endelig og Sara som den som har godkjent det.
 1. Hvem som tok hvert bilde, og med hvilket kamera, er sporbart.
+
+Flyten er også vist som et diagram, med bildene og status fra FHIR-hackathonet 9. november 2026: [Karins sår: fra JodaCare til journal](karins-sar.md).
 
 ### Krav
 
@@ -56,19 +61,40 @@ Et bilde tatt hjemme kan gi hjemmetjenesten beskjed tidligere, og et bilde tatt 
 | Pasienten | Patient | [Pasient](StructureDefinition-joda-pasient.md), bygger på no-basis |
 | Kameraet | Device | [Kamera](StructureDefinition-joda-kamera.md), mobil via JodaCare eller Jodapro hodekamera |
 | Bildet | Media | [Sårbilde](StructureDefinition-joda-sarbilde.md) |
-| Vurderingen | Observation | [Sårvurdering](StructureDefinition-joda-sarvurdering.md), peker på bildene med derivedFrom |
+| Timen med sårpoliklinikken | Encounter | Videotime der sykepleieren er hos pasienten og spesialisten er på sykehuset |
+| Vurderingen | Observation | [Sårvurdering](StructureDefinition-joda-sarvurdering.md), én for sykepleierens observasjoner og én for spesialistens vurdering. Peker på bildene og andre vurderinger med derivedFrom |
 | Innsending til journal | DocumentReference | [Sårdokument til journal](StructureDefinition-joda-sardokument.md), docStatus preliminary eller final |
 | Sporbarhet | Provenance | Hvem tok bildet, på vegne av hvem, med hvilket kamera |
 
+### Kodeverk
+
+Guiden bruker LOINC for spørsmålene og SNOMED CT for svarene. Den følger samme oppskrift som [HL7 Lower Extremity Skin Wound Assessment IG](https://build.fhir.org/ig/HL7/fhir-skin-wound-ig/). LOINC-koden sier hva som er målt eller observert. SNOMED CT-koden sier hva svaret er. Norsk tekst står i `text` ved siden av koden.
+
+| | | |
+| :--- | :--- | :--- |
+| Hele sårvurderingen | 39135-9 Wound assessment panel | Feltene under |
+| Lengde | 39126-8 Length of Wound | Centimeter |
+| Bredde | 39125-0 Width of Wound | Centimeter |
+| Dybde | 39127-6 Depth of Wound | Centimeter |
+| Sårbunn | 72371-8 Appearance of Wound base | SNOMED CT,[Sårbunn](ValueSet-joda-sarbunn-vs.md) |
+| Væsking | 39116-9 Drainage amount of Wound | SNOMED CT,[Væsking](ValueSet-joda-vaesking-vs.md) |
+| Huden rundt såret | 72301-5 Description of Periwound | SNOMED CT,[Huden rundt såret](ValueSet-joda-hud-rundt-vs.md) |
+| Smerte | 72514-3 Pain severity - 0-10 verbal numeric rating [Score] - Reported | Tall fra 0 til 10 |
+| Tegn på infeksjon | Egen kode i[Sårvurdering](CodeSystem-joda-sarvurdering-kode.md) | Ja eller nei |
+
+Verdisettene for sårbunn og væsking er de samme som i HL7-guiden. Verdisettet for huden rundt såret er et utvalg. Koden 16386004 «Dry skin» er inaktiv i gjeldende utgave av SNOMED CT og bør byttes ut.
+
 ### Åpne spørsmål
 
-1. Hvilke SNOMED CT-koder bør brukes for sårtype, sårbunn og kroppssted, i stedet for våre egne koder og fritekst?
+1. Hvilke SNOMED CT-koder bør brukes for sårtype, kroppssted og tegn på infeksjon? Disse har ennå egne koder eller fritekst.
 1. Bør sårvurderingen bygge på en eksisterende standard for sårdokumentasjon, for eksempel et anerkjent vurderingsskjema?
 1. Kan NHN-tjenesten Pasientens måledata ta imot bilder fra pasienten, eller er det IHE MHD og dokumentdeling som passer best?
 1. Hvordan tar journalsystemene i kommunene imot bilder i dag, og hvor mange av dem støtter FHIR?
 1. Hvordan skal pasientens samtykke til at pårørende tar og sender bilder uttrykkes?
 1. Bør bildet i journalen være selve bildefilen, en lenke, eller en PDF med bilde og vurdering samlet?
 1. I FHIR R5 er Media erstattet av DocumentReference. Bør guiden bruke DocumentReference for bildene allerede nå?
+1. Hvordan får sårpoliklinikken se bildet fra Lise før timen? Kan det deles gjennom NHN Dokumentlager når Sara har journalført det?
+1. Hvordan skal sårplanen fra spesialisthelsetjenesten deles med hjemmetjenesten, pasienten og pårørende? Er NHN Pasientens planer riktig sted?
 
 ### Spørsmål til Aidn
 
@@ -85,12 +111,17 @@ Aidn er et journalsystem for kommunal helse og omsorg, og Open Aidn bruker FHIR 
 * [Karin Testdal](Patient-Pasient-Karin.md), oppdiktet pasient
 * [Lise Testdal](RelatedPerson-Datter-Lise.md), datter
 * [Sara Testesen](Practitioner-Sykepleier-Sara.md), sykepleier
+* [Nora Testvik](Practitioner-Spesialist-Nora.md), spesialist på sårpoliklinikken
+* [Sårpoliklinikken, Fjordvik sykehus](Organization-Sarpoliklinikk.md)
+* [Videotime med sårpoliklinikken](Encounter-Time-Sarpoliklinikk-1.md)
 * [Bilde tatt hjemme av datteren](Media-Sarbilde-Hjemme-1.md)
 * [Bilde tatt av sykepleier med hodekamera](Media-Sarbilde-Besok-1.md)
-* [Sårvurdering ved besøk](Observation-Sarvurdering-Besok-1.md)
+* [Saras observasjoner ved timen](Observation-Sarvurdering-Besok-1.md)
+* [Spesialistens sårvurdering](Observation-Sarvurdering-Spesialist-1.md)
 * [Bildet fra Lise, sendt inn](DocumentReference-Sardokument-Hjemme-1-Innsendt.md)
 * [Bildet fra Lise, journalført](DocumentReference-Sardokument-Hjemme-1-Journalfort.md)
 * [Hvem tok bildet hjemme](Provenance-Proveniens-Sarbilde-Hjemme-1.md)
+* [Hvem tok bildet ved besøket](Provenance-Proveniens-Sarbilde-Besok-1.md)
 
 
 
@@ -105,7 +136,7 @@ Aidn er et journalsystem for kommunal helse og omsorg, og Open Aidn bruker FHIR 
   "name" : "JodaSardokumentasjon",
   "title" : "Sårdokumentasjon med JodaCare og Jodapro",
   "status" : "draft",
-  "date" : "2026-11-09T10:33:12+00:00",
+  "date" : "2026-11-09T12:33:10+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",
@@ -444,7 +475,7 @@ Aidn er et journalsystem for kommunal helse og omsorg, og Open Aidn bruker FHIR 
         "reference" : "Media/Sarbilde-Besok-1"
       },
       "name" : "Bilde tatt av sykepleier med hodekamera",
-      "description" : "Sara tar et bilde med Jodapro hodekamera under besøket dagen etter.",
+      "description" : "Sara tar et bilde med Jodapro hodekamera under videotimen med sårpoliklinikken dagen etter.",
       "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde"
     },
     {
@@ -524,23 +555,7 @@ Aidn er et journalsystem for kommunal helse og omsorg, og Open Aidn bruker FHIR 
         "reference" : "ValueSet/joda-hud-rundt-vs"
       },
       "name" : "Huden rundt såret",
-      "description" : "Gyldige verdier for huden rundt såret.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-joda-hud-rundt.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/joda-hud-rundt"
-      },
-      "name" : "Huden rundt såret",
-      "description" : "Tilstanden til huden rundt såret.",
+      "description" : "Tilstanden til huden rundt såret. Et utvalg av SNOMED CT-kodene i periwoundConditionVS i HL7 Lower Extremity Skin Wound Assessment IG.",
       "exampleBoolean" : false
     },
     {
@@ -557,6 +572,22 @@ Aidn er et journalsystem for kommunal helse og omsorg, og Open Aidn bruker FHIR 
       },
       "name" : "Hvem tok bildet hjemme",
       "description" : "Sporbarhet: Lise tok bildet med mobilen via JodaCare.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Provenance"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Provenance-Proveniens-Sarbilde-Besok-1.html"
+      }],
+      "reference" : {
+        "reference" : "Provenance/Proveniens-Sarbilde-Besok-1"
+      },
+      "name" : "Hvem tok bildet ved besøket",
+      "description" : "Sporbarhet: Sara tok bildet med Jodapro hodekamera. Originalen er identifisert med SHA-256 som ni-URI (RFC 6920), slik at det kan bevises at bildet ikke er endret.",
       "exampleBoolean" : true
     },
     {
@@ -674,6 +705,22 @@ Aidn er et journalsystem for kommunal helse og omsorg, og Open Aidn bruker FHIR 
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Practitioner-Spesialist-Nora.html"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/Spesialist-Nora"
+      },
+      "name" : "Nora Testvik",
+      "description" : "Oppdiktet spesialist i sårbehandling ved sårpoliklinikken på Fjordvik sykehus.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -706,6 +753,38 @@ Aidn er et journalsystem for kommunal helse og omsorg, og Open Aidn bruker FHIR 
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-Sarvurdering-Besok-1.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/Sarvurdering-Besok-1"
+      },
+      "name" : "Saras observasjoner ved timen",
+      "description" : "Det Sara måler og observerer hjemme hos Karin under videotimen: mål, væsking, huden rundt og smerte.",
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Observation-Sarvurdering-Spesialist-1.html"
+      }],
+      "reference" : {
+        "reference" : "Observation/Sarvurdering-Spesialist-1"
+      },
+      "name" : "Spesialistens sårvurdering",
+      "description" : "Noras faglige vurdering under videotimen, basert på bildet fra Lise, bildet fra hodekameraet og Saras observasjoner.",
+      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       },
       {
@@ -732,23 +811,7 @@ Aidn er et journalsystem for kommunal helse og omsorg, og Open Aidn bruker FHIR 
         "reference" : "ValueSet/joda-sarbunn-vs"
       },
       "name" : "Sårbunn",
-      "description" : "Gyldige verdier for sårbunn.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-joda-sarbunn.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/joda-sarbunn"
-      },
-      "name" : "Sårbunn",
-      "description" : "Hva sårbunnen hovedsakelig består av.",
+      "description" : "Hva sårbunnen hovedsakelig består av. SNOMED CT-koder fra woundBedAppearanceVS i HL7 Lower Extremity Skin Wound Assessment IG.",
       "exampleBoolean" : false
     },
     {
@@ -766,6 +829,22 @@ Aidn er et journalsystem for kommunal helse og omsorg, og Open Aidn bruker FHIR 
       "name" : "Sårdokument til journal",
       "description" : "Et sårbilde som er sendt inn til journalen. Det starter som foreløpig (docStatus = preliminary). Når helsepersonell har sett på det og valgt å journalføre det, blir det endelig (docStatus = final) og får helsepersonellet som authenticator.",
       "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Organization-Sarpoliklinikk.html"
+      }],
+      "reference" : {
+        "reference" : "Organization/Sarpoliklinikk"
+      },
+      "name" : "Sårpoliklinikken, Fjordvik sykehus",
+      "description" : "Oppdiktet sårpoliklinikk på sykehuset, som hjelper hjemmetjenesten med vurdering og behandling av sår.",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -796,24 +875,24 @@ Aidn er et journalsystem for kommunal helse og omsorg, og Open Aidn bruker FHIR 
         "reference" : "CodeSystem/joda-sarvurdering-kode"
       },
       "name" : "Sårvurdering",
-      "description" : "Kode for selve sårvurderingen og for feltene i den.",
+      "description" : "Egne koder for felt i sårvurderingen som ennå ikke har en LOINC-kode i guiden. De andre feltene bruker LOINC.",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
+        "valueString" : "Encounter"
       },
       {
         "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Observation-Sarvurdering-Besok-1.html"
+        "valueUri" : "Encounter-Time-Sarpoliklinikk-1.html"
       }],
       "reference" : {
-        "reference" : "Observation/Sarvurdering-Besok-1"
+        "reference" : "Encounter/Time-Sarpoliklinikk-1"
       },
-      "name" : "Sårvurdering ved besøk",
-      "description" : "Saras vurdering av såret, basert på bildet fra Lise og bildet fra besøket.",
-      "exampleCanonical" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering"
+      "name" : "Videotime med sårpoliklinikken",
+      "description" : "Karin har time hos sårpoliklinikken. Sara er hjemme hos Karin med Jodapro hodekamera, og Nora er med på video fra sykehuset.",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -828,23 +907,7 @@ Aidn er et journalsystem for kommunal helse og omsorg, og Open Aidn bruker FHIR 
         "reference" : "ValueSet/joda-vaesking-vs"
       },
       "name" : "Væsking",
-      "description" : "Gyldige verdier for væsking.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "CodeSystem-joda-vaesking.html"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/joda-vaesking"
-      },
-      "name" : "Væsking",
-      "description" : "Hvor mye såret væsker.",
+      "description" : "Hvor mye såret væsker. SNOMED CT-koder fra woundExudateAmountDescriptionVS i HL7 Lower Extremity Skin Wound Assessment IG.",
       "exampleBoolean" : false
     }],
     "page" : {

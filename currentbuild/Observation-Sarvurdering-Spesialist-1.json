@@ -1,0 +1,70 @@
+{
+  "resourceType" : "Observation",
+  "id" : "Sarvurdering-Spesialist-1",
+  "meta" : {
+    "profile" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation Sarvurdering-Spesialist-1</b></p><a name=\"Sarvurdering-Spesialist-1\"> </a><a name=\"hcSarvurdering-Spesialist-1\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-joda-sarvurdering.html\">Sårvurdering</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 39135-9}\">Wound assessment panel</span></p><p><b>subject</b>: <a href=\"Patient-Pasient-Karin.html\">Karin Testdal  Female, DoB: 1948-03-13 ( https://example.org/oppdiktet/pasient-id#testpasient-karin)</a></p><p><b>encounter</b>: <a href=\"Encounter-Time-Sarpoliklinikk-1.html\">Encounter: status = finished; class = virtual (ActCode#VR); period = 2026-11-11 10:00:00+0100 --&gt; 2026-11-11 10:30:00+0100</a></p><p><b>effective</b>: 2026-11-11 10:25:00+0100</p><p><b>performer</b>: <a href=\"Practitioner-Spesialist-Nora.html\">Nora Testvik</a></p><p><b>note</b>: </p><blockquote><div><p>Tegn på infeksjon. Sårpoliklinikken foreslår en ny sårplan med grønn, gul og rød sone, og ny videotime om to uker.</p>\n</div></blockquote><p><b>bodySite</b>: <span title=\"Codes:\">Venstre legg, innside</span></p><p><b>derivedFrom</b>: </p><ul><li><a href=\"Media-Sarbilde-Hjemme-1.html\">Media: status = completed; type = Image; created[x] = 2026-11-10 18:30:00+0100; bodySite = Venstre legg, innside; note = Mamma sier det verker mer i kveld, og det ser rødere ut rundt kanten.</a></li><li><a href=\"Media-Sarbilde-Besok-1.html\">Media: identifier = https://jodapro.no/fhir/sid/evidence-id#7d2f4b8e-1c3a-4e59-9b6d-2a8f0c5e9d14; status = completed; type = Image; created[x] = 2026-11-11 10:15:00+0100; bodySite = Venstre legg, innside</a></li><li><a href=\"Observation-Sarvurdering-Besok-1.html\">Observation Wound assessment panel</a></li></ul><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 72371-8}\">Appearance of Wound base</span></p><p><b>value</b>: <span title=\"Codes:{http://snomed.info/sct 449745003}\">Fibrinbelegg</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode infeksjonstegn}\">Tegn på infeksjon</span></p><p><b>value</b>: true</p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "39135-9",
+      "display" : "Wound assessment panel"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/Pasient-Karin"
+  },
+  "encounter" : {
+    "reference" : "Encounter/Time-Sarpoliklinikk-1"
+  },
+  "effectiveDateTime" : "2026-11-11T10:25:00+01:00",
+  "performer" : [{
+    "reference" : "Practitioner/Spesialist-Nora"
+  }],
+  "note" : [{
+    "text" : "Tegn på infeksjon. Sårpoliklinikken foreslår en ny sårplan med grønn, gul og rød sone, og ny videotime om to uker."
+  }],
+  "bodySite" : {
+    "text" : "Venstre legg, innside"
+  },
+  "derivedFrom" : [{
+    "reference" : "Media/Sarbilde-Hjemme-1"
+  },
+  {
+    "reference" : "Media/Sarbilde-Besok-1"
+  },
+  {
+    "reference" : "Observation/Sarvurdering-Besok-1"
+  }],
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "72371-8",
+        "display" : "Appearance of Wound base"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "449745003",
+        "display" : "Fibrinous wound bed"
+      }],
+      "text" : "Fibrinbelegg"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
+        "code" : "infeksjonstegn"
+      }]
+    },
+    "valueBoolean" : true
+  }]
+}

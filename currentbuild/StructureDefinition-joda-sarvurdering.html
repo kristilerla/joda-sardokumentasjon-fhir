@@ -273,7 +273,8 @@ Experimental
 
 <p><b>Usages:</b></p>
 <ul>
- <li>Examples for this Profile: <a href="Observation-Sarvurdering-Besok-1.html">Observation/Sarvurdering-Besok-1</a></li>
+ <li>Refer to this Profile: <a href="StructureDefinition-joda-sarvurdering.html">Sårvurdering</a></li>
+ <li>Examples for this Profile: <a href="Observation-Sarvurdering-Besok-1.html">Observation/Sarvurdering-Besok-1</a> and <a href="Observation-Sarvurdering-Spesialist-1.html">Observation/Sarvurdering-Spesialist-1</a></li>
 </ul>
 <p>You can also check for <a href="https://packages2.fhir.org/xig/resource/joda.fhir.sardokumentasjon|current/StructureDefinition/StructureDefinition-joda-sarvurdering.json">usages in the FHIR IG Statistics</a></p>
 
@@ -351,8 +352,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Sårvurdering">"sarvurdering"</span>
+      "system" : "http://loinc.org",
+      "code" : "39135-9",
+      "display" : "Wound assessment panel"
     }
   ]
 }</code></pre></div></td></tr>
@@ -384,8 +386,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr fhir="generated-heirarchy" id="k-aj" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.</span><a no-external="true" href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.derivedFrom" title="The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image." data-no-external="true">derivedFrom</a><a name="k-Observation.derivedFrom"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element must be supported. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="This element is included in summaries">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element is included in summaries. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-joda-sarbilde.html">Sårbilde</a>)</td>
-<td style="" class="hierarchy xhtCellBorder0">Sårbildene vurderingen bygger på<br/></td></tr>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-joda-sarbilde.html">Sårbilde</a> | <a href="StructureDefinition-joda-sarvurdering.html">Sårvurdering</a>)</td>
+<td style="" class="hierarchy xhtCellBorder0">Sårbildene og eventuelle andre vurderinger denne bygger på<br/></td></tr>
 <tr fhir="generated-heirarchy" id="k-ak" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck03.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Slice Definition" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.</span><a no-external="true" href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.component" title="Some observations have multiple component observations.  These component observations are expressed as separate code value pairs that share the same attributes.  Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations." class="xhtPieceItalic" data-no-external="true">Slices for component</a><a name="k-Observation.component"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported" class="xhtPieceItalic">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element must be supported. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="This element is included in summaries" class="xhtPieceItalic">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element is included in summaries. </span></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceItalic"></span><span class="xhtPieceItalic">0</span><span class="xhtPieceItalic">..</span><span class="xhtPieceItalic">*</span></td>
@@ -428,8 +430,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Lengde">"lengde"</span>
+      "system" : "http://loinc.org",
+      "code" : "39126-8",
+      "display" : "Length of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -473,8 +476,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Bredde">"bredde"</span>
+      "system" : "http://loinc.org",
+      "code" : "39125-0",
+      "display" : "Width of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -518,8 +522,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Dybde">"dybde"</span>
+      "system" : "http://loinc.org",
+      "code" : "39127-6",
+      "display" : "Depth of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -563,8 +568,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Sårbunn">"sarbunn"</span>
+      "system" : "http://loinc.org",
+      "code" : "72371-8",
+      "display" : "Appearance of Wound base"
     }
   ]
 }</code></pre></div></td></tr>
@@ -593,8 +599,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Væsking">"vaesking"</span>
+      "system" : "http://loinc.org",
+      "code" : "39116-9",
+      "display" : "Drainage amount of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -623,8 +630,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Huden rundt såret">"hud-rundt"</span>
+      "system" : "http://loinc.org",
+      "code" : "72301-5",
+      "display" : "Description of Periwound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -683,8 +691,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Smerte">"smerte"</span>
+      "system" : "http://loinc.org",
+      "code" : "72514-3",
+      "display" : "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
     }
   ]
 }</code></pre></div></td></tr>
@@ -693,7 +702,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Actual component result</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 98805ec6-5d6a-461e-8579-aa45efce2048
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 702989ab-ef0a-4a66-b66b-338f89bda2da
 document.getElementById('cbjoda-sarvurderingK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('joda-sarvurderingK'), 'binding', document.getElementById('cbjoda-sarvurderingK-binding').checked, document.getElementById('ppjoda-sarvurderingK'));
 document.getElementById('cbjoda-sarvurderingK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1131,8 +1140,9 @@ filterDesc(document.getElementById('joda-sarvurderingK'), 'obligation', document
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Sårvurdering">"sarvurdering"</span>
+      "system" : "http://loinc.org",
+      "code" : "39135-9",
+      "display" : "Wound assessment panel"
     }
   ]
 }</code></pre></div></td></tr>
@@ -1164,8 +1174,8 @@ filterDesc(document.getElementById('joda-sarvurderingK'), 'obligation', document
 <tr fhir="generated-heirarchy" id="ah" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.</span><a no-external="true" href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.derivedFrom" data-no-external="true">derivedFrom</a><a name="Observation.derivedFrom"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element must be supported. </span></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-joda-sarbilde.html">Sårbilde</a>)</td>
-<td style="" class="hierarchy xhtCellBorder0">Sårbildene vurderingen bygger på</td></tr>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-joda-sarbilde.html">Sårbilde</a> | <a href="StructureDefinition-joda-sarvurdering.html">Sårvurdering</a>)</td>
+<td style="" class="hierarchy xhtCellBorder0">Sårbildene og eventuelle andre vurderinger denne bygger på</td></tr>
 <tr fhir="generated-heirarchy" id="ai" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck03.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Slice Definition" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.</span><a no-external="true" href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.component" class="xhtPieceItalic" data-no-external="true">Slices for component</a><a name="Observation.component"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported" class="xhtPieceItalic">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element must be supported. </span></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceItalic"></span><span class="xhtPieceItalic xhtPieceDeEmphasized">0</span><span class="xhtPieceItalic xhtPieceDeEmphasized">..</span><span class="xhtPieceItalic xhtPieceDeEmphasized">*</span></td>
@@ -1184,8 +1194,9 @@ filterDesc(document.getElementById('joda-sarvurderingK'), 'obligation', document
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Lengde">"lengde"</span>
+      "system" : "http://loinc.org",
+      "code" : "39126-8",
+      "display" : "Length of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -1217,8 +1228,9 @@ filterDesc(document.getElementById('joda-sarvurderingK'), 'obligation', document
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Bredde">"bredde"</span>
+      "system" : "http://loinc.org",
+      "code" : "39125-0",
+      "display" : "Width of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -1250,8 +1262,9 @@ filterDesc(document.getElementById('joda-sarvurderingK'), 'obligation', document
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Dybde">"dybde"</span>
+      "system" : "http://loinc.org",
+      "code" : "39127-6",
+      "display" : "Depth of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -1283,8 +1296,9 @@ filterDesc(document.getElementById('joda-sarvurderingK'), 'obligation', document
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Sårbunn">"sarbunn"</span>
+      "system" : "http://loinc.org",
+      "code" : "72371-8",
+      "display" : "Appearance of Wound base"
     }
   ]
 }</code></pre></div></td></tr>
@@ -1306,8 +1320,9 @@ filterDesc(document.getElementById('joda-sarvurderingK'), 'obligation', document
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Væsking">"vaesking"</span>
+      "system" : "http://loinc.org",
+      "code" : "39116-9",
+      "display" : "Drainage amount of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -1329,8 +1344,9 @@ filterDesc(document.getElementById('joda-sarvurderingK'), 'obligation', document
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Huden rundt såret">"hud-rundt"</span>
+      "system" : "http://loinc.org",
+      "code" : "72301-5",
+      "display" : "Description of Periwound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -1375,8 +1391,9 @@ filterDesc(document.getElementById('joda-sarvurderingK'), 'obligation', document
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Smerte">"smerte"</span>
+      "system" : "http://loinc.org",
+      "code" : "72514-3",
+      "display" : "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
     }
   ]
 }</code></pre></div></td></tr>
@@ -1385,7 +1402,7 @@ filterDesc(document.getElementById('joda-sarvurderingK'), 'obligation', document
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Actual component result</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 98805ec6-5d6a-461e-8579-aa45efce2048
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 702989ab-ef0a-4a66-b66b-338f89bda2da
 document.getElementById('cbjoda-sarvurderingD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('joda-sarvurderingD'), 'binding', document.getElementById('cbjoda-sarvurderingD-binding').checked, document.getElementById('ppjoda-sarvurderingD'));
 document.getElementById('cbjoda-sarvurderingD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1553,8 +1570,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Sårvurdering">"sarvurdering"</span>
+      "system" : "http://loinc.org",
+      "code" : "39135-9",
+      "display" : "Wound assessment panel"
     }
   ]
 }</code></pre></div></td></tr>
@@ -1743,8 +1761,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr fhir="generated-heirarchy" id="s-a30." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.</span><a no-external="true" href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.derivedFrom" title="The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image." data-no-external="true">derivedFrom</a><a name="s-Observation.derivedFrom"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element must be supported. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="This element is included in summaries">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element is included in summaries. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-joda-sarbilde.html">Sårbilde</a>)</td>
-<td style="" class="hierarchy xhtCellBorder0">Sårbildene vurderingen bygger på<br/></td></tr>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-joda-sarbilde.html">Sårbilde</a> | <a href="StructureDefinition-joda-sarvurdering.html">Sårvurdering</a>)</td>
+<td style="" class="hierarchy xhtCellBorder0">Sårbildene og eventuelle andre vurderinger denne bygger på<br/></td></tr>
 <tr fhir="generated-heirarchy" id="s-a31." class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck03.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="" style="background-color: white; background-color: inherit" title="Slice Definition" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.</span><a no-external="true" href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.component" title="Some observations have multiple component observations.  These component observations are expressed as separate code value pairs that share the same attributes.  Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations." class="xhtPieceItalic" data-no-external="true">Slices for component</a><a name="s-Observation.component"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported" class="xhtPieceItalic">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element must be supported. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="This element is included in summaries" class="xhtPieceItalic">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element is included in summaries. </span></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceItalic"></span><span class="xhtPieceItalic">0</span><span class="xhtPieceItalic">..</span><span class="xhtPieceItalic">*</span></td>
@@ -1882,8 +1900,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Lengde">"lengde"</span>
+      "system" : "http://loinc.org",
+      "code" : "39126-8",
+      "display" : "Length of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -1972,8 +1991,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Bredde">"bredde"</span>
+      "system" : "http://loinc.org",
+      "code" : "39125-0",
+      "display" : "Width of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -2062,8 +2082,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Dybde">"dybde"</span>
+      "system" : "http://loinc.org",
+      "code" : "39127-6",
+      "display" : "Depth of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -2152,8 +2173,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Sårbunn">"sarbunn"</span>
+      "system" : "http://loinc.org",
+      "code" : "72371-8",
+      "display" : "Appearance of Wound base"
     }
   ]
 }</code></pre></div></td></tr>
@@ -2207,8 +2229,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Væsking">"vaesking"</span>
+      "system" : "http://loinc.org",
+      "code" : "39116-9",
+      "display" : "Drainage amount of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -2262,8 +2285,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Huden rundt såret">"hud-rundt"</span>
+      "system" : "http://loinc.org",
+      "code" : "72301-5",
+      "display" : "Description of Periwound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -2372,8 +2396,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Smerte">"smerte"</span>
+      "system" : "http://loinc.org",
+      "code" : "72514-3",
+      "display" : "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
     }
   ]
 }</code></pre></div></td></tr>
@@ -2397,7 +2422,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0">See <a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange" title="Observation.referenceRange">referenceRange (Observation)</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Provides guide for interpretation of component result<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 98805ec6-5d6a-461e-8579-aa45efce2048
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 702989ab-ef0a-4a66-b66b-338f89bda2da
 document.getElementById('cbjoda-sarvurderingS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('joda-sarvurderingS'), 'binding', document.getElementById('cbjoda-sarvurderingS-binding').checked, document.getElementById('ppjoda-sarvurderingS'));
 document.getElementById('cbjoda-sarvurderingS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3272,7 +3297,7 @@ filterDesc(document.getElementById('joda-sarvurderingS'), 'obligation', document
       "<a href="StructureDefinition-joda-sarvurdering.html#Observation.referenceRange.text" title="Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of &quot;Negative&quot; or a list or table of &quot;normals&quot;" class="dict"><span style="text-decoration: underline">text</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Text based reference range in an observation</span>
     }],
     "<a href="StructureDefinition-joda-sarvurdering.html#Observation.hasMember" title="This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group" class="dict"><span style="text-decoration: underline">hasMember</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Observation|4.0.1)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Related resource that belongs to the Observation group</span>
-    "<a href="StructureDefinition-joda-sarvurdering.html#Observation.derivedFrom" title="The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image (this element must be supported)" class="dict"><span style="text-decoration: underline">derivedFrom</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde]])}] <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Sårbildene vurderingen bygger på</span>
+    "<a href="StructureDefinition-joda-sarvurdering.html#Observation.derivedFrom" title="The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image (this element must be supported)" class="dict"><span style="text-decoration: underline">derivedFrom</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde], CanonicalType[https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering]])}] <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Sårbildene og eventuelle andre vurderinger denne bygger på</span>
     "<a href="StructureDefinition-joda-sarvurdering.html#Observation.component" title="Some observations have multiple component observations.  These component observations are expressed as separate code value pairs that share the same attributes.  Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations (this element must be supported)" class="dict"><span style="text-decoration: underline">component</span></a>" : [ <span style="color: navy"> // sliced by pattern:code in the specified order Open</span>
       { // <span style="color: navy; opacity: 0.8">Component results</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows one element"><b>Only One!</b></span> 
         "<a href="StructureDefinition-joda-sarvurdering.html#Observation.component.modifierExtension" title="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -3412,6 +3437,7 @@ Summary
 <ul>
 <li><a href="StructureDefinition-joda-pasient.html">Pasient <span style="font-size: 8px">(https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-pasient)</span></a></li>
 <li><a href="StructureDefinition-joda-sarbilde.html">Sårbilde <span style="font-size: 8px">(https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde)</span></a></li>
+<li><a href="StructureDefinition-joda-sarvurdering.html">Sårvurdering <span style="font-size: 8px">(https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering)</span></a></li>
 
 </ul>
 
@@ -3464,8 +3490,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Sårvurdering">"sarvurdering"</span>
+      "system" : "http://loinc.org",
+      "code" : "39135-9",
+      "display" : "Wound assessment panel"
     }
   ]
 }</code></pre></div></td></tr>
@@ -3497,8 +3524,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr fhir="generated-heirarchy" id="ka-aj" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.</span><a no-external="true" href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.derivedFrom" title="The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image." data-no-external="true">derivedFrom</a><a name="ka-Observation.derivedFrom"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element must be supported. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="This element is included in summaries">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element is included in summaries. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-joda-sarbilde.html">Sårbilde</a>)</td>
-<td style="" class="hierarchy xhtCellBorder0">Sårbildene vurderingen bygger på<br/></td></tr>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-joda-sarbilde.html">Sårbilde</a> | <a href="StructureDefinition-joda-sarvurdering.html">Sårvurdering</a>)</td>
+<td style="" class="hierarchy xhtCellBorder0">Sårbildene og eventuelle andre vurderinger denne bygger på<br/></td></tr>
 <tr fhir="generated-heirarchy" id="ka-ak" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck03.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Slice Definition" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.</span><a no-external="true" href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.component" title="Some observations have multiple component observations.  These component observations are expressed as separate code value pairs that share the same attributes.  Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations." class="xhtPieceItalic" data-no-external="true">Slices for component</a><a name="ka-Observation.component"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported" class="xhtPieceItalic">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element must be supported. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="This element is included in summaries" class="xhtPieceItalic">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element is included in summaries. </span></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceItalic"></span><span class="xhtPieceItalic">0</span><span class="xhtPieceItalic">..</span><span class="xhtPieceItalic">*</span></td>
@@ -3541,8 +3568,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Lengde">"lengde"</span>
+      "system" : "http://loinc.org",
+      "code" : "39126-8",
+      "display" : "Length of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -3586,8 +3614,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Bredde">"bredde"</span>
+      "system" : "http://loinc.org",
+      "code" : "39125-0",
+      "display" : "Width of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -3631,8 +3660,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Dybde">"dybde"</span>
+      "system" : "http://loinc.org",
+      "code" : "39127-6",
+      "display" : "Depth of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -3676,8 +3706,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Sårbunn">"sarbunn"</span>
+      "system" : "http://loinc.org",
+      "code" : "72371-8",
+      "display" : "Appearance of Wound base"
     }
   ]
 }</code></pre></div></td></tr>
@@ -3706,8 +3737,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Væsking">"vaesking"</span>
+      "system" : "http://loinc.org",
+      "code" : "39116-9",
+      "display" : "Drainage amount of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -3736,8 +3768,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Huden rundt såret">"hud-rundt"</span>
+      "system" : "http://loinc.org",
+      "code" : "72301-5",
+      "display" : "Description of Periwound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -3796,8 +3829,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Smerte">"smerte"</span>
+      "system" : "http://loinc.org",
+      "code" : "72514-3",
+      "display" : "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
     }
   ]
 }</code></pre></div></td></tr>
@@ -3806,7 +3840,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..1</td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Actual component result</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 98805ec6-5d6a-461e-8579-aa45efce2048
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 702989ab-ef0a-4a66-b66b-338f89bda2da
 document.getElementById('cbjoda-sarvurderingKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('joda-sarvurderingKA'), 'binding', document.getElementById('cbjoda-sarvurderingKA-binding').checked, document.getElementById('ppjoda-sarvurderingKA'));
 document.getElementById('cbjoda-sarvurderingKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -4244,8 +4278,9 @@ filterDesc(document.getElementById('joda-sarvurderingKA'), 'obligation', documen
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Sårvurdering">"sarvurdering"</span>
+      "system" : "http://loinc.org",
+      "code" : "39135-9",
+      "display" : "Wound assessment panel"
     }
   ]
 }</code></pre></div></td></tr>
@@ -4277,8 +4312,8 @@ filterDesc(document.getElementById('joda-sarvurderingKA'), 'obligation', documen
 <tr fhir="generated-heirarchy" id="a-ah" class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.</span><a no-external="true" href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.derivedFrom" data-no-external="true">derivedFrom</a><a name="a-Observation.derivedFrom"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element must be supported. </span></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-joda-sarbilde.html">Sårbilde</a>)</td>
-<td style="" class="hierarchy xhtCellBorder0">Sårbildene vurderingen bygger på</td></tr>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-joda-sarbilde.html">Sårbilde</a> | <a href="StructureDefinition-joda-sarvurdering.html">Sårvurdering</a>)</td>
+<td style="" class="hierarchy xhtCellBorder0">Sårbildene og eventuelle andre vurderinger denne bygger på</td></tr>
 <tr fhir="generated-heirarchy" id="a-ai" class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck03.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Slice Definition" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.</span><a no-external="true" href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.component" class="xhtPieceItalic" data-no-external="true">Slices for component</a><a name="a-Observation.component"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported" class="xhtPieceItalic">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element must be supported. </span></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceItalic"></span><span class="xhtPieceItalic xhtPieceDeEmphasized">0</span><span class="xhtPieceItalic xhtPieceDeEmphasized">..</span><span class="xhtPieceItalic xhtPieceDeEmphasized">*</span></td>
@@ -4297,8 +4332,9 @@ filterDesc(document.getElementById('joda-sarvurderingKA'), 'obligation', documen
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Lengde">"lengde"</span>
+      "system" : "http://loinc.org",
+      "code" : "39126-8",
+      "display" : "Length of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -4330,8 +4366,9 @@ filterDesc(document.getElementById('joda-sarvurderingKA'), 'obligation', documen
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Bredde">"bredde"</span>
+      "system" : "http://loinc.org",
+      "code" : "39125-0",
+      "display" : "Width of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -4363,8 +4400,9 @@ filterDesc(document.getElementById('joda-sarvurderingKA'), 'obligation', documen
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Dybde">"dybde"</span>
+      "system" : "http://loinc.org",
+      "code" : "39127-6",
+      "display" : "Depth of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -4396,8 +4434,9 @@ filterDesc(document.getElementById('joda-sarvurderingKA'), 'obligation', documen
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Sårbunn">"sarbunn"</span>
+      "system" : "http://loinc.org",
+      "code" : "72371-8",
+      "display" : "Appearance of Wound base"
     }
   ]
 }</code></pre></div></td></tr>
@@ -4419,8 +4458,9 @@ filterDesc(document.getElementById('joda-sarvurderingKA'), 'obligation', documen
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Væsking">"vaesking"</span>
+      "system" : "http://loinc.org",
+      "code" : "39116-9",
+      "display" : "Drainage amount of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -4442,8 +4482,9 @@ filterDesc(document.getElementById('joda-sarvurderingKA'), 'obligation', documen
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Huden rundt såret">"hud-rundt"</span>
+      "system" : "http://loinc.org",
+      "code" : "72301-5",
+      "display" : "Description of Periwound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -4488,8 +4529,9 @@ filterDesc(document.getElementById('joda-sarvurderingKA'), 'obligation', documen
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Smerte">"smerte"</span>
+      "system" : "http://loinc.org",
+      "code" : "72514-3",
+      "display" : "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
     }
   ]
 }</code></pre></div></td></tr>
@@ -4498,7 +4540,7 @@ filterDesc(document.getElementById('joda-sarvurderingKA'), 'obligation', documen
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td>
 <td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#integer">integer</a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Actual component result</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 98805ec6-5d6a-461e-8579-aa45efce2048
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 702989ab-ef0a-4a66-b66b-338f89bda2da
 document.getElementById('cbjoda-sarvurderingDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('joda-sarvurderingDA'), 'binding', document.getElementById('cbjoda-sarvurderingDA-binding').checked, document.getElementById('ppjoda-sarvurderingDA'));
 document.getElementById('cbjoda-sarvurderingDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -4665,8 +4707,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Sårvurdering">"sarvurdering"</span>
+      "system" : "http://loinc.org",
+      "code" : "39135-9",
+      "display" : "Wound assessment panel"
     }
   ]
 }</code></pre></div></td></tr>
@@ -4855,8 +4898,8 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <tr fhir="generated-heirarchy" id="sa-a30." class="xhtRowBorder0 xhtRowOdd" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.</span><a no-external="true" href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.derivedFrom" title="The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image." data-no-external="true">derivedFrom</a><a name="sa-Observation.derivedFrom"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element must be supported. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="This element is included in summaries">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element is included in summaries. </span></td>
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
-<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-joda-sarbilde.html">Sårbilde</a>)</td>
-<td style="" class="hierarchy xhtCellBorder0">Sårbildene vurderingen bygger på<br/></td></tr>
+<td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-joda-sarbilde.html">Sårbilde</a> | <a href="StructureDefinition-joda-sarvurdering.html">Sårvurdering</a>)</td>
+<td style="" class="hierarchy xhtCellBorder0">Sårbildene og eventuelle andre vurderinger denne bygger på<br/></td></tr>
 <tr fhir="generated-heirarchy" id="sa-a31." class="xhtRowBorder0 xhtRowEven" data-fhir="generated-heirarchy"><td role="rowheader" style="background-image: url(tbl_bck03.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="tbl_vjoin_end-open.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="" style="background-color: white; background-color: inherit" title="Slice Definition" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.</span><a no-external="true" href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.component" title="Some observations have multiple component observations.  These component observations are expressed as separate code value pairs that share the same attributes.  Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations." class="xhtPieceItalic" data-no-external="true">Slices for component</a><a name="sa-Observation.component"> </a></td>
 <td style="" class="hierarchy xhtCellBorder0"><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported" class="xhtPieceItalic">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element must be supported. </span><span aria-hidden="true" style="padding-left: 3px; padding-right: 3px; color: black; background-color: white" title="This element is included in summaries" class="xhtPieceItalic">Σ</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element is included in summaries. </span></td>
 <td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceItalic"></span><span class="xhtPieceItalic">0</span><span class="xhtPieceItalic">..</span><span class="xhtPieceItalic">*</span></td>
@@ -4994,8 +5037,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Lengde">"lengde"</span>
+      "system" : "http://loinc.org",
+      "code" : "39126-8",
+      "display" : "Length of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -5084,8 +5128,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Bredde">"bredde"</span>
+      "system" : "http://loinc.org",
+      "code" : "39125-0",
+      "display" : "Width of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -5174,8 +5219,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Dybde">"dybde"</span>
+      "system" : "http://loinc.org",
+      "code" : "39127-6",
+      "display" : "Depth of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -5264,8 +5310,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Sårbunn">"sarbunn"</span>
+      "system" : "http://loinc.org",
+      "code" : "72371-8",
+      "display" : "Appearance of Wound base"
     }
   ]
 }</code></pre></div></td></tr>
@@ -5319,8 +5366,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Væsking">"vaesking"</span>
+      "system" : "http://loinc.org",
+      "code" : "39116-9",
+      "display" : "Drainage amount of Wound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -5374,8 +5422,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Huden rundt såret">"hud-rundt"</span>
+      "system" : "http://loinc.org",
+      "code" : "72301-5",
+      "display" : "Description of Periwound"
     }
   ]
 }</code></pre></div></td></tr>
@@ -5484,8 +5533,9 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <div><pre class="json"><code>{
   "coding" : [
     {
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-      "code" : <span title="Smerte">"smerte"</span>
+      "system" : "http://loinc.org",
+      "code" : "72514-3",
+      "display" : "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
     }
   ]
 }</code></pre></div></td></tr>
@@ -5509,7 +5559,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="" class="hierarchy xhtCellBorder0">0..*</td>
 <td style="" class="hierarchy xhtCellBorder0">See <a href="http://hl7.org/fhir/R4/observation.html#Observation.referenceRange" title="Observation.referenceRange">referenceRange (Observation)</a></td>
 <td style="" class="hierarchy xhtCellBorder0">Provides guide for interpretation of component result<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 98805ec6-5d6a-461e-8579-aa45efce2048
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 702989ab-ef0a-4a66-b66b-338f89bda2da
 document.getElementById('cbjoda-sarvurderingSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('joda-sarvurderingSA'), 'binding', document.getElementById('cbjoda-sarvurderingSA-binding').checked, document.getElementById('ppjoda-sarvurderingSA'));
 document.getElementById('cbjoda-sarvurderingSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -6384,7 +6434,7 @@ filterDesc(document.getElementById('joda-sarvurderingSA'), 'obligation', documen
       "<a href="StructureDefinition-joda-sarvurdering.html#Observation.referenceRange.text" title="Text based reference range in an observation which may be used when a quantitative range is not appropriate for an observation.  An example would be a reference value of &quot;Negative&quot; or a list or table of &quot;normals&quot;" class="dict"><span style="text-decoration: underline">text</span></a>" : "&lt;<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></span>&gt;", <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Text based reference range in an observation</span>
     }],
     "<a href="StructureDefinition-joda-sarvurdering.html#Observation.hasMember" title="This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group" class="dict"><span style="text-decoration: underline">hasMember</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>(Observation|4.0.1)}], <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Related resource that belongs to the Observation group</span>
-    "<a href="StructureDefinition-joda-sarvurdering.html#Observation.derivedFrom" title="The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image (this element must be supported)" class="dict"><span style="text-decoration: underline">derivedFrom</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde]])}] <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Sårbildene vurderingen bygger på</span>
+    "<a href="StructureDefinition-joda-sarvurdering.html#Observation.derivedFrom" title="The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image (this element must be supported)" class="dict"><span style="text-decoration: underline">derivedFrom</span></a>" : [{<span style="color: darkgreen"><a href="http://hl7.org/fhir/R4/references.html#Reference">Reference</a></span>([CanonicalType[https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde], CanonicalType[https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering]])}] <span style="color: Gray">//</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: navy; opacity: 0.8">Sårbildene og eventuelle andre vurderinger denne bygger på</span>
     "<a href="StructureDefinition-joda-sarvurdering.html#Observation.component" title="Some observations have multiple component observations.  These component observations are expressed as separate code value pairs that share the same attributes.  Examples include systolic and diastolic component observations for blood pressure measurement and multiple component observations for genetics observations (this element must be supported)" class="dict"><span style="text-decoration: underline">component</span></a>" : [ <span style="color: navy"> // sliced by pattern:code in the specified order Open</span>
       { // <span style="color: navy; opacity: 0.8">Component results</span> <span style="color: brown" title="ele-1: All FHIR elements must have a @value or children"><b>C?</b></span> <span style="color: brown" title="This element is an array in the base standard, but the profile only allows one element"><b>Only One!</b></span> 
         "<a href="StructureDefinition-joda-sarvurdering.html#Observation.component.modifierExtension" title="May be used to represent additional information that is not part of the basic definition of the element and that modifies the understanding of the element in which it is contained and/or the understanding of the containing element's descendants. Usually modifier elements provide negation or qualification. To make the use of extensions safe and manageable, there is a strict set of governance applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension. Applications processing a resource are required to check for modifier extensions.
@@ -6520,6 +6570,7 @@ Summary
 <ul>
 <li><a href="StructureDefinition-joda-pasient.html">Pasient <span style="font-size: 8px">(https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-pasient)</span></a></li>
 <li><a href="StructureDefinition-joda-sarbilde.html">Sårbilde <span style="font-size: 8px">(https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde)</span></a></li>
+<li><a href="StructureDefinition-joda-sarvurdering.html">Sårvurdering <span style="font-size: 8px">(https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering)</span></a></li>
 
 </ul>
 
@@ -6566,7 +6617,7 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jodacare.no">Kristil Erla Håland</a>.  Package joda.fhir.sardokumentasjon#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 9, 2026 10:33+0000">2026-11-09</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jodacare.no">Kristil Erla Håland</a>.  Package joda.fhir.sardokumentasjon#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 9, 2026 12:33+0000">2026-11-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="Sarpoliklinikk"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization Sarpoliklinikk</b></p><a name="Sarpoliklinikk"> </a><a name="hcSarpoliklinikk"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Sårpoliklinikken, Fjordvik sykehus</p><hr/></div>
+  </text>
+  <name value="Sårpoliklinikken, Fjordvik sykehus"/>
+</Organization>

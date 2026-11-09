@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="Time-Sarpoliklinikk-1"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Encounter Time-Sarpoliklinikk-1</b></p><a name="Time-Sarpoliklinikk-1"> </a><a name="hcTime-Sarpoliklinikk-1"> </a><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-VR">ActCode: VR</a> (virtual)</p><p><b>subject</b>: <a href="Patient-Pasient-Karin.html">Karin Testdal  Female, DoB: 1948-03-13 ( https://example.org/oppdiktet/pasient-id#testpasient-karin)</a></p><blockquote><p><b>participant</b></p><p><b>individual</b>: <a href="Practitioner-Spesialist-Nora.html">Nora Testvik</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>individual</b>: <a href="Practitioner-Sykepleier-Sara.html">Sara Testesen</a></p></blockquote><p><b>period</b>: 2026-11-11 10:00:00+0100 --&gt; 2026-11-11 10:30:00+0100</p><p><b>serviceProvider</b>: <a href="Organization-Sarpoliklinikk.html">Sårpoliklinikken, Fjordvik sykehus</a></p></div>
+  </text>
+  <status value="finished"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="VR"/>
+    <display value="virtual"/>
+  </class>
+  <subject>
+    <reference value="Patient/Pasient-Karin"/>
+  </subject>
+  <participant>
+    <individual>
+      <reference value="Practitioner/Spesialist-Nora"/>
+    </individual>
+  </participant>
+  <participant>
+    <individual>
+      <reference value="Practitioner/Sykepleier-Sara"/>
+    </individual>
+  </participant>
+  <period>
+    <start value="2026-11-11T10:00:00+01:00"/>
+    <end value="2026-11-11T10:30:00+01:00"/>
+  </period>
+  <serviceProvider>
+    <reference value="Organization/Sarpoliklinikk"/>
+  </serviceProvider>
+</Encounter>

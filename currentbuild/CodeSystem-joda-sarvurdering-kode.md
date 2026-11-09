@@ -12,7 +12,7 @@
 | Draft as of 2026-11-09 | *Computable Name*:JodaSarvurderingKode |
 
  
-Kode for selve sårvurderingen og for feltene i den. 
+Egne koder for felt i sårvurderingen som ennå ikke har en LOINC-kode i guiden. De andre feltene bruker LOINC. 
 
  This Code system is referenced in the content logical definition of the following value sets: 
 
@@ -32,7 +32,7 @@ Kode for selve sårvurderingen og for feltene i den.
   "title" : "Sårvurdering",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-09T10:33:12+00:00",
+  "date" : "2026-11-09T12:33:10+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",
@@ -41,7 +41,7 @@ Kode for selve sårvurderingen og for feltene i den.
       "value" : "https://jodacare.no"
     }]
   }],
-  "description" : "Kode for selve sårvurderingen og for feltene i den.",
+  "description" : "Egne koder for felt i sårvurderingen som ennå ikke har en LOINC-kode i guiden. De andre feltene bruker LOINC.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -51,51 +51,11 @@ Kode for selve sårvurderingen og for feltene i den.
   }],
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 9,
+  "count" : 1,
   "concept" : [{
-    "code" : "sarvurdering",
-    "display" : "Sårvurdering",
-    "definition" : "En vurdering av et sår på et gitt tidspunkt."
-  },
-  {
-    "code" : "lengde",
-    "display" : "Lengde",
-    "definition" : "Sårets lengde i centimeter."
-  },
-  {
-    "code" : "bredde",
-    "display" : "Bredde",
-    "definition" : "Sårets bredde i centimeter."
-  },
-  {
-    "code" : "dybde",
-    "display" : "Dybde",
-    "definition" : "Sårets dybde i centimeter."
-  },
-  {
-    "code" : "sarbunn",
-    "display" : "Sårbunn",
-    "definition" : "Hva sårbunnen består av."
-  },
-  {
-    "code" : "vaesking",
-    "display" : "Væsking",
-    "definition" : "Hvor mye såret væsker."
-  },
-  {
-    "code" : "hud-rundt",
-    "display" : "Huden rundt såret",
-    "definition" : "Tilstanden til huden rundt såret."
-  },
-  {
     "code" : "infeksjonstegn",
     "display" : "Tegn på infeksjon",
     "definition" : "Om det er tegn på infeksjon, for eksempel rødme, varme, hevelse eller lukt."
-  },
-  {
-    "code" : "smerte",
-    "display" : "Smerte",
-    "definition" : "Smerte i såret på en skala fra 0 til 10."
   }]
 }
 

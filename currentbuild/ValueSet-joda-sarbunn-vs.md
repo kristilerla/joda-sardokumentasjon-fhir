@@ -12,7 +12,7 @@
 | Draft as of 2026-11-09 | *Computable Name*:JodaSarbunnVS |
 
  
-Gyldige verdier for sårbunn. 
+Hva sårbunnen hovedsakelig består av. SNOMED CT-koder fra woundBedAppearanceVS i HL7 Lower Extremity Skin Wound Assessment IG. 
 
  **References** 
 
@@ -51,7 +51,7 @@ Gyldige verdier for sårbunn.
   "title" : "Sårbunn",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-09T10:33:12+00:00",
+  "date" : "2026-11-09T12:33:10+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",
@@ -60,7 +60,7 @@ Gyldige verdier for sårbunn.
       "value" : "https://jodacare.no"
     }]
   }],
-  "description" : "Gyldige verdier for sårbunn.",
+  "description" : "Hva sårbunnen hovedsakelig består av. SNOMED CT-koder fra woundBedAppearanceVS i HL7 Lower Extremity Skin Wound Assessment IG.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -70,7 +70,35 @@ Gyldige verdier for sårbunn.
   }],
   "compose" : {
     "include" : [{
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn"
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "225541009",
+        "display" : "Granulation of tissue"
+      },
+      {
+        "code" : "449745003",
+        "display" : "Fibrinous wound bed"
+      },
+      {
+        "code" : "449746002",
+        "display" : "Wound slough"
+      },
+      {
+        "code" : "421306004",
+        "display" : "Necrotic eschar"
+      },
+      {
+        "code" : "609410002",
+        "display" : "Necrosis of anatomical site"
+      },
+      {
+        "code" : "409590008",
+        "display" : "Skin eschar"
+      },
+      {
+        "code" : "449743005",
+        "display" : "Wound epithelialization"
+      }]
     }]
   }
 }

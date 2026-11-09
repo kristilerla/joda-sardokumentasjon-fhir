@@ -25,7 +25,7 @@ Profile: [Sårdokument til journal](StructureDefinition-joda-sardokument.md)
 | | | |
 | :--- | :--- | :--- |
 | - | **ContentType** | **Url** |
-| * | image/jpeg | [https://example.org/oppdiktet/sarbilde-hjemme-1.jpg](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.2&canonical=https://example.org/oppdiktet/sarbilde-hjemme-1.jpg) |
+| * | image/jpeg | [https://kristilerla.github.io/joda-sardokumentasjon-fhir/currentbuild/sarbilde-hjemme-1.jpg](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.2&canonical=https://kristilerla.github.io/joda-sardokumentasjon-fhir/currentbuild/sarbilde-hjemme-1.jpg) |
 
 
 ### Contexts
@@ -58,7 +58,7 @@ Profile: [Sårdokument til journal](StructureDefinition-joda-sardokument.md)
   "content" : [{
     "attachment" : {
       "contentType" : "image/jpeg",
-      "url" : "https://example.org/oppdiktet/sarbilde-hjemme-1.jpg"
+      "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/currentbuild/sarbilde-hjemme-1.jpg"
     }
   }],
   "context" : {

@@ -27,7 +27,7 @@ Profile: [Sårbilde](StructureDefinition-joda-sarbilde.md)
 | | | | |
 | :--- | :--- | :--- | :--- |
 | - | **ContentType** | **Url** | **Title** |
-| * | image/jpeg | [https://example.org/oppdiktet/sarbilde-hjemme-1.jpg](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.2&canonical=https://example.org/oppdiktet/sarbilde-hjemme-1.jpg) | Sår venstre legg 10.11.2026 |
+| * | image/jpeg | [https://kristilerla.github.io/joda-sardokumentasjon-fhir/currentbuild/sarbilde-hjemme-1.jpg](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.2&canonical=https://kristilerla.github.io/joda-sardokumentasjon-fhir/currentbuild/sarbilde-hjemme-1.jpg) | Sår venstre legg 10.11.2026 |
 
 **note**: 
 
@@ -70,7 +70,7 @@ Mamma sier det verker mer i kveld, og det ser rødere ut rundt kanten.
   },
   "content" : {
     "contentType" : "image/jpeg",
-    "url" : "https://example.org/oppdiktet/sarbilde-hjemme-1.jpg",
+    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/currentbuild/sarbilde-hjemme-1.jpg",
     "title" : "Sår venstre legg 10.11.2026"
   },
   "note" : [{

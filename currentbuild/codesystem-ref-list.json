@@ -1,14 +1,17 @@
 {
   "codeSystems" : [{
-    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "JodaHudRundt",
-    "title" : "Huden rundt såret",
-    "description" : "Tilstanden til huden rundt såret.",
+    "url" : "http://snomed.info/sct",
+    "version" : null,
+    "status" : "active",
+    "name" : "SNOMED_CT",
+    "title" : "SNOMED CT (all versions)",
+    "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+    "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "ValueSet-joda-hud-rundt-vs.html" : "Huden rundt såret"
+    "ValueSet-joda-hud-rundt-vs.html" : "Huden rundt såret",
+    "ValueSet-joda-sarbunn-vs.html" : "Sårbunn",
+    "ValueSet-joda-vaesking-vs.html" : "Væsking"
   },
   {
     "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype",
@@ -20,27 +23,5 @@
     "uses" : {
     },
     "ValueSet-joda-kameratype-vs.html" : "Kameratype"
-  },
-  {
-    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "JodaSarbunn",
-    "title" : "Sårbunn",
-    "description" : "Hva sårbunnen hovedsakelig består av.",
-    "uses" : {
-    },
-    "ValueSet-joda-sarbunn-vs.html" : "Sårbunn"
-  },
-  {
-    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "JodaVaesking",
-    "title" : "Væsking",
-    "description" : "Hvor mye såret væsker.",
-    "uses" : {
-    },
-    "ValueSet-joda-vaesking-vs.html" : "Væsking"
   }]
 }

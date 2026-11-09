@@ -3,7 +3,7 @@
   "id" : "joda-hud-rundt-vs",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet joda-hud-rundt-vs</b></p><a name=\"joda-hud-rundt-vs\"> </a><a name=\"hcjoda-hud-rundt-vs\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-joda-hud-rundt.html\"><code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;0.1.0</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet joda-hud-rundt-vs</b></p><a name=\"joda-hud-rundt-vs\"> </a><a name=\"hcjoda-hud-rundt-vs\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/444884003\">444884003</a></td><td>Intact skin</td></tr><tr><td><a href=\"http://snomed.info/id/239163008\">239163008</a></td><td>Wound erythema</td></tr><tr><td><a href=\"http://snomed.info/id/3644009\">3644009</a></td><td>Macerated skin</td></tr><tr><td><a href=\"http://snomed.info/id/95322002\">95322002</a></td><td>Edematous skin</td></tr><tr><td><a href=\"http://snomed.info/id/16386004\">16386004</a></td><td>Dry skin</td></tr><tr><td><a href=\"http://snomed.info/id/17038008\">17038008</a></td><td>Increased skin temperature</td></tr><tr><td><a href=\"http://snomed.info/id/449738003\">449738003</a></td><td>Inflammation of periwound skin</td></tr><tr><td><a href=\"http://snomed.info/id/449744004\">449744004</a></td><td>Induration of wound</td></tr><tr><td><a href=\"http://snomed.info/id/247444006\">247444006</a></td><td>Excoriation of skin</td></tr><tr><td><a href=\"http://snomed.info/id/417237009\">417237009</a></td><td>Blister</td></tr></table></li></ul></div>"
   },
   "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-hud-rundt-vs",
   "version" : "0.1.0",
@@ -11,7 +11,7 @@
   "title" : "Huden rundt såret",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-09T10:33:12+00:00",
+  "date" : "2026-11-09T12:33:10+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",
@@ -20,7 +20,7 @@
       "value" : "https://jodacare.no"
     }]
   }],
-  "description" : "Gyldige verdier for huden rundt såret.",
+  "description" : "Tilstanden til huden rundt såret. Et utvalg av SNOMED CT-kodene i periwoundConditionVS i HL7 Lower Extremity Skin Wound Assessment IG.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -30,7 +30,47 @@
   }],
   "compose" : {
     "include" : [{
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt"
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "444884003",
+        "display" : "Intact skin"
+      },
+      {
+        "code" : "239163008",
+        "display" : "Wound erythema"
+      },
+      {
+        "code" : "3644009",
+        "display" : "Macerated skin"
+      },
+      {
+        "code" : "95322002",
+        "display" : "Edematous skin"
+      },
+      {
+        "code" : "16386004",
+        "display" : "Dry skin"
+      },
+      {
+        "code" : "17038008",
+        "display" : "Increased skin temperature"
+      },
+      {
+        "code" : "449738003",
+        "display" : "Inflammation of periwound skin"
+      },
+      {
+        "code" : "449744004",
+        "display" : "Induration of wound"
+      },
+      {
+        "code" : "247444006",
+        "display" : "Excoriation of skin"
+      },
+      {
+        "code" : "417237009",
+        "display" : "Blister"
+      }]
     }]
   }
 }

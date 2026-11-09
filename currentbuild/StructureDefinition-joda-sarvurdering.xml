@@ -8,8 +8,9 @@
 <tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.</span><a href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.code">code</a><a name="Observation.code"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Type of observation (code / type)</span><br/><span class="xhtPieceBold">Required Pattern: </span><div><pre class="json"><code>{
   &quot;coding&quot; : [
     {
-      &quot;system&quot; : &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode&quot;,
-      &quot;code&quot; : <span title="Sårvurdering">&quot;sarvurdering&quot;</span>
+      &quot;system&quot; : &quot;http://loinc.org&quot;,
+      &quot;code&quot; : &quot;39135-9&quot;,
+      &quot;display&quot; : &quot;Wound assessment panel&quot;
     }
   ]
 }</code></pre></div></td></tr>
@@ -18,14 +19,15 @@
 <tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.</span><a href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.performer">performer</a><a name="Observation.performer"> </a></td><td style="" class="hierarchy xhtCellBorder0"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element must be supported. </span></td><td style="" class="hierarchy xhtCellBorder0">1..<span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> | <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a> | <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a> | <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>)</td><td style="" class="hierarchy xhtCellBorder0">Hvem som gjorde vurderingen</td></tr>
 <tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.</span><a href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.note">note</a><a name="Observation.note"> </a></td><td style="" class="hierarchy xhtCellBorder0"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element must be supported. </span></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#Annotation" class="xhtPieceDeEmphasized">Annotation</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Comments about the observation</span></td></tr>
 <tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.</span><a href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.bodySite">bodySite</a><a name="Observation.bodySite"> </a></td><td style="" class="hierarchy xhtCellBorder0"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element must be supported. </span></td><td style="" class="hierarchy xhtCellBorder0">1..<span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Observed body part</span></td></tr>
-<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.</span><a href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.derivedFrom">derivedFrom</a><a name="Observation.derivedFrom"> </a></td><td style="" class="hierarchy xhtCellBorder0"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element must be supported. </span></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-joda-sarbilde.html">Sårbilde</a>)</td><td style="" class="hierarchy xhtCellBorder0">Sårbildene vurderingen bygger på</td></tr>
+<tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck10.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_reference.png" alt="" style="background-color: white; background-color: inherit" title="Reference to another Resource" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.</span><a href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.derivedFrom">derivedFrom</a><a name="Observation.derivedFrom"> </a></td><td style="" class="hierarchy xhtCellBorder0"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element must be supported. </span></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">0</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="StructureDefinition-joda-sarbilde.html">Sårbilde</a> | <a href="StructureDefinition-joda-sarvurdering.html">Sårvurdering</a>)</td><td style="" class="hierarchy xhtCellBorder0">Sårbildene og eventuelle andre vurderinger denne bygger på</td></tr>
 <tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck03.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_slice.png" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Slice Definition" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.</span><a href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.component" class="xhtPieceItalic">Slices for component</a><a name="Observation.component"> </a></td><td style="" class="hierarchy xhtCellBorder0"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported" class="xhtPieceItalic">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element must be supported. </span></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceItalic"/><span class="xhtPieceItalic xhtPieceDeEmphasized">0</span><span class="xhtPieceItalic xhtPieceDeEmphasized">..</span><span class="xhtPieceItalic xhtPieceDeEmphasized">*</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement" class="xhtPieceItalic xhtPieceDeEmphasized">BackboneElement</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceItalic xhtPieceDeEmphasized">Component results</span><br class="xhtPieceItalic"/><span class="xhtPieceBold xhtPieceItalic">Slice: </span><span class="xhtPieceItalic">Unordered, Open by pattern:code</span><br class="xhtPieceItalic"/><span class="xhtPieceBold xhtPieceItalic">Slicing Note: </span><span class="xhtPieceItalic">The rules on this element (including its children) apply to all the slices, but are not repeated in them</span></td></tr>
 <tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck035.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slicer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_slice_item.png" alt="" style="background-color: white; background-color: inherit" title="Slice Item" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.Slices for component.</span><a href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.component:lengde" title="Slice lengde">component:lengde</a><a name="Observation.component:lengde"> </a></td><td style="" class="hierarchy xhtCellBorder0"><span style="padding-left: 3px; padding-right: 3px; color: white; background-color: #B60000" title="This element must be supported">S</span><span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only"> This element must be supported. </span></td><td style="" class="hierarchy xhtCellBorder0">0..1</td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement" class="xhtPieceDeEmphasized">BackboneElement</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Component results</span></td></tr>
 <tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck0350.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.Slices for component.component:lengde.</span><a href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.component:lengde.code">code</a><a name="Observation.component:lengde.code"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Type of component observation (code / type)</span><br/><span class="xhtPieceBold">Required Pattern: </span><div><pre class="json"><code>{
   &quot;coding&quot; : [
     {
-      &quot;system&quot; : &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode&quot;,
-      &quot;code&quot; : <span title="Lengde">&quot;lengde&quot;</span>
+      &quot;system&quot; : &quot;http://loinc.org&quot;,
+      &quot;code&quot; : &quot;39126-8&quot;,
+      &quot;display&quot; : &quot;Length of Wound&quot;
     }
   ]
 }</code></pre></div></td></tr>
@@ -36,8 +38,9 @@
 <tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck0350.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.Slices for component.component:bredde.</span><a href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.component:bredde.code">code</a><a name="Observation.component:bredde.code"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Type of component observation (code / type)</span><br/><span class="xhtPieceBold">Required Pattern: </span><div><pre class="json"><code>{
   &quot;coding&quot; : [
     {
-      &quot;system&quot; : &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode&quot;,
-      &quot;code&quot; : <span title="Bredde">&quot;bredde&quot;</span>
+      &quot;system&quot; : &quot;http://loinc.org&quot;,
+      &quot;code&quot; : &quot;39125-0&quot;,
+      &quot;display&quot; : &quot;Width of Wound&quot;
     }
   ]
 }</code></pre></div></td></tr>
@@ -48,8 +51,9 @@
 <tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck0350.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.Slices for component.component:dybde.</span><a href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.component:dybde.code">code</a><a name="Observation.component:dybde.code"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Type of component observation (code / type)</span><br/><span class="xhtPieceBold">Required Pattern: </span><div><pre class="json"><code>{
   &quot;coding&quot; : [
     {
-      &quot;system&quot; : &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode&quot;,
-      &quot;code&quot; : <span title="Dybde">&quot;dybde&quot;</span>
+      &quot;system&quot; : &quot;http://loinc.org&quot;,
+      &quot;code&quot; : &quot;39127-6&quot;,
+      &quot;display&quot; : &quot;Depth of Wound&quot;
     }
   ]
 }</code></pre></div></td></tr>
@@ -60,8 +64,9 @@
 <tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck0350.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.Slices for component.component:sarbunn.</span><a href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.component:sarbunn.code">code</a><a name="Observation.component:sarbunn.code"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Type of component observation (code / type)</span><br/><span class="xhtPieceBold">Required Pattern: </span><div><pre class="json"><code>{
   &quot;coding&quot; : [
     {
-      &quot;system&quot; : &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode&quot;,
-      &quot;code&quot; : <span title="Sårbunn">&quot;sarbunn&quot;</span>
+      &quot;system&quot; : &quot;http://loinc.org&quot;,
+      &quot;code&quot; : &quot;72371-8&quot;,
+      &quot;display&quot; : &quot;Appearance of Wound base&quot;
     }
   ]
 }</code></pre></div></td></tr>
@@ -70,8 +75,9 @@
 <tr class="xhtRowBorder0 xhtRowOdd"><td style="background-image: url(tbl_bck0350.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.Slices for component.component:vaesking.</span><a href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.component:vaesking.code">code</a><a name="Observation.component:vaesking.code"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Type of component observation (code / type)</span><br/><span class="xhtPieceBold">Required Pattern: </span><div><pre class="json"><code>{
   &quot;coding&quot; : [
     {
-      &quot;system&quot; : &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode&quot;,
-      &quot;code&quot; : <span title="Væsking">&quot;vaesking&quot;</span>
+      &quot;system&quot; : &quot;http://loinc.org&quot;,
+      &quot;code&quot; : &quot;39116-9&quot;,
+      &quot;display&quot; : &quot;Drainage amount of Wound&quot;
     }
   ]
 }</code></pre></div></td></tr>
@@ -80,8 +86,9 @@
 <tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck0350.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vline_slicer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.Slices for component.component:hud_rundt.</span><a href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.component:hud_rundt.code">code</a><a name="Observation.component:hud_rundt.code"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Type of component observation (code / type)</span><br/><span class="xhtPieceBold">Required Pattern: </span><div><pre class="json"><code>{
   &quot;coding&quot; : [
     {
-      &quot;system&quot; : &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode&quot;,
-      &quot;code&quot; : <span title="Huden rundt såret">&quot;hud-rundt&quot;</span>
+      &quot;system&quot; : &quot;http://loinc.org&quot;,
+      &quot;code&quot; : &quot;72301-5&quot;,
+      &quot;display&quot; : &quot;Description of Periwound&quot;
     }
   ]
 }</code></pre></div></td></tr>
@@ -100,8 +107,9 @@
 <tr class="xhtRowBorder0 xhtRowEven"><td style="background-image: url(tbl_bck0250.png)" class="hierarchy xhtCellBorder0 xhtCellNoWrap"><img src="tbl_spacer.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_slice.png" alt="" style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="" style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0" class="sr-only">Observation.Slices for component.component:smerte.</span><a href="StructureDefinition-joda-sarvurdering-definitions.html#Observation.component:smerte.code">code</a><a name="Observation.component:smerte.code"> </a></td><td style="" class="hierarchy xhtCellBorder0"/><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">1</span><span class="xhtPieceDeEmphasized">..</span><span class="xhtPieceDeEmphasized">1</span></td><td style="" class="hierarchy xhtCellBorder0"><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept" class="xhtPieceDeEmphasized">CodeableConcept</a></td><td style="" class="hierarchy xhtCellBorder0"><span class="xhtPieceDeEmphasized">Type of component observation (code / type)</span><br/><span class="xhtPieceBold">Required Pattern: </span><div><pre class="json"><code>{
   &quot;coding&quot; : [
     {
-      &quot;system&quot; : &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode&quot;,
-      &quot;code&quot; : <span title="Smerte">&quot;smerte&quot;</span>
+      &quot;system&quot; : &quot;http://loinc.org&quot;,
+      &quot;code&quot; : &quot;72514-3&quot;,
+      &quot;display&quot; : &quot;Pain severity - 0-10 verbal numeric rating [Score] - Reported&quot;
     }
   ]
 }</code></pre></div></td></tr>
@@ -114,7 +122,7 @@
   <title value="Sårvurdering"/>
   <status value="draft"/>
   <experimental value="true"/>
-  <date value="2026-11-09T10:33:12+00:00"/>
+  <date value="2026-11-09T12:33:10+00:00"/>
   <publisher value="Kristil Erla Håland"/>
   <contact>
     <name value="Kristil Erla Håland"/>
@@ -777,8 +785,9 @@
       </type>
       <patternCodeableConcept>
         <coding>
-          <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-          <code value="sarvurdering"/>
+          <system value="http://loinc.org"/>
+          <code value="39135-9"/>
+          <display value="Wound assessment panel"/>
         </coding>
       </patternCodeableConcept>
       <constraint>
@@ -1917,7 +1926,7 @@
     </element>
     <element id="Observation.derivedFrom">
       <path value="Observation.derivedFrom"/>
-      <short value="Sårbildene vurderingen bygger på"/>
+      <short value="Sårbildene og eventuelle andre vurderinger denne bygger på"/>
       <definition value="The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image."/>
       <comment value="All the reference choices that are listed in this element can represent clinical observations and other measurements that may be the source for a derived value.  The most common reference will be another Observation.  For a discussion on the ways Observations can assembled in groups together, see [Notes](http://hl7.org/fhir/R4/observation.html#obsgrouping) below."/>
       <min value="0"/>
@@ -1930,6 +1939,7 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde"/>
+        <targetProfile value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering"/>
       </type>
       <constraint>
         <key value="ele-1"/>
@@ -2519,8 +2529,9 @@
       </type>
       <patternCodeableConcept>
         <coding>
-          <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-          <code value="lengde"/>
+          <system value="http://loinc.org"/>
+          <code value="39126-8"/>
+          <display value="Length of Wound"/>
         </coding>
       </patternCodeableConcept>
       <constraint>
@@ -3154,8 +3165,9 @@
       </type>
       <patternCodeableConcept>
         <coding>
-          <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-          <code value="bredde"/>
+          <system value="http://loinc.org"/>
+          <code value="39125-0"/>
+          <display value="Width of Wound"/>
         </coding>
       </patternCodeableConcept>
       <constraint>
@@ -3789,8 +3801,9 @@
       </type>
       <patternCodeableConcept>
         <coding>
-          <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-          <code value="dybde"/>
+          <system value="http://loinc.org"/>
+          <code value="39127-6"/>
+          <display value="Depth of Wound"/>
         </coding>
       </patternCodeableConcept>
       <constraint>
@@ -4424,8 +4437,9 @@
       </type>
       <patternCodeableConcept>
         <coding>
-          <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-          <code value="sarbunn"/>
+          <system value="http://loinc.org"/>
+          <code value="72371-8"/>
+          <display value="Appearance of Wound base"/>
         </coding>
       </patternCodeableConcept>
       <constraint>
@@ -4802,8 +4816,9 @@
       </type>
       <patternCodeableConcept>
         <coding>
-          <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-          <code value="vaesking"/>
+          <system value="http://loinc.org"/>
+          <code value="39116-9"/>
+          <display value="Drainage amount of Wound"/>
         </coding>
       </patternCodeableConcept>
       <constraint>
@@ -5180,8 +5195,9 @@
       </type>
       <patternCodeableConcept>
         <coding>
-          <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-          <code value="hud-rundt"/>
+          <system value="http://loinc.org"/>
+          <code value="72301-5"/>
+          <display value="Description of Periwound"/>
         </coding>
       </patternCodeableConcept>
       <constraint>
@@ -5932,8 +5948,9 @@
       </type>
       <patternCodeableConcept>
         <coding>
-          <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-          <code value="smerte"/>
+          <system value="http://loinc.org"/>
+          <code value="72514-3"/>
+          <display value="Pain severity - 0-10 verbal numeric rating [Score] - Reported"/>
         </coding>
       </patternCodeableConcept>
       <constraint>
@@ -6156,8 +6173,9 @@
       <path value="Observation.code"/>
       <patternCodeableConcept>
         <coding>
-          <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-          <code value="sarvurdering"/>
+          <system value="http://loinc.org"/>
+          <code value="39135-9"/>
+          <display value="Wound assessment panel"/>
         </coding>
       </patternCodeableConcept>
     </element>
@@ -6202,10 +6220,11 @@
     </element>
     <element id="Observation.derivedFrom">
       <path value="Observation.derivedFrom"/>
-      <short value="Sårbildene vurderingen bygger på"/>
+      <short value="Sårbildene og eventuelle andre vurderinger denne bygger på"/>
       <type>
         <code value="Reference"/>
         <targetProfile value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde"/>
+        <targetProfile value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering"/>
       </type>
       <mustSupport value="true"/>
     </element>
@@ -6232,8 +6251,9 @@
       <path value="Observation.component.code"/>
       <patternCodeableConcept>
         <coding>
-          <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-          <code value="lengde"/>
+          <system value="http://loinc.org"/>
+          <code value="39126-8"/>
+          <display value="Length of Wound"/>
         </coding>
       </patternCodeableConcept>
     </element>
@@ -6262,8 +6282,9 @@
       <path value="Observation.component.code"/>
       <patternCodeableConcept>
         <coding>
-          <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-          <code value="bredde"/>
+          <system value="http://loinc.org"/>
+          <code value="39125-0"/>
+          <display value="Width of Wound"/>
         </coding>
       </patternCodeableConcept>
     </element>
@@ -6292,8 +6313,9 @@
       <path value="Observation.component.code"/>
       <patternCodeableConcept>
         <coding>
-          <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-          <code value="dybde"/>
+          <system value="http://loinc.org"/>
+          <code value="39127-6"/>
+          <display value="Depth of Wound"/>
         </coding>
       </patternCodeableConcept>
     </element>
@@ -6322,8 +6344,9 @@
       <path value="Observation.component.code"/>
       <patternCodeableConcept>
         <coding>
-          <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-          <code value="sarbunn"/>
+          <system value="http://loinc.org"/>
+          <code value="72371-8"/>
+          <display value="Appearance of Wound base"/>
         </coding>
       </patternCodeableConcept>
     </element>
@@ -6348,8 +6371,9 @@
       <path value="Observation.component.code"/>
       <patternCodeableConcept>
         <coding>
-          <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-          <code value="vaesking"/>
+          <system value="http://loinc.org"/>
+          <code value="39116-9"/>
+          <display value="Drainage amount of Wound"/>
         </coding>
       </patternCodeableConcept>
     </element>
@@ -6374,8 +6398,9 @@
       <path value="Observation.component.code"/>
       <patternCodeableConcept>
         <coding>
-          <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-          <code value="hud-rundt"/>
+          <system value="http://loinc.org"/>
+          <code value="72301-5"/>
+          <display value="Description of Periwound"/>
         </coding>
       </patternCodeableConcept>
     </element>
@@ -6423,8 +6448,9 @@
       <path value="Observation.component.code"/>
       <patternCodeableConcept>
         <coding>
-          <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-          <code value="smerte"/>
+          <system value="http://loinc.org"/>
+          <code value="72514-3"/>
+          <display value="Pain severity - 0-10 verbal numeric rating [Score] - Reported"/>
         </coding>
       </patternCodeableConcept>
     </element>

@@ -4,16 +4,14 @@
 
 * [Home](index.md)
 * [Artifacts Summary](artifacts.md)
+* [Karins sår i JodaCare](karins-sar.md)
 
 ## Resources
 
 ### CodeSystems
 
-* [Huden rundt såret](CodeSystem-joda-hud-rundt.md)
 * [Kameratype](CodeSystem-joda-kameratype.md)
-* [Sårbunn](CodeSystem-joda-sarbunn.md)
 * [Sårvurdering](CodeSystem-joda-sarvurdering-kode.md)
-* [Væsking](CodeSystem-joda-vaesking.md)
 
 ### ValueSets
 
@@ -41,10 +39,15 @@
 * [Kamera-Mobil (Device)](Device-Kamera-Mobil.md)
 * [Sardokument-Hjemme-1-Innsendt (DocumentReference)](DocumentReference-Sardokument-Hjemme-1-Innsendt.md)
 * [Sardokument-Hjemme-1-Journalfort (DocumentReference)](DocumentReference-Sardokument-Hjemme-1-Journalfort.md)
+* [Time-Sarpoliklinikk-1 (Encounter)](Encounter-Time-Sarpoliklinikk-1.md)
 * [Sarbilde-Besok-1 (Media)](Media-Sarbilde-Besok-1.md)
 * [Sarbilde-Hjemme-1 (Media)](Media-Sarbilde-Hjemme-1.md)
 * [Sarvurdering-Besok-1 (Observation)](Observation-Sarvurdering-Besok-1.md)
+* [Sarvurdering-Spesialist-1 (Observation)](Observation-Sarvurdering-Spesialist-1.md)
+* [Sårpoliklinikken, Fjordvik sykehus (Organization)](Organization-Sarpoliklinikk.md)
 * [Pasient-Karin (Patient)](Patient-Pasient-Karin.md)
+* [Spesialist-Nora (Practitioner)](Practitioner-Spesialist-Nora.md)
 * [Sykepleier-Sara (Practitioner)](Practitioner-Sykepleier-Sara.md)
+* [Proveniens-Sarbilde-Besok-1 (Provenance)](Provenance-Proveniens-Sarbilde-Besok-1.md)
 * [Proveniens-Sarbilde-Hjemme-1 (Provenance)](Provenance-Proveniens-Sarbilde-Hjemme-1.md)
 * [Datter-Lise (RelatedPerson)](RelatedPerson-Datter-Lise.md)

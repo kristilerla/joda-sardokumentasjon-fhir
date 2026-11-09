@@ -17,8 +17,8 @@
     "status" : "draft",
     "name" : "JodaHudRundtVS",
     "title" : "Huden rundt såret",
-    "description" : "Gyldige verdier for huden rundt såret.",
-    "systems" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt"],
+    "description" : "Tilstanden til huden rundt såret. Et utvalg av SNOMED CT-kodene i periwoundConditionVS i HL7 Lower Extremity Skin Wound Assessment IG.",
+    "systems" : ["http://snomed.info/sct"],
     "uses" : {
     },
     "StructureDefinition-joda-sarvurdering.html" : "Sårvurdering"
@@ -41,8 +41,8 @@
     "status" : "draft",
     "name" : "JodaSarbunnVS",
     "title" : "Sårbunn",
-    "description" : "Gyldige verdier for sårbunn.",
-    "systems" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn"],
+    "description" : "Hva sårbunnen hovedsakelig består av. SNOMED CT-koder fra woundBedAppearanceVS i HL7 Lower Extremity Skin Wound Assessment IG.",
+    "systems" : ["http://snomed.info/sct"],
     "uses" : {
     },
     "StructureDefinition-joda-sarvurdering.html" : "Sårvurdering"
@@ -53,8 +53,8 @@
     "status" : "draft",
     "name" : "JodaVaeskingVS",
     "title" : "Væsking",
-    "description" : "Gyldige verdier for væsking.",
-    "systems" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking"],
+    "description" : "Hvor mye såret væsker. SNOMED CT-koder fra woundExudateAmountDescriptionVS i HL7 Lower Extremity Skin Wound Assessment IG.",
+    "systems" : ["http://snomed.info/sct"],
     "uses" : {
     },
     "StructureDefinition-joda-sarvurdering.html" : "Sårvurdering"

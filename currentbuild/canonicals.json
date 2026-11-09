@@ -1,11 +1,4 @@
 [{
-  "id" : "joda-hud-rundt",
-  "type" : "CodeSystem",
-  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt",
-  "version" : "0.1.0",
-  "name" : "JodaHudRundt"
-},
-{
   "id" : "joda-kameratype",
   "type" : "CodeSystem",
   "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype",
@@ -13,25 +6,11 @@
   "name" : "JodaKameratype"
 },
 {
-  "id" : "joda-sarbunn",
-  "type" : "CodeSystem",
-  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn",
-  "version" : "0.1.0",
-  "name" : "JodaSarbunn"
-},
-{
   "id" : "joda-sarvurdering-kode",
   "type" : "CodeSystem",
   "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
   "version" : "0.1.0",
   "name" : "JodaSarvurderingKode"
-},
-{
-  "id" : "joda-vaesking",
-  "type" : "CodeSystem",
-  "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking",
-  "version" : "0.1.0",
-  "name" : "JodaVaesking"
 },
 {
   "id" : "joda.fhir.sardokumentasjon",

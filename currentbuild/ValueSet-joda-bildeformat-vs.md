@@ -51,7 +51,7 @@ Bildeformater som kan brukes for sårbilder.
   "title" : "Bildeformat",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-09T10:33:12+00:00",
+  "date" : "2026-11-09T12:33:10+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",
@@ -78,6 +78,10 @@ Bildeformater som kan brukes for sårbilder.
       {
         "code" : "image/png",
         "display" : "PNG"
+      },
+      {
+        "code" : "image/tiff",
+        "display" : "TIFF"
       }]
     }]
   }

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "de7f20a9-72d0-4f84-88db-d79366c9f323",
+  "id" : "bd8a1b75-28a6-4762-bd42-084e23e03487",
   "meta" : {
-    "lastUpdated" : "2026-11-09T10:33:12.511+00:00"
+    "lastUpdated" : "2026-11-09T12:33:10.185+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -11,7 +11,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p>This value set contains 2 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (no)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-urn:ietf:bcp:13-image/jpeg\"> </a><code>urn:ietf:bcp:13</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0image/jpeg</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:ietf:bcp:13&quot;, &quot;code&quot;: &quot;image/jpeg&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:ietf:bcp:13&quot;/&gt;&lt;code value=&quot;image/jpeg&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:ietf:bcp:13-image/png\"> </a><code>urn:ietf:bcp:13</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0image/png</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:ietf:bcp:13&quot;, &quot;code&quot;: &quot;image/png&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:ietf:bcp:13&quot;/&gt;&lt;code value=&quot;image/png&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p>This value set contains 3 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (no)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-urn:ietf:bcp:13-image/jpeg\"> </a><code>urn:ietf:bcp:13</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0image/jpeg</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:ietf:bcp:13&quot;, &quot;code&quot;: &quot;image/jpeg&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:ietf:bcp:13&quot;/&gt;&lt;code value=&quot;image/jpeg&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:ietf:bcp:13-image/png\"> </a><code>urn:ietf:bcp:13</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0image/png</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:ietf:bcp:13&quot;, &quot;code&quot;: &quot;image/png&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:ietf:bcp:13&quot;/&gt;&lt;code value=&quot;image/png&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-urn:ietf:bcp:13-image/tiff\"> </a><code>urn:ietf:bcp:13</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0image/tiff</td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;urn:ietf:bcp:13&quot;, &quot;code&quot;: &quot;image/tiff&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;urn:ietf:bcp:13&quot;/&gt;&lt;code value=&quot;image/tiff&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
       },
       "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-bildeformat-vs",
       "version" : "0.1.0",
@@ -19,7 +19,7 @@
       "title" : "Bildeformat",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-11-09T10:33:12+00:00",
+      "date" : "2026-11-09T12:33:10+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -28,9 +28,9 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:d31f0924-0ca0-4e90-b1de-fe83923b6812",
-        "timestamp" : "2026-11-09T10:34:29+00:00",
-        "total" : 2,
+        "identifier" : "urn:uuid:29a3ac51-7d3e-480b-a7d8-65f3ca3a3ecf",
+        "timestamp" : "2026-11-09T12:34:10+00:00",
+        "total" : 3,
         "offset" : 0,
         "parameter" : [{
           "name" : "displayLanguage",
@@ -67,6 +67,10 @@
         {
           "system" : "urn:ietf:bcp:13",
           "code" : "image/png"
+        },
+        {
+          "system" : "urn:ietf:bcp:13",
+          "code" : "image/tiff"
         }]
       }
     }
@@ -77,7 +81,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-joda-hud-rundt.html\">codesystem Huden rundt såret v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 5 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (no)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt-normal\"> </a><code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-hud-rundt.html#joda-hud-rundt-normal\">normal</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;normal&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;normal&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt-rod\"> </a><code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-hud-rundt.html#joda-hud-rundt-rod\">rod</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;rod&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;rod&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt-maserert\"> </a><code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-hud-rundt.html#joda-hud-rundt-maserert\">maserert</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;maserert&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;maserert&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt-hoven\"> </a><code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-hud-rundt.html#joda-hud-rundt-hoven\">hoven</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;hoven&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;hoven&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt-torr\"> </a><code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-hud-rundt.html#joda-hud-rundt-torr\">torr</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;torr&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;torr&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 10 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (no)</b></td><td><b>Inactive</b></td><td><b><a href=\"http://hl7.org/fhir/concept-properties#status\">status</a></b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://snomed.info/sct-444884003\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/444884003\">444884003</a></td><td/><td/><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;444884003&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;444884003&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-239163008\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/239163008\">239163008</a></td><td/><td/><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;239163008&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;239163008&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-3644009\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/3644009\">3644009</a></td><td/><td/><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;3644009&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;3644009&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-95322002\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/95322002\">95322002</a></td><td/><td/><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;95322002&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;95322002&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-16386004\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/16386004\">16386004</a></td><td/><td>inactive</td><td>inactive</td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;16386004&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;16386004&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-17038008\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/17038008\">17038008</a></td><td/><td/><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;17038008&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;17038008&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-449738003\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/449738003\">449738003</a></td><td/><td/><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;449738003&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;449738003&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-449744004\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/449744004\">449744004</a></td><td/><td/><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;449744004&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;449744004&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-247444006\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/247444006\">247444006</a></td><td/><td/><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;247444006&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;247444006&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-417237009\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/417237009\">417237009</a></td><td/><td/><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;417237009&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;417237009&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
       },
       "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-hud-rundt-vs",
       "version" : "0.1.0",
@@ -85,7 +89,7 @@
       "title" : "Huden rundt såret",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-11-09T10:33:12+00:00",
+      "date" : "2026-11-09T12:33:10+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -94,9 +98,9 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0da5ff19-5603-4558-b703-c09e403ae284",
-        "timestamp" : "2026-11-09T10:34:29+00:00",
-        "total" : 5,
+        "identifier" : "urn:uuid:2b346293-0491-459a-9004-bdadc9b2d495",
+        "timestamp" : "2026-11-09T12:34:10+00:00",
+        "total" : 10,
         "offset" : 0,
         "parameter" : [{
           "name" : "displayLanguage",
@@ -115,28 +119,65 @@
           "valueBoolean" : false
         },
         {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "includeDefinition",
+          "valueBoolean" : false
+        },
+        {
           "name" : "used-codesystem",
-          "valueUri" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt|0.1.0"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
+        }],
+        "property" : [{
+          "code" : "status",
+          "uri" : "http://hl7.org/fhir/concept-properties#status"
         }],
         "contains" : [{
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt",
-          "code" : "normal"
+          "system" : "http://snomed.info/sct",
+          "code" : "444884003"
         },
         {
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt",
-          "code" : "rod"
+          "system" : "http://snomed.info/sct",
+          "code" : "239163008"
         },
         {
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt",
-          "code" : "maserert"
+          "system" : "http://snomed.info/sct",
+          "code" : "3644009"
         },
         {
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt",
-          "code" : "hoven"
+          "system" : "http://snomed.info/sct",
+          "code" : "95322002"
         },
         {
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt",
-          "code" : "torr"
+          "system" : "http://snomed.info/sct",
+          "inactive" : true,
+          "code" : "16386004",
+          "property" : [{
+            "code" : "status",
+            "valueCode" : "inactive"
+          }]
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "17038008"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "449738003"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "449744004"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "247444006"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "417237009"
         }]
       }
     }
@@ -155,7 +196,7 @@
       "title" : "Kameratype",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-11-09T10:33:12+00:00",
+      "date" : "2026-11-09T12:33:10+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -164,8 +205,8 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:2e411ff6-b39a-40c1-afde-1d89f5e8db27",
-        "timestamp" : "2026-11-09T10:34:29+00:00",
+        "identifier" : "urn:uuid:c2424064-fb75-4bdf-a0e3-550dbddd1a2f",
+        "timestamp" : "2026-11-09T12:34:10+00:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -205,7 +246,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-joda-sarbunn.html\">codesystem Sårbunn v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 4 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (no)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn-granulasjon\"> </a><code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-sarbunn.html#joda-sarbunn-granulasjon\">granulasjon</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;granulasjon&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;granulasjon&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn-fibrin\"> </a><code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-sarbunn.html#joda-sarbunn-fibrin\">fibrin</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;fibrin&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;fibrin&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn-nekrose\"> </a><code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-sarbunn.html#joda-sarbunn-nekrose\">nekrose</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;nekrose&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;nekrose&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn-epitel\"> </a><code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-sarbunn.html#joda-sarbunn-epitel\">epitel</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;epitel&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;epitel&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 7 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (no)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://snomed.info/sct-225541009\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/225541009\">225541009</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;225541009&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;225541009&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-449745003\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/449745003\">449745003</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;449745003&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;449745003&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-449746002\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/449746002\">449746002</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;449746002&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;449746002&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-421306004\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/421306004\">421306004</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;421306004&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;421306004&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-609410002\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/609410002\">609410002</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;609410002&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;609410002&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-409590008\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/409590008\">409590008</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;409590008&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;409590008&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-449743005\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/449743005\">449743005</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;449743005&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;449743005&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
       },
       "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-sarbunn-vs",
       "version" : "0.1.0",
@@ -213,7 +254,7 @@
       "title" : "Sårbunn",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-11-09T10:33:12+00:00",
+      "date" : "2026-11-09T12:33:10+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -222,9 +263,9 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:bcda9565-8152-4fea-ad4e-a3312e3493cb",
-        "timestamp" : "2026-11-09T10:34:29+00:00",
-        "total" : 4,
+        "identifier" : "urn:uuid:dc5cc805-35e3-46e2-8bee-9e76354840e0",
+        "timestamp" : "2026-11-09T12:34:10+00:00",
+        "total" : 7,
         "offset" : 0,
         "parameter" : [{
           "name" : "displayLanguage",
@@ -243,24 +284,44 @@
           "valueBoolean" : false
         },
         {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "includeDefinition",
+          "valueBoolean" : false
+        },
+        {
           "name" : "used-codesystem",
-          "valueUri" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn|0.1.0"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn",
-          "code" : "granulasjon"
+          "system" : "http://snomed.info/sct",
+          "code" : "225541009"
         },
         {
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn",
-          "code" : "fibrin"
+          "system" : "http://snomed.info/sct",
+          "code" : "449745003"
         },
         {
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn",
-          "code" : "nekrose"
+          "system" : "http://snomed.info/sct",
+          "code" : "449746002"
         },
         {
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn",
-          "code" : "epitel"
+          "system" : "http://snomed.info/sct",
+          "code" : "421306004"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "609410002"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "409590008"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "449743005"
         }]
       }
     }
@@ -271,7 +332,7 @@
       "resourceType" : "ValueSet",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion performed internally based on <a href=\"CodeSystem-joda-vaesking.html\">codesystem Væsking v0.1.0 (CodeSystem)</a><span class=\"copy-text-inline\"><button data-clipboard-text=\"https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking|0.1.0\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 4 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (no)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking-ingen\"> </a><code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-vaesking.html#joda-vaesking-ingen\">ingen</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;ingen&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;ingen&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking-lite\"> </a><code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-vaesking.html#joda-vaesking-lite\">lite</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;lite&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;lite&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking-moderat\"> </a><code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-vaesking.html#joda-vaesking-moderat\">moderat</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;moderat&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;moderat&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking-mye\"> </a><code>https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"CodeSystem-joda-vaesking.html#joda-vaesking-mye\">mye</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;mye&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;mye&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" data-fhir=\"generated\"><p class=\"res-header-id\"/><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion from tx.fhir.org based on SNOMED CT International edition 01-Feb 2025<span class=\"copy-text-inline\"><button data-clipboard-text=\"http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201\" title=\"Click to Copy URL\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></p><p>This value set contains 5 concepts</p><table class=\"codes\" data-fhir=\"generated\"><tr><td><b>System</b></td><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display (no)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name=\"x-http://snomed.info/sct-260413007\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/260413007\">260413007</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;260413007&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;260413007&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-263865001\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/263865001\">263865001</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;263865001&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;263865001&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-255507004\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/255507004\">255507004</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;255507004&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;255507004&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-6736007\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/6736007\">6736007</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;6736007&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;6736007&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr><tr><td><a name=\"x-http://snomed.info/sct-255509001\"> </a><code>http://snomed.info/sct</code></td><td style=\"white-space:nowrap\">\u00a0\u00a0<a href=\"http://snomed.info/id/255509001\">255509001</a></td><td/><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"{&quot;system&quot;: &quot;http://snomed.info/sct&quot;, &quot;version&quot;: &quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;, &quot;code&quot;: &quot;255509001&quot;}\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td><td><span class=\"copy-text-inline\"><button data-clipboard-text=\"&lt;coding&gt;&lt;system value=&quot;http://snomed.info/sct&quot;/&gt;&lt;version value=&quot;http://snomed.info/sct/900000000000207008/version/20250201&quot;/&gt;&lt;code value=&quot;255509001&quot;/&gt;&lt;/coding&gt;\" title=\"Click to Copy as Coding\" class=\"btn-copy\" aria-label=\"copy\"> </button></span></td></tr></table></div>"
       },
       "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/ValueSet/joda-vaesking-vs",
       "version" : "0.1.0",
@@ -279,7 +340,7 @@
       "title" : "Væsking",
       "status" : "draft",
       "experimental" : true,
-      "date" : "2026-11-09T10:33:12+00:00",
+      "date" : "2026-11-09T12:33:10+00:00",
       "jurisdiction" : [{
         "coding" : [{
           "system" : "urn:iso:std:iso:3166",
@@ -288,9 +349,9 @@
         }]
       }],
       "expansion" : {
-        "identifier" : "urn:uuid:0dc12226-c294-4e94-bfb5-98ea7e9dab0c",
-        "timestamp" : "2026-11-09T10:34:29+00:00",
-        "total" : 4,
+        "identifier" : "urn:uuid:dab50ec8-1a20-4376-a802-1390b3e89213",
+        "timestamp" : "2026-11-09T12:34:10+00:00",
+        "total" : 5,
         "offset" : 0,
         "parameter" : [{
           "name" : "displayLanguage",
@@ -309,24 +370,36 @@
           "valueBoolean" : false
         },
         {
+          "name" : "used-valueset",
+          "valueUri" : "null"
+        },
+        {
+          "name" : "includeDefinition",
+          "valueBoolean" : false
+        },
+        {
           "name" : "used-codesystem",
-          "valueUri" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking|0.1.0"
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250201"
         }],
         "contains" : [{
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking",
-          "code" : "ingen"
+          "system" : "http://snomed.info/sct",
+          "code" : "260413007"
         },
         {
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking",
-          "code" : "lite"
+          "system" : "http://snomed.info/sct",
+          "code" : "263865001"
         },
         {
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking",
-          "code" : "moderat"
+          "system" : "http://snomed.info/sct",
+          "code" : "255507004"
         },
         {
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking",
-          "code" : "mye"
+          "system" : "http://snomed.info/sct",
+          "code" : "6736007"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "255509001"
         }]
       }
     }

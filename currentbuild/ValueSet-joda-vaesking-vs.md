@@ -12,7 +12,7 @@
 | Draft as of 2026-11-09 | *Computable Name*:JodaVaeskingVS |
 
  
-Gyldige verdier for væsking. 
+Hvor mye såret væsker. SNOMED CT-koder fra woundExudateAmountDescriptionVS i HL7 Lower Extremity Skin Wound Assessment IG. 
 
  **References** 
 
@@ -51,7 +51,7 @@ Gyldige verdier for væsking.
   "title" : "Væsking",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-09T10:33:12+00:00",
+  "date" : "2026-11-09T12:33:10+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",
@@ -60,7 +60,7 @@ Gyldige verdier for væsking.
       "value" : "https://jodacare.no"
     }]
   }],
-  "description" : "Gyldige verdier for væsking.",
+  "description" : "Hvor mye såret væsker. SNOMED CT-koder fra woundExudateAmountDescriptionVS i HL7 Lower Extremity Skin Wound Assessment IG.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -70,7 +70,27 @@ Gyldige verdier for væsking.
   }],
   "compose" : {
     "include" : [{
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking"
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "260413007",
+        "display" : "None"
+      },
+      {
+        "code" : "263865001",
+        "display" : "Scanty"
+      },
+      {
+        "code" : "255507004",
+        "display" : "Small"
+      },
+      {
+        "code" : "6736007",
+        "display" : "Moderate"
+      },
+      {
+        "code" : "255509001",
+        "display" : "Large"
+      }]
     }]
   }
 }

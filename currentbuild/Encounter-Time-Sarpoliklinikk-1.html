@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Sårbunn - Testing - Sårdokumentasjon med JodaCare og Jodapro v0.1.0</title>
+    <title>Videotime med sårpoliklinikken - Sårdokumentasjon med JodaCare og Jodapro v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.13"}
-    h3,h4,h5,h6{--heading-prefix:"2.13"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.28"}
+    h3,h4,h5,h6{--heading-prefix:"2.28"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -121,7 +121,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Sårbunn</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Videotime med sårpoliklinikken</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -135,6 +135,7 @@
 
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Sårdokumentasjon med JodaCare og Jodapro - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://kristilerla.github.io/joda-sardokumentasjon-fhir/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
   
 
 
@@ -146,29 +147,29 @@
 
 <ul class="nav nav-tabs">
 
-  <li>
-    <a href="CodeSystem-joda-sarbunn.html">Narrative Content</a>
+  <li class="active">
+    <a href="#">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="CodeSystem-joda-sarbunn.xml.html">XML</a>
+      <a href="Encounter-Time-Sarpoliklinikk-1.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="CodeSystem-joda-sarbunn.json.html">JSON</a>
+      <a href="Encounter-Time-Sarpoliklinikk-1.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="CodeSystem-joda-sarbunn.ttl.html">TTL</a>
+      <a href="Encounter-Time-Sarpoliklinikk-1.ttl.html">TTL</a>
     </li>
   
 
@@ -176,49 +177,26 @@
 
 </ul>
 
+
   <a name="root"> </a>
-  <h2 id="root">CodeSystem: Sårbunn - Testing
-(Experimental)
-  </h2>
 
 
-  <table class="colsd">
-    <tr>
-
-      <td colspan="2">
-        
-          Draft
-          
-            as of 2026-11-09
-          
-        
-      </td>
-
-    </tr>
-  </table>
+  <h2 id="root">Example Encounter: Videotime med sårpoliklinikken</h2>
 
 
 
 
-<!-- insert intro if present -->
+  <!-- insert intro if present -->
+  
 
 
 
+  <div xmlns="http://www.w3.org/1999/xhtml"><a name="Time-Sarpoliklinikk-1"> </a><a name="hcTime-Sarpoliklinikk-1"> </a><p><b>status</b>: Finished</p><p><b>class</b>: <a href="http://terminology.hl7.org/7.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-VR">ActCode: VR</a> (virtual)</p><p><b>subject</b>: <a href="Patient-Pasient-Karin.html">Karin Testdal  Female, DoB: 1948-03-13 ( https://example.org/oppdiktet/pasient-id#testpasient-karin)</a></p><blockquote><p><b>participant</b></p><p><b>individual</b>: <a href="Practitioner-Spesialist-Nora.html">Nora Testvik</a></p></blockquote><blockquote><p><b>participant</b></p><p><b>individual</b>: <a href="Practitioner-Sykepleier-Sara.html">Sara Testesen</a></p></blockquote><p><b>period</b>: 2026-11-11 10:00:00+0100 --&gt; 2026-11-11 10:30:00+0100</p><p><b>serviceProvider</b>: <a href="Organization-Sarpoliklinikk.html">Sårpoliklinikken, Fjordvik sykehus</a></p></div>
 
-<h3>Test Plans</h3>
+  
 
-  <p><b>No test plans are currently available for the  CodeSystem.</b></p>
-
-
-<h3>Test Scripts</h3>
-
-  <p><b>No test scripts are currently available for the  CodeSystem.</b></p>
-
-
-<!-- insert notes if present -->
-
-
-
+  <!-- insert notes if present -->
+  
 
 
 
@@ -238,7 +216,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jodacare.no">Kristil Erla Håland</a>.  Package joda.fhir.sardokumentasjon#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 9, 2026 10:33+0000">2026-11-09</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jodacare.no">Kristil Erla Håland</a>.  Package joda.fhir.sardokumentasjon#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 9, 2026 12:33+0000">2026-11-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Huden rundt såret - Testing - Sårdokumentasjon med JodaCare og Jodapro v0.1.0</title>
+    <title>Hvem tok bildet ved besøket - Sårdokumentasjon med JodaCare og Jodapro v0.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.11"}
-    h3,h4,h5,h6{--heading-prefix:"2.11"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.18"}
+    h3,h4,h5,h6{--heading-prefix:"2.18"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -121,7 +121,7 @@
     <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
       <div class="container">  <!-- container -->
         <ul class="breadcrumb">
-          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Huden rundt såret</b></li>
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Hvem tok bildet ved besøket</b></li>
 
         </ul>
       </div>  <!-- /container -->
@@ -135,6 +135,7 @@
 
 <div class="col-12">
   <!--ReleaseHeader--><p id="publish-box">Sårdokumentasjon med JodaCare og Jodapro - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://kristilerla.github.io/joda-sardokumentasjon-fhir/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+
   
 
 
@@ -146,29 +147,29 @@
 
 <ul class="nav nav-tabs">
 
-  <li>
-    <a href="CodeSystem-joda-hud-rundt.html">Narrative Content</a>
+  <li class="active">
+    <a href="#">Narrative Content</a>
   </li>
 
 
 
   
     <li>
-      <a href="CodeSystem-joda-hud-rundt.xml.html">XML</a>
+      <a href="Provenance-Proveniens-Sarbilde-Besok-1.xml.html">XML</a>
     </li>
   
 
 
   
     <li>
-      <a href="CodeSystem-joda-hud-rundt.json.html">JSON</a>
+      <a href="Provenance-Proveniens-Sarbilde-Besok-1.json.html">JSON</a>
     </li>
   
 
 
   
     <li>
-      <a href="CodeSystem-joda-hud-rundt.ttl.html">TTL</a>
+      <a href="Provenance-Proveniens-Sarbilde-Besok-1.ttl.html">TTL</a>
     </li>
   
 
@@ -176,49 +177,32 @@
 
 </ul>
 
+
   <a name="root"> </a>
-  <h2 id="root">CodeSystem: Huden rundt såret - Testing
-(Experimental)
-  </h2>
 
 
-  <table class="colsd">
-    <tr>
-
-      <td colspan="2">
-        
-          Draft
-          
-            as of 2026-11-09
-          
-        
-      </td>
-
-    </tr>
-  </table>
+  <h2 id="root">Example Provenance: Hvem tok bildet ved besøket</h2>
 
 
 
 
-<!-- insert intro if present -->
+  <!-- insert intro if present -->
+  
 
 
 
+  <div xmlns="http://www.w3.org/1999/xhtml"><a name="Proveniens-Sarbilde-Besok-1"> </a><a name="hcProveniens-Sarbilde-Besok-1"> </a><p>Provenance for <a href="Media-Sarbilde-Besok-1.html">Media: identifier = https://jodapro.no/fhir/sid/evidence-id#7d2f4b8e-1c3a-4e59-9b6d-2a8f0c5e9d14; status = completed; type = Image; created[x] = 2026-11-11 10:15:00+0100; bodySite = Venstre legg, innside</a></p><p>Summary</p><table class="grid"><tr><td>Recorded</td><td>2026-11-11 09:15:02+0000</td></tr><tr><td>Activity</td><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-DataOperation CREATE}">create</span></td></tr></table><p><b>Agents</b></p><table class="grid"><tr><td><b>Type</b></td><td><b>who</b></td></tr><tr><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type author}">Author</span></td><td><a href="Practitioner-Sykepleier-Sara.html">Sara Testesen</a></td></tr><tr><td><span title="Codes:{http://terminology.hl7.org/CodeSystem/provenance-participant-type assembler}">Assembler</span></td><td><a href="Device-Kamera-Jodapro.html">Device: identifier = https://jodapro.no/fhir/sid/device-id#0f3c9a2e7b41d5c8; manufacturer = RealWear; type = Hodekamera</a></td></tr></table><p><b>Entities</b></p><table class="grid"><tr><td><b>Role</b></td><td><b>What</b></td></tr><tr><td>Source</td><td>Tapsfri original (TIFF) fra Jodapro bevispakke, SHA-256 3040f92c340d2a5d5ba3bda37ccdb878e62878d56636b9f3063b5c8741b12f54 (Identifier: <a href="http://terminology.hl7.org/7.5.0/NamingSystem-uri.html" title="As defined by RFC 3986 (http://www.ietf.org/rfc/rfc3986.txt)(with many schemes defined in many RFCs). For OIDs and UUIDs, use the URN form (urn:oid:(note: lowercase) and urn:uuid:). See http://www.ietf.org/rfc/rfc3001.txt and http://www.ietf.org/rfc/rfc4122.txt 
 
-<h3>Test Plans</h3>
+This oid is used as an identifier II.root to indicate the the extension is an absolute URI (technically, an IRI). Typically, this is used for OIDs and GUIDs. Note that when this OID is used with OIDs and GUIDs, the II.extension should start with urn:oid or urn:uuid: 
 
-  <p><b>No test plans are currently available for the  CodeSystem.</b></p>
+Note that this OID is created to aid with interconversion between CDA and FHIR - FHIR uses urn:ietf:rfc:3986 as equivalent to this OID. URIs as identifiers appear more commonly in FHIR.
 
+This OID may also be used in CD.codeSystem.">Uniform Resource Identifier (URI)</a>/ni:///sha-256;MED5LDQNKl1bo72jfM24eOYoeNVmNrnzBjtch0GxL1Q)</td></tr></table></div>
 
-<h3>Test Scripts</h3>
+  
 
-  <p><b>No test scripts are currently available for the  CodeSystem.</b></p>
-
-
-<!-- insert notes if present -->
-
-
-
+  <!-- insert notes if present -->
+  
 
 
 
@@ -238,7 +222,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jodacare.no">Kristil Erla Håland</a>.  Package joda.fhir.sardokumentasjon#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 9, 2026 10:33+0000">2026-11-09</span>
+          IG &#169; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jodacare.no">Kristil Erla Håland</a>.  Package joda.fhir.sardokumentasjon#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 9, 2026 12:33+0000">2026-11-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

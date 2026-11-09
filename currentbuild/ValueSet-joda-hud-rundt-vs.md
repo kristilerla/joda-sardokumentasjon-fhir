@@ -12,7 +12,7 @@
 | Draft as of 2026-11-09 | *Computable Name*:JodaHudRundtVS |
 
  
-Gyldige verdier for huden rundt såret. 
+Tilstanden til huden rundt såret. Et utvalg av SNOMED CT-kodene i periwoundConditionVS i HL7 Lower Extremity Skin Wound Assessment IG. 
 
  **References** 
 
@@ -51,7 +51,7 @@ Gyldige verdier for huden rundt såret.
   "title" : "Huden rundt såret",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-09T10:33:12+00:00",
+  "date" : "2026-11-09T12:33:10+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",
@@ -60,7 +60,7 @@ Gyldige verdier for huden rundt såret.
       "value" : "https://jodacare.no"
     }]
   }],
-  "description" : "Gyldige verdier for huden rundt såret.",
+  "description" : "Tilstanden til huden rundt såret. Et utvalg av SNOMED CT-kodene i periwoundConditionVS i HL7 Lower Extremity Skin Wound Assessment IG.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -70,7 +70,47 @@ Gyldige verdier for huden rundt såret.
   }],
   "compose" : {
     "include" : [{
-      "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt"
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "444884003",
+        "display" : "Intact skin"
+      },
+      {
+        "code" : "239163008",
+        "display" : "Wound erythema"
+      },
+      {
+        "code" : "3644009",
+        "display" : "Macerated skin"
+      },
+      {
+        "code" : "95322002",
+        "display" : "Edematous skin"
+      },
+      {
+        "code" : "16386004",
+        "display" : "Dry skin"
+      },
+      {
+        "code" : "17038008",
+        "display" : "Increased skin temperature"
+      },
+      {
+        "code" : "449738003",
+        "display" : "Inflammation of periwound skin"
+      },
+      {
+        "code" : "449744004",
+        "display" : "Induration of wound"
+      },
+      {
+        "code" : "247444006",
+        "display" : "Excoriation of skin"
+      },
+      {
+        "code" : "417237009",
+        "display" : "Blister"
+      }]
     }]
   }
 }

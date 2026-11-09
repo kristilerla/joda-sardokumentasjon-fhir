@@ -27,12 +27,13 @@ Profile: [Sårdokument til journal](StructureDefinition-joda-sardokument.md)
 | | | |
 | :--- | :--- | :--- |
 | - | **ContentType** | **Url** |
-| * | image/jpeg | [https://example.org/oppdiktet/sarbilde-hjemme-1.jpg](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.2&canonical=https://example.org/oppdiktet/sarbilde-hjemme-1.jpg) |
+| * | image/jpeg | [https://kristilerla.github.io/joda-sardokumentasjon-fhir/currentbuild/sarbilde-hjemme-1.jpg](https://simplifier.net/resolve?scope=hl7.fhir.no.basis@2.2.2&canonical=https://kristilerla.github.io/joda-sardokumentasjon-fhir/currentbuild/sarbilde-hjemme-1.jpg) |
 
 
 > **context****related**: 
 * [Media: status = completed; type = Image; created[x] = 2026-11-10 18:30:00+0100; bodySite = Venstre legg, innside; note = Mamma sier det verker mer i kveld, og det ser rødere ut rundt kanten.](Media-Sarbilde-Hjemme-1.md)
-* [Observation Sårvurdering](Observation-Sarvurdering-Besok-1.md)
+* [Observation Wound assessment panel](Observation-Sarvurdering-Besok-1.md)
+* [Observation Wound assessment panel](Observation-Sarvurdering-Spesialist-1.md)
 
 
 
@@ -60,7 +61,7 @@ Profile: [Sårdokument til journal](StructureDefinition-joda-sardokument.md)
   "content" : [{
     "attachment" : {
       "contentType" : "image/jpeg",
-      "url" : "https://example.org/oppdiktet/sarbilde-hjemme-1.jpg"
+      "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/currentbuild/sarbilde-hjemme-1.jpg"
     }
   }],
   "context" : {
@@ -69,6 +70,9 @@ Profile: [Sårdokument til journal](StructureDefinition-joda-sardokument.md)
     },
     {
       "reference" : "Observation/Sarvurdering-Besok-1"
+    },
+    {
+      "reference" : "Observation/Sarvurdering-Spesialist-1"
     }]
   }
 }

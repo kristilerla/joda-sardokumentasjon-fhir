@@ -11,7 +11,7 @@
   <name value="JodaSardokumentasjon"/>
   <title value="Sårdokumentasjon med JodaCare og Jodapro"/>
   <status value="draft"/>
-  <date value="2026-11-09T10:33:12+00:00"/>
+  <date value="2026-11-09T12:33:10+00:00"/>
   <publisher value="Kristil Erla Håland"/>
   <contact>
     <name value="Kristil Erla Håland"/>
@@ -264,7 +264,7 @@
         <reference value="Media/Sarbilde-Besok-1"/>
       </reference>
       <name value="Bilde tatt av sykepleier med hodekamera"/>
-      <description value="Sara tar et bilde med Jodapro hodekamera under besøket dagen etter."/>
+      <description value="Sara tar et bilde med Jodapro hodekamera under videotimen med sårpoliklinikken dagen etter."/>
       <exampleCanonical value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde"/>
     </resource>
     <resource>
@@ -319,18 +319,7 @@
         <reference value="ValueSet/joda-hud-rundt-vs"/>
       </reference>
       <name value="Huden rundt såret"/>
-      <description value="Gyldige verdier for huden rundt såret."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/joda-hud-rundt"/>
-      </reference>
-      <name value="Huden rundt såret"/>
-      <description value="Tilstanden til huden rundt såret."/>
+      <description value="Tilstanden til huden rundt såret. Et utvalg av SNOMED CT-kodene i periwoundConditionVS i HL7 Lower Extremity Skin Wound Assessment IG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -342,6 +331,17 @@
       </reference>
       <name value="Hvem tok bildet hjemme"/>
       <description value="Sporbarhet: Lise tok bildet med mobilen via JodaCare."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Provenance"/>
+      </extension>
+      <reference>
+        <reference value="Provenance/Proveniens-Sarbilde-Besok-1"/>
+      </reference>
+      <name value="Hvem tok bildet ved besøket"/>
+      <description value="Sporbarhet: Sara tok bildet med Jodapro hodekamera. Originalen er identifisert med SHA-256 som ni-URI (RFC 6920), slik at det kan bevises at bildet ikke er endret."/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
@@ -423,6 +423,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/Spesialist-Nora"/>
+      </reference>
+      <name value="Nora Testvik"/>
+      <description value="Oppdiktet spesialist i sårbehandling ved sårpoliklinikken på Fjordvik sykehus."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -445,6 +456,28 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Sarvurdering-Besok-1"/>
+      </reference>
+      <name value="Saras observasjoner ved timen"/>
+      <description value="Det Sara måler og observerer hjemme hos Karin under videotimen: mål, væsking, huden rundt og smerte."/>
+      <exampleCanonical value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/Sarvurdering-Spesialist-1"/>
+      </reference>
+      <name value="Spesialistens sårvurdering"/>
+      <description value="Noras faglige vurdering under videotimen, basert på bildet fra Lise, bildet fra hodekameraet og Saras observasjoner."/>
+      <exampleCanonical value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -462,18 +495,7 @@
         <reference value="ValueSet/joda-sarbunn-vs"/>
       </reference>
       <name value="Sårbunn"/>
-      <description value="Gyldige verdier for sårbunn."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/joda-sarbunn"/>
-      </reference>
-      <name value="Sårbunn"/>
-      <description value="Hva sårbunnen hovedsakelig består av."/>
+      <description value="Hva sårbunnen hovedsakelig består av. SNOMED CT-koder fra woundBedAppearanceVS i HL7 Lower Extremity Skin Wound Assessment IG."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -486,6 +508,17 @@
       <name value="Sårdokument til journal"/>
       <description value="Et sårbilde som er sendt inn til journalen. Det starter som foreløpig (docStatus = preliminary). Når helsepersonell har sett på det og valgt å journalføre det, blir det endelig (docStatus = final) og får helsepersonellet som authenticator."/>
       <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/Sarpoliklinikk"/>
+      </reference>
+      <name value="Sårpoliklinikken, Fjordvik sykehus"/>
+      <description value="Oppdiktet sårpoliklinikk på sykehuset, som hjelper hjemmetjenesten med vurdering og behandling av sår."/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -506,19 +539,19 @@
         <reference value="CodeSystem/joda-sarvurdering-kode"/>
       </reference>
       <name value="Sårvurdering"/>
-      <description value="Kode for selve sårvurderingen og for feltene i den."/>
+      <description value="Egne koder for felt i sårvurderingen som ennå ikke har en LOINC-kode i guiden. De andre feltene bruker LOINC."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
+        <valueString value="Encounter"/>
       </extension>
       <reference>
-        <reference value="Observation/Sarvurdering-Besok-1"/>
+        <reference value="Encounter/Time-Sarpoliklinikk-1"/>
       </reference>
-      <name value="Sårvurdering ved besøk"/>
-      <description value="Saras vurdering av såret, basert på bildet fra Lise og bildet fra besøket."/>
-      <exampleCanonical value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering"/>
+      <name value="Videotime med sårpoliklinikken"/>
+      <description value="Karin har time hos sårpoliklinikken. Sara er hjemme hos Karin med Jodapro hodekamera, og Nora er med på video fra sykehuset."/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -528,18 +561,7 @@
         <reference value="ValueSet/joda-vaesking-vs"/>
       </reference>
       <name value="Væsking"/>
-      <description value="Gyldige verdier for væsking."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/joda-vaesking"/>
-      </reference>
-      <name value="Væsking"/>
-      <description value="Hvor mye såret væsker."/>
+      <description value="Hvor mye såret væsker. SNOMED CT-koder fra woundExudateAmountDescriptionVS i HL7 Lower Extremity Skin Wound Assessment IG."/>
       <exampleBoolean value="false"/>
     </resource>
     <page>

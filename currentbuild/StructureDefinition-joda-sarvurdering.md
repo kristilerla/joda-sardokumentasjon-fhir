@@ -16,7 +16,8 @@ En vurdering av et sår, gjerne basert på ett eller flere sårbilder. Pasienten
 
 **Usages:**
 
-* Examples for this Profile: [Observation/Sarvurdering-Besok-1](Observation-Sarvurdering-Besok-1.md)
+* Refer to this Profile: [Sårvurdering](StructureDefinition-joda-sarvurdering.md)
+* Examples for this Profile: [Observation/Sarvurdering-Besok-1](Observation-Sarvurdering-Besok-1.md) and [Observation/Sarvurdering-Spesialist-1](Observation-Sarvurdering-Spesialist-1.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/joda.fhir.sardokumentasjon|current/StructureDefinition/StructureDefinition-joda-sarvurdering.json)
 
@@ -42,7 +43,7 @@ Other representations of profile: [CSV](StructureDefinition-joda-sarvurdering.cs
   "title" : "Sårvurdering",
   "status" : "draft",
   "experimental" : true,
-  "date" : "2026-11-09T10:33:12+00:00",
+  "date" : "2026-11-09T12:33:10+00:00",
   "publisher" : "Kristil Erla Håland",
   "contact" : [{
     "name" : "Kristil Erla Håland",
@@ -110,8 +111,9 @@ Other representations of profile: [CSV](StructureDefinition-joda-sarvurdering.cs
       "path" : "Observation.code",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-          "code" : "sarvurdering"
+          "system" : "http://loinc.org",
+          "code" : "39135-9",
+          "display" : "Wound assessment panel"
         }]
       }
     },
@@ -162,10 +164,11 @@ Other representations of profile: [CSV](StructureDefinition-joda-sarvurdering.cs
     {
       "id" : "Observation.derivedFrom",
       "path" : "Observation.derivedFrom",
-      "short" : "Sårbildene vurderingen bygger på",
+      "short" : "Sårbildene og eventuelle andre vurderinger denne bygger på",
       "type" : [{
         "code" : "Reference",
-        "targetProfile" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde"]
+        "targetProfile" : ["https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarbilde",
+        "https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering"]
       }],
       "mustSupport" : true
     },
@@ -195,8 +198,9 @@ Other representations of profile: [CSV](StructureDefinition-joda-sarvurdering.cs
       "path" : "Observation.component.code",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-          "code" : "lengde"
+          "system" : "http://loinc.org",
+          "code" : "39126-8",
+          "display" : "Length of Wound"
         }]
       }
     },
@@ -230,8 +234,9 @@ Other representations of profile: [CSV](StructureDefinition-joda-sarvurdering.cs
       "path" : "Observation.component.code",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-          "code" : "bredde"
+          "system" : "http://loinc.org",
+          "code" : "39125-0",
+          "display" : "Width of Wound"
         }]
       }
     },
@@ -265,8 +270,9 @@ Other representations of profile: [CSV](StructureDefinition-joda-sarvurdering.cs
       "path" : "Observation.component.code",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-          "code" : "dybde"
+          "system" : "http://loinc.org",
+          "code" : "39127-6",
+          "display" : "Depth of Wound"
         }]
       }
     },
@@ -300,8 +306,9 @@ Other representations of profile: [CSV](StructureDefinition-joda-sarvurdering.cs
       "path" : "Observation.component.code",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-          "code" : "sarbunn"
+          "system" : "http://loinc.org",
+          "code" : "72371-8",
+          "display" : "Appearance of Wound base"
         }]
       }
     },
@@ -329,8 +336,9 @@ Other representations of profile: [CSV](StructureDefinition-joda-sarvurdering.cs
       "path" : "Observation.component.code",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-          "code" : "vaesking"
+          "system" : "http://loinc.org",
+          "code" : "39116-9",
+          "display" : "Drainage amount of Wound"
         }]
       }
     },
@@ -358,8 +366,9 @@ Other representations of profile: [CSV](StructureDefinition-joda-sarvurdering.cs
       "path" : "Observation.component.code",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-          "code" : "hud-rundt"
+          "system" : "http://loinc.org",
+          "code" : "72301-5",
+          "display" : "Description of Periwound"
         }]
       }
     },
@@ -413,8 +422,9 @@ Other representations of profile: [CSV](StructureDefinition-joda-sarvurdering.cs
       "path" : "Observation.component.code",
       "patternCodeableConcept" : {
         "coding" : [{
-          "system" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
-          "code" : "smerte"
+          "system" : "http://loinc.org",
+          "code" : "72514-3",
+          "display" : "Pain severity - 0-10 verbal numeric rating [Score] - Reported"
         }]
       }
     },

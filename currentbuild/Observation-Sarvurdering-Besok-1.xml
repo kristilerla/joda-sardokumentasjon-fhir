@@ -6,20 +6,23 @@
     <profile value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/StructureDefinition/joda-sarvurdering"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation Sarvurdering-Besok-1</b></p><a name="Sarvurdering-Besok-1"> </a><a name="hcSarvurdering-Besok-1"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-joda-sarvurdering.html">Sårvurdering</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode sarvurdering}">Sårvurdering</span></p><p><b>subject</b>: <a href="Patient-Pasient-Karin.html">Karin Testdal  Female, DoB: 1948-03-13 ( https://example.org/oppdiktet/pasient-id#testpasient-karin)</a></p><p><b>effective</b>: 2026-11-11 10:25:00+0100</p><p><b>performer</b>: <a href="Practitioner-Sykepleier-Sara.html">Sara Testesen</a></p><p><b>bodySite</b>: <span title="Codes:">Venstre legg, innside</span></p><p><b>derivedFrom</b>: </p><ul><li><a href="Media-Sarbilde-Hjemme-1.html">Media: status = completed; type = Image; created[x] = 2026-11-10 18:30:00+0100; bodySite = Venstre legg, innside; note = Mamma sier det verker mer i kveld, og det ser rødere ut rundt kanten.</a></li><li><a href="Media-Sarbilde-Besok-1.html">Media: status = completed; type = Image; created[x] = 2026-11-11 10:15:00+0100; bodySite = Venstre legg, innside</a></li></ul><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode lengde}">Lengde</span></p><p><b>value</b>: 4.5 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM  codecm = 'cm')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode bredde}">Bredde</span></p><p><b>value</b>: 3 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM  codecm = 'cm')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode sarbunn}">Sårbunn</span></p><p><b>value</b>: <span title="Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn fibrin}">Fibrin (belegg)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode vaesking}">Væsking</span></p><p><b>value</b>: <span title="Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking moderat}">Moderat</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode hud-rundt}">Huden rundt såret</span></p><p><b>value</b>: <span title="Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt rod}">Rød</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode infeksjonstegn}">Tegn på infeksjon</span></p><p><b>value</b>: true</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode smerte}">Smerte</span></p><p><b>value</b>: 6</p></blockquote></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation Sarvurdering-Besok-1</b></p><a name="Sarvurdering-Besok-1"> </a><a name="hcSarvurdering-Besok-1"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-joda-sarvurdering.html">Sårvurdering</a></p></div><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{http://loinc.org 39135-9}">Wound assessment panel</span></p><p><b>subject</b>: <a href="Patient-Pasient-Karin.html">Karin Testdal  Female, DoB: 1948-03-13 ( https://example.org/oppdiktet/pasient-id#testpasient-karin)</a></p><p><b>encounter</b>: <a href="Encounter-Time-Sarpoliklinikk-1.html">Encounter: status = finished; class = virtual (ActCode#VR); period = 2026-11-11 10:00:00+0100 --&gt; 2026-11-11 10:30:00+0100</a></p><p><b>effective</b>: 2026-11-11 10:20:00+0100</p><p><b>performer</b>: <a href="Practitioner-Sykepleier-Sara.html">Sara Testesen</a></p><p><b>bodySite</b>: <span title="Codes:">Venstre legg, innside</span></p><p><b>derivedFrom</b>: <a href="Media-Sarbilde-Besok-1.html">Media: identifier = https://jodapro.no/fhir/sid/evidence-id#7d2f4b8e-1c3a-4e59-9b6d-2a8f0c5e9d14; status = completed; type = Image; created[x] = 2026-11-11 10:15:00+0100; bodySite = Venstre legg, innside</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 39126-8}">Length of Wound</span></p><p><b>value</b>: 4.5 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM  codecm = 'cm')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 39125-0}">Width of Wound</span></p><p><b>value</b>: 3 cm<span style="background: LightGoldenRodYellow"> (Details: UCUM  codecm = 'cm')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 39116-9}">Drainage amount of Wound</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 6736007}">Moderat væsking</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 72301-5}">Description of Periwound</span></p><p><b>value</b>: <span title="Codes:{http://snomed.info/sct 239163008}">Rødme rundt såret</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{http://loinc.org 72514-3}">Pain severity - 0-10 verbal numeric rating [Score] - Reported</span></p><p><b>value</b>: 6</p></blockquote></div>
   </text>
   <status value="final"/>
   <code>
     <coding>
-      <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-      <code value="sarvurdering"/>
-      <display value="Sårvurdering"/>
+      <system value="http://loinc.org"/>
+      <code value="39135-9"/>
+      <display value="Wound assessment panel"/>
     </coding>
   </code>
   <subject>
     <reference value="Patient/Pasient-Karin"/>
   </subject>
-  <effectiveDateTime value="2026-11-11T10:25:00+01:00"/>
+  <encounter>
+    <reference value="Encounter/Time-Sarpoliklinikk-1"/>
+  </encounter>
+  <effectiveDateTime value="2026-11-11T10:20:00+01:00"/>
   <performer>
     <reference value="Practitioner/Sykepleier-Sara"/>
   </performer>
@@ -27,16 +30,14 @@
     <text value="Venstre legg, innside"/>
   </bodySite>
   <derivedFrom>
-    <reference value="Media/Sarbilde-Hjemme-1"/>
-  </derivedFrom>
-  <derivedFrom>
     <reference value="Media/Sarbilde-Besok-1"/>
   </derivedFrom>
   <component>
     <code>
       <coding>
-        <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-        <code value="lengde"/>
+        <system value="http://loinc.org"/>
+        <code value="39126-8"/>
+        <display value="Length of Wound"/>
       </coding>
     </code>
     <valueQuantity>
@@ -49,8 +50,9 @@
   <component>
     <code>
       <coding>
-        <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-        <code value="bredde"/>
+        <system value="http://loinc.org"/>
+        <code value="39125-0"/>
+        <display value="Width of Wound"/>
       </coding>
     </code>
     <valueQuantity>
@@ -63,62 +65,43 @@
   <component>
     <code>
       <coding>
-        <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-        <code value="sarbunn"/>
+        <system value="http://loinc.org"/>
+        <code value="39116-9"/>
+        <display value="Drainage amount of Wound"/>
       </coding>
     </code>
     <valueCodeableConcept>
       <coding>
-        <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn"/>
-        <code value="fibrin"/>
-        <display value="Fibrin (belegg)"/>
+        <system value="http://snomed.info/sct"/>
+        <code value="6736007"/>
+        <display value="Moderate"/>
       </coding>
+      <text value="Moderat væsking"/>
     </valueCodeableConcept>
   </component>
   <component>
     <code>
       <coding>
-        <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-        <code value="vaesking"/>
+        <system value="http://loinc.org"/>
+        <code value="72301-5"/>
+        <display value="Description of Periwound"/>
       </coding>
     </code>
     <valueCodeableConcept>
       <coding>
-        <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking"/>
-        <code value="moderat"/>
-        <display value="Moderat"/>
+        <system value="http://snomed.info/sct"/>
+        <code value="239163008"/>
+        <display value="Wound erythema"/>
       </coding>
+      <text value="Rødme rundt såret"/>
     </valueCodeableConcept>
   </component>
   <component>
     <code>
       <coding>
-        <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-        <code value="hud-rundt"/>
-      </coding>
-    </code>
-    <valueCodeableConcept>
-      <coding>
-        <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt"/>
-        <code value="rod"/>
-        <display value="Rød"/>
-      </coding>
-    </valueCodeableConcept>
-  </component>
-  <component>
-    <code>
-      <coding>
-        <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-        <code value="infeksjonstegn"/>
-      </coding>
-    </code>
-    <valueBoolean value="true"/>
-  </component>
-  <component>
-    <code>
-      <coding>
-        <system value="https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode"/>
-        <code value="smerte"/>
+        <system value="http://loinc.org"/>
+        <code value="72514-3"/>
+        <display value="Pain severity - 0-10 verbal numeric rating [Score] - Reported"/>
       </coding>
     </code>
     <valueInteger value="6"/>

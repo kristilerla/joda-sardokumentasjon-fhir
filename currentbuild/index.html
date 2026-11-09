@@ -203,6 +203,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="#hovedbrukstilfelle-leggsår-som-blir-verre" id="markdown-toc-hovedbrukstilfelle-leggsår-som-blir-verre">Hovedbrukstilfelle: leggsår som blir verre</a></li>
   <li><a href="#krav" id="markdown-toc-krav">Krav</a></li>
   <li><a href="#modell" id="markdown-toc-modell">Modell</a></li>
+  <li><a href="#kodeverk" id="markdown-toc-kodeverk">Kodeverk</a></li>
   <li><a href="#åpne-spørsmål" id="markdown-toc-åpne-spørsmål">Åpne spørsmål</a></li>
   <li><a href="#spørsmål-til-aidn" id="markdown-toc-spørsmål-til-aidn">Spørsmål til Aidn</a></li>
   <li><a href="#eksempler" id="markdown-toc-eksempler">Eksempler</a></li>
@@ -241,7 +242,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
     <tr>
       <td>Sykepleier i hjemmetjenesten</td>
-      <td>Vurderer bildene, gjør sårvurderingen og bestemmer hva som journalføres. Kan ta bilder med Jodapro hodekamera under besøket.</td>
+      <td>Ser bildene fra pasient og pårørende, måler og observerer såret, og bestemmer hva som journalføres. Tar bilder med Jodapro hodekamera under timen med sårpoliklinikken.</td>
+    </tr>
+    <tr>
+      <td>Spesialist på sårpoliklinikken</td>
+      <td>Er med på video fra sykehuset under timen. Gjør den faglige sårvurderingen og foreslår sårplanen.</td>
     </tr>
     <tr>
       <td>Journalsystemet</td>
@@ -256,10 +261,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li>Karin (78 år) får hjelp av hjemmetjenesten i Fjordvik kommune til et leggsår på venstre legg.</li>
   <li>En kveld mellom besøkene synes datteren Lise at såret ser rødere ut. Hun tar et bilde med mobilen i JodaCare og skriver at det verker mer.</li>
   <li>Bildet sendes inn som foreløpig. Det er ikke en del av journalen ennå.</li>
-  <li>Neste morgen ser sykepleieren Sara bildet. På besøket tar hun et nytt bilde med Jodapro hodekamera og gjør en sårvurdering: mål, sårbunn, væsking, huden rundt, tegn på infeksjon og smerte.</li>
-  <li>Sara velger å journalføre bildet fra Lise sammen med sin egen vurdering. Bildet får status endelig og Sara som den som har godkjent det.</li>
+  <li>Neste morgen ser sykepleieren Sara bildet. Karin har time hos sårpoliklinikken på Fjordvik sykehus. Sara er hjemme hos Karin med Jodapro hodekamera, og spesialisten Nora er med på video fra sykehuset.</li>
+  <li>Under timen tar Sara et bilde med hodekameraet og registrerer det hun måler og observerer: mål, væsking, huden rundt og smerte.</li>
+  <li>Nora gjør den faglige vurderingen ut fra bildet fra Lise, bildet fra hodekameraet og Saras observasjoner: sårbunn og tegn på infeksjon. Hun foreslår en ny sårplan med grønn, gul og rød sone.</li>
+  <li>Sara journalfører bildet fra Lise sammen med vurderingene. Bildet får status endelig og Sara som den som har godkjent det.</li>
   <li>Hvem som tok hvert bilde, og med hvilket kamera, er sporbart.</li>
 </ol>
+
+<p>Flyten er også vist som et diagram, med bildene og status fra FHIR-hackathonet 9. november 2026: <a href="karins-sar.html">Karins sår: fra JodaCare til journal</a>.</p>
 
 <h3 id="krav">Krav</h3>
 
@@ -299,9 +308,14 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td><a href="StructureDefinition-joda-sarbilde.html">Sårbilde</a></td>
     </tr>
     <tr>
+      <td>Timen med sårpoliklinikken</td>
+      <td>Encounter</td>
+      <td>Videotime der sykepleieren er hos pasienten og spesialisten er på sykehuset</td>
+    </tr>
+    <tr>
       <td>Vurderingen</td>
       <td>Observation</td>
-      <td><a href="StructureDefinition-joda-sarvurdering.html">Sårvurdering</a>, peker på bildene med derivedFrom</td>
+      <td><a href="StructureDefinition-joda-sarvurdering.html">Sårvurdering</a>, én for sykepleierens observasjoner og én for spesialistens vurdering. Peker på bildene og andre vurderinger med derivedFrom</td>
     </tr>
     <tr>
       <td>Innsending til journal</td>
@@ -316,16 +330,81 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
+<h3 id="kodeverk">Kodeverk</h3>
+
+<p>Guiden bruker LOINC for spørsmålene og SNOMED CT for svarene. Den følger samme oppskrift som <a href="https://build.fhir.org/ig/HL7/fhir-skin-wound-ig/">HL7 Lower Extremity Skin Wound Assessment IG</a>. LOINC-koden sier hva som er målt eller observert. SNOMED CT-koden sier hva svaret er. Norsk tekst står i <code class="language-plaintext highlighter-rouge">text</code> ved siden av koden.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Felt</th>
+      <th>LOINC</th>
+      <th>Svar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hele sårvurderingen</td>
+      <td>39135-9 Wound assessment panel</td>
+      <td>Feltene under</td>
+    </tr>
+    <tr>
+      <td>Lengde</td>
+      <td>39126-8 Length of Wound</td>
+      <td>Centimeter</td>
+    </tr>
+    <tr>
+      <td>Bredde</td>
+      <td>39125-0 Width of Wound</td>
+      <td>Centimeter</td>
+    </tr>
+    <tr>
+      <td>Dybde</td>
+      <td>39127-6 Depth of Wound</td>
+      <td>Centimeter</td>
+    </tr>
+    <tr>
+      <td>Sårbunn</td>
+      <td>72371-8 Appearance of Wound base</td>
+      <td>SNOMED CT, <a href="ValueSet-joda-sarbunn-vs.html">Sårbunn</a></td>
+    </tr>
+    <tr>
+      <td>Væsking</td>
+      <td>39116-9 Drainage amount of Wound</td>
+      <td>SNOMED CT, <a href="ValueSet-joda-vaesking-vs.html">Væsking</a></td>
+    </tr>
+    <tr>
+      <td>Huden rundt såret</td>
+      <td>72301-5 Description of Periwound</td>
+      <td>SNOMED CT, <a href="ValueSet-joda-hud-rundt-vs.html">Huden rundt såret</a></td>
+    </tr>
+    <tr>
+      <td>Smerte</td>
+      <td>72514-3 Pain severity - 0-10 verbal numeric rating [Score] - Reported</td>
+      <td>Tall fra 0 til 10</td>
+    </tr>
+    <tr>
+      <td>Tegn på infeksjon</td>
+      <td>Egen kode i <a href="CodeSystem-joda-sarvurdering-kode.html">Sårvurdering</a></td>
+      <td>Ja eller nei</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Verdisettene for sårbunn og væsking er de samme som i HL7-guiden. Verdisettet for huden rundt såret er et utvalg. Koden 16386004 «Dry skin» er inaktiv i gjeldende utgave av SNOMED CT og bør byttes ut.</p>
+
 <h3 id="åpne-spørsmål">Åpne spørsmål</h3>
 
 <ol>
-  <li>Hvilke SNOMED CT-koder bør brukes for sårtype, sårbunn og kroppssted, i stedet for våre egne koder og fritekst?</li>
+  <li>Hvilke SNOMED CT-koder bør brukes for sårtype, kroppssted og tegn på infeksjon? Disse har ennå egne koder eller fritekst.</li>
   <li>Bør sårvurderingen bygge på en eksisterende standard for sårdokumentasjon, for eksempel et anerkjent vurderingsskjema?</li>
   <li>Kan NHN-tjenesten Pasientens måledata ta imot bilder fra pasienten, eller er det IHE MHD og dokumentdeling som passer best?</li>
   <li>Hvordan tar journalsystemene i kommunene imot bilder i dag, og hvor mange av dem støtter FHIR?</li>
   <li>Hvordan skal pasientens samtykke til at pårørende tar og sender bilder uttrykkes?</li>
   <li>Bør bildet i journalen være selve bildefilen, en lenke, eller en PDF med bilde og vurdering samlet?</li>
   <li>I FHIR R5 er Media erstattet av DocumentReference. Bør guiden bruke DocumentReference for bildene allerede nå?</li>
+  <li>Hvordan får sårpoliklinikken se bildet fra Lise før timen? Kan det deles gjennom NHN Dokumentlager når Sara har journalført det?</li>
+  <li>Hvordan skal sårplanen fra spesialisthelsetjenesten deles med hjemmetjenesten, pasienten og pårørende? Er NHN Pasientens planer riktig sted?</li>
 </ol>
 
 <h3 id="spørsmål-til-aidn">Spørsmål til Aidn</h3>
@@ -346,12 +425,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><a href="Patient-Pasient-Karin.html">Karin Testdal</a>, oppdiktet pasient</li>
   <li><a href="RelatedPerson-Datter-Lise.html">Lise Testdal</a>, datter</li>
   <li><a href="Practitioner-Sykepleier-Sara.html">Sara Testesen</a>, sykepleier</li>
+  <li><a href="Practitioner-Spesialist-Nora.html">Nora Testvik</a>, spesialist på sårpoliklinikken</li>
+  <li><a href="Organization-Sarpoliklinikk.html">Sårpoliklinikken, Fjordvik sykehus</a></li>
+  <li><a href="Encounter-Time-Sarpoliklinikk-1.html">Videotime med sårpoliklinikken</a></li>
   <li><a href="Media-Sarbilde-Hjemme-1.html">Bilde tatt hjemme av datteren</a></li>
   <li><a href="Media-Sarbilde-Besok-1.html">Bilde tatt av sykepleier med hodekamera</a></li>
-  <li><a href="Observation-Sarvurdering-Besok-1.html">Sårvurdering ved besøk</a></li>
+  <li><a href="Observation-Sarvurdering-Besok-1.html">Saras observasjoner ved timen</a></li>
+  <li><a href="Observation-Sarvurdering-Spesialist-1.html">Spesialistens sårvurdering</a></li>
   <li><a href="DocumentReference-Sardokument-Hjemme-1-Innsendt.html">Bildet fra Lise, sendt inn</a></li>
   <li><a href="DocumentReference-Sardokument-Hjemme-1-Journalfort.html">Bildet fra Lise, journalført</a></li>
   <li><a href="Provenance-Proveniens-Sarbilde-Hjemme-1.html">Hvem tok bildet hjemme</a></li>
+  <li><a href="Provenance-Proveniens-Sarbilde-Besok-1.html">Hvem tok bildet ved besøket</a></li>
 </ul>
 
 
@@ -373,7 +457,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jodacare.no">Kristil Erla Håland</a>.  Package joda.fhir.sardokumentasjon#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 9, 2026 10:33+0000">2026-11-09</span>
+          IG &copy; 2026+ <a style="color:var(--footer-hyperlink-text-color)" href="https://jodacare.no">Kristil Erla Håland</a>.  Package joda.fhir.sardokumentasjon#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Nov 9, 2026 12:33+0000">2026-11-09</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

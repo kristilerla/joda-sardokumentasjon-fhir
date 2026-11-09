@@ -6,15 +6,15 @@
   "status" : "draft",
   "package-id" : "joda.fhir.sardokumentasjon",
   "ig-ver" : "0.1.0",
-  "date" : "Mon, 09 Nov, 2026 10:33:12 +0000",
-  "dateISO8601" : "2026-11-09T10:33:12+00:00",
+  "date" : "Mon, 09 Nov, 2026 12:33:10 +0000",
+  "dateISO8601" : "2026-11-09T12:33:10+00:00",
   "errs" : 1,
-  "warnings" : 27,
-  "hints" : 62,
+  "warnings" : 33,
+  "hints" : 87,
   "broken-links" : 0,
   "suppressed-hints" : 0,
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "6.0.0-snapshot1 (3)",
-  "maxMemory" : 751462896
+  "maxMemory" : 966159624
 }

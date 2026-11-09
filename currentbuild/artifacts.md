@@ -26,10 +26,10 @@ These define sets of codes used by systems conforming to this implementation gui
 | | |
 | :--- | :--- |
 | [Bildeformat](ValueSet-joda-bildeformat-vs.md) | Bildeformater som kan brukes for sårbilder. |
-| [Huden rundt såret](ValueSet-joda-hud-rundt-vs.md) | Gyldige verdier for huden rundt såret. |
+| [Huden rundt såret](ValueSet-joda-hud-rundt-vs.md) | Tilstanden til huden rundt såret. Et utvalg av SNOMED CT-kodene i periwoundConditionVS i HL7 Lower Extremity Skin Wound Assessment IG. |
 | [Kameratype](ValueSet-joda-kameratype-vs.md) | Gyldige kameratyper. |
-| [Sårbunn](ValueSet-joda-sarbunn-vs.md) | Gyldige verdier for sårbunn. |
-| [Væsking](ValueSet-joda-vaesking-vs.md) | Gyldige verdier for væsking. |
+| [Sårbunn](ValueSet-joda-sarbunn-vs.md) | Hva sårbunnen hovedsakelig består av. SNOMED CT-koder fra woundBedAppearanceVS i HL7 Lower Extremity Skin Wound Assessment IG. |
+| [Væsking](ValueSet-joda-vaesking-vs.md) | Hvor mye såret væsker. SNOMED CT-koder fra woundExudateAmountDescriptionVS i HL7 Lower Extremity Skin Wound Assessment IG. |
 
 ### Terminology: Code Systems 
 
@@ -37,11 +37,8 @@ These define new code systems used by systems conforming to this implementation 
 
 | | |
 | :--- | :--- |
-| [Huden rundt såret](CodeSystem-joda-hud-rundt.md) | Tilstanden til huden rundt såret. |
 | [Kameratype](CodeSystem-joda-kameratype.md) | Hva slags kamera bildet er tatt med. |
-| [Sårbunn](CodeSystem-joda-sarbunn.md) | Hva sårbunnen hovedsakelig består av. |
-| [Sårvurdering](CodeSystem-joda-sarvurdering-kode.md) | Kode for selve sårvurderingen og for feltene i den. |
-| [Væsking](CodeSystem-joda-vaesking.md) | Hvor mye såret væsker. |
+| [Sårvurdering](CodeSystem-joda-sarvurdering-kode.md) | Egne koder for felt i sårvurderingen som ennå ikke har en LOINC-kode i guiden. De andre feltene bruker LOINC. |
 
 ### Example: Example Instances 
 
@@ -49,15 +46,20 @@ These are example instances that show what data produced and consumed by systems
 
 | | |
 | :--- | :--- |
-| [Bilde tatt av sykepleier med hodekamera](Media-Sarbilde-Besok-1.md) | Sara tar et bilde med Jodapro hodekamera under besøket dagen etter. |
+| [Bilde tatt av sykepleier med hodekamera](Media-Sarbilde-Besok-1.md) | Sara tar et bilde med Jodapro hodekamera under videotimen med sårpoliklinikken dagen etter. |
 | [Bilde tatt hjemme av datteren](Media-Sarbilde-Hjemme-1.md) | Lise tar et bilde av morens sår med mobilen via JodaCare, to dager etter siste besøk. |
 | [Bildet fra Lise, journalført](DocumentReference-Sardokument-Hjemme-1-Journalfort.md) | Sara har sett på bildet og valgt å legge det i journalen. |
 | [Bildet fra Lise, sendt inn](DocumentReference-Sardokument-Hjemme-1-Innsendt.md) | Bildet Lise tok er sendt inn til journalen, men ikke vurdert ennå. |
 | [Hvem tok bildet hjemme](Provenance-Proveniens-Sarbilde-Hjemme-1.md) | Sporbarhet: Lise tok bildet med mobilen via JodaCare. |
+| [Hvem tok bildet ved besøket](Provenance-Proveniens-Sarbilde-Besok-1.md) | Sporbarhet: Sara tok bildet med Jodapro hodekamera. Originalen er identifisert med SHA-256 som ni-URI (RFC 6920), slik at det kan bevises at bildet ikke er endret. |
 | [Jodapro hodekamera](Device-Kamera-Jodapro.md) | Hodekamera som hjemmetjenesten bruker. |
 | [Karin Testdal](Patient-Pasient-Karin.md) | Oppdiktet pasient, 78 år, som får hjelp fra hjemmetjenesten i Fjordvik kommune til et leggsår. |
 | [Lise Testdal](RelatedPerson-Datter-Lise.md) | Oppdiktet datter av Karin, som hjelper moren med å ta bilder av såret mellom besøkene. |
 | [Mobilen til Lise](Device-Kamera-Mobil.md) | Mobiltelefon brukt via JodaCare. |
+| [Nora Testvik](Practitioner-Spesialist-Nora.md) | Oppdiktet spesialist i sårbehandling ved sårpoliklinikken på Fjordvik sykehus. |
 | [Sara Testesen](Practitioner-Sykepleier-Sara.md) | Oppdiktet sykepleier i hjemmetjenesten i Fjordvik kommune. |
-| [Sårvurdering ved besøk](Observation-Sarvurdering-Besok-1.md) | Saras vurdering av såret, basert på bildet fra Lise og bildet fra besøket. |
+| [Saras observasjoner ved timen](Observation-Sarvurdering-Besok-1.md) | Det Sara måler og observerer hjemme hos Karin under videotimen: mål, væsking, huden rundt og smerte. |
+| [Spesialistens sårvurdering](Observation-Sarvurdering-Spesialist-1.md) | Noras faglige vurdering under videotimen, basert på bildet fra Lise, bildet fra hodekameraet og Saras observasjoner. |
+| [Sårpoliklinikken, Fjordvik sykehus](Organization-Sarpoliklinikk.md) | Oppdiktet sårpoliklinikk på sykehuset, som hjelper hjemmetjenesten med vurdering og behandling av sår. |
+| [Videotime med sårpoliklinikken](Encounter-Time-Sarpoliklinikk-1.md) | Karin har time hos sårpoliklinikken. Sara er hjemme hos Karin med Jodapro hodekamera, og Nora er med på video fra sykehuset. |
 

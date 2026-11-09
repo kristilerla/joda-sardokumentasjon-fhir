@@ -1,13 +1,5 @@
 {
   "codeSystems" : [{
-    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-hud-rundt",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "JodaHudRundt",
-    "title" : "Huden rundt såret",
-    "description" : "Tilstanden til huden rundt såret."
-  },
-  {
     "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-kameratype",
     "version" : "0.1.0",
     "status" : "draft",
@@ -16,27 +8,11 @@
     "description" : "Hva slags kamera bildet er tatt med."
   },
   {
-    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarbunn",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "JodaSarbunn",
-    "title" : "Sårbunn",
-    "description" : "Hva sårbunnen hovedsakelig består av."
-  },
-  {
     "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-sarvurdering-kode",
     "version" : "0.1.0",
     "status" : "draft",
     "name" : "JodaSarvurderingKode",
     "title" : "Sårvurdering",
-    "description" : "Kode for selve sårvurderingen og for feltene i den."
-  },
-  {
-    "url" : "https://kristilerla.github.io/joda-sardokumentasjon-fhir/CodeSystem/joda-vaesking",
-    "version" : "0.1.0",
-    "status" : "draft",
-    "name" : "JodaVaesking",
-    "title" : "Væsking",
-    "description" : "Hvor mye såret væsker."
+    "description" : "Egne koder for felt i sårvurderingen som ennå ikke har en LOINC-kode i guiden. De andre feltene bruker LOINC."
   }]
 }
