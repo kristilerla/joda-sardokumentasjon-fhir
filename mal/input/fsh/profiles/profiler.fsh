@@ -78,8 +78,8 @@ Description: "En vurdering av et sår, gjerne basert på ett eller flere sårbil
 * performer ^short = "Hvem som gjorde vurderingen"
 * bodySite 1..1 MS
 * derivedFrom MS
-* derivedFrom only Reference(JodaSarbilde)
-* derivedFrom ^short = "Sårbildene vurderingen bygger på"
+* derivedFrom only Reference(JodaSarbilde or JodaSarvurdering)
+* derivedFrom ^short = "Sårbildene og eventuelle andre vurderinger denne bygger på"
 * note MS
 * component MS
 * component ^slicing.discriminator.type = #pattern

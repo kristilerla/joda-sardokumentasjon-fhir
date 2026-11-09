@@ -30,6 +30,35 @@ Usage:       #example
 * name.family = "Testesen"
 * name.given = "Sara"
 
+Instance:    Sarpoliklinikk
+InstanceOf:  Organization
+Title:       "Sårpoliklinikken, Fjordvik sykehus"
+Description: "Oppdiktet sårpoliklinikk på sykehuset, som hjelper hjemmetjenesten med vurdering og behandling av sår."
+Usage:       #example
+* name = "Sårpoliklinikken, Fjordvik sykehus"
+
+Instance:    Spesialist-Nora
+InstanceOf:  Practitioner
+Title:       "Nora Testvik"
+Description: "Oppdiktet spesialist i sårbehandling ved sårpoliklinikken på Fjordvik sykehus."
+Usage:       #example
+* name.family = "Testvik"
+* name.given = "Nora"
+
+Instance:    Time-Sarpoliklinikk-1
+InstanceOf:  Encounter
+Title:       "Videotime med sårpoliklinikken"
+Description: "Karin har time hos sårpoliklinikken. Sara er hjemme hos Karin med Jodapro hodekamera, og Nora er med på video fra sykehuset."
+Usage:       #example
+* status = #finished
+* class = http://terminology.hl7.org/CodeSystem/v3-ActCode#VR "virtual"
+* subject = Reference(Pasient-Karin)
+* participant[0].individual = Reference(Spesialist-Nora)
+* participant[1].individual = Reference(Sykepleier-Sara)
+* period.start = "2026-11-11T10:00:00+01:00"
+* period.end = "2026-11-11T10:30:00+01:00"
+* serviceProvider = Reference(Sarpoliklinikk)
+
 Instance:    Kamera-Mobil
 InstanceOf:  JodaKamera
 Title:       "Mobilen til Lise"
@@ -73,7 +102,7 @@ Usage:       #example
 Instance:    Sarbilde-Besok-1
 InstanceOf:  JodaSarbilde
 Title:       "Bilde tatt av sykepleier med hodekamera"
-Description: "Sara tar et bilde med Jodapro hodekamera under besøket dagen etter."
+Description: "Sara tar et bilde med Jodapro hodekamera under videotimen med sårpoliklinikken dagen etter."
 Usage:       #example
 * status = #completed
 * type = $mediatype#image "Image"
@@ -82,6 +111,7 @@ Usage:       #example
 * operator = Reference(Sykepleier-Sara)
 * bodySite.text = "Venstre legg, innside"
 * device = Reference(Kamera-Jodapro)
+* encounter = Reference(Time-Sarpoliklinikk-1)
 * identifier.system = "https://jodapro.no/fhir/sid/evidence-id"
 * identifier.value = "7d2f4b8e-1c3a-4e59-9b6d-2a8f0c5e9d14"
 * content.contentType = #image/tiff
@@ -92,31 +122,48 @@ Usage:       #example
 
 Instance:    Sarvurdering-Besok-1
 InstanceOf:  JodaSarvurdering
-Title:       "Sårvurdering ved besøk"
-Description: "Saras vurdering av såret, basert på bildet fra Lise og bildet fra besøket."
+Title:       "Saras observasjoner ved timen"
+Description: "Det Sara måler og observerer hjemme hos Karin under videotimen: mål, væsking, huden rundt og smerte."
 Usage:       #example
 * status = #final
 * code = JodaSarvurderingKode#sarvurdering "Sårvurdering"
 * subject = Reference(Pasient-Karin)
-* effectiveDateTime = "2026-11-11T10:25:00+01:00"
+* encounter = Reference(Time-Sarpoliklinikk-1)
+* effectiveDateTime = "2026-11-11T10:20:00+01:00"
 * performer = Reference(Sykepleier-Sara)
 * bodySite.text = "Venstre legg, innside"
-* derivedFrom[0] = Reference(Sarbilde-Hjemme-1)
-* derivedFrom[1] = Reference(Sarbilde-Besok-1)
+* derivedFrom[0] = Reference(Sarbilde-Besok-1)
 * component[lengde].code = JodaSarvurderingKode#lengde
 * component[lengde].valueQuantity = 4.5 'cm' "cm"
 * component[bredde].code = JodaSarvurderingKode#bredde
 * component[bredde].valueQuantity = 3 'cm' "cm"
-* component[sarbunn].code = JodaSarvurderingKode#sarbunn
-* component[sarbunn].valueCodeableConcept = JodaSarbunn#fibrin "Fibrin (belegg)"
 * component[vaesking].code = JodaSarvurderingKode#vaesking
 * component[vaesking].valueCodeableConcept = JodaVaesking#moderat "Moderat"
 * component[hud_rundt].code = JodaSarvurderingKode#hud-rundt
 * component[hud_rundt].valueCodeableConcept = JodaHudRundt#rod "Rød"
-* component[infeksjonstegn].code = JodaSarvurderingKode#infeksjonstegn
-* component[infeksjonstegn].valueBoolean = true
 * component[smerte].code = JodaSarvurderingKode#smerte
 * component[smerte].valueInteger = 6
+
+Instance:    Sarvurdering-Spesialist-1
+InstanceOf:  JodaSarvurdering
+Title:       "Spesialistens sårvurdering"
+Description: "Noras faglige vurdering under videotimen, basert på bildet fra Lise, bildet fra hodekameraet og Saras observasjoner."
+Usage:       #example
+* status = #final
+* code = JodaSarvurderingKode#sarvurdering "Sårvurdering"
+* subject = Reference(Pasient-Karin)
+* encounter = Reference(Time-Sarpoliklinikk-1)
+* effectiveDateTime = "2026-11-11T10:25:00+01:00"
+* performer = Reference(Spesialist-Nora)
+* bodySite.text = "Venstre legg, innside"
+* derivedFrom[0] = Reference(Sarbilde-Hjemme-1)
+* derivedFrom[1] = Reference(Sarbilde-Besok-1)
+* derivedFrom[2] = Reference(Sarvurdering-Besok-1)
+* component[sarbunn].code = JodaSarvurderingKode#sarbunn
+* component[sarbunn].valueCodeableConcept = JodaSarbunn#fibrin "Fibrin (belegg)"
+* component[infeksjonstegn].code = JodaSarvurderingKode#infeksjonstegn
+* component[infeksjonstegn].valueBoolean = true
+* note.text = "Tegn på infeksjon. Sårpoliklinikken foreslår en ny sårplan med grønn, gul og rød sone, og ny videotime om to uker."
 
 Instance:    Sardokument-Hjemme-1-Innsendt
 InstanceOf:  JodaSardokument
@@ -147,6 +194,7 @@ Usage:       #example
 * content.attachment.url = "https://kristilerla.github.io/joda-sardokumentasjon-fhir/currentbuild/sarbilde-hjemme-1.jpg"
 * context.related[0] = Reference(Sarbilde-Hjemme-1)
 * context.related[1] = Reference(Sarvurdering-Besok-1)
+* context.related[2] = Reference(Sarvurdering-Spesialist-1)
 
 Instance:    Proveniens-Sarbilde-Hjemme-1
 InstanceOf:  Provenance

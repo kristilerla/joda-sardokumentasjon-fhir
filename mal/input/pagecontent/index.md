@@ -16,7 +16,8 @@ Et bilde tatt hjemme kan gi hjemmetjenesten beskjed tidligere, og et bilde tatt 
 |---|---|
 | Pasient | Har såret. Kan ta bilder og registrere smerte og om det ser betent ut. |
 | Pårørende | Hjelper pasienten med å ta bilder mellom besøkene. |
-| Sykepleier i hjemmetjenesten | Vurderer bildene, gjør sårvurderingen og bestemmer hva som journalføres. Kan ta bilder med Jodapro hodekamera under besøket. |
+| Sykepleier i hjemmetjenesten | Ser bildene fra pasient og pårørende, måler og observerer såret, og bestemmer hva som journalføres. Tar bilder med Jodapro hodekamera under timen med sårpoliklinikken. |
+| Spesialist på sårpoliklinikken | Er med på video fra sykehuset under timen. Gjør den faglige sårvurderingen og foreslår sårplanen. |
 | Journalsystemet | Kommunens pasientjournal, der det journalførte bildet og vurderingen havner. |
 
 ### Hovedbrukstilfelle: leggsår som blir verre
@@ -24,9 +25,11 @@ Et bilde tatt hjemme kan gi hjemmetjenesten beskjed tidligere, og et bilde tatt 
 1. Karin (78 år) får hjelp av hjemmetjenesten i Fjordvik kommune til et leggsår på venstre legg.
 2. En kveld mellom besøkene synes datteren Lise at såret ser rødere ut. Hun tar et bilde med mobilen i JodaCare og skriver at det verker mer.
 3. Bildet sendes inn som foreløpig. Det er ikke en del av journalen ennå.
-4. Neste morgen ser sykepleieren Sara bildet. På besøket tar hun et nytt bilde med Jodapro hodekamera og gjør en sårvurdering: mål, sårbunn, væsking, huden rundt, tegn på infeksjon og smerte.
-5. Sara velger å journalføre bildet fra Lise sammen med sin egen vurdering. Bildet får status endelig og Sara som den som har godkjent det.
-6. Hvem som tok hvert bilde, og med hvilket kamera, er sporbart.
+4. Neste morgen ser sykepleieren Sara bildet. Karin har time hos sårpoliklinikken på Fjordvik sykehus. Sara er hjemme hos Karin med Jodapro hodekamera, og spesialisten Nora er med på video fra sykehuset.
+5. Under timen tar Sara et bilde med hodekameraet og registrerer det hun måler og observerer: mål, væsking, huden rundt og smerte.
+6. Nora gjør den faglige vurderingen ut fra bildet fra Lise, bildet fra hodekameraet og Saras observasjoner: sårbunn og tegn på infeksjon. Hun foreslår en ny sårplan med grønn, gul og rød sone.
+7. Sara journalfører bildet fra Lise sammen med vurderingene. Bildet får status endelig og Sara som den som har godkjent det.
+8. Hvem som tok hvert bilde, og med hvilket kamera, er sporbart.
 
 Flyten er også vist som et diagram, med bildene og status fra FHIR-hackathonet 9. november 2026: [Karins sår: fra JodaCare til journal](karins-sar.html).
 
@@ -46,7 +49,8 @@ Flyten er også vist som et diagram, med bildene og status fra FHIR-hackathonet 
 | Pasienten | Patient | [Pasient](StructureDefinition-joda-pasient.html), bygger på no-basis |
 | Kameraet | Device | [Kamera](StructureDefinition-joda-kamera.html), mobil via JodaCare eller Jodapro hodekamera |
 | Bildet | Media | [Sårbilde](StructureDefinition-joda-sarbilde.html) |
-| Vurderingen | Observation | [Sårvurdering](StructureDefinition-joda-sarvurdering.html), peker på bildene med derivedFrom |
+| Timen med sårpoliklinikken | Encounter | Videotime der sykepleieren er hos pasienten og spesialisten er på sykehuset |
+| Vurderingen | Observation | [Sårvurdering](StructureDefinition-joda-sarvurdering.html), én for sykepleierens observasjoner og én for spesialistens vurdering. Peker på bildene og andre vurderinger med derivedFrom |
 | Innsending til journal | DocumentReference | [Sårdokument til journal](StructureDefinition-joda-sardokument.html), docStatus preliminary eller final |
 | Sporbarhet | Provenance | Hvem tok bildet, på vegne av hvem, med hvilket kamera |
 
@@ -59,6 +63,8 @@ Flyten er også vist som et diagram, med bildene og status fra FHIR-hackathonet 
 5. Hvordan skal pasientens samtykke til at pårørende tar og sender bilder uttrykkes?
 6. Bør bildet i journalen være selve bildefilen, en lenke, eller en PDF med bilde og vurdering samlet?
 7. I FHIR R5 er Media erstattet av DocumentReference. Bør guiden bruke DocumentReference for bildene allerede nå?
+8. Hvordan får sårpoliklinikken se bildet fra Lise før timen? Kan det deles gjennom NHN Dokumentlager når Sara har journalført det?
+9. Hvordan skal sårplanen fra spesialisthelsetjenesten deles med hjemmetjenesten, pasienten og pårørende? Er NHN Pasientens planer riktig sted?
 
 ### Spørsmål til Aidn
 
@@ -75,9 +81,13 @@ Aidn er et journalsystem for kommunal helse og omsorg, og Open Aidn bruker FHIR 
 - [Karin Testdal](Patient-Pasient-Karin.html), oppdiktet pasient
 - [Lise Testdal](RelatedPerson-Datter-Lise.html), datter
 - [Sara Testesen](Practitioner-Sykepleier-Sara.html), sykepleier
+- [Nora Testvik](Practitioner-Spesialist-Nora.html), spesialist på sårpoliklinikken
+- [Sårpoliklinikken, Fjordvik sykehus](Organization-Sarpoliklinikk.html)
+- [Videotime med sårpoliklinikken](Encounter-Time-Sarpoliklinikk-1.html)
 - [Bilde tatt hjemme av datteren](Media-Sarbilde-Hjemme-1.html)
 - [Bilde tatt av sykepleier med hodekamera](Media-Sarbilde-Besok-1.html)
-- [Sårvurdering ved besøk](Observation-Sarvurdering-Besok-1.html)
+- [Saras observasjoner ved timen](Observation-Sarvurdering-Besok-1.html)
+- [Spesialistens sårvurdering](Observation-Sarvurdering-Spesialist-1.html)
 - [Bildet fra Lise, sendt inn](DocumentReference-Sardokument-Hjemme-1-Innsendt.html)
 - [Bildet fra Lise, journalført](DocumentReference-Sardokument-Hjemme-1-Journalfort.html)
 - [Hvem tok bildet hjemme](Provenance-Proveniens-Sarbilde-Hjemme-1.html)
